@@ -1,0 +1,25 @@
+# Secret and environment configuration protection
+.env
+.env*.local
+
+# Operating System files
+.DS_Store
+Thumbs.db
+
+# Chrome and browser temporary files
+.chrome_temp/
+.tmp_chrome/
+chrome_user_data/
+chrome_profile/
+chrome-profile/
+
+# Python caches
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+# Local workspace backups and scratch files
+*.bak
+*.0byte.bak
+scratch/
