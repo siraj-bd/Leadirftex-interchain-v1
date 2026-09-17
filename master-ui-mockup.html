@@ -6873,14 +6873,21 @@
       margin-top: 56px;
     }
 
-    .footer-inner-max {
+    .footer-inner-max,
+    .footer-unified-wrap {
       max-width: 1440px;
       margin: 0 auto;
-      display: grid;
-      grid-template-columns: 1.5fr 1fr 1fr 1fr 1fr;
-      gap: 40px;
-      padding-bottom: 40px;
+      display: flex;
+      gap: 48px;
+      align-items: flex-start;
+      justify-content: space-between;
+      padding-bottom: 28px;
       border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .footer-brand-bio {
+      flex: 0 0 280px;
+      max-width: 320px;
     }
 
     .footer-brand-bio p {
@@ -6889,6 +6896,26 @@
       line-height: 1.6;
       margin-top: 14px;
       max-width: 320px;
+    }
+
+    .footer-directory-body {
+      flex: 1;
+      min-width: 280px;
+    }
+
+    .footer-directory-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 14px;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .footer-nav-pills-cluster {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
     }
 
     .footer-nav-col-title {
@@ -81356,114 +81383,72 @@
   <!-- GLOBAL ENTERPRISE FOOTER -->
     <!-- GLOBAL ENTERPRISE FOOTER -->
     <footer class="site-footer">
-      <div class="footer-inner-max">
+      <div class="footer-unified-wrap">
+        <!-- Left Corner: Official Brand Lockup & Strategic Mission Bio -->
         <div class="footer-brand-bio">
-          <div class="brand-logo-unit" style="margin-bottom: 8px;">
-            <div class="brand-hex-mark" style="width: 32px; height: 32px;">
-              <svg viewBox="0 0 24 24" style="width: 18px; height: 18px;"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+          <a href="#" class="brand-logo-unit brand-lockup-32" onclick="showScreen('screen-home'); return false;" title="Leadirftex Interchain Home" style="text-decoration: none; display: inline-block; margin-bottom: 12px;">
+            <div class="lockup-brand-flush lockup-tier-32">
+              <img src="Monogram/monogram-approved-tight.png" 
+                   alt="Leadirftex Approved Monogram" 
+                   class="lockup-mono-tight"
+                   title="Approved Design 2 Monogram">
+              <div class="lockup-text-stack">
+                <span class="wordmark-3d size-32 wordmark-label">Leadirftex</span>
+                <span class="interchain-silver-3d">INTERCHAIN</span>
+              </div>
             </div>
-            <div class="brand-titles">
-              <span class="brand-name" style="font-size: 16px;">LEADIRFTEX</span>
-              <span class="brand-descriptor" style="font-size: 9px;">INTERCHAIN</span>
-            </div>
-          </div>
+          </a>
           <p>
             Global B2B textile and manufacturing infrastructure connecting brands, fabric mills, suppliers, and certified garment factories with verified audits and real-time execution.
           </p>
-        </div>
-
-        <div>
-          <h4 class="footer-nav-col-title">Sourcing &amp; Marketplaces</h4>
-          <ul class="footer-links-vertical">
-            <li><a href="#" onclick="showScreen('screen-marketplace'); return false;">05. Fabric Marketplace</a></li>
-            <li><a href="#" onclick="showScreen('screen-marketplace'); return false;">04. Raw Materials &amp; Yarn</a></li>
-            <li><a href="#" onclick="showScreen('screen-excess-stocklot'); return false;">19. Excess &amp; Stocklots</a></li>
-            <li><a href="#" onclick="showScreen('screen-retail-marketplace'); return false;">20. Retail Marketplace</a></li>
-            <li><a href="#" onclick="showScreen('screen-product'); return false;">Product Detail Showcase</a></li>
-          </ul>
-        </div>
-
-        <div>
-          <h4 class="footer-nav-col-title">Design &amp; Manufacturing</h4>
-          <ul class="footer-links-vertical">
-            <li><a href="#" onclick="showScreen('screen-fashion'); return false;">01. Fashion &amp; Design (3D)</a></li>
-            <li><a href="#" onclick="showScreen('screen-automated-machine-equipment'); return false;">03. Automated Machinery &amp; Equipment</a></li>
-            <li><a href="#" onclick="showScreen('screen-digital-production-Technology'); return false;">03B. Digital Production Tech &amp; Automation</a></li>
-            <li><a href="#" onclick="showScreen('screen-parts'); return false;">03B. Machine Parts Intelligence</a></li>
-            <li><a href="#" onclick="showScreen('screen-wash-chem'); return false;">07. Processing, Wash &amp; Chemical</a></li>
-            <li><a href="#" onclick="showScreen('screen-sample'); return false;">11. R&amp;D &amp; Sample Development</a></li>
-            <li><a href="#" onclick="showScreen('screen-factory'); return false;">16. Factory &amp; Org Network</a></li>
-            <li><a href="#" onclick="showScreen('screen-production-floor-solution'); return false;">Production Floor Solution</a></li>
-          </ul>
-        </div>
-
-        <div>
-          <h4 class="footer-nav-col-title">Trade, Quality &amp; Trust</h4>
-          <ul class="footer-links-vertical">
-            <li><a href="#" onclick="showScreen('screen-buyer-req'); return false;">12. Buyer Requirements</a></li>
-            <li><a href="#" onclick="showScreen('screen-ai-matching'); return false;">13. AI Matching &amp; RFQ</a></li>
-            <li><a href="#" onclick="showScreen('screen-rfq'); return false;">13B. RFQ Bids &amp; Bidding</a></li>
-            <li><a href="#" onclick="showScreen('screen-workspace'); return false;">14. Merchandising Workspace</a></li>
-            <li><a href="#" onclick="showScreen('screen-quality'); return false;">17. Quality &amp; AQL Inspection</a></li>
-            <li><a href="#" onclick="showScreen('screen-rating-trust'); return false;">21. Factory &amp; Buyer Rating / Trust</a></li>
-            <li><a href="#" onclick="showScreen('screen-compliance'); return false;">22. Social Compliance &amp; ESG</a></li>
-          </ul>
-        </div>
-
-        <div>
-          <h4 class="footer-nav-col-title">Careers &amp; Platform</h4>
-          <ul class="footer-links-vertical">
-            <li><a href="#" onclick="showScreen('screen-jobs'); return false;">23. Industry Job Feed</a></li>
-            <li><a href="#" onclick="showScreen('screen-cv'); return false;">23B. Free Textile CV Builder</a></li>
-            <li><a href="#" onclick="showScreen('screen-learning'); return false;">02. Textile &amp; Garment Learning</a></li>
-            <li><a href="#" onclick="showScreen('screen-trust'); return false;">Security &amp; Physical Audits</a></li>
-            <li><a href="#" onclick="showScreen('screen-dashboard'); return false;">Executive Dashboard</a></li>
-            <li><a href="#" onclick="showScreen('screen-hubs'); return false;">All 21 Ecosystem Hubs Matrix</a></li>
-            <li><a href="#" onclick="showScreen('screen-tokens'); return false;">Global Design Tokens Explorer</a></li>
-          </ul>
-        </div>
-      </div>
-
-      <!-- Quick Platform Directory Indexer: Every Screen Text Clickable -->
-      <div class="footer-quick-screen-indexer" style="max-width: 1440px; margin: 36px auto 0; padding-top: 24px; border-top: 1px solid rgba(255,255,255,0.08);">
-        <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 14px; flex-wrap: wrap; gap: 8px;">
-          <div style="display: flex; align-items: center; gap: 8px;">
-            <span style="font-size: 11px; font-weight: 800; color: #ff4e00; text-transform: uppercase; letter-spacing: 0.06em; font-family: var(--lt-font-mono, monospace);">◈ COMPLETE PLATFORM DIRECTORY</span>
-            <span style="font-size: 10px; background: rgba(0, 255, 34, 0.12); color: #00FF22; border: 1px solid rgba(0, 255, 34, 0.3); padding: 2px 7px; border-radius: 9999px; font-weight: 700;">ALL 27 SCREENS CONNECTED</span>
+          <div class="footer-telemetry-badge" style="display: inline-flex; align-items: center; gap: 8px; margin-top: 14px; padding: 4px 10px; background: rgba(0, 255, 34, 0.08); border: 1px solid rgba(0, 255, 34, 0.25); border-radius: 9999px;">
+            <span style="display: inline-block; width: 6px; height: 6px; border-radius: 50%; background: #00FF22; box-shadow: 0 0 6px #00FF22;"></span>
+            <span style="font-size: 10px; color: #00FF22; font-family: var(--lt-font-mono, monospace); font-weight: 700; letter-spacing: 0.06em;">256-BIT SECURE ECOSYSTEM</span>
           </div>
-          <span style="font-size: 11px; color: #94a3b8;">Click any page name below to switch views instantly:</span>
         </div>
 
-        <div style="display: flex; flex-wrap: wrap; gap: 6px;">
-          <a href="#" onclick="showScreen('screen-home'); return false;" class="footer-nav-pill">🏠 Homepage</a>
-          <a href="#" onclick="showScreen('screen-fashion'); return false;" class="footer-nav-pill">👗 01. Fashion &amp; Design</a>
-          <a href="#" onclick="showScreen('screen-learning'); return false;" class="footer-nav-pill">🎓 02. Learning Academy</a>
-          <a href="#" onclick="showScreen('screen-automated-machine-equipment'); return false;" class="footer-nav-pill">⚙️ 03. Machinery &amp; Equipment</a>
-          <a href="#" onclick="showScreen('screen-digital-production-Technology'); return false;" class="footer-nav-pill">🤖 03B. Digital Production Tech</a>
-          <a href="#" onclick="showScreen('screen-parts'); return false;" class="footer-nav-pill">⚙️ Parts Intelligence</a>
-          <a href="#" onclick="showScreen('screen-marketplace'); return false;" class="footer-nav-pill">🛒 05. Fabric Marketplace</a>
-          <a href="#" onclick="showScreen('screen-wash-chem'); return false;" class="footer-nav-pill">🧪 07. Wash &amp; Chemical</a>
-          <a href="#" onclick="showScreen('screen-excess-stocklot'); return false;" class="footer-nav-pill">📦 19. Excess &amp; Stocklots</a>
-          <a href="#" onclick="showScreen('screen-retail-marketplace'); return false;" class="footer-nav-pill">🛍️ 20. Retail Marketplace</a>
-          <a href="#" onclick="showScreen('screen-product'); return false;" class="footer-nav-pill">🔍 Product Detail</a>
-          <a href="#" onclick="showScreen('screen-factory'); return false;" class="footer-nav-pill">🏭 16. Factory Network</a>
-          <a href="#" onclick="showScreen('screen-buyer-req'); return false;" class="footer-nav-pill">📝 12. Buyer Req</a>
-          <a href="#" onclick="showScreen('screen-ai-matching'); return false;" class="footer-nav-pill">⚡ 13. AI Matching</a>
-          <a href="#" onclick="showScreen('screen-rfq'); return false;" class="footer-nav-pill">💬 RFQ Bids</a>
-          <a href="#" onclick="showScreen('screen-sample'); return false;" class="footer-nav-pill">🧵 11. Sample Dev</a>
-          <a href="#" onclick="showScreen('screen-workspace'); return false;" class="footer-nav-pill">📊 14. Workspace</a>
-          <a href="#" onclick="showScreen('screen-quality'); return false;" class="footer-nav-pill">🔬 17. Quality &amp; AQL</a>
-          <a href="#" onclick="showScreen('screen-rating-trust'); return false;" class="footer-nav-pill">⭐ 21. Rating &amp; Trust</a>
-          <a href="#" onclick="showScreen('screen-compliance'); return false;" class="footer-nav-pill">🎖️ 22. Social Compliance &amp; ESG</a>
-          <a href="#" onclick="showScreen('screen-jobs'); return false;" class="footer-nav-pill">💼 23. Job Feed</a>
-          <a href="#" onclick="showScreen('screen-cv'); return false;" class="footer-nav-pill">📄 23B. Free CV Builder</a>
-          <a href="#" onclick="showScreen('screen-trust'); return false;" class="footer-nav-pill">🛡️ Security &amp; Trust</a>
-          <a href="#" onclick="showScreen('screen-dashboard'); return false;" class="footer-nav-pill">📈 Dashboard</a>
-          <a href="#" onclick="showScreen('screen-hubs'); return false;" class="footer-nav-pill">🌐 21 Hubs Matrix</a>
-          <a href="#" onclick="showScreen('screen-tokens'); return false;" class="footer-nav-pill">🎨 Design Tokens</a>
-          <a href="#" onclick="showScreen('screen-production-floor-solution'); return false;" class="footer-nav-pill">🏭 Production Floor Solution</a>
-          <a href="#" onclick="showScreen('sam-cover-studio'); return false;" class="footer-nav-pill" style="border-color: rgba(255, 92, 0, 0.4); color: #FF5C00;">🖼️ Cover Studio</a>
-          <a href="#" onclick="showScreen('screen-social-account'); return false;" class="footer-nav-pill">📱 Social Architecture</a>
+        <!-- Right Side: Complete Platform Directory Pill Buttons Grid -->
+        <div class="footer-directory-body">
+          <div class="footer-directory-header">
+            <div style="display: flex; align-items: center; gap: 8px;">
+              <span style="font-size: 11px; font-weight: 800; color: #ff4e00; text-transform: uppercase; letter-spacing: 0.06em; font-family: var(--lt-font-mono, monospace);">◈ COMPLETE PLATFORM DIRECTORY</span>
+              <span style="font-size: 10px; background: rgba(0, 255, 34, 0.12); color: #00FF22; border: 1px solid rgba(0, 255, 34, 0.3); padding: 2px 7px; border-radius: 9999px; font-weight: 700;">ALL 30 SCREENS CONNECTED</span>
+            </div>
+            <span style="font-size: 11px; color: #94a3b8;">Click any page name below to switch views instantly:</span>
+          </div>
+
+          <div class="footer-nav-pills-cluster">
+            <a href="#" onclick="showScreen('screen-home'); return false;" class="footer-nav-pill">🏠 Homepage</a>
+            <a href="#" onclick="showScreen('screen-fashion'); return false;" class="footer-nav-pill">👗 01. Fashion &amp; Design</a>
+            <a href="#" onclick="showScreen('screen-learning'); return false;" class="footer-nav-pill">🎓 02. Learning Academy</a>
+            <a href="#" onclick="showScreen('screen-automated-machine-equipment'); return false;" class="footer-nav-pill">⚙️ 03. Machinery &amp; Equipment</a>
+            <a href="#" onclick="showScreen('screen-digital-production-Technology'); return false;" class="footer-nav-pill">🤖 03B. Digital Production Tech</a>
+            <a href="#" onclick="showScreen('screen-parts'); return false;" class="footer-nav-pill">⚙️ Parts Intelligence</a>
+            <a href="#" onclick="showScreen('screen-marketplace'); return false;" class="footer-nav-pill">🌾 04. Raw Materials &amp; Yarn</a>
+            <a href="#" onclick="showScreen('screen-marketplace'); return false;" class="footer-nav-pill">🛒 05. Fabric Marketplace</a>
+            <a href="#" onclick="showScreen('screen-wash-chem'); return false;" class="footer-nav-pill">🧪 07. Wash &amp; Chemical</a>
+            <a href="#" onclick="showScreen('screen-excess-stocklot'); return false;" class="footer-nav-pill">📦 19. Excess &amp; Stocklots</a>
+            <a href="#" onclick="showScreen('screen-retail-marketplace'); return false;" class="footer-nav-pill">🛍️ 20. Retail Marketplace</a>
+            <a href="#" onclick="showScreen('screen-product'); return false;" class="footer-nav-pill">🔍 Product Detail</a>
+            <a href="#" onclick="showScreen('screen-factory'); return false;" class="footer-nav-pill">🏭 16. Factory Network</a>
+            <a href="#" onclick="showScreen('screen-buyer-req'); return false;" class="footer-nav-pill">📝 12. Buyer Req</a>
+            <a href="#" onclick="showScreen('screen-ai-matching'); return false;" class="footer-nav-pill">⚡ 13. AI Matching</a>
+            <a href="#" onclick="showScreen('screen-rfq'); return false;" class="footer-nav-pill">💬 RFQ Bids</a>
+            <a href="#" onclick="showScreen('screen-sample'); return false;" class="footer-nav-pill">🧵 11. Sample Dev</a>
+            <a href="#" onclick="showScreen('screen-workspace'); return false;" class="footer-nav-pill">📊 14. Workspace</a>
+            <a href="#" onclick="showScreen('screen-quality'); return false;" class="footer-nav-pill">🔬 17. Quality &amp; AQL</a>
+            <a href="#" onclick="showScreen('screen-rating-trust'); return false;" class="footer-nav-pill">⭐ 21. Rating &amp; Trust</a>
+            <a href="#" onclick="showScreen('screen-compliance'); return false;" class="footer-nav-pill">🎖️ 22. Social Compliance &amp; ESG</a>
+            <a href="#" onclick="showScreen('screen-jobs'); return false;" class="footer-nav-pill">💼 23. Job Feed</a>
+            <a href="#" onclick="showScreen('screen-cv'); return false;" class="footer-nav-pill">📄 23B. Free CV Builder</a>
+            <a href="#" onclick="showScreen('screen-trust'); return false;" class="footer-nav-pill">🛡️ Security &amp; Trust</a>
+            <a href="#" onclick="showScreen('screen-dashboard'); return false;" class="footer-nav-pill">📈 Dashboard</a>
+            <a href="#" onclick="showScreen('screen-hubs'); return false;" class="footer-nav-pill">🌐 21 Hubs Matrix</a>
+            <a href="#" onclick="showScreen('screen-tokens'); return false;" class="footer-nav-pill">🎨 Design Tokens</a>
+            <a href="#" onclick="showScreen('screen-production-floor-solution'); return false;" class="footer-nav-pill">🏭 Production Floor Solution</a>
+            <a href="#" onclick="showScreen('sam-cover-studio'); return false;" class="footer-nav-pill" style="border-color: rgba(255, 92, 0, 0.4); color: #FF5C00;">🖼️ Cover Studio</a>
+            <a href="#" onclick="showScreen('screen-social-account'); return false;" class="footer-nav-pill">📱 Social Architecture</a>
+          </div>
         </div>
       </div>
 
