@@ -368,6 +368,108 @@
     .itchy-elephant-ltx-btn:active {
       transform: scale(0.70);
     }
+
+    /* === SERIAL #004: HAPPY-CHIPMUNK-39 EXPANDING ARROW GO-BACK BUTTON === */
+    .happy-chipmunk-btn {
+      position: relative;
+      background-color: #ffffff;
+      text-align: center;
+      width: 192px;
+      height: 56px;
+      border-radius: 16px;
+      border: 4px solid #ffffff;
+      color: #000000;
+      font-size: 20px;
+      font-weight: 600;
+      cursor: pointer;
+      overflow: hidden;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.3s ease;
+      font-family: inherit;
+      outline: none;
+      box-shadow: 0 4px 14px rgba(0,0,0,0.25);
+    }
+    .happy-chipmunk-slider {
+      background-color: #4ade80;
+      border-radius: 12px;
+      height: 48px;
+      width: 25%;
+      display: grid;
+      place-items: center;
+      position: absolute;
+      left: 0;
+      top: 0;
+      z-index: 10;
+      transition: width 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .happy-chipmunk-btn:hover .happy-chipmunk-slider {
+      width: 100%;
+    }
+    .happy-chipmunk-text {
+      transform: translateX(16px);
+      margin: 0;
+      font-size: 18px;
+      font-weight: 600;
+      color: #000000;
+      user-select: none;
+    }
+
+    /* Variant B: Leadirftex Cyber Edition (Neon Green Glow) */
+    .happy-chipmunk-ltx-btn {
+      position: relative;
+      background-color: #070B14;
+      text-align: center;
+      width: 200px;
+      height: 56px;
+      border-radius: 16px;
+      border: 2px solid rgba(0, 255, 34, 0.4);
+      color: #ffffff;
+      font-size: 18px;
+      font-family: 'JetBrains Mono', monospace;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      cursor: pointer;
+      overflow: hidden;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      transition: border-color 0.3s ease, box-shadow 0.3s ease;
+      outline: none;
+      box-shadow: 0 0 16px rgba(0, 255, 34, 0.15);
+    }
+    .happy-chipmunk-ltx-btn:hover {
+      border-color: #00FF22;
+      box-shadow: 0 0 25px rgba(0, 255, 34, 0.4);
+    }
+    .happy-chipmunk-ltx-slider {
+      background: linear-gradient(135deg, #00FF22 0%, #00cc1b 100%);
+      border-radius: 12px;
+      height: 48px;
+      width: 25%;
+      display: grid;
+      place-items: center;
+      position: absolute;
+      left: 2px;
+      top: 2px;
+      z-index: 10;
+      transition: width 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+      box-shadow: 0 0 10px rgba(0, 255, 34, 0.5);
+    }
+    .happy-chipmunk-ltx-btn:hover .happy-chipmunk-ltx-slider {
+      width: calc(100% - 4px);
+    }
+    .happy-chipmunk-ltx-text {
+      transform: translateX(18px);
+      margin: 0;
+      font-size: 15px;
+      font-weight: 700;
+      color: #ffffff;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      user-select: none;
+    }
   </style>
 </head>
 <body>
@@ -497,6 +599,53 @@
 
       <div style="margin-top: 20px; padding-top: 14px; border-top: 1px solid rgba(255,255,255,0.06); display: flex; justify-content: space-between; align-items: center; font-size: 11.5px; color: #64748b;">
         <span>Category: <strong>UI Buttons / Outline-to-Fill &amp; Scale Dynamics</strong></span>
+        <span style="color: #00FF22;">● Verified Production Ingestion</span>
+      </div>
+    </section>
+
+    <!-- SERIAL #004 -->
+    <section id="mockup-item-004" class="mockup-card">
+      <div class="mockup-header">
+        <div style="display: flex; align-items: center; gap: 10px;">
+          <span class="serial-badge">SERIAL #004</span>
+          <strong style="color: #ffffff; font-size: 16px;">Happy-Chipmunk-39 Expanding Arrow Go-Back Button</strong>
+          <span style="font-size: 11px; color: #64748b; font-family: monospace;">uiverse.io/Rahulcheryala/happy-chipmunk-39</span>
+        </div>
+        <a href="serial-list-mockup-design.html" style="color: var(--orange); font-size: 12px; text-decoration: none; font-weight: 600;">&larr; View Master Serial Index</a>
+      </div>
+
+      <div class="stage-view">
+        <!-- Variant A: Uiverse Canonical -->
+        <div class="stage-column">
+          <span class="stage-label">Variant A: Uiverse Canonical (Green-400 Slider)</span>
+          <button type="button" class="happy-chipmunk-btn">
+            <div class="happy-chipmunk-slider">
+              <svg width="25px" height="25px" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+                <path fill="#000000" d="M224 480h640a32 32 0 1 1 0 64H224a32 32 0 0 1 0-64z"></path>
+                <path fill="#000000" d="m237.248 512 265.408 265.344a32 32 0 0 1-45.312 45.312l-288-288a32 32 0 0 1 0-45.312l288-288a32 32 0 1 1 45.312 45.312L237.248 512z"></path>
+              </svg>
+            </div>
+            <p class="happy-chipmunk-text">Go Back</p>
+          </button>
+        </div>
+
+        <!-- Variant B: Leadirftex Cyber Edition -->
+        <div class="stage-column">
+          <span class="stage-label">Variant B: Leadirftex Cyber Edition (Neon Green Glow)</span>
+          <button type="button" class="happy-chipmunk-ltx-btn">
+            <div class="happy-chipmunk-ltx-slider">
+              <svg width="22px" height="22px" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+                <path fill="#03050A" d="M224 480h640a32 32 0 1 1 0 64H224a32 32 0 0 1 0-64z"></path>
+                <path fill="#03050A" d="m237.248 512 265.408 265.344a32 32 0 0 1-45.312 45.312l-288-288a32 32 0 0 1 0-45.312l288-288a32 32 0 1 1 45.312 45.312L237.248 512z"></path>
+              </svg>
+            </div>
+            <p class="happy-chipmunk-ltx-text">Return</p>
+          </button>
+        </div>
+      </div>
+
+      <div style="margin-top: 20px; padding-top: 14px; border-top: 1px solid rgba(255,255,255,0.06); display: flex; justify-content: space-between; align-items: center; font-size: 11.5px; color: #64748b;">
+        <span>Category: <strong>UI Buttons / Expanding Arrow Slider Navigation</strong></span>
         <span style="color: #00FF22;">● Verified Production Ingestion</span>
       </div>
     </section>
