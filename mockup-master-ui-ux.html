@@ -639,6 +639,91 @@
       color: #ffffff;
       box-shadow: 0 0 30px rgba(0, 255, 34, 0.6);
     }
+
+    /* === SERIAL #006: NASTY-FISH-9 SKEWED DIAGONAL SLICE FILL BUTTON === */
+    /* Variant A: Canonical Uiverse */
+    .nasty-fish-btn {
+      width: 7.2em;
+      height: 2.6em;
+      background: #000000;
+      color: #ffffff;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      border-radius: 0.625em;
+      font-size: 17px;
+      font-weight: bold;
+      cursor: pointer;
+      position: relative;
+      z-index: 1;
+      overflow: hidden;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      transition: color 0.5s ease;
+      outline: none;
+    }
+    .nasty-fish-btn:hover {
+      color: #000000;
+    }
+    .nasty-fish-btn::after {
+      content: "";
+      background: #ffffff;
+      position: absolute;
+      z-index: -1;
+      left: -20%;
+      right: -20%;
+      top: 0;
+      bottom: 0;
+      transform: skewX(-45deg) scale(0, 1);
+      transition: transform 0.5s ease;
+    }
+    .nasty-fish-btn:hover::after {
+      transform: skewX(-45deg) scale(1, 1);
+    }
+
+    /* Variant B: Leadirftex Cyber Edition (Obsidian + Neon Cyber Green Glow) */
+    .nasty-fish-ltx-btn {
+      width: 8em;
+      height: 2.6em;
+      background: #070B14;
+      color: #00FF22;
+      border: 1.5px solid rgba(0, 255, 34, 0.45);
+      border-radius: 0.625em;
+      font-size: 16px;
+      font-family: 'JetBrains Mono', monospace;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      cursor: pointer;
+      position: relative;
+      z-index: 1;
+      overflow: hidden;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      transition: color 0.5s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+      outline: none;
+      box-shadow: 0 0 14px rgba(0, 255, 34, 0.2);
+    }
+    .nasty-fish-ltx-btn:hover {
+      color: #03050A;
+      border-color: #00FF22;
+      box-shadow: 0 0 25px rgba(0, 255, 34, 0.6);
+    }
+    .nasty-fish-ltx-btn::after {
+      content: "";
+      background: #00FF22;
+      position: absolute;
+      z-index: -1;
+      left: -20%;
+      right: -20%;
+      top: 0;
+      bottom: 0;
+      transform: skewX(-45deg) scale(0, 1);
+      transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .nasty-fish-ltx-btn:hover::after {
+      transform: skewX(-45deg) scale(1, 1);
+    }
   </style>
 </head>
 <body>
@@ -846,6 +931,37 @@
 
       <div style="margin-top: 20px; padding-top: 14px; border-top: 1px solid rgba(255,255,255,0.06); display: flex; justify-content: space-between; align-items: center; font-size: 11.5px; color: #64748b;">
         <span>Category: <strong>UI Buttons / Cyberpunk Chamfered Gradient Cut-Corner</strong></span>
+        <span style="color: #00FF22;">● Verified Production Ingestion</span>
+      </div>
+    </section>
+
+    <!-- SERIAL #006 -->
+    <section id="mockup-item-006" class="mockup-card">
+      <div class="mockup-header">
+        <div style="display: flex; align-items: center; gap: 10px;">
+          <span class="serial-badge">SERIAL #006</span>
+          <strong style="color: #ffffff; font-size: 16px;">Nasty-Fish-9 Skewed Diagonal Slice Fill Button</strong>
+          <span style="font-size: 11px; color: #64748b; font-family: monospace;">uiverse.io/CristianMontoya98/nasty-fish-9</span>
+        </div>
+        <a href="serial-list-mockup-design.html" style="color: var(--orange); font-size: 12px; text-decoration: none; font-weight: 600;">&larr; View Master Serial Index</a>
+      </div>
+
+      <div class="stage-view">
+        <!-- Variant A: Uiverse Canonical -->
+        <div class="stage-column">
+          <span class="stage-label">Variant A: Uiverse Canonical (Monochrome Skew Slice)</span>
+          <button type="button" class="nasty-fish-btn">Button</button>
+        </div>
+
+        <!-- Variant B: Leadirftex Cyber Edition -->
+        <div class="stage-column">
+          <span class="stage-label">Variant B: Leadirftex Cyber Edition (Neon Green Glow)</span>
+          <button type="button" class="nasty-fish-ltx-btn">LEADIRFTEX</button>
+        </div>
+      </div>
+
+      <div style="margin-top: 20px; padding-top: 14px; border-top: 1px solid rgba(255,255,255,0.06); display: flex; justify-content: space-between; align-items: center; font-size: 11.5px; color: #64748b;">
+        <span>Category: <strong>UI Buttons / Skewed Diagonal Slice Fill Animation</strong></span>
         <span style="color: #00FF22;">● Verified Production Ingestion</span>
       </div>
     </section>
