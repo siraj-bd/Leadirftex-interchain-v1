@@ -724,6 +724,178 @@
     .nasty-fish-ltx-btn:hover::after {
       transform: skewX(-45deg) scale(1, 1);
     }
+
+    /* === SERIAL #007: WEAK-HORSE-33 FUTURISTIC AI NEON GLOW INPUT === */
+    /* Variant A: Canonical Uiverse */
+    .weak-horse-box {
+      position: relative;
+      width: 100%;
+      min-height: 240px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      border-radius: 12px;
+      background: #080d16;
+      padding: 24px 16px;
+    }
+    .weak-horse-container {
+      position: relative;
+      width: 90%;
+      max-width: 360px;
+      text-align: center;
+      z-index: 2;
+    }
+    .weak-horse-title {
+      font-size: 24px;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      margin-bottom: 16px;
+      color: #00ffe1;
+      text-shadow: 0 0 15px #00ffe1, 0 0 30px #00ffe1;
+      font-weight: 800;
+    }
+    .weak-horse-input-field {
+      position: relative;
+      margin-top: 14px;
+    }
+    .weak-horse-input {
+      width: 100%;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 30px;
+      background: rgba(31, 40, 51, 0.7);
+      color: #ffffff;
+      font-size: 15px;
+      text-align: center;
+      outline: none;
+      box-shadow: 0 0 10px #00ffe1, 0 0 20px #00ffe1;
+      transition: box-shadow 0.4s ease-in-out, transform 0.2s ease;
+      font-family: inherit;
+      box-sizing: border-box;
+    }
+    .weak-horse-input:hover,
+    .weak-horse-input:focus {
+      box-shadow: 0 0 15px #00ffe1, 0 0 30px #00ffe1, 0 0 45px #00ffe1;
+      transform: scale(1.03);
+    }
+    .weak-horse-particles {
+      position: absolute;
+      inset: 0;
+      overflow: hidden;
+      z-index: 1;
+      pointer-events: none;
+    }
+    .weak-horse-particle {
+      position: absolute;
+      width: 8px;
+      height: 8px;
+      background: #00ffe1;
+      border-radius: 50%;
+      animation: weak-horse-float 5s infinite ease-in-out;
+      box-shadow: 0 0 10px #00ffe1, 0 0 15px #00ffe1;
+    }
+    @keyframes weak-horse-float {
+      0% {
+        transform: translateY(0);
+        opacity: 0.8;
+      }
+      10% {
+        transform: translateY(15px);
+        opacity: 0.4;
+      }
+      25% {
+        transform: translateY(0);
+        opacity: 0.8;
+      }
+      50% {
+        transform: translateY(-35px);
+        opacity: 0.4;
+      }
+      100% {
+        transform: translateY(0);
+        opacity: 0.8;
+      }
+    }
+    .weak-horse-response {
+      margin-top: 18px;
+      font-size: 14px;
+      color: #00ffe1;
+      text-shadow: 0 0 8px #00ffe1;
+      font-style: italic;
+    }
+
+    /* Variant B: Leadirftex Cyber Edition (Obsidian + Cyber Neon Green #00FF22 + Leadirftex Orange) */
+    .weak-horse-ltx-box {
+      position: relative;
+      width: 100%;
+      min-height: 240px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      border-radius: 12px;
+      background: #03050A;
+      border: 1px solid rgba(0, 255, 34, 0.25);
+      padding: 24px 16px;
+      box-shadow: inset 0 0 30px rgba(0, 255, 34, 0.05);
+    }
+    .weak-horse-ltx-container {
+      position: relative;
+      width: 90%;
+      max-width: 360px;
+      text-align: center;
+      z-index: 2;
+    }
+    .weak-horse-ltx-title {
+      font-size: 20px;
+      font-family: 'JetBrains Mono', monospace;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin-bottom: 16px;
+      color: #00FF22;
+      text-shadow: 0 0 15px #00FF22, 0 0 30px rgba(0, 255, 34, 0.5);
+      font-weight: 800;
+    }
+    .weak-horse-ltx-input {
+      width: 100%;
+      padding: 12px 20px;
+      border: 1px solid rgba(0, 255, 34, 0.5);
+      border-radius: 30px;
+      background: rgba(10, 16, 29, 0.85);
+      color: #00FF22;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 14px;
+      text-align: center;
+      outline: none;
+      box-shadow: 0 0 12px rgba(0, 255, 34, 0.35);
+      transition: box-shadow 0.4s ease-in-out, transform 0.2s ease, border-color 0.3s;
+      box-sizing: border-box;
+    }
+    .weak-horse-ltx-input:hover,
+    .weak-horse-ltx-input:focus {
+      border-color: #00FF22;
+      box-shadow: 0 0 20px rgba(0, 255, 34, 0.6), 0 0 40px rgba(0, 255, 34, 0.3);
+      transform: scale(1.03);
+    }
+    .weak-horse-ltx-particle {
+      position: absolute;
+      width: 8px;
+      height: 8px;
+      background: #00FF22;
+      border-radius: 50%;
+      animation: weak-horse-float 4.5s infinite ease-in-out;
+      box-shadow: 0 0 10px #00FF22, 0 0 20px #00FF22;
+    }
+    .weak-horse-ltx-response {
+      margin-top: 18px;
+      font-size: 13px;
+      font-family: 'JetBrains Mono', monospace;
+      color: #FF5C00;
+      text-shadow: 0 0 10px rgba(255, 92, 0, 0.4);
+      font-weight: 600;
+      letter-spacing: 0.5px;
+    }
   </style>
 </head>
 <body>
@@ -962,6 +1134,65 @@
 
       <div style="margin-top: 20px; padding-top: 14px; border-top: 1px solid rgba(255,255,255,0.06); display: flex; justify-content: space-between; align-items: center; font-size: 11.5px; color: #64748b;">
         <span>Category: <strong>UI Buttons / Skewed Diagonal Slice Fill Animation</strong></span>
+        <span style="color: #00FF22;">● Verified Production Ingestion</span>
+      </div>
+    </section>
+
+    <!-- SERIAL #007 -->
+    <section id="mockup-item-007" class="mockup-card">
+      <div class="mockup-header">
+        <div style="display: flex; align-items: center; gap: 10px;">
+          <span class="serial-badge">SERIAL #007</span>
+          <strong style="color: #ffffff; font-size: 16px;">Weak-Horse-33 Futuristic AI Neon Glow Input Field</strong>
+          <span style="font-size: 11px; color: #64748b; font-family: monospace;">uiverse.io/satish_1056/weak-horse-33</span>
+        </div>
+        <a href="serial-list-mockup-design.html" style="color: var(--orange); font-size: 12px; text-decoration: none; font-weight: 600;">&larr; View Master Serial Index</a>
+      </div>
+
+      <div class="stage-view">
+        <!-- Variant A: Uiverse Canonical -->
+        <div class="stage-column">
+          <span class="stage-label">Variant A: Uiverse Canonical (Cyan Particle AI Interface)</span>
+          <div class="weak-horse-box">
+            <div class="weak-horse-container">
+              <div class="weak-horse-title">AI Interface</div>
+              <div class="weak-horse-input-field">
+                <input class="weak-horse-input" placeholder="Speak to AI..." />
+              </div>
+              <div class="weak-horse-response">"AI is processing your thoughts..."</div>
+            </div>
+            <div class="weak-horse-particles">
+              <div class="weak-horse-particle" style="top: 15%; left: 18%; animation-duration: 4s;"></div>
+              <div class="weak-horse-particle" style="top: 30%; left: 75%; animation-duration: 6s;"></div>
+              <div class="weak-horse-particle" style="top: 65%; left: 25%; animation-duration: 5s;"></div>
+              <div class="weak-horse-particle" style="top: 75%; left: 65%; animation-duration: 4.5s;"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Variant B: Leadirftex Cyber Edition -->
+        <div class="stage-column">
+          <span class="stage-label">Variant B: Leadirftex Cyber Edition (Industrial AI Copilot)</span>
+          <div class="weak-horse-ltx-box">
+            <div class="weak-horse-ltx-container">
+              <div class="weak-horse-ltx-title">Industrial Copilot</div>
+              <div class="weak-horse-input-field">
+                <input class="weak-horse-ltx-input" placeholder="Prompt Interchain Network..." />
+              </div>
+              <div class="weak-horse-ltx-response">TELEMETRY SYNC ACTIVE &bull; 29 NODES</div>
+            </div>
+            <div class="weak-horse-particles">
+              <div class="weak-horse-ltx-particle" style="top: 15%; left: 18%; animation-duration: 4s;"></div>
+              <div class="weak-horse-ltx-particle" style="top: 30%; left: 75%; animation-duration: 5.5s;"></div>
+              <div class="weak-horse-ltx-particle" style="top: 65%; left: 25%; animation-duration: 4.8s;"></div>
+              <div class="weak-horse-ltx-particle" style="top: 75%; left: 65%; animation-duration: 4.2s;"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div style="margin-top: 20px; padding-top: 14px; border-top: 1px solid rgba(255,255,255,0.06); display: flex; justify-content: space-between; align-items: center; font-size: 11.5px; color: #64748b;">
+        <span>Category: <strong>Inputs &amp; Forms / Futuristic AI Neon Glow Input Field</strong></span>
         <span style="color: #00FF22;">● Verified Production Ingestion</span>
       </div>
     </section>
