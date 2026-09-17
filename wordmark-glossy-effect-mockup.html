@@ -1,6 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+  <!-- ======================================================================
+       LEADIRFTEX ENTERPRISE DOMAIN FIREWALL GATEWAY (RULE 59 PROTECTED)
+       ====================================================================== -->
+  <script>
+    (function() {
+      var host = window.location.hostname;
+      if (host && (host.indexOf('leadirftex.com') !== -1 || host.indexOf('github.io') !== -1)) {
+        if (sessionStorage.getItem('ltx_internal_auth') !== 'verified_2026') {
+          document.addEventListener('DOMContentLoaded', function() {
+            document.body.innerHTML = `
+              <div style="min-height: 100vh; background: #03050a; color: #f8fafc; display: flex; align-items: center; justify-content: center; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; padding: 20px; box-sizing: border-box;">
+                <div style="max-width: 480px; width: 100%; background: #070b14; border: 1px solid rgba(255, 92, 0, 0.4); border-radius: 14px; padding: 36px 30px; box-shadow: 0 25px 60px rgba(0,0,0,0.9), 0 0 30px rgba(255, 92, 0, 0.15); text-align: center;">
+                  <div style="width: 52px; height: 52px; border-radius: 12px; background: rgba(255, 92, 0, 0.12); border: 1px solid rgba(255, 92, 0, 0.4); display: inline-flex; align-items: center; justify-content: center; font-size: 24px; margin-bottom: 16px;">
+                    🔒
+                  </div>
+                  <div style="display: block; margin-bottom: 12px;">
+                    <span style="display: inline-block; font-size: 10px; font-weight: 800; color: #00FF22; background: rgba(0, 255, 34, 0.12); border: 1px solid rgba(0, 255, 34, 0.35); padding: 3px 8px; border-radius: 4px; letter-spacing: 1px;">
+                      RESTRICTED INTERNAL RESOURCE &bull; RULE 59
+                    </span>
+                  </div>
+                  <h2 style="font-size: 19px; font-weight: 900; margin: 0 0 10px 0; color: #ffffff; letter-spacing: -0.2px;">
+                    Authorized Access Required
+                  </h2>
+                  <p style="font-size: 12.5px; color: #94a3b8; line-height: 1.55; margin: 0 0 22px 0;">
+                    This engineering blueprint and audit dossier contains proprietary operational assets. Public extraction is restricted under Leadirftex Security Protocol.
+                  </p>
+                  <div id="auth-err" style="display: none; color: #FF5C00; font-size: 12px; margin-bottom: 12px; font-weight: 700;">
+                    ⚠️ Invalid enterprise clearance passcode.
+                  </div>
+                  <form id="auth-form" onsubmit="event.preventDefault(); var p = document.getElementById('pass-in').value.trim(); if(p === 'leadirftex2026' || p === 'creatorall2026'){ sessionStorage.setItem('ltx_internal_auth', 'verified_2026'); location.reload(); } else { document.getElementById('auth-err').style.display='block'; }">
+                    <input type="password" id="pass-in" placeholder="Enter Enterprise Passcode" required style="width: 100%; box-sizing: border-box; background: #0c121e; border: 1px solid rgba(255,255,255,0.2); color: #fff; padding: 11px 14px; border-radius: 8px; font-size: 13px; margin-bottom: 14px; text-align: center; letter-spacing: 2px;">
+                    <button type="submit" style="width: 100%; background: linear-gradient(135deg, #FF5C00 0%, #E04E00 100%); border: none; color: #fff; padding: 11px; border-radius: 8px; font-size: 13px; font-weight: 800; cursor: pointer; box-shadow: 0 4px 15px rgba(255, 92, 0, 0.35);">
+                      Verify Clearance
+                    </button>
+                  </form>
+                  <div style="margin-top: 20px; border-top: 1px solid rgba(255,255,255,0.08); padding-top: 16px;">
+                    <a href="/" style="font-size: 12px; color: #94a3b8; text-decoration: none; display: inline-flex; align-items: center; gap: 6px;">
+                      <span>&larr;</span> Return to Official Platform
+                    </a>
+                  </div>
+                </div>
+              </div>
+            `;
+          });
+        }
+      }
+    })();
+  </script>
+
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Leadirftex Wordmark Glossy 3D Effect — Refined User Reference Match</title>
