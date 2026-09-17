@@ -470,6 +470,175 @@
       text-transform: uppercase;
       user-select: none;
     }
+
+    /* === SERIAL #005: DANGEROUS-HORSE-41 CYBERPUNK CHAMFERED GRADIENT BUTTON === */
+    /* Variant A: Canonical Uiverse */
+    .dangerous-horse-btn {
+      --border-color: linear-gradient(-45deg, #ffae00, #7e03aa, #00fffb);
+      --border-width: 0.125em;
+      --curve-size: 0.5em;
+      --blur: 30px;
+      --bg: #080312;
+      --color: #afffff;
+      color: var(--color);
+      cursor: pointer;
+      position: relative;
+      isolation: isolate;
+      display: inline-grid;
+      place-content: center;
+      padding: 0.6em 1.8em;
+      font-size: 16px;
+      font-family: inherit;
+      font-weight: 700;
+      letter-spacing: 1px;
+      border: 0;
+      text-transform: uppercase;
+      box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.6);
+      clip-path: polygon(
+        0% var(--curve-size),
+        var(--curve-size) 0,
+        100% 0,
+        100% calc(100% - var(--curve-size)),
+        calc(100% - var(--curve-size)) 100%,
+        0 100%
+      );
+      transition: color 250ms;
+      outline: none;
+    }
+    .dangerous-horse-btn::after,
+    .dangerous-horse-btn::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+    }
+    .dangerous-horse-btn::before {
+      background: var(--border-color);
+      background-size: 300% 300%;
+      animation: dangerous-horse-anim 5s ease infinite;
+      z-index: -2;
+    }
+    @keyframes dangerous-horse-anim {
+      0% {
+        background-position: 31% 0%;
+      }
+      50% {
+        background-position: 70% 100%;
+      }
+      100% {
+        background-position: 31% 0%;
+      }
+    }
+    .dangerous-horse-btn::after {
+      background: var(--bg);
+      z-index: -1;
+      clip-path: polygon(
+        var(--border-width) calc(var(--curve-size) + var(--border-width) * 0.5),
+        calc(var(--curve-size) + var(--border-width) * 0.5) var(--border-width),
+        calc(100% - var(--border-width)) var(--border-width),
+        calc(100% - var(--border-width)) calc(100% - calc(var(--curve-size) + var(--border-width) * 0.5)),
+        calc(100% - calc(var(--curve-size) + var(--border-width) * 0.5)) calc(100% - var(--border-width)),
+        var(--border-width) calc(100% - var(--border-width))
+      );
+      transition: clip-path 500ms;
+    }
+    .dangerous-horse-btn:where(:hover, :focus)::after {
+      clip-path: polygon(
+        calc(100% - var(--border-width)) calc(100% - calc(var(--curve-size) + var(--border-width) * 0.5)),
+        calc(100% - var(--border-width)) var(--border-width),
+        calc(100% - var(--border-width)) var(--border-width),
+        calc(100% - var(--border-width)) calc(100% - calc(var(--curve-size) + var(--border-width) * 0.5)),
+        calc(100% - calc(var(--curve-size) + var(--border-width) * 0.5)) calc(100% - var(--border-width)),
+        calc(100% - calc(var(--curve-size) + var(--border-width) * 0.5)) calc(100% - var(--border-width))
+      );
+      transition: 200ms;
+    }
+    .dangerous-horse-btn:where(:hover, :focus) {
+      color: #ffffff;
+    }
+
+    /* Variant B: Leadirftex Cyber Edition (Obsidian + Cyber Neon Green + Leadirftex Orange) */
+    .dangerous-horse-ltx-btn {
+      --border-color: linear-gradient(-45deg, #FF5C00, #00FF22, #00f0ff);
+      --border-width: 0.125em;
+      --curve-size: 0.6em;
+      --bg: #03050A;
+      --color: #00FF22;
+      color: var(--color);
+      cursor: pointer;
+      position: relative;
+      isolation: isolate;
+      display: inline-grid;
+      place-content: center;
+      padding: 0.65em 2em;
+      font-size: 16px;
+      font-family: 'JetBrains Mono', monospace;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      border: 0;
+      text-transform: uppercase;
+      box-shadow: 0 0 20px rgba(0, 255, 34, 0.25);
+      clip-path: polygon(
+        0% var(--curve-size),
+        var(--curve-size) 0,
+        100% 0,
+        100% calc(100% - var(--curve-size)),
+        calc(100% - var(--curve-size)) 100%,
+        0 100%
+      );
+      transition: color 250ms, box-shadow 300ms ease;
+      outline: none;
+    }
+    .dangerous-horse-ltx-btn::after,
+    .dangerous-horse-ltx-btn::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+    }
+    .dangerous-horse-ltx-btn::before {
+      background: var(--border-color);
+      background-size: 300% 300%;
+      animation: dangerous-horse-ltx-anim 4s ease infinite;
+      z-index: -2;
+    }
+    @keyframes dangerous-horse-ltx-anim {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+    .dangerous-horse-ltx-btn::after {
+      background: var(--bg);
+      z-index: -1;
+      clip-path: polygon(
+        var(--border-width) calc(var(--curve-size) + var(--border-width) * 0.5),
+        calc(var(--curve-size) + var(--border-width) * 0.5) var(--border-width),
+        calc(100% - var(--border-width)) var(--border-width),
+        calc(100% - var(--border-width)) calc(100% - calc(var(--curve-size) + var(--border-width) * 0.5)),
+        calc(100% - calc(var(--curve-size) + var(--border-width) * 0.5)) calc(100% - var(--border-width)),
+        var(--border-width) calc(100% - var(--border-width))
+      );
+      transition: clip-path 500ms;
+    }
+    .dangerous-horse-ltx-btn:where(:hover, :focus)::after {
+      clip-path: polygon(
+        calc(100% - var(--border-width)) calc(100% - calc(var(--curve-size) + var(--border-width) * 0.5)),
+        calc(100% - var(--border-width)) var(--border-width),
+        calc(100% - var(--border-width)) var(--border-width),
+        calc(100% - var(--border-width)) calc(100% - calc(var(--curve-size) + var(--border-width) * 0.5)),
+        calc(100% - calc(var(--curve-size) + var(--border-width) * 0.5)) calc(100% - var(--border-width)),
+        calc(100% - calc(var(--curve-size) + var(--border-width) * 0.5)) calc(100% - var(--border-width))
+      );
+      transition: 200ms;
+    }
+    .dangerous-horse-ltx-btn:where(:hover, :focus) {
+      color: #ffffff;
+      box-shadow: 0 0 30px rgba(0, 255, 34, 0.6);
+    }
   </style>
 </head>
 <body>
@@ -646,6 +815,37 @@
 
       <div style="margin-top: 20px; padding-top: 14px; border-top: 1px solid rgba(255,255,255,0.06); display: flex; justify-content: space-between; align-items: center; font-size: 11.5px; color: #64748b;">
         <span>Category: <strong>UI Buttons / Expanding Arrow Slider Navigation</strong></span>
+        <span style="color: #00FF22;">● Verified Production Ingestion</span>
+      </div>
+    </section>
+
+    <!-- SERIAL #005 -->
+    <section id="mockup-item-005" class="mockup-card">
+      <div class="mockup-header">
+        <div style="display: flex; align-items: center; gap: 10px;">
+          <span class="serial-badge">SERIAL #005</span>
+          <strong style="color: #ffffff; font-size: 16px;">Dangerous-Horse-41 Cyberpunk Chamfered Gradient Button</strong>
+          <span style="font-size: 11px; color: #64748b; font-family: monospace;">uiverse.io/kleenpulse/dangerous-horse-41</span>
+        </div>
+        <a href="serial-list-mockup-design.html" style="color: var(--orange); font-size: 12px; text-decoration: none; font-weight: 600;">&larr; View Master Serial Index</a>
+      </div>
+
+      <div class="stage-view">
+        <!-- Variant A: Uiverse Canonical -->
+        <div class="stage-column">
+          <span class="stage-label">Variant A: Uiverse Canonical (Cyan/Purple/Gold Gradient)</span>
+          <button type="button" class="dangerous-horse-btn">Button</button>
+        </div>
+
+        <!-- Variant B: Leadirftex Cyber Edition -->
+        <div class="stage-column">
+          <span class="stage-label">Variant B: Leadirftex Cyber Edition (Neon Green &amp; Orange Interchain)</span>
+          <button type="button" class="dangerous-horse-ltx-btn">LEADIRFTEX</button>
+        </div>
+      </div>
+
+      <div style="margin-top: 20px; padding-top: 14px; border-top: 1px solid rgba(255,255,255,0.06); display: flex; justify-content: space-between; align-items: center; font-size: 11.5px; color: #64748b;">
+        <span>Category: <strong>UI Buttons / Cyberpunk Chamfered Gradient Cut-Corner</strong></span>
         <span style="color: #00FF22;">● Verified Production Ingestion</span>
       </div>
     </section>
