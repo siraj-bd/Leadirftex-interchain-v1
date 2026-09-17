@@ -1,0 +1,3219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leadirftex Official Brand Identity System — Approved Monogram + Encode Sans 900 Wordmark</title>
+
+  <!-- Google Fonts: Strictly Encode Sans 900 (Approved Brand Font) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@900&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      /* Official Brand Typography Tokens (Single Source of Truth) */
+      --lt-font-brand: 'Encode Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      --lt-font-brand-weight: 900;
+
+      /* Canonical Brand Color Palette */
+      --lt-brand-orange-solid: #FF5C00;
+      --lt-brand-orange-glossy: #F26B21;
+      --lt-orange-face: #FF5C00;
+      --lt-orange-bevel-light: #b83e00;
+      --lt-orange-bevel-mid: #8f2b00;
+      --lt-orange-bevel-dark: #521200;
+      
+      /* Canonical Lockup Flush Bounding Heights (7 Sizing Tiers) */
+      --lt-lockup-h-48: 67.5px;
+      --lt-lockup-h-36: 52.5px;
+      --lt-lockup-h-32: 46px;
+      --lt-lockup-h-28: 41px;
+      --lt-lockup-h-24: 35.5px;
+      --lt-lockup-h-20: 29.5px;
+      --lt-lockup-h-18: 26.5px;
+
+      /* Canonical Lockup Gaps (Monogram to Text Stack) */
+      --lt-lockup-gap-48: 10px;
+      --lt-lockup-gap-36: 8px;
+      --lt-lockup-gap-32: 7px;
+      --lt-lockup-gap-28: 6px;
+      --lt-lockup-gap-24: 5px;
+      --lt-lockup-gap-20: 4px;
+      --lt-lockup-gap-18: 3px;
+
+      /* Canonical Wordmark Font Sizes */
+      --lt-wordmark-size-48: 48px;
+      --lt-wordmark-size-36: 36px;
+      --lt-wordmark-size-32: 32px;
+      --lt-wordmark-size-28: 28px;
+      --lt-wordmark-size-24: 24px;
+      --lt-wordmark-size-20: 20px;
+      --lt-wordmark-size-18: 18px;
+
+      /* Canonical INTERCHAIN Descriptor Font Sizes & Tracking */
+      --lt-interchain-size-48: 15px;
+      --lt-interchain-size-36: 12px;
+      --lt-interchain-size-32: 10.5px;
+      --lt-interchain-size-28: 9.5px;
+      --lt-interchain-size-24: 8.5px;
+      --lt-interchain-size-20: 7.5px;
+      --lt-interchain-size-18: 7px;
+
+      --lt-interchain-track-48: 0.20em;
+      --lt-interchain-track-36: 0.20em;
+      --lt-interchain-track-32: 0.20em;
+      --lt-interchain-track-28: 0.19em;
+      --lt-interchain-track-24: 0.18em;
+      --lt-interchain-track-20: 0.17em;
+      --lt-interchain-track-18: 0.16em;
+
+      /* Canonical Rendered Glossy Wordmark Image Heights */
+      --lt-glossy-wm-h-48: 46px;
+      --lt-glossy-wm-h-36: 35px;
+      --lt-glossy-wm-h-32: 31px;
+      --lt-glossy-wm-h-28: 27px;
+      --lt-glossy-wm-h-24: 23px;
+      --lt-glossy-wm-h-20: 19px;
+      --lt-glossy-wm-h-18: 17px;
+
+      --lt-neon-green: #00FF22;
+      --lt-neon-green-glow: rgba(0, 255, 34, 0.5);
+      --lt-neon-green-badge-bg: rgba(0, 255, 34, 0.12);
+      --lt-neon-green-badge-border: rgba(0, 255, 34, 0.45);
+
+      --lt-bg-surface: #365669;
+      --lt-bg-card: rgba(15, 23, 42, 0.65);
+      --lt-bg-card-border: rgba(255, 255, 255, 0.12);
+      --lt-text-primary: #F8FAFC;
+      --lt-text-secondary: #94A3B8;
+      --lt-text-muted: #64748B;
+
+      --lt-header-steel-bg: linear-gradient(180deg, #cdd5df 0%, #e2e8f0 60%, #d8e0ea 100%);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      background-color: var(--lt-bg-surface);
+      color: var(--lt-text-primary);
+      line-height: 1.5;
+      padding: 0;
+      margin: 0;
+      min-height: 100vh;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      transition: background-color 0.3s ease;
+    }
+
+    .mockup-container {
+      max-width: 1360px;
+      margin: 0 auto;
+      padding: 36px 24px 80px;
+    }
+
+    .masthead-header {
+      background: rgba(15, 23, 42, 0.85);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid var(--lt-bg-card-border);
+      border-radius: 16px;
+      padding: 32px 36px;
+      margin-bottom: 32px;
+      box-shadow: 0 16px 36px rgba(0, 0, 0, 0.35);
+    }
+
+    .masthead-badge-row {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-bottom: 16px;
+    }
+
+    .cyber-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 5px 12px;
+      background: var(--lt-neon-green-badge-bg);
+      border: 1px solid var(--lt-neon-green-badge-border);
+      border-radius: 9999px;
+      color: var(--lt-neon-green);
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+    }
+
+    .cyber-pulse-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--lt-neon-green);
+      box-shadow: 0 0 10px var(--lt-neon-green);
+      animation: pulse-glow 2s infinite;
+    }
+
+    @keyframes pulse-glow {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.4; transform: scale(0.85); }
+    }
+
+    .meta-badge {
+      font-size: 12px;
+      padding: 4px 10px;
+      border-radius: 6px;
+      background: rgba(255, 255, 255, 0.06);
+      color: var(--lt-text-secondary);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .masthead-title {
+      font-size: 32px;
+      font-weight: 800;
+      color: #FFFFFF;
+      margin-bottom: 8px;
+      letter-spacing: -0.02em;
+    }
+
+    .masthead-subtitle {
+      font-size: 15px;
+      color: var(--lt-text-secondary);
+      max-width: 960px;
+      line-height: 1.6;
+      margin-bottom: 24px;
+    }
+
+    .reference-callout-box {
+      background: rgba(30, 41, 59, 0.7);
+      border: 1px solid rgba(255, 92, 0, 0.35);
+      border-radius: 12px;
+      padding: 20px 24px;
+      margin-bottom: 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .callout-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .callout-title {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: 700;
+      color: #FF5C00;
+      font-size: 14px;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+
+    .callout-pill {
+      font-size: 11px;
+      padding: 3px 8px;
+      border-radius: 4px;
+      background: rgba(255, 92, 0, 0.15);
+      border: 1px solid rgba(255, 92, 0, 0.4);
+      color: #FF8533;
+      font-weight: 600;
+    }
+
+    .ref-comparison-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      align-items: center;
+    }
+
+    @media (max-width: 860px) {
+      .ref-comparison-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .ref-preview-panel {
+      background: #365669;
+      border-radius: 8px;
+      padding: 16px 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 130px;
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      box-shadow: inset 0 2px 6px rgba(0, 0, 0, 0.25);
+    }
+
+    .ref-preview-panel img {
+      max-height: 80px;
+      object-fit: contain;
+      filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.4));
+    }
+
+    .ref-panel-label {
+      font-size: 11px;
+      color: #CBD5E1;
+      margin-bottom: 8px;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      font-weight: 600;
+    }
+
+    .controls-toolbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      flex-wrap: wrap;
+      background: rgba(15, 23, 42, 0.6);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 12px;
+      padding: 14px 20px;
+    }
+
+    .control-group {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .control-label {
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--lt-text-secondary);
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+
+    .theme-toggle-btn {
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: 6px;
+      color: var(--lt-text-primary);
+      padding: 6px 12px;
+      font-size: 12px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .theme-toggle-btn:hover {
+      background: rgba(255, 255, 255, 0.12);
+      border-color: rgba(255, 255, 255, 0.25);
+    }
+
+    .theme-toggle-btn.active {
+      background: rgba(255, 92, 0, 0.2);
+      border-color: #FF5C00;
+      color: #FF8533;
+    }
+
+    .custom-text-input {
+      background: rgba(0, 0, 0, 0.4);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      border-radius: 6px;
+      color: #FFFFFF;
+      padding: 6px 12px;
+      font-size: 13px;
+      font-weight: 500;
+      width: 180px;
+      outline: none;
+      transition: border-color 0.2s ease;
+    }
+
+    .custom-text-input:focus {
+      border-color: #FF5C00;
+    }
+
+    .zoom-control {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .zoom-slider {
+      width: 90px;
+      cursor: pointer;
+      accent-color: #FF5C00;
+    }
+
+    .section-nav-pills {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-wrap: wrap;
+      margin-bottom: 28px;
+      padding: 10px 16px;
+      background: rgba(15, 23, 42, 0.7);
+      border-radius: 10px;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .section-nav-link {
+      padding: 6px 14px;
+      border-radius: 6px;
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--lt-text-secondary);
+      text-decoration: none;
+      transition: all 0.2s ease;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      border: 1px solid transparent;
+    }
+
+    .section-nav-link:hover {
+      color: #FFFFFF;
+      background: rgba(255, 255, 255, 0.08);
+    }
+
+    .section-nav-link.active {
+      background: rgba(0, 255, 34, 0.12);
+      border-color: rgba(0, 255, 34, 0.35);
+      color: #00FF22;
+    }
+
+    .view-mode-tabs {
+      display: inline-flex;
+      background: rgba(0, 0, 0, 0.4);
+      padding: 3px;
+      border-radius: 8px;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .view-mode-tab {
+      background: transparent;
+      border: none;
+      padding: 5px 12px;
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--lt-text-secondary);
+      border-radius: 6px;
+      cursor: pointer;
+      transition: all 0.15s ease;
+    }
+
+    .view-mode-tab:hover {
+      color: #FFFFFF;
+    }
+
+    .view-mode-tab.active {
+      background: #FF5C00;
+      color: #FFFFFF;
+    }
+
+    .section-header-block {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      gap: 16px;
+      margin-bottom: 20px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      flex-wrap: wrap;
+    }
+
+    .section-title {
+      font-size: 20px;
+      font-weight: 800;
+      color: #FFFFFF;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      letter-spacing: -0.01em;
+    }
+
+    .section-desc {
+      font-size: 13px;
+      color: var(--lt-text-secondary);
+      margin-top: 4px;
+    }
+
+    .size-comparison-row {
+      background: rgba(15, 23, 42, 0.6);
+      border: 1px solid var(--lt-bg-card-border);
+      border-radius: 14px;
+      padding: 24px;
+      margin-bottom: 24px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+    }
+
+    .row-meta-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 18px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .size-pill-group {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .size-badge-large {
+      font-size: 16px;
+      font-weight: 800;
+      color: #FF5C00;
+      background: rgba(255, 92, 0, 0.12);
+      border: 1px solid rgba(255, 92, 0, 0.35);
+      padding: 4px 12px;
+      border-radius: 6px;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+    }
+
+    .usage-badge {
+      font-size: 13px;
+      font-weight: 700;
+      color: #FFFFFF;
+    }
+
+    .weight-tag {
+      font-size: 11px;
+      padding: 3px 8px;
+      border-radius: 4px;
+      background: rgba(255, 255, 255, 0.06);
+      color: var(--lt-text-secondary);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+    }
+
+    .row-single-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+
+    .row-dual-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+
+    @media (max-width: 960px) {
+      .row-dual-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .font-sample-card {
+      background: rgba(0, 0, 0, 0.3);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 12px;
+      padding: 22px 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      position: relative;
+      transition: border-color 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .font-sample-card.approved-card {
+      border-color: rgba(0, 255, 34, 0.35);
+      box-shadow: 0 4px 20px rgba(0, 255, 34, 0.08);
+    }
+
+    .card-top-info {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .card-font-name {
+      font-size: 14px;
+      font-weight: 800;
+      color: #00FF22;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .card-font-indicator {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #00FF22;
+      box-shadow: 0 0 8px #00FF22;
+    }
+
+    .wordmark-stage {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      min-height: 90px;
+      padding: 16px 20px;
+      background: rgba(0, 0, 0, 0.25);
+      border-radius: 8px;
+      overflow-x: auto;
+      position: relative;
+    }
+
+    .wordmark-3d {
+      font-family: 'Encode Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
+      font-weight: 900 !important;
+      font-style: normal !important;
+      color: #FF5C00;
+      letter-spacing: -0.02em;
+      white-space: nowrap !important;
+      display: inline-block;
+      line-height: 1.05;
+      user-select: all;
+      transition: transform 0.2s ease;
+    }
+
+    .size-48 {
+      font-size: 48px;
+      text-shadow:
+        0.4px 0.6px 0 #b83e00,
+        0.8px 1.2px 0 #a33400,
+        1.2px 1.8px 0 #8f2b00,
+        1.6px 2.4px 0 #7a2200,
+        2.0px 3.0px 0 #661900,
+        2.4px 3.6px 0 #521200,
+        2.8px 4.4px 1px rgba(15, 30, 42, 0.80),
+        3.2px 5.2px 2px rgba(0, 0, 0, 0.60),
+        4px 8px 6px rgba(0, 0, 0, 0.45),
+        6px 13px 14px rgba(0, 0, 0, 0.32),
+        9px 20px 24px rgba(0, 0, 0, 0.20);
+    }
+
+    .size-36 {
+      font-size: 36px;
+      text-shadow:
+        0.3px 0.5px 0 #b83e00,
+        0.6px 0.9px 0 #a33400,
+        0.9px 1.4px 0 #8f2b00,
+        1.2px 1.8px 0 #7a2200,
+        1.5px 2.3px 0 #661900,
+        1.8px 2.7px 0 #521200,
+        2.1px 3.3px 1px rgba(15, 30, 42, 0.80),
+        2.4px 3.9px 2px rgba(0, 0, 0, 0.60),
+        3px 6px 5px rgba(0, 0, 0, 0.45),
+        4.5px 10px 11px rgba(0, 0, 0, 0.32),
+        7px 15px 18px rgba(0, 0, 0, 0.20);
+    }
+
+    .size-32 {
+      font-size: 32px;
+      text-shadow:
+        0.3px 0.4px 0 #b83e00,
+        0.5px 0.8px 0 #a33400,
+        0.8px 1.2px 0 #8f2b00,
+        1.1px 1.6px 0 #7a2200,
+        1.3px 2.0px 0 #661900,
+        1.6px 2.4px 0 #521200,
+        1.9px 2.9px 1px rgba(15, 30, 42, 0.80),
+        2.1px 3.5px 2px rgba(0, 0, 0, 0.60),
+        2.7px 5.3px 4px rgba(0, 0, 0, 0.45),
+        4px 9px 9px rgba(0, 0, 0, 0.32),
+        6px 13px 16px rgba(0, 0, 0, 0.20);
+    }
+
+    .size-28 {
+      font-size: 28px;
+      text-shadow:
+        0.2px 0.4px 0 #b83e00,
+        0.5px 0.7px 0 #a33400,
+        0.7px 1.1px 0 #8f2b00,
+        0.9px 1.4px 0 #7a2200,
+        1.2px 1.8px 0 #661900,
+        1.4px 2.1px 0 #521200,
+        1.6px 2.6px 1px rgba(15, 30, 42, 0.80),
+        1.9px 3.0px 1.5px rgba(0, 0, 0, 0.60),
+        2.3px 4.7px 4px rgba(0, 0, 0, 0.45),
+        3.5px 7.6px 8px rgba(0, 0, 0, 0.32),
+        5.3px 11.7px 14px rgba(0, 0, 0, 0.20);
+    }
+
+    .size-24 {
+      font-size: 24px;
+      text-shadow:
+        0.2px 0.3px 0 #b83e00,
+        0.4px 0.6px 0 #a33400,
+        0.6px 0.9px 0 #8f2b00,
+        0.8px 1.2px 0 #7a2200,
+        1.0px 1.5px 0 #661900,
+        1.2px 1.8px 0 #521200,
+        1.4px 2.2px 1px rgba(15, 30, 42, 0.80),
+        1.6px 2.6px 1.5px rgba(0, 0, 0, 0.60),
+        2.0px 4.0px 3px rgba(0, 0, 0, 0.45),
+        3.0px 6.5px 7px rgba(0, 0, 0, 0.32),
+        4.5px 10px 12px rgba(0, 0, 0, 0.20);
+    }
+
+    .size-20 {
+      font-size: 20px;
+      text-shadow:
+        0.2px 0.3px 0 #b83e00,
+        0.3px 0.5px 0 #a33400,
+        0.5px 0.8px 0 #8f2b00,
+        0.7px 1.0px 0 #7a2200,
+        0.8px 1.3px 0 #661900,
+        1.0px 1.5px 0 #521200,
+        1.2px 1.8px 0.8px rgba(15, 30, 42, 0.80),
+        1.3px 2.2px 1.2px rgba(0, 0, 0, 0.60),
+        1.7px 3.3px 2.5px rgba(0, 0, 0, 0.45),
+        2.5px 5.4px 6px rgba(0, 0, 0, 0.32),
+        3.8px 8.3px 10px rgba(0, 0, 0, 0.20);
+    }
+
+    .size-18 {
+      font-size: 18px;
+      text-shadow:
+        0.2px 0.2px 0 #b83e00,
+        0.3px 0.5px 0 #a33400,
+        0.5px 0.7px 0 #8f2b00,
+        0.6px 0.9px 0 #7a2200,
+        0.8px 1.1px 0 #661900,
+        0.9px 1.4px 0 #521200,
+        1.1px 1.7px 0.8px rgba(15, 30, 42, 0.80),
+        1.2px 2.0px 1.0px rgba(0, 0, 0, 0.60),
+        1.5px 3.0px 2px rgba(0, 0, 0, 0.45),
+        2.3px 4.9px 5px rgba(0, 0, 0, 0.32),
+        3.4px 7.5px 9px rgba(0, 0, 0, 0.20);
+    }
+
+    .card-metrics-footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 10px;
+      padding-top: 10px;
+      border-top: 1px solid rgba(255, 255, 255, 0.06);
+    }
+
+    .metrics-group {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
+    .metric-pill {
+      font-size: 11px;
+      padding: 3px 8px;
+      border-radius: 4px;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      color: var(--lt-text-secondary);
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+    }
+
+    .copy-btn {
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: 6px;
+      color: #FFFFFF;
+      padding: 4px 10px;
+      font-size: 11px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.15s ease;
+    }
+
+    .copy-btn:hover {
+      background: #FF5C00;
+      border-color: #FF5C00;
+    }
+
+    .monogram-stage {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 160px;
+      padding: 24px;
+      border-radius: 8px;
+      position: relative;
+      background-color: #243B4A;
+      transition: background-color 0.2s ease;
+    }
+
+    .monogram-stage.checkered {
+      background-color: #1e293b;
+      background-image: 
+        linear-gradient(45deg, rgba(255, 255, 255, 0.04) 25%, transparent 25%), 
+        linear-gradient(-45deg, rgba(255, 255, 255, 0.04) 25%, transparent 25%), 
+        linear-gradient(45deg, transparent 75%, rgba(255, 255, 255, 0.04) 75%), 
+        linear-gradient(-45deg, transparent 75%, rgba(255, 255, 255, 0.04) 75%);
+      background-size: 20px 20px;
+      background-position: 0 0, 0 10px, 10px -10px, -10px 0px;
+    }
+
+    .monogram-stage.dark-solid {
+      background-color: #0b1118;
+    }
+
+    .monogram-stage.clean-surface {
+      background-color: var(--lt-bg-surface);
+    }
+
+    .monogram-img {
+      object-fit: contain;
+      filter: drop-shadow(0 6px 16px rgba(0,0,0,0.5));
+      transition: transform 0.25s cubic-bezier(0.34, 1.56, 0.64, 1);
+    }
+
+    .monogram-stage:hover .monogram-img {
+      transform: scale(1.06);
+    }
+
+    .mono-size-128 { width: 128px; height: 128px; }
+    .mono-size-96  { width: 96px;  height: 96px; }
+    .mono-size-64  { width: 64px;  height: 64px; }
+    .mono-size-48  { width: 48px;  height: 48px; }
+    .mono-size-40  { width: 40px;  height: 40px; }
+    .mono-size-32  { width: 32px;  height: 32px; }
+    .mono-size-24  { width: 24px;  height: 24px; }
+    .mono-size-16  { width: 16px;  height: 16px; }
+
+    .lockup-stage-wrap {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      padding: 24px 28px;
+      background: rgba(0, 0, 0, 0.28);
+      border-radius: 10px;
+      min-height: 110px;
+      overflow-x: auto;
+    }
+
+    .lockup-brand-flush {
+      display: inline-flex;
+      align-items: stretch;
+      position: relative;
+      background: transparent;
+      padding: 0;
+      margin: 0;
+      line-height: 1;
+    }
+
+    .lockup-mono-tight {
+      height: 100%;
+      width: auto;
+      object-fit: contain;
+      flex-shrink: 0;
+      display: block;
+      filter: drop-shadow(0 4px 12px rgba(0,0,0,0.5));
+      transition: transform 0.2s cubic-bezier(0.34, 1.56, 0.64, 1);
+    }
+
+    .lockup-brand-flush:hover .lockup-mono-tight {
+      transform: scale(1.04);
+    }
+
+    .lockup-text-stack {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-start;
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      line-height: 1;
+    }
+
+    .lockup-text-stack .wordmark-3d {
+      margin-left: -1px;
+      margin-top: 0;
+    }
+
+    .lockup-wm-img {
+      height: 48px;
+      width: auto;
+      object-fit: contain;
+      display: block;
+      margin-left: -1px;
+      margin-top: 0;
+      filter: none;
+    }
+
+    .interchain-silver-3d {
+      font-family: 'Encode Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
+      font-weight: 900 !important;
+      text-transform: uppercase;
+      line-height: 0.85;
+      margin: 0;
+      padding: 0;
+      display: block;
+      white-space: nowrap;
+      background: linear-gradient(180deg, 
+        #FFFFFF 0%, 
+        #F8FAFC 18%, 
+        #E2E8F0 45%, 
+        #CBD5E1 70%, 
+        #94A3B8 100%
+      );
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      transition: filter 0.2s ease;
+    }
+
+    /* Calibrated Lockup Tiers: Enlarged Monogram + Exact INTERCHAIN Bottom Baseline Flush */
+    .lockup-tier-48 { height: 67.5px; gap: 10px; }
+    .lockup-tier-48 .wordmark-3d { font-size: 48px; line-height: 0.90; margin-top: 0; }
+    .lockup-tier-48 .interchain-silver-3d {
+      font-size: 15px;
+      letter-spacing: 0.20em;
+      margin-left: 0;
+      transform: translateY(-2px);
+      filter: drop-shadow(0.4px 0.6px 0px #64748b)
+              drop-shadow(0.8px 1.2px 0px #475569)
+              drop-shadow(1.2px 1.8px 1px rgba(15, 23, 42, 0.85))
+              drop-shadow(0 2px 5px rgba(0, 0, 0, 0.45));
+    }
+
+    .lockup-tier-36 { height: 52.5px; gap: 8px; }
+    .lockup-tier-36 .wordmark-3d { font-size: 36px; line-height: 0.90; margin-top: 0; }
+    .lockup-tier-36 .interchain-silver-3d {
+      font-size: 12px;
+      letter-spacing: 0.20em;
+      margin-left: 0;
+      transform: translateY(-1.5px);
+      filter: drop-shadow(0.3px 0.5px 0px #64748b)
+              drop-shadow(0.6px 1.0px 0px #475569)
+              drop-shadow(1.0px 1.5px 1px rgba(15, 23, 42, 0.80))
+              drop-shadow(0 2px 4px rgba(0, 0, 0, 0.40));
+    }
+
+    .lockup-tier-32 { height: 46px; gap: 7px; }
+    .lockup-tier-32 .wordmark-3d { font-size: 32px; line-height: 0.90; margin-top: 0; }
+    .lockup-tier-32 .interchain-silver-3d {
+      font-size: 10.5px;
+      letter-spacing: 0.20em;
+      margin-left: 0;
+      transform: translateY(-1.3px);
+      filter: drop-shadow(0.3px 0.4px 0px #64748b)
+              drop-shadow(0.6px 0.8px 0px #475569)
+              drop-shadow(0.9px 1.2px 1px rgba(15, 23, 42, 0.75))
+              drop-shadow(0 1.5px 3px rgba(0, 0, 0, 0.35));
+    }
+
+    .lockup-tier-28 { height: 41px; gap: 6px; }
+    .lockup-tier-28 .wordmark-3d { font-size: 28px; line-height: 0.90; margin-top: 0; }
+    .lockup-tier-28 .interchain-silver-3d {
+      font-size: 9.5px;
+      letter-spacing: 0.19em;
+      margin-left: 0;
+      transform: translateY(-1.2px);
+      filter: drop-shadow(0.3px 0.4px 0px #64748b)
+              drop-shadow(0.6px 0.8px 1px rgba(15, 23, 42, 0.75))
+              drop-shadow(0 1.5px 3px rgba(0, 0, 0, 0.35));
+    }
+
+    .lockup-tier-24 { height: 35.5px; gap: 5px; }
+    .lockup-tier-24 .wordmark-3d { font-size: 24px; line-height: 0.90; margin-top: 0; }
+    .lockup-tier-24 .interchain-silver-3d {
+      font-size: 8.5px;
+      letter-spacing: 0.18em;
+      margin-left: 0;
+      transform: translateY(-1.0px);
+      filter: drop-shadow(0.3px 0.4px 0px #64748b)
+              drop-shadow(0.6px 0.8px 1px rgba(15, 23, 42, 0.70));
+    }
+
+    .lockup-tier-20 { height: 29.5px; gap: 4px; }
+    .lockup-tier-20 .wordmark-3d { font-size: 20px; line-height: 0.90; margin-top: 0; }
+    .lockup-tier-20 .interchain-silver-3d {
+      font-size: 7.5px;
+      letter-spacing: 0.17em;
+      margin-left: 0;
+      transform: translateY(-0.8px);
+      filter: drop-shadow(0.2px 0.3px 0px #64748b)
+              drop-shadow(0.5px 0.7px 1px rgba(15, 23, 42, 0.65));
+    }
+
+    .lockup-tier-18 { height: 26.5px; gap: 3px; }
+    .lockup-tier-18 .wordmark-3d { font-size: 18px; line-height: 0.90; margin-top: 0; }
+    .lockup-tier-18 .interchain-silver-3d {
+      font-size: 7px;
+      letter-spacing: 0.16em;
+      margin-left: 0;
+      transform: translateY(-0.7px);
+      filter: drop-shadow(0.2px 0.3px 0px #64748b)
+              drop-shadow(0.4px 0.6px 1px rgba(15, 23, 42, 0.60));
+    }
+
+    /* Calibrated Glossy Asset Heights for Lockup Tiers */
+    .lockup-tier-48 .lockup-wm-img { height: 46px; }
+    .lockup-tier-36 .lockup-wm-img { height: 35px; }
+    .lockup-tier-32 .lockup-wm-img { height: 31px; }
+    .lockup-tier-28 .lockup-wm-img { height: 27px; }
+    .lockup-tier-24 .lockup-wm-img { height: 23px; }
+    .lockup-tier-20 .lockup-wm-img { height: 19px; }
+    .lockup-tier-18 .lockup-wm-img { height: 17px; }
+
+    .show-lockup-guides .lockup-brand-flush::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -16px;
+      right: -16px;
+      height: 1.5px;
+      background: #00FF22;
+      box-shadow: 0 0 8px rgba(0, 255, 34, 0.85);
+      z-index: 25;
+      pointer-events: none;
+    }
+    .show-lockup-guides .lockup-brand-flush::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: -16px;
+      right: -16px;
+      height: 1.5px;
+      background: #00FF22;
+      box-shadow: 0 0 8px rgba(0, 255, 34, 0.85);
+      z-index: 25;
+      pointer-events: none;
+    }
+
+    .live-header-showcase {
+      margin-top: 48px;
+    }
+
+    .live-header-box {
+      background: rgba(15, 23, 42, 0.75);
+      border: 1px solid var(--lt-bg-card-border);
+      border-radius: 14px;
+      padding: 24px;
+      margin-bottom: 24px;
+    }
+
+    .header-box-label {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 16px;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .simulated-site-header {
+      background: linear-gradient(180deg, #111c2a 0%, #0a1017 100%);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: 10px;
+      padding: 12px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+    }
+
+    .simulated-site-header.steel-variant {
+      background: var(--lt-header-steel-bg);
+      border-color: rgba(255, 255, 255, 0.4);
+    }
+
+    .simulated-nav-strip {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
+    .sim-nav-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 7px 14px;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 6px;
+      font-size: 12px;
+      font-weight: 600;
+      color: #E2E8F0;
+      text-shadow: 0 1px 2px rgba(0,0,0,0.5);
+    }
+
+    .sim-nav-btn.active {
+      background: rgba(255, 92, 0, 0.18);
+      border-color: #FF5C00;
+      color: #FF8533;
+    }
+
+    .simulated-site-header.steel-variant .sim-nav-btn {
+      background: rgba(0, 0, 0, 0.06);
+      border-color: rgba(0, 0, 0, 0.15);
+      color: #0f172a;
+      text-shadow: none;
+    }
+
+    .simulated-site-header.steel-variant .sim-nav-btn.active {
+      background: #FF5C00;
+      border-color: #FF5C00;
+      color: #FFFFFF;
+    }
+
+    .comparison-table-wrap {
+      margin-top: 48px;
+      background: rgba(15, 23, 42, 0.75);
+      border: 1px solid var(--lt-bg-card-border);
+      border-radius: 14px;
+      padding: 28px;
+    }
+
+    .comparison-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 16px;
+      font-size: 13px;
+    }
+
+    .comparison-table th, .comparison-table td {
+      padding: 12px 16px;
+      text-align: left;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .comparison-table th {
+      background: rgba(0, 0, 0, 0.25);
+      color: #CBD5E1;
+      font-weight: 700;
+      text-transform: uppercase;
+      font-size: 11px;
+      letter-spacing: 0.05em;
+    }
+
+    .comparison-table tr:hover td {
+      background: rgba(255, 255, 255, 0.02);
+    }
+
+    .feature-name {
+      font-weight: 600;
+      color: #94A3B8;
+    }
+
+    body.theme-steel { background-color: #9cb0c1; color: #0f172a; }
+    body.theme-steel .masthead-header, body.theme-steel .size-comparison-row, 
+    body.theme-steel .controls-toolbar, body.theme-steel .comparison-table-wrap, 
+    body.theme-steel .live-header-box { background: rgba(255, 255, 255, 0.85); border-color: rgba(0, 0, 0, 0.1); color: #0f172a; }
+    body.theme-steel .masthead-title, body.theme-steel .section-title, body.theme-steel .usage-badge { color: #0f172a; }
+    body.theme-steel .masthead-subtitle, body.theme-steel .section-desc, body.theme-steel .control-label { color: #475569; }
+    body.theme-steel .font-sample-card { background: rgba(255, 255, 255, 0.6); border-color: rgba(0, 0, 0, 0.1); }
+    body.theme-steel .wordmark-stage, body.theme-steel .lockup-stage-wrap { background: rgba(0, 0, 0, 0.06); }
+
+    body.theme-silver { background-color: #C4CDD5; color: #0f172a; }
+    body.theme-silver .masthead-header, body.theme-silver .size-comparison-row, 
+    body.theme-silver .controls-toolbar, body.theme-silver .comparison-table-wrap, 
+    body.theme-silver .live-header-box { background: rgba(241, 245, 249, 0.92); border-color: rgba(100, 116, 139, 0.35); color: #0f172a; box-shadow: 0 8px 24px rgba(100, 116, 139, 0.18); }
+    body.theme-silver .masthead-title, body.theme-silver .section-title, body.theme-silver .usage-badge { color: #0f172a; }
+    body.theme-silver .masthead-subtitle, body.theme-silver .section-desc, body.theme-silver .control-label { color: #334155; }
+    body.theme-silver .font-sample-card { background: rgba(255, 255, 255, 0.70); border-color: rgba(148, 163, 184, 0.45); box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05); }
+    body.theme-silver .wordmark-stage, body.theme-silver .lockup-stage-wrap { 
+      background: linear-gradient(145deg, #E2E8F0 0%, #CBD5E1 45%, #BAC4D2 100%) !important; 
+      border: 1px solid #94A3B8 !important;
+      box-shadow: inset 0 2px 8px rgba(0, 0, 0, 0.08), 0 8px 24px rgba(100, 116, 139, 0.18) !important;
+    }
+
+    body.theme-dark { background-color: #0f172a; }
+    body.theme-slate { background-color: #1e293b; }
+    body.theme-light { background-color: #f8fafc; color: #0f172a; }
+    body.theme-light .masthead-header, body.theme-light .size-comparison-row, 
+    body.theme-light .controls-toolbar, body.theme-light .comparison-table-wrap, 
+    body.theme-light .live-header-box { background: #FFFFFF; border-color: #cbd5e1; color: #0f172a; box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05); }
+    body.theme-light .masthead-title, body.theme-light .section-title, body.theme-light .usage-badge { color: #0f172a; }
+    body.theme-light .masthead-subtitle, body.theme-light .section-desc, body.theme-light .control-label { color: #475569; }
+    body.theme-light .font-sample-card { background: #ffffff; border-color: #e2e8f0; box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04); }
+    body.theme-light .wordmark-stage, body.theme-light .lockup-stage-wrap { 
+      background: #ffffff !important; 
+      border: 1px solid #e2e8f0;
+      box-shadow: inset 0 2px 8px rgba(0, 0, 0, 0.02), 0 4px 12px rgba(0, 0, 0, 0.03);
+    }
+
+    .has-guidelines .wordmark-stage::before {
+      content: '';
+      position: absolute;
+      top: 20%;
+      left: 0;
+      right: 0;
+      height: 1px;
+      background: rgba(0, 255, 34, 0.4);
+      pointer-events: none;
+    }
+    .has-guidelines .wordmark-stage::after {
+      content: '';
+      position: absolute;
+      bottom: 20%;
+      left: 0;
+      right: 0;
+      height: 1px;
+      background: rgba(0, 255, 34, 0.4);
+      pointer-events: none;
+    }
+  </style>
+</head>
+<body class="theme-light">
+
+  <div class="mockup-container">
+
+    <header class="masthead-header">
+      <div class="masthead-badge-row">
+        <span class="cyber-badge"><span class="cyber-pulse-dot"></span> Official Brand Identity Approved</span>
+        <span class="meta-badge" style="color: #00FF22; border-color: rgba(0,255,34,0.4);">Encode Sans 900 Wordmark</span>
+        <span class="meta-badge" style="color: #FF5C00; border-color: rgba(255,92,0,0.4);">Design 2 Monogram</span>
+        <span class="meta-badge" style="color: #e2e8f0; border-color: rgba(226,232,240,0.4);">Chrome Silver 3D Descriptor</span>
+        <span class="meta-badge" style="color: #00FF22; font-weight: 700;">100% Flush Top &amp; Bottom Alignment</span>
+      </div>
+
+      <h1 class="masthead-title">Leadirftex Official Brand Identity System</h1>
+      <p class="masthead-subtitle">
+        Approved corporate brand assets featuring the <strong>Official Monogram (Design 2 Modern Smooth Beveled Triangle)</strong> paired exclusively with the approved <strong>Encode Sans 900 Wordmark</strong> in brand orange <strong>#FF5C00</strong>. Features precision top-and-bottom flush alignment and the enlarged <strong>INTERCHAIN</strong> descriptor in specular chrome metallic silver with matching 3D extrusion.
+      </p>
+
+      <div class="reference-callout-box">
+        <div class="callout-header">
+          <div class="callout-title">
+            <span>🎯</span> Physical 3D Extrusion &amp; Visual Fidelity Reference
+          </div>
+          <span class="callout-pill">Direct Reference Parity</span>
+        </div>
+        <div class="ref-comparison-grid">
+          <div class="ref-preview-panel">
+            <div class="ref-panel-label">Your Uploaded 3D Render Image:</div>
+            <img src="assets/mockup/user_3d_orange_reference.png" alt="Your Uploaded 3D Render">
+          </div>
+
+          <div class="ref-preview-panel">
+            <div class="ref-panel-label">OFFICIAL LOCKUP: Rendered Glossy Wordmark Asset (#F26B21):</div>
+            <img src="assets/mockup/leadirftex_glossy_approved_master.png?v=clean3" alt="Rendered Glossy Wordmark Asset (#F26B21)" style="max-height: 52px; width: auto; object-fit: contain; filter: none;">
+          </div>
+        </div>
+      </div>
+
+      <div class="controls-toolbar">
+        <div class="control-group">
+          <span class="control-label">Surface Theme:</span>
+          <button class="theme-toggle-btn" id="btn-theme-teal" onclick="setMockupTheme('teal')">
+            <span>🎨</span> Reference Slate-Teal (#365669)
+          </button>
+          <button class="theme-toggle-btn" id="btn-theme-steel" onclick="setMockupTheme('steel')">
+            <span>⚙️</span> Header Brushed Steel
+          </button>
+          <button class="theme-toggle-btn" id="btn-theme-dark" onclick="setMockupTheme('dark')">
+            <span>🌑</span> Dark Carbon
+          </button>
+          <button class="theme-toggle-btn" id="btn-theme-slate" onclick="setMockupTheme('slate')">
+            <span>🔷</span> Slate Navy
+          </button>
+          <button class="theme-toggle-btn" id="btn-theme-silver" onclick="setMockupTheme('silver')">
+            <span>✨</span> Silver Metallic
+          </button>
+          <button class="theme-toggle-btn active" id="btn-theme-light" onclick="setMockupTheme('light')">
+            <span>☀️</span> Studio White (Pure #FFFFFF)
+          </button>
+        </div>
+
+        <div class="control-group">
+          <span class="control-label">Wordmark Text:</span>
+          <input type="text" class="custom-text-input" id="custom-wordmark-input" value="Leadirftex" placeholder="Type wordmark..." oninput="updateWordmarkText(this.value)">
+          <button class="theme-toggle-btn" onclick="toggleTextCase()" title="Toggle UPPERCASE / Titlecase">Aa</button>
+        </div>
+
+        <div class="control-group">
+          <button class="theme-toggle-btn" id="btn-toggle-guidelines" onclick="toggleGuidelines()">
+            <span>📐</span> Align Guides
+          </button>
+        </div>
+
+        <div class="control-group zoom-control">
+          <span class="control-label">Scale:</span>
+          <input type="range" class="zoom-slider" id="zoom-range" min="100" max="200" value="100" oninput="setZoomScale(this.value)">
+          <span class="metric-pill" id="zoom-val">100%</span>
+        </div>
+      </div>
+    </header>
+
+    <nav class="section-nav-pills">
+      <span class="control-label" style="margin-right: 4px;">Explore Sections:</span>
+      <a href="#sizing-comparison-section" class="section-nav-link active">
+        <span>🔤</span> Approved Wordmark Sizing (7 Tiers)
+      </a>
+      <a href="#standalone-monogram-section" class="section-nav-link">
+        <span>💎</span> Approved Monograms (8 Sizes)
+      </a>
+      <a href="#lockup-monogram-wordmark-section" class="section-nav-link">
+        <span>🔗</span> Flush Brand Lockups (100% Aligned)
+      </a>
+      <a href="#live-header-showcase-anchor" class="section-nav-link">
+        <span>🖥️</span> Live Header Context
+      </a>
+      <a href="#comparison-table-wrap-anchor" class="section-nav-link">
+        <span>⚖️</span> Approved Brand Specifications
+      </a>
+    </nav>
+
+    <!-- SECTION 1: APPROVED WORDMARK SIZING (7 TIERS) -->
+    <section id="sizing-comparison-section">
+      <div class="section-header-block">
+        <div>
+          <h2 class="section-title">
+            <span>🔤</span> Approved Official Wordmark (Encode Sans 900 Across 7 Platform Tiers)
+          </h2>
+          <p class="section-desc">
+            Rendered in strict <strong>Encode Sans Black / 900</strong> with brand front face <strong>#FF5C00</strong>, featuring the calibrated multi-layer 3D physical extrusion wall, contact occlusion shadow, and ambient ground dispersion.
+          </p>
+        </div>
+        <div class="control-group">
+          <div class="view-mode-tabs">
+            <button class="view-mode-tab active" onclick="setViewFilter('all')">All Sizes</button>
+            <button class="view-mode-tab" onclick="setViewFilter('header')">Header Range (36px-28px)</button>
+            <button class="view-mode-tab" onclick="setViewFilter('compact')">Compact (24px-18px)</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- TIER: 48px — Hero / Large Brand Preview -->
+      <div class="size-comparison-row" data-tier="hero">
+        <div class="row-meta-header">
+          <div class="size-pill-group">
+            <span class="size-badge-large">48px</span>
+            <span class="usage-badge">Hero / Large Brand Preview</span>
+            <span class="weight-tag">Weight: Black 900</span>
+            <span class="weight-tag" style="color: #00FF22; border-color: rgba(0,255,34,0.3);">Approved Brand Wordmark</span>
+          </div>
+          <span class="meta-badge">Extrusion Depth: 3.6px | Contact Shadow: 5.2px | Ambient: 24px</span>
+        </div>
+        <div class="row-dual-grid">
+          <!-- Left: #FF5C00 Solid Vector -->
+          <div class="font-sample-card approved-card">
+            <div class="card-top-info">
+              <span class="card-font-name">
+                <span class="card-font-indicator"></span>
+                APPROVED: Encode Sans 900 Solid Vector (48px)
+              </span>
+              <div style="display: flex; gap: 6px; align-items: center;">
+                <span class="metric-pill" style="color: #FF5C00; border-color: rgba(255,92,0,0.4); font-weight: 700;">#FF5C00</span>
+                <span class="metric-pill" id="metric-w-encode-48">Measuring...</span>
+              </div>
+            </div>
+            <div class="wordmark-stage">
+              <span class="wordmark-3d size-48 wordmark-label" id="wm-encode-48">Leadirftex</span>
+            </div>
+            <div class="card-metrics-footer">
+              <div class="metrics-group">
+                <span class="metric-pill">Font: Encode Sans 900</span>
+                <span class="metric-pill">Color: #FF5C00 Solid</span>
+                <span class="metric-pill">Extrusion: Real 3D Layered</span>
+              </div>
+              <button class="copy-btn" onclick="copySnippet('Encode Sans', 48)">Copy Wordmark CSS</button>
+            </div>
+          </div>
+
+          <!-- Right: #F26B21 Rendered Glossy Wordmark -->
+          <div class="font-sample-card approved-card" style="border-color: rgba(242, 107, 33, 0.4); box-shadow: 0 4px 20px rgba(242, 107, 33, 0.1);">
+            <div class="card-top-info">
+              <span class="card-font-name" style="color: #F26B21;">
+                <span class="card-font-indicator" style="background: #F26B21; box-shadow: 0 0 10px rgba(242, 107, 33, 0.6);"></span>
+                OFFICIAL ASSET: Rendered Glossy Wordmark (48px)
+              </span>
+              <span class="metric-pill" style="color: #F26B21; border-color: rgba(242, 107, 33, 0.4); font-weight: 700;">#F26B21 Glossy</span>
+            </div>
+            <div class="wordmark-stage" style="display: flex; align-items: center; justify-content: center;">
+              <img src="assets/mockup/leadirftex_glossy_approved_master.png?v=clean3" alt="Leadirftex Glossy Wordmark (48px)" style="height: 48px; width: auto; object-fit: contain; display: block; margin: 0 auto; filter: none;">
+            </div>
+            <div class="card-metrics-footer">
+              <div class="metrics-group">
+                <span class="metric-pill">Format: Master PNG Asset</span>
+                <span class="metric-pill">Color: #F26B21 Glossy</span>
+                <span class="metric-pill">Finish: High-Gloss Specular</span>
+              </div>
+              <span class="metric-pill" style="color: #F26B21; border-color: rgba(242, 107, 33, 0.3); font-weight: 700;">Approved Asset</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- TIER: 36px — Prominent Header / Display -->
+      <div class="size-comparison-row" data-tier="header">
+        <div class="row-meta-header">
+          <div class="size-pill-group">
+            <span class="size-badge-large">36px</span>
+            <span class="usage-badge">Prominent Header / Display</span>
+            <span class="weight-tag">Weight: Black 900</span>
+            <span class="weight-tag" style="color: #00FF22; border-color: rgba(0,255,34,0.3);">Approved Brand Wordmark</span>
+          </div>
+          <span class="meta-badge">Extrusion Depth: 2.7px | Contact Shadow: 3.9px | Ambient: 18px</span>
+        </div>
+        <div class="row-dual-grid">
+          <!-- Left: #FF5C00 Solid Vector -->
+          <div class="font-sample-card approved-card">
+            <div class="card-top-info">
+              <span class="card-font-name">
+                <span class="card-font-indicator"></span>
+                APPROVED: Encode Sans 900 Solid Vector (36px)
+              </span>
+              <div style="display: flex; gap: 6px; align-items: center;">
+                <span class="metric-pill" style="color: #FF5C00; border-color: rgba(255,92,0,0.4); font-weight: 700;">#FF5C00</span>
+                <span class="metric-pill" id="metric-w-encode-36">Measuring...</span>
+              </div>
+            </div>
+            <div class="wordmark-stage">
+              <span class="wordmark-3d size-36 wordmark-label" id="wm-encode-36">Leadirftex</span>
+            </div>
+            <div class="card-metrics-footer">
+              <div class="metrics-group">
+                <span class="metric-pill">Font: Encode Sans 900</span>
+                <span class="metric-pill">Color: #FF5C00 Solid</span>
+                <span class="metric-pill">Extrusion: Real 3D Layered</span>
+              </div>
+              <button class="copy-btn" onclick="copySnippet('Encode Sans', 36)">Copy Wordmark CSS</button>
+            </div>
+          </div>
+
+          <!-- Right: #F26B21 Rendered Glossy Wordmark -->
+          <div class="font-sample-card approved-card" style="border-color: rgba(242, 107, 33, 0.4); box-shadow: 0 4px 20px rgba(242, 107, 33, 0.1);">
+            <div class="card-top-info">
+              <span class="card-font-name" style="color: #F26B21;">
+                <span class="card-font-indicator" style="background: #F26B21; box-shadow: 0 0 10px rgba(242, 107, 33, 0.6);"></span>
+                OFFICIAL ASSET: Rendered Glossy Wordmark (36px)
+              </span>
+              <span class="metric-pill" style="color: #F26B21; border-color: rgba(242, 107, 33, 0.4); font-weight: 700;">#F26B21 Glossy</span>
+            </div>
+            <div class="wordmark-stage" style="display: flex; align-items: center; justify-content: center;">
+              <img src="assets/mockup/leadirftex_glossy_approved_master.png?v=clean3" alt="Leadirftex Glossy Wordmark (36px)" style="height: 36px; width: auto; object-fit: contain; display: block; margin: 0 auto; filter: none;">
+            </div>
+            <div class="card-metrics-footer">
+              <div class="metrics-group">
+                <span class="metric-pill">Format: Master PNG Asset</span>
+                <span class="metric-pill">Color: #F26B21 Glossy</span>
+                <span class="metric-pill">Finish: High-Gloss Specular</span>
+              </div>
+              <span class="metric-pill" style="color: #F26B21; border-color: rgba(242, 107, 33, 0.3); font-weight: 700;">Approved Asset</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- TIER: 32px — Standard Master Header -->
+      <div class="size-comparison-row" data-tier="header">
+        <div class="row-meta-header">
+          <div class="size-pill-group">
+            <span class="size-badge-large">32px</span>
+            <span class="usage-badge">Standard Master Header</span>
+            <span class="weight-tag">Weight: Black 900</span>
+            <span class="weight-tag" style="color: #00FF22; border-color: rgba(0,255,34,0.3);">Approved Brand Wordmark</span>
+          </div>
+          <span class="meta-badge">Extrusion Depth: 2.4px | Contact Shadow: 3.5px | Ambient: 16px</span>
+        </div>
+        <div class="row-dual-grid">
+          <!-- Left: #FF5C00 Solid Vector -->
+          <div class="font-sample-card approved-card">
+            <div class="card-top-info">
+              <span class="card-font-name">
+                <span class="card-font-indicator"></span>
+                APPROVED: Encode Sans 900 Solid Vector (32px)
+              </span>
+              <div style="display: flex; gap: 6px; align-items: center;">
+                <span class="metric-pill" style="color: #FF5C00; border-color: rgba(255,92,0,0.4); font-weight: 700;">#FF5C00</span>
+                <span class="metric-pill" id="metric-w-encode-32">Measuring...</span>
+              </div>
+            </div>
+            <div class="wordmark-stage">
+              <span class="wordmark-3d size-32 wordmark-label" id="wm-encode-32">Leadirftex</span>
+            </div>
+            <div class="card-metrics-footer">
+              <div class="metrics-group">
+                <span class="metric-pill">Font: Encode Sans 900</span>
+                <span class="metric-pill">Color: #FF5C00 Solid</span>
+                <span class="metric-pill">Extrusion: Real 3D Layered</span>
+              </div>
+              <button class="copy-btn" onclick="copySnippet('Encode Sans', 32)">Copy Wordmark CSS</button>
+            </div>
+          </div>
+
+          <!-- Right: #F26B21 Rendered Glossy Wordmark -->
+          <div class="font-sample-card approved-card" style="border-color: rgba(242, 107, 33, 0.4); box-shadow: 0 4px 20px rgba(242, 107, 33, 0.1);">
+            <div class="card-top-info">
+              <span class="card-font-name" style="color: #F26B21;">
+                <span class="card-font-indicator" style="background: #F26B21; box-shadow: 0 0 10px rgba(242, 107, 33, 0.6);"></span>
+                OFFICIAL ASSET: Rendered Glossy Wordmark (32px)
+              </span>
+              <span class="metric-pill" style="color: #F26B21; border-color: rgba(242, 107, 33, 0.4); font-weight: 700;">#F26B21 Glossy</span>
+            </div>
+            <div class="wordmark-stage" style="display: flex; align-items: center; justify-content: center;">
+              <img src="assets/mockup/leadirftex_glossy_approved_master.png?v=clean3" alt="Leadirftex Glossy Wordmark (32px)" style="height: 32px; width: auto; object-fit: contain; display: block; margin: 0 auto; filter: none;">
+            </div>
+            <div class="card-metrics-footer">
+              <div class="metrics-group">
+                <span class="metric-pill">Format: Master PNG Asset</span>
+                <span class="metric-pill">Color: #F26B21 Glossy</span>
+                <span class="metric-pill">Finish: High-Gloss Specular</span>
+              </div>
+              <span class="metric-pill" style="color: #F26B21; border-color: rgba(242, 107, 33, 0.3); font-weight: 700;">Approved Asset</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- TIER: 28px — Sub-Header / Modal Title -->
+      <div class="size-comparison-row" data-tier="header">
+        <div class="row-meta-header">
+          <div class="size-pill-group">
+            <span class="size-badge-large">28px</span>
+            <span class="usage-badge">Sub-Header / Modal Title</span>
+            <span class="weight-tag">Weight: Black 900</span>
+            <span class="weight-tag" style="color: #00FF22; border-color: rgba(0,255,34,0.3);">Approved Brand Wordmark</span>
+          </div>
+          <span class="meta-badge">Extrusion Depth: 2.1px | Contact Shadow: 3.0px | Ambient: 14px</span>
+        </div>
+        <div class="row-dual-grid">
+          <!-- Left: #FF5C00 Solid Vector -->
+          <div class="font-sample-card approved-card">
+            <div class="card-top-info">
+              <span class="card-font-name">
+                <span class="card-font-indicator"></span>
+                APPROVED: Encode Sans 900 Solid Vector (28px)
+              </span>
+              <div style="display: flex; gap: 6px; align-items: center;">
+                <span class="metric-pill" style="color: #FF5C00; border-color: rgba(255,92,0,0.4); font-weight: 700;">#FF5C00</span>
+                <span class="metric-pill" id="metric-w-encode-28">Measuring...</span>
+              </div>
+            </div>
+            <div class="wordmark-stage">
+              <span class="wordmark-3d size-28 wordmark-label" id="wm-encode-28">Leadirftex</span>
+            </div>
+            <div class="card-metrics-footer">
+              <div class="metrics-group">
+                <span class="metric-pill">Font: Encode Sans 900</span>
+                <span class="metric-pill">Color: #FF5C00 Solid</span>
+                <span class="metric-pill">Extrusion: Real 3D Layered</span>
+              </div>
+              <button class="copy-btn" onclick="copySnippet('Encode Sans', 28)">Copy Wordmark CSS</button>
+            </div>
+          </div>
+
+          <!-- Right: #F26B21 Rendered Glossy Wordmark -->
+          <div class="font-sample-card approved-card" style="border-color: rgba(242, 107, 33, 0.4); box-shadow: 0 4px 20px rgba(242, 107, 33, 0.1);">
+            <div class="card-top-info">
+              <span class="card-font-name" style="color: #F26B21;">
+                <span class="card-font-indicator" style="background: #F26B21; box-shadow: 0 0 10px rgba(242, 107, 33, 0.6);"></span>
+                OFFICIAL ASSET: Rendered Glossy Wordmark (28px)
+              </span>
+              <span class="metric-pill" style="color: #F26B21; border-color: rgba(242, 107, 33, 0.4); font-weight: 700;">#F26B21 Glossy</span>
+            </div>
+            <div class="wordmark-stage" style="display: flex; align-items: center; justify-content: center;">
+              <img src="assets/mockup/leadirftex_glossy_approved_master.png?v=clean3" alt="Leadirftex Glossy Wordmark (28px)" style="height: 28px; width: auto; object-fit: contain; display: block; margin: 0 auto; filter: none;">
+            </div>
+            <div class="card-metrics-footer">
+              <div class="metrics-group">
+                <span class="metric-pill">Format: Master PNG Asset</span>
+                <span class="metric-pill">Color: #F26B21 Glossy</span>
+                <span class="metric-pill">Finish: High-Gloss Specular</span>
+              </div>
+              <span class="metric-pill" style="color: #F26B21; border-color: rgba(242, 107, 33, 0.3); font-weight: 700;">Approved Asset</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- TIER: 24px — Compact Nav / Card Brand Header -->
+      <div class="size-comparison-row" data-tier="compact">
+        <div class="row-meta-header">
+          <div class="size-pill-group">
+            <span class="size-badge-large">24px</span>
+            <span class="usage-badge">Compact Nav / Card Brand Header</span>
+            <span class="weight-tag">Weight: Black 900</span>
+            <span class="weight-tag" style="color: #00FF22; border-color: rgba(0,255,34,0.3);">Approved Brand Wordmark</span>
+          </div>
+          <span class="meta-badge">Extrusion Depth: 1.8px | Contact Shadow: 2.6px | Ambient: 12px</span>
+        </div>
+        <div class="row-dual-grid">
+          <!-- Left: #FF5C00 Solid Vector -->
+          <div class="font-sample-card approved-card">
+            <div class="card-top-info">
+              <span class="card-font-name">
+                <span class="card-font-indicator"></span>
+                APPROVED: Encode Sans 900 Solid Vector (24px)
+              </span>
+              <div style="display: flex; gap: 6px; align-items: center;">
+                <span class="metric-pill" style="color: #FF5C00; border-color: rgba(255,92,0,0.4); font-weight: 700;">#FF5C00</span>
+                <span class="metric-pill" id="metric-w-encode-24">Measuring...</span>
+              </div>
+            </div>
+            <div class="wordmark-stage">
+              <span class="wordmark-3d size-24 wordmark-label" id="wm-encode-24">Leadirftex</span>
+            </div>
+            <div class="card-metrics-footer">
+              <div class="metrics-group">
+                <span class="metric-pill">Font: Encode Sans 900</span>
+                <span class="metric-pill">Color: #FF5C00 Solid</span>
+                <span class="metric-pill">Extrusion: Real 3D Layered</span>
+              </div>
+              <button class="copy-btn" onclick="copySnippet('Encode Sans', 24)">Copy Wordmark CSS</button>
+            </div>
+          </div>
+
+          <!-- Right: #F26B21 Rendered Glossy Wordmark -->
+          <div class="font-sample-card approved-card" style="border-color: rgba(242, 107, 33, 0.4); box-shadow: 0 4px 20px rgba(242, 107, 33, 0.1);">
+            <div class="card-top-info">
+              <span class="card-font-name" style="color: #F26B21;">
+                <span class="card-font-indicator" style="background: #F26B21; box-shadow: 0 0 10px rgba(242, 107, 33, 0.6);"></span>
+                OFFICIAL ASSET: Rendered Glossy Wordmark (24px)
+              </span>
+              <span class="metric-pill" style="color: #F26B21; border-color: rgba(242, 107, 33, 0.4); font-weight: 700;">#F26B21 Glossy</span>
+            </div>
+            <div class="wordmark-stage" style="display: flex; align-items: center; justify-content: center;">
+              <img src="assets/mockup/leadirftex_glossy_approved_master.png?v=clean3" alt="Leadirftex Glossy Wordmark (24px)" style="height: 24px; width: auto; object-fit: contain; display: block; margin: 0 auto; filter: none;">
+            </div>
+            <div class="card-metrics-footer">
+              <div class="metrics-group">
+                <span class="metric-pill">Format: Master PNG Asset</span>
+                <span class="metric-pill">Color: #F26B21 Glossy</span>
+                <span class="metric-pill">Finish: High-Gloss Specular</span>
+              </div>
+              <span class="metric-pill" style="color: #F26B21; border-color: rgba(242, 107, 33, 0.3); font-weight: 700;">Approved Asset</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- TIER: 20px — Dense Grid / Mobile Top Bar -->
+      <div class="size-comparison-row" data-tier="compact">
+        <div class="row-meta-header">
+          <div class="size-pill-group">
+            <span class="size-badge-large">20px</span>
+            <span class="usage-badge">Dense Grid / Mobile Top Bar</span>
+            <span class="weight-tag">Weight: Black 900</span>
+            <span class="weight-tag" style="color: #00FF22; border-color: rgba(0,255,34,0.3);">Approved Brand Wordmark</span>
+          </div>
+          <span class="meta-badge">Extrusion Depth: 1.5px | Contact Shadow: 2.2px | Ambient: 10px</span>
+        </div>
+        <div class="row-dual-grid">
+          <!-- Left: #FF5C00 Solid Vector -->
+          <div class="font-sample-card approved-card">
+            <div class="card-top-info">
+              <span class="card-font-name">
+                <span class="card-font-indicator"></span>
+                APPROVED: Encode Sans 900 Solid Vector (20px)
+              </span>
+              <div style="display: flex; gap: 6px; align-items: center;">
+                <span class="metric-pill" style="color: #FF5C00; border-color: rgba(255,92,0,0.4); font-weight: 700;">#FF5C00</span>
+                <span class="metric-pill" id="metric-w-encode-20">Measuring...</span>
+              </div>
+            </div>
+            <div class="wordmark-stage">
+              <span class="wordmark-3d size-20 wordmark-label" id="wm-encode-20">Leadirftex</span>
+            </div>
+            <div class="card-metrics-footer">
+              <div class="metrics-group">
+                <span class="metric-pill">Font: Encode Sans 900</span>
+                <span class="metric-pill">Color: #FF5C00 Solid</span>
+                <span class="metric-pill">Extrusion: Real 3D Layered</span>
+              </div>
+              <button class="copy-btn" onclick="copySnippet('Encode Sans', 20)">Copy Wordmark CSS</button>
+            </div>
+          </div>
+
+          <!-- Right: #F26B21 Rendered Glossy Wordmark -->
+          <div class="font-sample-card approved-card" style="border-color: rgba(242, 107, 33, 0.4); box-shadow: 0 4px 20px rgba(242, 107, 33, 0.1);">
+            <div class="card-top-info">
+              <span class="card-font-name" style="color: #F26B21;">
+                <span class="card-font-indicator" style="background: #F26B21; box-shadow: 0 0 10px rgba(242, 107, 33, 0.6);"></span>
+                OFFICIAL ASSET: Rendered Glossy Wordmark (20px)
+              </span>
+              <span class="metric-pill" style="color: #F26B21; border-color: rgba(242, 107, 33, 0.4); font-weight: 700;">#F26B21 Glossy</span>
+            </div>
+            <div class="wordmark-stage" style="display: flex; align-items: center; justify-content: center;">
+              <img src="assets/mockup/leadirftex_glossy_approved_master.png?v=clean3" alt="Leadirftex Glossy Wordmark (20px)" style="height: 20px; width: auto; object-fit: contain; display: block; margin: 0 auto; filter: none;">
+            </div>
+            <div class="card-metrics-footer">
+              <div class="metrics-group">
+                <span class="metric-pill">Format: Master PNG Asset</span>
+                <span class="metric-pill">Color: #F26B21 Glossy</span>
+                <span class="metric-pill">Finish: High-Gloss Specular</span>
+              </div>
+              <span class="metric-pill" style="color: #F26B21; border-color: rgba(242, 107, 33, 0.3); font-weight: 700;">Approved Asset</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- TIER: 18px — Micro Badge / Copyright Footer -->
+      <div class="size-comparison-row" data-tier="compact">
+        <div class="row-meta-header">
+          <div class="size-pill-group">
+            <span class="size-badge-large">18px</span>
+            <span class="usage-badge">Micro Badge / Copyright Footer</span>
+            <span class="weight-tag">Weight: Black 900</span>
+            <span class="weight-tag" style="color: #00FF22; border-color: rgba(0,255,34,0.3);">Approved Brand Wordmark</span>
+          </div>
+          <span class="meta-badge">Extrusion Depth: 1.4px | Contact Shadow: 2.0px | Ambient: 9px</span>
+        </div>
+        <div class="row-dual-grid">
+          <!-- Left: #FF5C00 Solid Vector -->
+          <div class="font-sample-card approved-card">
+            <div class="card-top-info">
+              <span class="card-font-name">
+                <span class="card-font-indicator"></span>
+                APPROVED: Encode Sans 900 Solid Vector (18px)
+              </span>
+              <div style="display: flex; gap: 6px; align-items: center;">
+                <span class="metric-pill" style="color: #FF5C00; border-color: rgba(255,92,0,0.4); font-weight: 700;">#FF5C00</span>
+                <span class="metric-pill" id="metric-w-encode-18">Measuring...</span>
+              </div>
+            </div>
+            <div class="wordmark-stage">
+              <span class="wordmark-3d size-18 wordmark-label" id="wm-encode-18">Leadirftex</span>
+            </div>
+            <div class="card-metrics-footer">
+              <div class="metrics-group">
+                <span class="metric-pill">Font: Encode Sans 900</span>
+                <span class="metric-pill">Color: #FF5C00 Solid</span>
+                <span class="metric-pill">Extrusion: Real 3D Layered</span>
+              </div>
+              <button class="copy-btn" onclick="copySnippet('Encode Sans', 18)">Copy Wordmark CSS</button>
+            </div>
+          </div>
+
+          <!-- Right: #F26B21 Rendered Glossy Wordmark -->
+          <div class="font-sample-card approved-card" style="border-color: rgba(242, 107, 33, 0.4); box-shadow: 0 4px 20px rgba(242, 107, 33, 0.1);">
+            <div class="card-top-info">
+              <span class="card-font-name" style="color: #F26B21;">
+                <span class="card-font-indicator" style="background: #F26B21; box-shadow: 0 0 10px rgba(242, 107, 33, 0.6);"></span>
+                OFFICIAL ASSET: Rendered Glossy Wordmark (18px)
+              </span>
+              <span class="metric-pill" style="color: #F26B21; border-color: rgba(242, 107, 33, 0.4); font-weight: 700;">#F26B21 Glossy</span>
+            </div>
+            <div class="wordmark-stage" style="display: flex; align-items: center; justify-content: center;">
+              <img src="assets/mockup/leadirftex_glossy_approved_master.png?v=clean3" alt="Leadirftex Glossy Wordmark (18px)" style="height: 18px; width: auto; object-fit: contain; display: block; margin: 0 auto; filter: none;">
+            </div>
+            <div class="card-metrics-footer">
+              <div class="metrics-group">
+                <span class="metric-pill">Format: Master PNG Asset</span>
+                <span class="metric-pill">Color: #F26B21 Glossy</span>
+                <span class="metric-pill">Finish: High-Gloss Specular</span>
+              </div>
+              <span class="metric-pill" style="color: #F26B21; border-color: rgba(242, 107, 33, 0.3); font-weight: 700;">Approved Asset</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- SECTION 2: APPROVED STANDALONE MONOGRAMS (8 SIZES) -->
+    <section id="standalone-monogram-section" style="margin-top: 40px;">
+      <div class="section-header-block">
+        <div>
+          <div class="masthead-badge-row" style="margin-bottom: 8px;">
+            <span class="cyber-badge"><span class="cyber-pulse-dot"></span> Approved Official Monogram</span>
+            <span class="meta-badge">Design 2 (Modern Smooth Beveled Triangle)</span>
+            <span class="meta-badge">8 Platform Sizing Tiers (128px to 16px)</span>
+            <span class="meta-badge">Transparent Alpha Assets</span>
+          </div>
+          <h2 class="section-title">
+            <span>💎</span> Standalone Official Monogram (Approved Design 2 Across 8 Sizes)
+          </h2>
+          <p class="section-desc">
+            Official brand monogram featuring the beveled metallic triangle in brand orange <strong>#FF5C00</strong> paired with the specular chrome silver <strong>X</strong> across all platform scales.
+          </p>
+        </div>
+        <div class="control-group">
+          <span class="control-label">Stage Backdrop:</span>
+          <button class="theme-toggle-btn active" id="btn-mono-checkered" onclick="setMonogramBackdrop('checkered')">
+            <span>🏁</span> Checkered
+          </button>
+          <button class="theme-toggle-btn" id="btn-mono-dark" onclick="setMonogramBackdrop('dark')">
+            <span>🌑</span> Dark
+          </button>
+          <button class="theme-toggle-btn" id="btn-mono-clean" onclick="setMonogramBackdrop('clean')">
+            <span>🎨</span> Theme Surface
+          </button>
+          
+          <div class="view-mode-tabs" style="margin-left: 8px;">
+            <button class="view-mode-tab active" id="tab-mono-all" onclick="setMonoSizeFilter('all')">All (8 Sizes)</button>
+            <button class="view-mode-tab" id="tab-mono-display" onclick="setMonoSizeFilter('display')">Display (128-64px)</button>
+            <button class="view-mode-tab" id="tab-mono-nav" onclick="setMonoSizeFilter('nav')">Navigation (48-32px)</button>
+            <button class="view-mode-tab" id="tab-mono-micro" onclick="setMonoSizeFilter('micro')">Micro (24-16px)</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- MONOGRAM SIZE TIER: 128px -->
+      <div class="size-comparison-row mono-size-row" data-mono-tier="display">
+        <div class="row-meta-header">
+          <div class="size-pill-group">
+            <span class="size-badge-large">128px × 128px</span>
+            <span class="usage-badge">Hero / Brand Showcase</span>
+            <span class="weight-tag">Hero display, splash screens, launch seals, animated intros</span>
+            <span class="weight-tag" style="color: #00FF22; border-color: rgba(0,255,34,0.3);">Approved Official Asset</span>
+          </div>
+          <span class="meta-badge">Aspect: 1:1 Square | Source: Monogram/monogram-approved-tight.png</span>
+        </div>
+        <div class="row-single-grid">
+          <div class="font-sample-card approved-card">
+            <div class="card-top-info">
+              <span class="card-font-name">
+                <span class="card-font-indicator"></span>
+                APPROVED: Design 2 Monogram (128px)
+              </span>
+              <span class="metric-pill">Transparent PNG (Alpha)</span>
+            </div>
+            <div class="monogram-stage checkered">
+              <img src="Monogram/monogram-approved-tight.png" 
+                   alt="Approved Leadirftex Monogram 128px" 
+                   class="monogram-img mono-d2-img mono-size-128"
+                   title="Approved Official Monogram (128px)">
+            </div>
+            <div class="card-metrics-footer">
+              <div class="metrics-group">
+                <span class="metric-pill">Dimensions: 128×128px</span>
+                <span class="metric-pill">Color: #FF5C00 + Chrome Silver X</span>
+                <span class="metric-pill">Status: Official Approved</span>
+              </div>
+              <span class="meta-badge">Monogram/monogram-approved-tight.png</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- MONOGRAM SIZE TIER: 96px -->
+      <div class="size-comparison-row mono-size-row" data-mono-tier="display">
+        <div class="row-meta-header">
+          <div class="size-pill-group">
+            <span class="size-badge-large">96px × 96px</span>
+            <span class="usage-badge">Display / Onboarding Splash</span>
+            <span class="weight-tag">Landing hero, feature showcase, user onboarding banners</span>
+            <span class="weight-tag" style="color: #00FF22; border-color: rgba(0,255,34,0.3);">Approved Official Asset</span>
+          </div>
+          <span class="meta-badge">Aspect: 1:1 Square | Source: Monogram/monogram-approved-tight.png</span>
+        </div>
+        <div class="row-single-grid">
+          <div class="font-sample-card approved-card">
+            <div class="card-top-info">
+              <span class="card-font-name">
+                <span class="card-font-indicator"></span>
+                APPROVED: Design 2 Monogram (96px)
+              </span>
+              <span class="metric-pill">Transparent PNG (Alpha)</span>
+            </div>
+            <div class="monogram-stage checkered">
+              <img src="Monogram/monogram-approved-tight.png" 
+                   alt="Approved Leadirftex Monogram 96px" 
+                   class="monogram-img mono-d2-img mono-size-96"
+                   title="Approved Official Monogram (96px)">
+            </div>
+            <div class="card-metrics-footer">
+              <div class="metrics-group">
+                <span class="metric-pill">Dimensions: 96×96px</span>
+                <span class="metric-pill">Color: #FF5C00 + Chrome Silver X</span>
+                <span class="metric-pill">Status: Official Approved</span>
+              </div>
+              <span class="meta-badge">Monogram/monogram-approved-tight.png</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- MONOGRAM SIZE TIER: 64px -->
+      <div class="size-comparison-row mono-size-row" data-mono-tier="display">
+        <div class="row-meta-header">
+          <div class="size-pill-group">
+            <span class="size-badge-large">64px × 64px</span>
+            <span class="usage-badge">Large Icon / Profile Badge</span>
+            <span class="weight-tag">Hero lockup companion, app launcher icon, modal avatars</span>
+            <span class="weight-tag" style="color: #00FF22; border-color: rgba(0,255,34,0.3);">Approved Official Asset</span>
+          </div>
+          <span class="meta-badge">Aspect: 1:1 Square | Source: Monogram/monogram-approved-tight.png</span>
+        </div>
+        <div class="row-single-grid">
+          <div class="font-sample-card approved-card">
+            <div class="card-top-info">
+              <span class="card-font-name">
+                <span class="card-font-indicator"></span>
+                APPROVED: Design 2 Monogram (64px)
+              </span>
+              <span class="metric-pill">Transparent PNG (Alpha)</span>
+            </div>
+            <div class="monogram-stage checkered">
+              <img src="Monogram/monogram-approved-tight.png" 
+                   alt="Approved Leadirftex Monogram 64px" 
+                   class="monogram-img mono-d2-img mono-size-64"
+                   title="Approved Official Monogram (64px)">
+            </div>
+            <div class="card-metrics-footer">
+              <div class="metrics-group">
+                <span class="metric-pill">Dimensions: 64×64px</span>
+                <span class="metric-pill">Color: #FF5C00 + Chrome Silver X</span>
+                <span class="metric-pill">Status: Official Approved</span>
+              </div>
+              <span class="meta-badge">Monogram/monogram-approved-tight.png</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- MONOGRAM SIZE TIER: 48px -->
+      <div class="size-comparison-row mono-size-row" data-mono-tier="nav">
+        <div class="row-meta-header">
+          <div class="size-pill-group">
+            <span class="size-badge-large">48px × 48px</span>
+            <span class="usage-badge">Standard Header Icon</span>
+            <span class="weight-tag">Primary desktop navigation mark, prominent toolbar emblem</span>
+            <span class="weight-tag" style="color: #00FF22; border-color: rgba(0,255,34,0.3);">Approved Official Asset</span>
+          </div>
+          <span class="meta-badge">Aspect: 1:1 Square | Source: Monogram/monogram-approved-tight.png</span>
+        </div>
+        <div class="row-single-grid">
+          <div class="font-sample-card approved-card">
+            <div class="card-top-info">
+              <span class="card-font-name">
+                <span class="card-font-indicator"></span>
+                APPROVED: Design 2 Monogram (48px)
+              </span>
+              <span class="metric-pill">Transparent PNG (Alpha)</span>
+            </div>
+            <div class="monogram-stage checkered">
+              <img src="Monogram/monogram-approved-tight.png" 
+                   alt="Approved Leadirftex Monogram 48px" 
+                   class="monogram-img mono-d2-img mono-size-48"
+                   title="Approved Official Monogram (48px)">
+            </div>
+            <div class="card-metrics-footer">
+              <div class="metrics-group">
+                <span class="metric-pill">Dimensions: 48×48px</span>
+                <span class="metric-pill">Color: #FF5C00 + Chrome Silver X</span>
+                <span class="metric-pill">Status: Official Approved</span>
+              </div>
+              <span class="meta-badge">Monogram/monogram-approved-tight.png</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- MONOGRAM SIZE TIER: 40px -->
+      <div class="size-comparison-row mono-size-row" data-mono-tier="nav">
+        <div class="row-meta-header">
+          <div class="size-pill-group">
+            <span class="size-badge-large">40px × 40px</span>
+            <span class="usage-badge">Compact Nav Mark</span>
+            <span class="weight-tag">Condensed header bar, tablet navigation mark</span>
+            <span class="weight-tag" style="color: #00FF22; border-color: rgba(0,255,34,0.3);">Approved Official Asset</span>
+          </div>
+          <span class="meta-badge">Aspect: 1:1 Square | Source: Monogram/monogram-approved-tight.png</span>
+        </div>
+        <div class="row-single-grid">
+          <div class="font-sample-card approved-card">
+            <div class="card-top-info">
+              <span class="card-font-name">
+                <span class="card-font-indicator"></span>
+                APPROVED: Design 2 Monogram (40px)
+              </span>
+              <span class="metric-pill">Transparent PNG (Alpha)</span>
+            </div>
+            <div class="monogram-stage checkered">
+              <img src="Monogram/monogram-approved-tight.png" 
+                   alt="Approved Leadirftex Monogram 40px" 
+                   class="monogram-img mono-d2-img mono-size-40"
+                   title="Approved Official Monogram (40px)">
+            </div>
+            <div class="card-metrics-footer">
+              <div class="metrics-group">
+                <span class="metric-pill">Dimensions: 40×40px</span>
+                <span class="metric-pill">Color: #FF5C00 + Chrome Silver X</span>
+                <span class="metric-pill">Status: Official Approved</span>
+              </div>
+              <span class="meta-badge">Monogram/monogram-approved-tight.png</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- MONOGRAM SIZE TIER: 32px -->
+      <div class="size-comparison-row mono-size-row" data-mono-tier="nav">
+        <div class="row-meta-header">
+          <div class="size-pill-group">
+            <span class="size-badge-large">32px × 32px</span>
+            <span class="usage-badge">Master Header Icon</span>
+            <span class="weight-tag">Master header bar default mark (matches master-ui-mockup.html)</span>
+            <span class="weight-tag" style="color: #00FF22; border-color: rgba(0,255,34,0.3);">Approved Official Asset</span>
+          </div>
+          <span class="meta-badge">Aspect: 1:1 Square | Source: Monogram/monogram-approved-tight.png</span>
+        </div>
+        <div class="row-single-grid">
+          <div class="font-sample-card approved-card">
+            <div class="card-top-info">
+              <span class="card-font-name">
+                <span class="card-font-indicator"></span>
+                APPROVED: Design 2 Monogram (32px)
+              </span>
+              <span class="metric-pill">Transparent PNG (Alpha)</span>
+            </div>
+            <div class="monogram-stage checkered">
+              <img src="Monogram/monogram-approved-tight.png" 
+                   alt="Approved Leadirftex Monogram 32px" 
+                   class="monogram-img mono-d2-img mono-size-32"
+                   title="Approved Official Monogram (32px)">
+            </div>
+            <div class="card-metrics-footer">
+              <div class="metrics-group">
+                <span class="metric-pill">Dimensions: 32×32px</span>
+                <span class="metric-pill">Color: #FF5C00 + Chrome Silver X</span>
+                <span class="metric-pill">Status: Official Approved</span>
+              </div>
+              <span class="meta-badge">Monogram/monogram-approved-tight.png</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- MONOGRAM SIZE TIER: 24px -->
+      <div class="size-comparison-row mono-size-row" data-mono-tier="micro">
+        <div class="row-meta-header">
+          <div class="size-pill-group">
+            <span class="size-badge-large">24px × 24px</span>
+            <span class="usage-badge">Dense Toolbar / Mobile Tab</span>
+            <span class="weight-tag">Mobile top bar, dense toolbars, table item status icons</span>
+            <span class="weight-tag" style="color: #00FF22; border-color: rgba(0,255,34,0.3);">Approved Official Asset</span>
+          </div>
+          <span class="meta-badge">Aspect: 1:1 Square | Source: Monogram/monogram-approved-tight.png</span>
+        </div>
+        <div class="row-single-grid">
+          <div class="font-sample-card approved-card">
+            <div class="card-top-info">
+              <span class="card-font-name">
+                <span class="card-font-indicator"></span>
+                APPROVED: Design 2 Monogram (24px)
+              </span>
+              <span class="metric-pill">Transparent PNG (Alpha)</span>
+            </div>
+            <div class="monogram-stage checkered">
+              <img src="Monogram/monogram-approved-tight.png" 
+                   alt="Approved Leadirftex Monogram 24px" 
+                   class="monogram-img mono-d2-img mono-size-24"
+                   title="Approved Official Monogram (24px)">
+            </div>
+            <div class="card-metrics-footer">
+              <div class="metrics-group">
+                <span class="metric-pill">Dimensions: 24×24px</span>
+                <span class="metric-pill">Color: #FF5C00 + Chrome Silver X</span>
+                <span class="metric-pill">Status: Official Approved</span>
+              </div>
+              <span class="meta-badge">Monogram/monogram-approved-tight.png</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- MONOGRAM SIZE TIER: 16px -->
+      <div class="size-comparison-row mono-size-row" data-mono-tier="micro">
+        <div class="row-meta-header">
+          <div class="size-pill-group">
+            <span class="size-badge-large">16px × 16px</span>
+            <span class="usage-badge">Favicon / Micro Status Badge</span>
+            <span class="weight-tag">Browser tab favicon (16×16), treeview icons, micro status badges</span>
+            <span class="weight-tag" style="color: #00FF22; border-color: rgba(0,255,34,0.3);">Approved Official Asset</span>
+          </div>
+          <span class="meta-badge">Aspect: 1:1 Square | Source: Monogram/monogram-approved-tight.png</span>
+        </div>
+        <div class="row-single-grid">
+          <div class="font-sample-card approved-card">
+            <div class="card-top-info">
+              <span class="card-font-name">
+                <span class="card-font-indicator"></span>
+                APPROVED: Design 2 Monogram (16px)
+              </span>
+              <span class="metric-pill">Transparent PNG (Alpha)</span>
+            </div>
+            <div class="monogram-stage checkered">
+              <img src="Monogram/monogram-approved-tight.png" 
+                   alt="Approved Leadirftex Monogram 16px" 
+                   class="monogram-img mono-d2-img mono-size-16"
+                   title="Approved Official Monogram (16px)">
+            </div>
+            <div class="card-metrics-footer">
+              <div class="metrics-group">
+                <span class="metric-pill">Dimensions: 16×16px</span>
+                <span class="metric-pill">Color: #FF5C00 + Chrome Silver X</span>
+                <span class="metric-pill">Status: Official Approved</span>
+              </div>
+              <span class="meta-badge">Monogram/monogram-approved-tight.png</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- SECTION 3: APPROVED BRAND LOCKUPS (100% FLUSH ALIGNED) -->
+    <section id="lockup-monogram-wordmark-section" style="margin-top: 40px;">
+      <div class="section-header-block">
+        <div>
+          <div class="masthead-badge-row" style="margin-bottom: 8px;">
+            <span class="cyber-badge">
+              <span class="cyber-pulse-dot"></span> Approved Official Brand Lockup
+            </span>
+            <span class="meta-badge" style="color: #00FF22; border-color: rgba(0, 255, 34, 0.4);">Encode Sans 900 Exclusively</span>
+            <span class="meta-badge" style="color: #e2e8f0; border-color: rgba(226, 232, 240, 0.4);">Enlarged Chrome Silver 3D INTERCHAIN</span>
+            <span class="meta-badge" style="color: #00FF22; border-color: rgba(0, 255, 34, 0.4); font-weight: 700;">100% Flush Top &amp; Bottom Alignment</span>
+          </div>
+          <h2 class="section-title">
+            <span>🔗</span> Official Monogram + Wordmark Brand Lockup Complex (100% Flush Alignment)
+          </h2>
+          <p class="section-desc">
+            Engineered lockups pairing the <strong>Approved Design 2 Monogram</strong> with <strong>Encode Sans (Black 900)</strong> in brand orange <strong>#FF5C00</strong>. Features sub-pixel optical flush alignment at both top apex and bottom baseline, with the enlarged <strong>INTERCHAIN</strong> descriptor in specular chrome metallic silver.
+          </p>
+        </div>
+        <div class="control-group">
+          <button class="theme-toggle-btn active" id="btn-toggle-lockup-guides" onclick="toggleLockupGuides()">
+            <span>📐</span> Flush Align Guides (100% Top &amp; Bottom)
+          </button>
+          <div class="view-mode-tabs" style="margin-left: 8px;">
+            <button class="view-mode-tab active" id="tab-lockup-all" onclick="setLockupFilter('all')">All (7 Tiers)</button>
+            <button class="view-mode-tab" id="tab-lockup-hero" onclick="setLockupFilter('hero')">Hero (48px)</button>
+            <button class="view-mode-tab" id="tab-lockup-header" onclick="setLockupFilter('header')">Header (36px-28px)</button>
+            <button class="view-mode-tab" id="tab-lockup-compact" onclick="setLockupFilter('compact')">Compact (24px-18px)</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- LOCKUP SIZE TIER: 48px (TOTAL FLUSH HEIGHT: 67.5px) -->
+      <div class="size-comparison-row lockup-size-row" data-lockup-tier="hero">
+        <div class="row-meta-header">
+          <div class="size-pill-group">
+            <span class="size-badge-large">48px Wordmark</span>
+            <span class="usage-badge">Hero / Large Brand Preview</span>
+            <span class="weight-tag">Flush Height: 67.5px</span>
+            <span class="weight-tag">INTERCHAIN: 15px (Silver 3D)</span>
+            <span class="weight-tag" style="color: #00FF22; border-color: rgba(0,255,34,0.3); font-weight: 700;">Top &amp; Bottom: 100% Flush</span>
+          </div>
+          <span class="meta-badge">Hero display, splash intro, high-contrast presentation banner</span>
+        </div>
+        <div class="row-dual-grid show-lockup-guides" id="lockup-grid-48">
+          <!-- Left: #FF5C00 Solid Vector Lockup -->
+          <div class="font-sample-card approved-card">
+            <div class="card-top-info">
+              <span class="card-font-name">
+                <span class="card-font-indicator"></span>
+                APPROVED: Official Brand Lockup (48px &bull; #FF5C00 Solid)
+              </span>
+              <span class="metric-pill" style="color: #FF5C00; border-color: rgba(255,92,0,0.4); font-weight: 800;">#FF5C00 SOLID LOCKUP</span>
+            </div>
+            <div class="lockup-stage-wrap">
+              <div class="lockup-brand-flush lockup-tier-48">
+                <img src="Monogram/monogram-approved-tight.png" 
+                     alt="Leadirftex Approved Monogram" 
+                     class="lockup-mono-tight"
+                     title="Approved Design 2 Monogram">
+                <div class="lockup-text-stack">
+                  <span class="wordmark-3d size-48 wordmark-label">Leadirftex</span>
+                  <span class="interchain-silver-3d">INTERCHAIN</span>
+                </div>
+              </div>
+            </div>
+            <div class="card-metrics-footer">
+              <div class="metrics-group">
+                <span class="metric-pill">Flush Bounding: 67.5px</span>
+                <span class="metric-pill">Monogram: Design 2 Tight</span>
+                <span class="metric-pill">Descriptor: 15px Chrome 3D</span>
+                <span class="metric-pill" style="color: #FF5C00;">Wordmark: #FF5C00 Solid</span>
+              </div>
+              <button class="copy-btn" onclick="copyFlushLockupSnippet(2, 48, '67.5px', '15px')">Copy Lockup CSS</button>
+            </div>
+          </div>
+
+          <!-- Right: #F26B21 Glossy 3D Lockup -->
+          <div class="font-sample-card approved-card" style="border-color: rgba(242, 107, 33, 0.4); box-shadow: 0 4px 20px rgba(242, 107, 33, 0.1);">
+            <div class="card-top-info">
+              <span class="card-font-name" style="color: #F26B21;">
+                <span class="card-font-indicator" style="background: #F26B21; box-shadow: 0 0 10px rgba(242, 107, 33, 0.6);"></span>
+                OFFICIAL LOCKUP: Rendered Glossy Lockup (48px &bull; #F26B21 Glossy)
+              </span>
+              <span class="metric-pill" style="color: #F26B21; border-color: rgba(242, 107, 33, 0.4); font-weight: 800;">#F26B21 GLOSSY LOCKUP</span>
+            </div>
+            <div class="lockup-stage-wrap">
+              <div class="lockup-brand-flush lockup-tier-48">
+                <img src="Monogram/monogram-approved-tight.png" 
+                     alt="Leadirftex Approved Monogram" 
+                     class="lockup-mono-tight"
+                     title="Approved Design 2 Monogram">
+                <div class="lockup-text-stack">
+                  <img src="assets/mockup/leadirftex_glossy_approved_master.png?v=clean3" 
+                       class="lockup-wm-img" 
+                       alt="Leadirftex Glossy Wordmark (#F26B21)">
+                  <span class="interchain-silver-3d">INTERCHAIN</span>
+                </div>
+              </div>
+            </div>
+            <div class="card-metrics-footer">
+              <div class="metrics-group">
+                <span class="metric-pill">Flush Bounding: 67.5px</span>
+                <span class="metric-pill">Monogram: Design 2 Tight</span>
+                <span class="metric-pill">Descriptor: 15px Chrome 3D</span>
+                <span class="metric-pill" style="color: #F26B21;">Wordmark: #F26B21 Glossy Asset</span>
+              </div>
+              <button class="copy-btn" onclick="copyGlossyLockupSnippet(48, '67.5px', '15px')">Copy Glossy CSS</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- LOCKUP SIZE TIER: 36px (TOTAL FLUSH HEIGHT: 52.5px) -->
+      <div class="size-comparison-row lockup-size-row" data-lockup-tier="header">
+        <div class="row-meta-header">
+          <div class="size-pill-group">
+            <span class="size-badge-large">36px Wordmark</span>
+            <span class="usage-badge">Prominent Header / Display</span>
+            <span class="weight-tag">Flush Height: 52.5px</span>
+            <span class="weight-tag">INTERCHAIN: 12px (Silver 3D)</span>
+            <span class="weight-tag" style="color: #00FF22; border-color: rgba(0,255,34,0.3); font-weight: 700;">Top &amp; Bottom: 100% Flush</span>
+          </div>
+          <span class="meta-badge">Expanded desktop sticky bar, hero dashboard header</span>
+        </div>
+        <div class="row-dual-grid show-lockup-guides" id="lockup-grid-36">
+          <!-- Left: #FF5C00 Solid Vector Lockup -->
+          <div class="font-sample-card approved-card">
+            <div class="card-top-info">
+              <span class="card-font-name">
+                <span class="card-font-indicator"></span>
+                APPROVED: Official Brand Lockup (36px &bull; #FF5C00 Solid)
+              </span>
+              <span class="metric-pill" style="color: #FF5C00; border-color: rgba(255,92,0,0.4); font-weight: 800;">#FF5C00 SOLID LOCKUP</span>
+            </div>
+            <div class="lockup-stage-wrap">
+              <div class="lockup-brand-flush lockup-tier-36">
+                <img src="Monogram/monogram-approved-tight.png" 
+                     alt="Leadirftex Approved Monogram" 
+                     class="lockup-mono-tight"
+                     title="Approved Design 2 Monogram">
+                <div class="lockup-text-stack">
+                  <span class="wordmark-3d size-36 wordmark-label">Leadirftex</span>
+                  <span class="interchain-silver-3d">INTERCHAIN</span>
+                </div>
+              </div>
+            </div>
+            <div class="card-metrics-footer">
+              <div class="metrics-group">
+                <span class="metric-pill">Flush Bounding: 52.5px</span>
+                <span class="metric-pill">Monogram: Design 2 Tight</span>
+                <span class="metric-pill">Descriptor: 12px Chrome 3D</span>
+                <span class="metric-pill" style="color: #FF5C00;">Wordmark: #FF5C00 Solid</span>
+              </div>
+              <button class="copy-btn" onclick="copyFlushLockupSnippet(2, 36, '52.5px', '12px')">Copy Lockup CSS</button>
+            </div>
+          </div>
+
+          <!-- Right: #F26B21 Glossy 3D Lockup -->
+          <div class="font-sample-card approved-card" style="border-color: rgba(242, 107, 33, 0.4); box-shadow: 0 4px 20px rgba(242, 107, 33, 0.1);">
+            <div class="card-top-info">
+              <span class="card-font-name" style="color: #F26B21;">
+                <span class="card-font-indicator" style="background: #F26B21; box-shadow: 0 0 10px rgba(242, 107, 33, 0.6);"></span>
+                OFFICIAL LOCKUP: Rendered Glossy Lockup (36px &bull; #F26B21 Glossy)
+              </span>
+              <span class="metric-pill" style="color: #F26B21; border-color: rgba(242, 107, 33, 0.4); font-weight: 800;">#F26B21 GLOSSY LOCKUP</span>
+            </div>
+            <div class="lockup-stage-wrap">
+              <div class="lockup-brand-flush lockup-tier-36">
+                <img src="Monogram/monogram-approved-tight.png" 
+                     alt="Leadirftex Approved Monogram" 
+                     class="lockup-mono-tight"
+                     title="Approved Design 2 Monogram">
+                <div class="lockup-text-stack">
+                  <img src="assets/mockup/leadirftex_glossy_approved_master.png?v=clean3" 
+                       class="lockup-wm-img" 
+                       alt="Leadirftex Glossy Wordmark (#F26B21)">
+                  <span class="interchain-silver-3d">INTERCHAIN</span>
+                </div>
+              </div>
+            </div>
+            <div class="card-metrics-footer">
+              <div class="metrics-group">
+                <span class="metric-pill">Flush Bounding: 52.5px</span>
+                <span class="metric-pill">Monogram: Design 2 Tight</span>
+                <span class="metric-pill">Descriptor: 12px Chrome 3D</span>
+                <span class="metric-pill" style="color: #F26B21;">Wordmark: #F26B21 Glossy Asset</span>
+              </div>
+              <button class="copy-btn" onclick="copyGlossyLockupSnippet(36, '52.5px', '12px')">Copy Glossy CSS</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- LOCKUP SIZE TIER: 32px (TOTAL FLUSH HEIGHT: 46px) -->
+      <div class="size-comparison-row lockup-size-row" data-lockup-tier="header">
+        <div class="row-meta-header">
+          <div class="size-pill-group">
+            <span class="size-badge-large">32px Wordmark</span>
+            <span class="usage-badge">Standard Master Header</span>
+            <span class="weight-tag">Flush Height: 46px</span>
+            <span class="weight-tag">INTERCHAIN: 10.5px (Silver 3D)</span>
+            <span class="weight-tag" style="color: #00FF22; border-color: rgba(0,255,34,0.3); font-weight: 700;">Top &amp; Bottom: 100% Flush</span>
+          </div>
+          <span class="meta-badge">Official desktop navigation bar default</span>
+        </div>
+        <div class="row-dual-grid show-lockup-guides" id="lockup-grid-32">
+          <!-- Left: #FF5C00 Solid Vector Lockup -->
+          <div class="font-sample-card approved-card">
+            <div class="card-top-info">
+              <span class="card-font-name">
+                <span class="card-font-indicator"></span>
+                APPROVED: Official Brand Lockup (32px &bull; #FF5C00 Solid)
+              </span>
+              <span class="metric-pill" style="color: #FF5C00; border-color: rgba(255,92,0,0.4); font-weight: 800;">#FF5C00 SOLID LOCKUP</span>
+            </div>
+            <div class="lockup-stage-wrap">
+              <div class="lockup-brand-flush lockup-tier-32">
+                <img src="Monogram/monogram-approved-tight.png" 
+                     alt="Leadirftex Approved Monogram" 
+                     class="lockup-mono-tight"
+                     title="Approved Design 2 Monogram">
+                <div class="lockup-text-stack">
+                  <span class="wordmark-3d size-32 wordmark-label">Leadirftex</span>
+                  <span class="interchain-silver-3d">INTERCHAIN</span>
+                </div>
+              </div>
+            </div>
+            <div class="card-metrics-footer">
+              <div class="metrics-group">
+                <span class="metric-pill">Flush Bounding: 46px</span>
+                <span class="metric-pill">Monogram: Design 2 Tight</span>
+                <span class="metric-pill">Descriptor: 10.5px Chrome 3D</span>
+                <span class="metric-pill" style="color: #FF5C00;">Wordmark: #FF5C00 Solid</span>
+              </div>
+              <button class="copy-btn" onclick="copyFlushLockupSnippet(2, 32, '46px', '10.5px')">Copy Lockup CSS</button>
+            </div>
+          </div>
+
+          <!-- Right: #F26B21 Glossy 3D Lockup -->
+          <div class="font-sample-card approved-card" style="border-color: rgba(242, 107, 33, 0.4); box-shadow: 0 4px 20px rgba(242, 107, 33, 0.1);">
+            <div class="card-top-info">
+              <span class="card-font-name" style="color: #F26B21;">
+                <span class="card-font-indicator" style="background: #F26B21; box-shadow: 0 0 10px rgba(242, 107, 33, 0.6);"></span>
+                OFFICIAL LOCKUP: Rendered Glossy Lockup (32px &bull; #F26B21 Glossy)
+              </span>
+              <span class="metric-pill" style="color: #F26B21; border-color: rgba(242, 107, 33, 0.4); font-weight: 800;">#F26B21 GLOSSY LOCKUP</span>
+            </div>
+            <div class="lockup-stage-wrap">
+              <div class="lockup-brand-flush lockup-tier-32">
+                <img src="Monogram/monogram-approved-tight.png" 
+                     alt="Leadirftex Approved Monogram" 
+                     class="lockup-mono-tight"
+                     title="Approved Design 2 Monogram">
+                <div class="lockup-text-stack">
+                  <img src="assets/mockup/leadirftex_glossy_approved_master.png?v=clean3" 
+                       class="lockup-wm-img" 
+                       alt="Leadirftex Glossy Wordmark (#F26B21)">
+                  <span class="interchain-silver-3d">INTERCHAIN</span>
+                </div>
+              </div>
+            </div>
+            <div class="card-metrics-footer">
+              <div class="metrics-group">
+                <span class="metric-pill">Flush Bounding: 46px</span>
+                <span class="metric-pill">Monogram: Design 2 Tight</span>
+                <span class="metric-pill">Descriptor: 10.5px Chrome 3D</span>
+                <span class="metric-pill" style="color: #F26B21;">Wordmark: #F26B21 Glossy Asset</span>
+              </div>
+              <button class="copy-btn" onclick="copyGlossyLockupSnippet(32, '46px', '10.5px')">Copy Glossy CSS</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- LOCKUP SIZE TIER: 28px (TOTAL FLUSH HEIGHT: 41px) -->
+      <div class="size-comparison-row lockup-size-row" data-lockup-tier="header">
+        <div class="row-meta-header">
+          <div class="size-pill-group">
+            <span class="size-badge-large">28px Wordmark</span>
+            <span class="usage-badge">Sub-Header / Modal Title</span>
+            <span class="weight-tag">Flush Height: 41px</span>
+            <span class="weight-tag">INTERCHAIN: 9.5px (Silver 3D)</span>
+            <span class="weight-tag" style="color: #00FF22; border-color: rgba(0,255,34,0.3); font-weight: 700;">Top &amp; Bottom: 100% Flush</span>
+          </div>
+          <span class="meta-badge">Sub-navigation bar, modal drawer title, dense table header</span>
+        </div>
+        <div class="row-dual-grid show-lockup-guides" id="lockup-grid-28">
+          <!-- Left: #FF5C00 Solid Vector Lockup -->
+          <div class="font-sample-card approved-card">
+            <div class="card-top-info">
+              <span class="card-font-name">
+                <span class="card-font-indicator"></span>
+                APPROVED: Official Brand Lockup (28px &bull; #FF5C00 Solid)
+              </span>
+              <span class="metric-pill" style="color: #FF5C00; border-color: rgba(255,92,0,0.4); font-weight: 800;">#FF5C00 SOLID LOCKUP</span>
+            </div>
+            <div class="lockup-stage-wrap">
+              <div class="lockup-brand-flush lockup-tier-28">
+                <img src="Monogram/monogram-approved-tight.png" 
+                     alt="Leadirftex Approved Monogram" 
+                     class="lockup-mono-tight"
+                     title="Approved Design 2 Monogram">
+                <div class="lockup-text-stack">
+                  <span class="wordmark-3d size-28 wordmark-label">Leadirftex</span>
+                  <span class="interchain-silver-3d">INTERCHAIN</span>
+                </div>
+              </div>
+            </div>
+            <div class="card-metrics-footer">
+              <div class="metrics-group">
+                <span class="metric-pill">Flush Bounding: 41px</span>
+                <span class="metric-pill">Monogram: Design 2 Tight</span>
+                <span class="metric-pill">Descriptor: 9.5px Chrome 3D</span>
+                <span class="metric-pill" style="color: #FF5C00;">Wordmark: #FF5C00 Solid</span>
+              </div>
+              <button class="copy-btn" onclick="copyFlushLockupSnippet(2, 28, '41px', '9.5px')">Copy Lockup CSS</button>
+            </div>
+          </div>
+
+          <!-- Right: #F26B21 Glossy 3D Lockup -->
+          <div class="font-sample-card approved-card" style="border-color: rgba(242, 107, 33, 0.4); box-shadow: 0 4px 20px rgba(242, 107, 33, 0.1);">
+            <div class="card-top-info">
+              <span class="card-font-name" style="color: #F26B21;">
+                <span class="card-font-indicator" style="background: #F26B21; box-shadow: 0 0 10px rgba(242, 107, 33, 0.6);"></span>
+                OFFICIAL LOCKUP: Rendered Glossy Lockup (28px &bull; #F26B21 Glossy)
+              </span>
+              <span class="metric-pill" style="color: #F26B21; border-color: rgba(242, 107, 33, 0.4); font-weight: 800;">#F26B21 GLOSSY LOCKUP</span>
+            </div>
+            <div class="lockup-stage-wrap">
+              <div class="lockup-brand-flush lockup-tier-28">
+                <img src="Monogram/monogram-approved-tight.png" 
+                     alt="Leadirftex Approved Monogram" 
+                     class="lockup-mono-tight"
+                     title="Approved Design 2 Monogram">
+                <div class="lockup-text-stack">
+                  <img src="assets/mockup/leadirftex_glossy_approved_master.png?v=clean3" 
+                       class="lockup-wm-img" 
+                       alt="Leadirftex Glossy Wordmark (#F26B21)">
+                  <span class="interchain-silver-3d">INTERCHAIN</span>
+                </div>
+              </div>
+            </div>
+            <div class="card-metrics-footer">
+              <div class="metrics-group">
+                <span class="metric-pill">Flush Bounding: 41px</span>
+                <span class="metric-pill">Monogram: Design 2 Tight</span>
+                <span class="metric-pill">Descriptor: 9.5px Chrome 3D</span>
+                <span class="metric-pill" style="color: #F26B21;">Wordmark: #F26B21 Glossy Asset</span>
+              </div>
+              <button class="copy-btn" onclick="copyGlossyLockupSnippet(28, '41px', '9.5px')">Copy Glossy CSS</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- LOCKUP SIZE TIER: 24px (TOTAL FLUSH HEIGHT: 35.5px) -->
+      <div class="size-comparison-row lockup-size-row" data-lockup-tier="compact">
+        <div class="row-meta-header">
+          <div class="size-pill-group">
+            <span class="size-badge-large">24px Wordmark</span>
+            <span class="usage-badge">Compact Nav / Card Brand Header</span>
+            <span class="weight-tag">Flush Height: 35.5px</span>
+            <span class="weight-tag">INTERCHAIN: 8.5px (Silver 3D)</span>
+            <span class="weight-tag" style="color: #00FF22; border-color: rgba(0,255,34,0.3); font-weight: 700;">Top &amp; Bottom: 100% Flush</span>
+          </div>
+          <span class="meta-badge">Compact workspace toolbar, card header identity</span>
+        </div>
+        <div class="row-dual-grid show-lockup-guides" id="lockup-grid-24">
+          <!-- Left: #FF5C00 Solid Vector Lockup -->
+          <div class="font-sample-card approved-card">
+            <div class="card-top-info">
+              <span class="card-font-name">
+                <span class="card-font-indicator"></span>
+                APPROVED: Official Brand Lockup (24px &bull; #FF5C00 Solid)
+              </span>
+              <span class="metric-pill" style="color: #FF5C00; border-color: rgba(255,92,0,0.4); font-weight: 800;">#FF5C00 SOLID LOCKUP</span>
+            </div>
+            <div class="lockup-stage-wrap">
+              <div class="lockup-brand-flush lockup-tier-24">
+                <img src="Monogram/monogram-approved-tight.png" 
+                     alt="Leadirftex Approved Monogram" 
+                     class="lockup-mono-tight"
+                     title="Approved Design 2 Monogram">
+                <div class="lockup-text-stack">
+                  <span class="wordmark-3d size-24 wordmark-label">Leadirftex</span>
+                  <span class="interchain-silver-3d">INTERCHAIN</span>
+                </div>
+              </div>
+            </div>
+            <div class="card-metrics-footer">
+              <div class="metrics-group">
+                <span class="metric-pill">Flush Bounding: 35.5px</span>
+                <span class="metric-pill">Monogram: Design 2 Tight</span>
+                <span class="metric-pill">Descriptor: 8.5px Chrome 3D</span>
+                <span class="metric-pill" style="color: #FF5C00;">Wordmark: #FF5C00 Solid</span>
+              </div>
+              <button class="copy-btn" onclick="copyFlushLockupSnippet(2, 24, '35.5px', '8.5px')">Copy Lockup CSS</button>
+            </div>
+          </div>
+
+          <!-- Right: #F26B21 Glossy 3D Lockup -->
+          <div class="font-sample-card approved-card" style="border-color: rgba(242, 107, 33, 0.4); box-shadow: 0 4px 20px rgba(242, 107, 33, 0.1);">
+            <div class="card-top-info">
+              <span class="card-font-name" style="color: #F26B21;">
+                <span class="card-font-indicator" style="background: #F26B21; box-shadow: 0 0 10px rgba(242, 107, 33, 0.6);"></span>
+                OFFICIAL LOCKUP: Rendered Glossy Lockup (24px &bull; #F26B21 Glossy)
+              </span>
+              <span class="metric-pill" style="color: #F26B21; border-color: rgba(242, 107, 33, 0.4); font-weight: 800;">#F26B21 GLOSSY LOCKUP</span>
+            </div>
+            <div class="lockup-stage-wrap">
+              <div class="lockup-brand-flush lockup-tier-24">
+                <img src="Monogram/monogram-approved-tight.png" 
+                     alt="Leadirftex Approved Monogram" 
+                     class="lockup-mono-tight"
+                     title="Approved Design 2 Monogram">
+                <div class="lockup-text-stack">
+                  <img src="assets/mockup/leadirftex_glossy_approved_master.png?v=clean3" 
+                       class="lockup-wm-img" 
+                       alt="Leadirftex Glossy Wordmark (#F26B21)">
+                  <span class="interchain-silver-3d">INTERCHAIN</span>
+                </div>
+              </div>
+            </div>
+            <div class="card-metrics-footer">
+              <div class="metrics-group">
+                <span class="metric-pill">Flush Bounding: 35.5px</span>
+                <span class="metric-pill">Monogram: Design 2 Tight</span>
+                <span class="metric-pill">Descriptor: 8.5px Chrome 3D</span>
+                <span class="metric-pill" style="color: #F26B21;">Wordmark: #F26B21 Glossy Asset</span>
+              </div>
+              <button class="copy-btn" onclick="copyGlossyLockupSnippet(24, '35.5px', '8.5px')">Copy Glossy CSS</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- LOCKUP SIZE TIER: 20px (TOTAL FLUSH HEIGHT: 29.5px) -->
+      <div class="size-comparison-row lockup-size-row" data-lockup-tier="compact">
+        <div class="row-meta-header">
+          <div class="size-pill-group">
+            <span class="size-badge-large">20px Wordmark</span>
+            <span class="usage-badge">Dense Grid / Mobile Top Bar</span>
+            <span class="weight-tag">Flush Height: 29.5px</span>
+            <span class="weight-tag">INTERCHAIN: 7.2px (Silver 3D)</span>
+            <span class="weight-tag" style="color: #00FF22; border-color: rgba(0,255,34,0.3); font-weight: 700;">Top &amp; Bottom: 100% Flush</span>
+          </div>
+          <span class="meta-badge">Mobile responsive top bar, high-density telemetry strip</span>
+        </div>
+        <div class="row-dual-grid show-lockup-guides" id="lockup-grid-20">
+          <!-- Left: #FF5C00 Solid Vector Lockup -->
+          <div class="font-sample-card approved-card">
+            <div class="card-top-info">
+              <span class="card-font-name">
+                <span class="card-font-indicator"></span>
+                APPROVED: Official Brand Lockup (20px &bull; #FF5C00 Solid)
+              </span>
+              <span class="metric-pill" style="color: #FF5C00; border-color: rgba(255,92,0,0.4); font-weight: 800;">#FF5C00 SOLID LOCKUP</span>
+            </div>
+            <div class="lockup-stage-wrap">
+              <div class="lockup-brand-flush lockup-tier-20">
+                <img src="Monogram/monogram-approved-tight.png" 
+                     alt="Leadirftex Approved Monogram" 
+                     class="lockup-mono-tight"
+                     title="Approved Design 2 Monogram">
+                <div class="lockup-text-stack">
+                  <span class="wordmark-3d size-20 wordmark-label">Leadirftex</span>
+                  <span class="interchain-silver-3d">INTERCHAIN</span>
+                </div>
+              </div>
+            </div>
+            <div class="card-metrics-footer">
+              <div class="metrics-group">
+                <span class="metric-pill">Flush Bounding: 29.5px</span>
+                <span class="metric-pill">Monogram: Design 2 Tight</span>
+                <span class="metric-pill">Descriptor: 7.2px Chrome 3D</span>
+                <span class="metric-pill" style="color: #FF5C00;">Wordmark: #FF5C00 Solid</span>
+              </div>
+              <button class="copy-btn" onclick="copyFlushLockupSnippet(2, 20, '29.5px', '7.2px')">Copy Lockup CSS</button>
+            </div>
+          </div>
+
+          <!-- Right: #F26B21 Glossy 3D Lockup -->
+          <div class="font-sample-card approved-card" style="border-color: rgba(242, 107, 33, 0.4); box-shadow: 0 4px 20px rgba(242, 107, 33, 0.1);">
+            <div class="card-top-info">
+              <span class="card-font-name" style="color: #F26B21;">
+                <span class="card-font-indicator" style="background: #F26B21; box-shadow: 0 0 10px rgba(242, 107, 33, 0.6);"></span>
+                OFFICIAL LOCKUP: Rendered Glossy Lockup (20px &bull; #F26B21 Glossy)
+              </span>
+              <span class="metric-pill" style="color: #F26B21; border-color: rgba(242, 107, 33, 0.4); font-weight: 800;">#F26B21 GLOSSY LOCKUP</span>
+            </div>
+            <div class="lockup-stage-wrap">
+              <div class="lockup-brand-flush lockup-tier-20">
+                <img src="Monogram/monogram-approved-tight.png" 
+                     alt="Leadirftex Approved Monogram" 
+                     class="lockup-mono-tight"
+                     title="Approved Design 2 Monogram">
+                <div class="lockup-text-stack">
+                  <img src="assets/mockup/leadirftex_glossy_approved_master.png?v=clean3" 
+                       class="lockup-wm-img" 
+                       alt="Leadirftex Glossy Wordmark (#F26B21)">
+                  <span class="interchain-silver-3d">INTERCHAIN</span>
+                </div>
+              </div>
+            </div>
+            <div class="card-metrics-footer">
+              <div class="metrics-group">
+                <span class="metric-pill">Flush Bounding: 29.5px</span>
+                <span class="metric-pill">Monogram: Design 2 Tight</span>
+                <span class="metric-pill">Descriptor: 7.2px Chrome 3D</span>
+                <span class="metric-pill" style="color: #F26B21;">Wordmark: #F26B21 Glossy Asset</span>
+              </div>
+              <button class="copy-btn" onclick="copyGlossyLockupSnippet(20, '29.5px', '7.2px')">Copy Glossy CSS</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- LOCKUP SIZE TIER: 18px (TOTAL FLUSH HEIGHT: 26.5px) -->
+      <div class="size-comparison-row lockup-size-row" data-lockup-tier="compact">
+        <div class="row-meta-header">
+          <div class="size-pill-group">
+            <span class="size-badge-large">18px Wordmark</span>
+            <span class="usage-badge">Micro Badge / Copyright Footer</span>
+            <span class="weight-tag">Flush Height: 26.5px</span>
+            <span class="weight-tag">INTERCHAIN: 6.5px (Silver 3D)</span>
+            <span class="weight-tag" style="color: #00FF22; border-color: rgba(0,255,34,0.3); font-weight: 700;">Top &amp; Bottom: 100% Flush</span>
+          </div>
+          <span class="meta-badge">Micro status pill, copyright stamp, sub-pixel badge</span>
+        </div>
+        <div class="row-dual-grid show-lockup-guides" id="lockup-grid-18">
+          <!-- Left: #FF5C00 Solid Vector Lockup -->
+          <div class="font-sample-card approved-card">
+            <div class="card-top-info">
+              <span class="card-font-name">
+                <span class="card-font-indicator"></span>
+                APPROVED: Official Brand Lockup (18px &bull; #FF5C00 Solid)
+              </span>
+              <span class="metric-pill" style="color: #FF5C00; border-color: rgba(255,92,0,0.4); font-weight: 800;">#FF5C00 SOLID LOCKUP</span>
+            </div>
+            <div class="lockup-stage-wrap">
+              <div class="lockup-brand-flush lockup-tier-18">
+                <img src="Monogram/monogram-approved-tight.png" 
+                     alt="Leadirftex Approved Monogram" 
+                     class="lockup-mono-tight"
+                     title="Approved Design 2 Monogram">
+                <div class="lockup-text-stack">
+                  <span class="wordmark-3d size-18 wordmark-label">Leadirftex</span>
+                  <span class="interchain-silver-3d">INTERCHAIN</span>
+                </div>
+              </div>
+            </div>
+            <div class="card-metrics-footer">
+              <div class="metrics-group">
+                <span class="metric-pill">Flush Bounding: 26.5px</span>
+                <span class="metric-pill">Monogram: Design 2 Tight</span>
+                <span class="metric-pill">Descriptor: 6.5px Chrome 3D</span>
+                <span class="metric-pill" style="color: #FF5C00;">Wordmark: #FF5C00 Solid</span>
+              </div>
+              <button class="copy-btn" onclick="copyFlushLockupSnippet(2, 18, '26.5px', '6.5px')">Copy Lockup CSS</button>
+            </div>
+          </div>
+
+          <!-- Right: #F26B21 Glossy 3D Lockup -->
+          <div class="font-sample-card approved-card" style="border-color: rgba(242, 107, 33, 0.4); box-shadow: 0 4px 20px rgba(242, 107, 33, 0.1);">
+            <div class="card-top-info">
+              <span class="card-font-name" style="color: #F26B21;">
+                <span class="card-font-indicator" style="background: #F26B21; box-shadow: 0 0 10px rgba(242, 107, 33, 0.6);"></span>
+                OFFICIAL LOCKUP: Rendered Glossy Lockup (18px &bull; #F26B21 Glossy)
+              </span>
+              <span class="metric-pill" style="color: #F26B21; border-color: rgba(242, 107, 33, 0.4); font-weight: 800;">#F26B21 GLOSSY LOCKUP</span>
+            </div>
+            <div class="lockup-stage-wrap">
+              <div class="lockup-brand-flush lockup-tier-18">
+                <img src="Monogram/monogram-approved-tight.png" 
+                     alt="Leadirftex Approved Monogram" 
+                     class="lockup-mono-tight"
+                     title="Approved Design 2 Monogram">
+                <div class="lockup-text-stack">
+                  <img src="assets/mockup/leadirftex_glossy_approved_master.png?v=clean3" 
+                       class="lockup-wm-img" 
+                       alt="Leadirftex Glossy Wordmark (#F26B21)">
+                  <span class="interchain-silver-3d">INTERCHAIN</span>
+                </div>
+              </div>
+            </div>
+            <div class="card-metrics-footer">
+              <div class="metrics-group">
+                <span class="metric-pill">Flush Bounding: 26.5px</span>
+                <span class="metric-pill">Monogram: Design 2 Tight</span>
+                <span class="metric-pill">Descriptor: 6.5px Chrome 3D</span>
+                <span class="metric-pill" style="color: #F26B21;">Wordmark: #F26B21 Glossy Asset</span>
+              </div>
+              <button class="copy-btn" onclick="copyGlossyLockupSnippet(18, '26.5px', '6.5px')">Copy Glossy CSS</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- SECTION 4: LIVE LEADIRFTEX HEADER SIMULATION -->
+    <div id="live-header-showcase-anchor"></div>
+    <section class="live-header-showcase">
+      <div class="section-header-block" style="border-bottom-color: rgba(255,255,255,0.15);">
+        <div>
+          <h2 class="section-title">
+            <span>🖥️</span> Live Leadirftex Header Context Simulation
+          </h2>
+          <p class="section-desc">
+            Exact production navigation bar environment showcasing the <strong>Approved Brand Lockup</strong> across executive dark carbon and polished brushed steel interfaces.
+          </p>
+        </div>
+        <span class="cyber-badge">
+          <span class="cyber-pulse-dot"></span> Full Header Preview
+        </span>
+      </div>
+
+      <!-- Header Simulation 1: Dark Carbon Steel (#FF5C00) -->
+      <div class="live-header-box">
+        <div class="header-box-label">
+          <div class="header-box-title">
+            <span class="card-font-indicator"></span>
+            <strong>Executive Dark Carbon Navbar:</strong> Approved Lockup in Production Header <span style="color: #FF5C00; font-weight: 800;">(#FF5C00 Solid Finish)</span>
+          </div>
+          <span class="metric-pill">Desktop Header Standard (44px Lockup &bull; #FF5C00)</span>
+        </div>
+
+        <div class="simulated-site-header">
+          <div class="lockup-brand-flush lockup-tier-32" style="cursor: pointer;">
+            <img src="Monogram/monogram-approved-tight.png" class="lockup-mono-tight" alt="Approved Monogram">
+            <div class="lockup-text-stack">
+              <span class="wordmark-3d size-32 sim-header-label">Leadirftex</span>
+              <span class="interchain-silver-3d">INTERCHAIN</span>
+            </div>
+          </div>
+
+          <nav class="simulated-nav-strip">
+            <div class="sim-nav-btn active">
+              <span class="sim-nav-icon">🏠</span>
+              <span>Home</span>
+            </div>
+            <div class="sim-nav-btn">
+              <span class="sim-nav-icon">📊</span>
+              <span>Executive</span>
+            </div>
+            <div class="sim-nav-btn">
+              <span class="sim-nav-icon">🏭</span>
+              <span>Floor Hub</span>
+            </div>
+            <div class="sim-nav-btn">
+              <span class="sim-nav-icon">🧠</span>
+              <span>LX AI</span>
+            </div>
+            <div class="sim-nav-btn">
+              <span class="sim-nav-icon">⚡</span>
+              <span>RFQ Matrix</span>
+            </div>
+          </nav>
+        </div>
+      </div>
+
+      <!-- Header Simulation 2: Polished Brushed Steel (#FF5C00) -->
+      <div class="live-header-box">
+        <div class="header-box-label">
+          <div class="header-box-title">
+            <span class="card-font-indicator"></span>
+            <strong>Polished Brushed Steel Navbar:</strong> Approved Lockup in High-Contrast Header <span style="color: #FF5C00; font-weight: 800;">(#FF5C00 Solid Finish)</span>
+          </div>
+          <span class="metric-pill">Brushed Steel Surface (#FF5C00)</span>
+        </div>
+
+        <div class="simulated-site-header steel-variant">
+          <div class="lockup-brand-flush lockup-tier-32" style="cursor: pointer;">
+            <img src="Monogram/monogram-approved-tight.png" class="lockup-mono-tight" alt="Approved Monogram">
+            <div class="lockup-text-stack">
+              <span class="wordmark-3d size-32 sim-header-label">Leadirftex</span>
+              <span class="interchain-silver-3d">INTERCHAIN</span>
+            </div>
+          </div>
+
+          <nav class="simulated-nav-strip">
+            <div class="sim-nav-btn active">
+              <span class="sim-nav-icon">🏠</span>
+              <span>Home</span>
+            </div>
+            <div class="sim-nav-btn">
+              <span class="sim-nav-icon">📊</span>
+              <span>Executive</span>
+            </div>
+            <div class="sim-nav-btn">
+              <span class="sim-nav-icon">🏭</span>
+              <span>Floor Hub</span>
+            </div>
+            <div class="sim-nav-btn">
+              <span class="sim-nav-icon">🧠</span>
+              <span>LX AI</span>
+            </div>
+            <div class="sim-nav-btn">
+              <span class="sim-nav-icon">⚡</span>
+              <span>RFQ Matrix</span>
+            </div>
+          </nav>
+        </div>
+      </div>
+
+      <!-- Header Simulation 3: Executive Dark Carbon (#F26B21 Glossy Wordmark) -->
+      <div class="live-header-box" style="border-color: rgba(242, 107, 33, 0.35);">
+        <div class="header-box-label">
+          <div class="header-box-title">
+            <span class="card-font-indicator" style="background: #F26B21; box-shadow: 0 0 10px rgba(242, 107, 33, 0.6);"></span>
+            <strong>Executive Dark Carbon Navbar:</strong> Approved Lockup in Production Header <span style="color: #F26B21; font-weight: 800;">(#F26B21 Glossy Finish)</span>
+          </div>
+          <span class="metric-pill" style="border-color: rgba(242, 107, 33, 0.4); color: #F26B21;">Desktop Header Standard (32px Wordmark &bull; #F26B21)</span>
+        </div>
+
+        <div class="simulated-site-header">
+          <div class="lockup-brand-flush lockup-tier-32" style="cursor: pointer;">
+            <img src="Monogram/monogram-approved-tight.png" class="lockup-mono-tight" alt="Approved Monogram">
+            <div class="lockup-text-stack">
+              <img src="assets/mockup/leadirftex_glossy_approved_master.png?v=clean3" class="lockup-wm-img" style="height: 31px; width: auto; object-fit: contain; display: block; margin-top: 0; filter: none;" alt="Leadirftex Glossy Wordmark (#F26B21)">
+              <span class="interchain-silver-3d">INTERCHAIN</span>
+            </div>
+          </div>
+
+          <nav class="simulated-nav-strip">
+            <div class="sim-nav-btn active" style="background: rgba(242, 107, 33, 0.18); border-color: #F26B21; color: #F26B21;">
+              <span class="sim-nav-icon">🏠</span>
+              <span>Home</span>
+            </div>
+            <div class="sim-nav-btn">
+              <span class="sim-nav-icon">📊</span>
+              <span>Executive</span>
+            </div>
+            <div class="sim-nav-btn">
+              <span class="sim-nav-icon">🏭</span>
+              <span>Floor Hub</span>
+            </div>
+            <div class="sim-nav-btn">
+              <span class="sim-nav-icon">🧠</span>
+              <span>LX AI</span>
+            </div>
+            <div class="sim-nav-btn">
+              <span class="sim-nav-icon">⚡</span>
+              <span>RFQ Matrix</span>
+            </div>
+          </nav>
+        </div>
+      </div>
+
+      <!-- Header Simulation 4: Polished Brushed Steel (#F26B21 Glossy Wordmark) -->
+      <div class="live-header-box" style="border-color: rgba(242, 107, 33, 0.35);">
+        <div class="header-box-label">
+          <div class="header-box-title">
+            <span class="card-font-indicator" style="background: #F26B21; box-shadow: 0 0 10px rgba(242, 107, 33, 0.6);"></span>
+            <strong>Polished Brushed Steel Navbar:</strong> Approved Lockup in High-Contrast Header <span style="color: #F26B21; font-weight: 800;">(#F26B21 Glossy Finish)</span>
+          </div>
+          <span class="metric-pill" style="border-color: rgba(242, 107, 33, 0.4); color: #F26B21;">Brushed Steel Surface (32px Wordmark &bull; #F26B21)</span>
+        </div>
+
+        <div class="simulated-site-header steel-variant">
+          <div class="lockup-brand-flush lockup-tier-32" style="cursor: pointer;">
+            <img src="Monogram/monogram-approved-tight.png" class="lockup-mono-tight" alt="Approved Monogram">
+            <div class="lockup-text-stack">
+              <img src="assets/mockup/leadirftex_glossy_approved_master.png?v=clean3" class="lockup-wm-img" style="height: 31px; width: auto; object-fit: contain; display: block; margin-top: 0; filter: none;" alt="Leadirftex Glossy Wordmark (#F26B21)">
+              <span class="interchain-silver-3d">INTERCHAIN</span>
+            </div>
+          </div>
+
+          <nav class="simulated-nav-strip">
+            <div class="sim-nav-btn active" style="background: #F26B21; border-color: #F26B21; color: #FFFFFF;">
+              <span class="sim-nav-icon">🏠</span>
+              <span>Home</span>
+            </div>
+            <div class="sim-nav-btn">
+              <span class="sim-nav-icon">📊</span>
+              <span>Executive</span>
+            </div>
+            <div class="sim-nav-btn">
+              <span class="sim-nav-icon">🏭</span>
+              <span>Floor Hub</span>
+            </div>
+            <div class="sim-nav-btn">
+              <span class="sim-nav-icon">🧠</span>
+              <span>LX AI</span>
+            </div>
+            <div class="sim-nav-btn">
+              <span class="sim-nav-icon">⚡</span>
+              <span>RFQ Matrix</span>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 5: APPROVED BRAND IDENTITY SPECIFICATION MATRIX -->
+    <div id="comparison-table-wrap-anchor"></div>
+    <section class="comparison-table-wrap">
+      <div class="section-header-block">
+        <div>
+          <h2 class="section-title">
+            <span>⚖️</span> Approved Brand Identity Technical Specification Matrix
+          </h2>
+          <p class="section-desc">
+            Complete technical specification and production parameters for the approved Leadirftex brand system.
+          </p>
+        </div>
+        <span class="meta-badge" style="color: #00FF22; border-color: rgba(0,255,34,0.4);">Official Design Standard</span>
+      </div>
+
+      <table class="comparison-table">
+        <thead>
+          <tr>
+            <th style="width: 25%;">Brand Asset Dimension</th>
+            <th style="width: 40%; color: #00FF22;">Approved Official Specification</th>
+            <th style="width: 35%; color: #94A3B8;">Production Implementation Notes</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="feature-name">Brand Wordmark Font</td>
+            <td style="color: #FF5C00; font-weight: 700;">Encode Sans (Weight: Black 900)</td>
+            <td>Google Fonts: 'Encode Sans:wght@900'</td>
+          </tr>
+          <tr>
+            <td class="feature-name">Front Face Color</td>
+            <td style="color: #FF5C00; font-weight: 700;">#FF5C00 (RGB: 255, 92, 0)</td>
+            <td>Strict brand orange front face mandate; 0 amber tokens</td>
+          </tr>
+          <tr>
+            <td class="feature-name">3D Physical Extrusion Wall</td>
+            <td>Multi-layer layered CSS text-shadow</td>
+            <td>Extrusion depths: #b83e00, #a33400, #8f2b00, #7a2200, #661900, #521200</td>
+          </tr>
+          <tr>
+            <td class="feature-name">Official Monogram</td>
+            <td style="color: #00FF22; font-weight: 700;">Design 2: Modern Smooth Beveled Triangle</td>
+            <td>Source: Monogram/monogram-approved-tight.png (tight 0px padding)</td>
+          </tr>
+          <tr>
+            <td class="feature-name">Monogram Color Scheme</td>
+            <td>Brand Orange #FF5C00 + Specular Chrome Silver 'X'</td>
+            <td>Metallic specular highlights with deep bevel shadows</td>
+          </tr>
+          <tr>
+            <td class="feature-name">Secondary Descriptor ("INTERCHAIN")</td>
+            <td style="color: #E2E8F0; font-weight: 700;">Metallic Silver Glossy 3D (Encode Sans 900)</td>
+            <td>Specular chrome gradient with subtle 3D drop-shadow</td>
+          </tr>
+          <tr>
+            <td class="feature-name">Lockup Alignment Geometry</td>
+            <td style="color: #00FF22; font-weight: 700;">100% Flush Top Apex &amp; Bottom Baseline Alignment</td>
+            <td>Monogram base and INTERCHAIN bottom terminate on identical horizontal line</td>
+          </tr>
+          <tr>
+            <td class="feature-name">Platform Sizing Coverage</td>
+            <td>7 Wordmark Tiers (48px to 18px) | 8 Monogram Tiers (128px to 16px)</td>
+            <td>Calibrated for Hero, Desktop Navigation, Modals, Mobile, Favicons</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+  </div>
+
+  <script>
+    function measureWordmarks() {
+      const sizes = [48, 36, 32, 28, 24, 20, 18];
+      sizes.forEach(size => {
+        const elEncode = document.getElementById(`wm-encode-${size}`);
+        const metricEncode = document.getElementById(`metric-w-encode-${size}`);
+
+        if (elEncode && metricEncode) {
+          const w = Math.round(elEncode.getBoundingClientRect().width);
+          metricEncode.textContent = `Width: ${w}px`;
+        }
+      });
+    }
+
+    function setMockupTheme(theme) {
+      document.body.classList.remove('theme-teal', 'theme-steel', 'theme-dark', 'theme-slate', 'theme-light', 'theme-silver');
+      document.body.classList.add(`theme-${theme}`);
+      
+      document.querySelectorAll('.theme-toggle-btn').forEach(b => {
+        if (b.id.startsWith('btn-theme-')) b.classList.remove('active');
+      });
+      const activeBtn = document.getElementById(`btn-theme-${theme}`);
+      if (activeBtn) activeBtn.classList.add('active');
+    }
+
+    function updateWordmarkText(val) {
+      const textToDisplay = val.trim() === '' ? 'Leadirftex' : val;
+      document.querySelectorAll('.wordmark-label').forEach(el => {
+        el.textContent = textToDisplay;
+      });
+      document.querySelectorAll('.sim-header-label').forEach(el => {
+        el.textContent = textToDisplay;
+      });
+      setTimeout(measureWordmarks, 50);
+    }
+
+    let isUpperCase = false;
+    function toggleTextCase() {
+      const input = document.getElementById('custom-wordmark-input');
+      if (isUpperCase) {
+        input.value = 'Leadirftex';
+        isUpperCase = false;
+      } else {
+        input.value = 'LEADIRFTEX';
+        isUpperCase = true;
+      }
+      updateWordmarkText(input.value);
+    }
+
+    function toggleGuidelines() {
+      document.body.classList.toggle('has-guidelines');
+      const btn = document.getElementById('btn-toggle-guidelines');
+      if (document.body.classList.contains('has-guidelines')) {
+        btn.classList.add('active');
+      } else {
+        btn.classList.remove('active');
+      }
+    }
+
+    function setZoomScale(val) {
+      const scale = val / 100;
+      document.querySelectorAll('.wordmark-stage').forEach(stage => {
+        stage.style.transformOrigin = 'left center';
+        stage.style.transform = `scale(${scale})`;
+      });
+      document.getElementById('zoom-val').textContent = `${val}%`;
+      setTimeout(measureWordmarks, 50);
+    }
+
+    function setViewFilter(filter) {
+      document.querySelectorAll('.view-mode-tab').forEach(t => t.classList.remove('active'));
+      event.target.classList.add('active');
+
+      const rows = document.querySelectorAll('.size-comparison-row');
+      rows.forEach(row => {
+        const tier = row.getAttribute('data-tier');
+        if (!tier) return;
+        if (filter === 'all') {
+          row.style.display = 'block';
+        } else if (filter === 'header') {
+          row.style.display = (tier === 'header') ? 'block' : 'none';
+        } else if (filter === 'compact') {
+          row.style.display = (tier === 'compact') ? 'block' : 'none';
+        }
+      });
+      setTimeout(measureWordmarks, 50);
+    }
+
+    function copySnippet(fontFamily, size) {
+      const s = size / 48;
+      const css = `/* Leadirftex ${fontFamily} Exact 3D Physical Extruded Wordmark (${size}px) */
+font-family: '${fontFamily}', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+font-size: ${size}px;
+font-weight: 900;
+letter-spacing: -0.02em;
+line-height: 1.05;
+color: #FF5C00;
+text-shadow:
+  /* 1. Solid Extrusion Side & Bottom Wall */
+  ${(0.4*s).toFixed(1)}px ${(0.6*s).toFixed(1)}px 0 #b83e00,
+  ${(0.8*s).toFixed(1)}px ${(1.2*s).toFixed(1)}px 0 #a33400,
+  ${(1.2*s).toFixed(1)}px ${(1.8*s).toFixed(1)}px 0 #8f2b00,
+  ${(1.6*s).toFixed(1)}px ${(2.4*s).toFixed(1)}px 0 #7a2200,
+  ${(2.0*s).toFixed(1)}px ${(3.0*s).toFixed(1)}px 0 #661900,
+  ${(2.4*s).toFixed(1)}px ${(3.6*s).toFixed(1)}px 0 #521200,
+  /* 2. Deep Dark Contact Occlusion Shadow */
+  ${(2.8*s).toFixed(1)}px ${(4.4*s).toFixed(1)}px 1px rgba(15, 30, 42, 0.80),
+  ${(3.2*s).toFixed(1)}px ${(5.2*s).toFixed(1)}px 2px rgba(0, 0, 0, 0.60),
+  /* 3. Soft Ambient Ground Shadow */
+  ${(4*s).toFixed(1)}px ${(8*s).toFixed(1)}px 6px rgba(0, 0, 0, 0.45),
+  ${(6*s).toFixed(1)}px ${(13*s).toFixed(1)}px 14px rgba(0, 0, 0, 0.32),
+  ${(9*s).toFixed(1)}px ${(20*s).toFixed(1)}px 24px rgba(0, 0, 0, 0.20);
+white-space: nowrap !important;`;
+
+      navigator.clipboard.writeText(css).then(() => {
+        alert(`CSS snippet for ${fontFamily} (${size}px) copied to clipboard!`);
+      }).catch(() => {
+        prompt('Copy CSS snippet:', css);
+      });
+    }
+
+    function setMonogramBackdrop(mode) {
+      document.querySelectorAll('.theme-toggle-btn').forEach(b => {
+        if (b.id && b.id.startsWith('btn-mono-')) b.classList.remove('active');
+      });
+      const activeBtn = document.getElementById(`btn-mono-${mode}`);
+      if (activeBtn) activeBtn.classList.add('active');
+
+      document.querySelectorAll('.monogram-stage').forEach(stage => {
+        stage.classList.remove('checkered', 'dark-solid', 'clean-surface');
+        if (mode === 'checkered') stage.classList.add('checkered');
+        else if (mode === 'dark') stage.classList.add('dark-solid');
+        else if (mode === 'clean') stage.classList.add('clean-surface');
+      });
+    }
+
+    function setMonoSizeFilter(filter) {
+      document.querySelectorAll('#tab-mono-all, #tab-mono-display, #tab-mono-nav, #tab-mono-micro').forEach(t => t.classList.remove('active'));
+      const activeTab = document.getElementById(`tab-mono-${filter}`);
+      if (activeTab) activeTab.classList.add('active');
+
+      document.querySelectorAll('.mono-size-row').forEach(row => {
+        const tier = row.getAttribute('data-mono-tier');
+        if (filter === 'all' || tier === filter) {
+          row.style.display = 'block';
+        } else {
+          row.style.display = 'none';
+        }
+      });
+    }
+
+    function setLockupFilter(filter) {
+      document.querySelectorAll('#tab-lockup-all, #tab-lockup-hero, #tab-lockup-header, #tab-lockup-compact').forEach(t => t.classList.remove('active'));
+      const activeTab = document.getElementById(`tab-lockup-${filter}`);
+      if (activeTab) activeTab.classList.add('active');
+
+      document.querySelectorAll('.lockup-size-row').forEach(row => {
+        const tier = row.getAttribute('data-lockup-tier');
+        if (filter === 'all' || tier === filter) {
+          row.style.display = 'block';
+        } else {
+          row.style.display = 'none';
+        }
+      });
+    }
+
+    let lockupGuidesActive = true;
+    function toggleLockupGuides() {
+      lockupGuidesActive = !lockupGuidesActive;
+      const btn = document.getElementById('btn-toggle-lockup-guides');
+      const grids = document.querySelectorAll('.show-lockup-guides, .lockup-grid-hidden');
+      
+      grids.forEach(g => {
+        if (lockupGuidesActive) {
+          g.classList.add('show-lockup-guides');
+          g.classList.remove('lockup-grid-hidden');
+        } else {
+          g.classList.remove('show-lockup-guides');
+          g.classList.add('lockup-grid-hidden');
+        }
+      });
+
+      if (lockupGuidesActive) {
+        btn.classList.add('active');
+        btn.innerHTML = '<span>📐</span> Flush Align Guides (100% Top &amp; Bottom)';
+      } else {
+        btn.classList.remove('active');
+        btn.innerHTML = '<span>📐</span> Show Align Guides';
+      }
+    }
+
+    function copyFlushLockupSnippet(designNum, wmSize, totalHeight, descSize) {
+      const snippet = `/* Leadirftex Approved Brand Lockup (${wmSize}px Wordmark) */
+.leadirftex-brand-lockup {
+  display: inline-flex;
+  align-items: stretch;
+  height: ${totalHeight};
+  gap: 16px;
+  position: relative;
+}
+.leadirftex-brand-lockup .monogram {
+  height: 100%;
+  width: auto;
+  object-fit: contain;
+}
+.leadirftex-brand-lockup .text-stack {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+.leadirftex-brand-lockup .wordmark {
+  font-family: 'Encode Sans', sans-serif;
+  font-weight: 900;
+  font-size: ${wmSize}px;
+  line-height: 0.90;
+  color: #FF5C00;
+  margin-top: 0;
+}
+.leadirftex-brand-lockup .descriptor {
+  font-family: 'Encode Sans', sans-serif;
+  font-weight: 900;
+  font-size: ${descSize};
+  line-height: 0.85;
+  text-transform: uppercase;
+  letter-spacing: 0.20em;
+  background: linear-gradient(180deg, #FFFFFF 0%, #F8FAFC 18%, #E2E8F0 45%, #CBD5E1 70%, #94A3B8 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transform: translateY(3.5px);
+}`;
+
+      navigator.clipboard.writeText(snippet).then(() => {
+        alert(`Lockup CSS for Approved Design 2 + Encode Sans 900 (${wmSize}px) copied to clipboard!`);
+      }).catch(() => {
+        prompt('Copy Lockup CSS:', snippet);
+      });
+    }
+
+    function copyGlossyLockupSnippet(wmSize, totalHeight, descSize) {
+      const snippet = `/* Leadirftex Approved Glossy 3D Brand Lockup (${wmSize}px Wordmark) */
+.leadirftex-glossy-lockup {
+  display: inline-flex;
+  align-items: stretch;
+  height: ${totalHeight};
+  gap: 16px;
+  position: relative;
+}
+.leadirftex-glossy-lockup .monogram {
+  height: 100%;
+  width: auto;
+  object-fit: contain;
+}
+.leadirftex-glossy-lockup .text-stack {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+.leadirftex-glossy-lockup .wordmark-asset {
+  height: ${wmSize}px;
+  width: auto;
+  object-fit: contain;
+}
+.leadirftex-glossy-lockup .descriptor {
+  font-family: 'Encode Sans', sans-serif;
+  font-weight: 900;
+  font-size: ${descSize};
+  line-height: 0.85;
+  text-transform: uppercase;
+  letter-spacing: 0.20em;
+  background: linear-gradient(180deg, #FFFFFF 0%, #F8FAFC 18%, #E2E8F0 45%, #CBD5E1 70%, #94A3B8 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}`;
+      navigator.clipboard.writeText(snippet).then(() => {
+        alert(`Glossy 3D Lockup CSS (${wmSize}px) copied to clipboard!`);
+      }).catch(() => {
+        prompt('Copy Glossy Lockup CSS:', snippet);
+      });
+    }
+
+    window.addEventListener('load', () => {
+      document.fonts.ready.then(() => {
+        measureWordmarks();
+      });
+    });
+    window.addEventListener('resize', measureWordmarks);
+  </script>
+</body>
+</html>
