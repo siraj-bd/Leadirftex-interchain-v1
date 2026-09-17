@@ -24,3 +24,5 @@ __pycache__/
 *.bak.*
 *.0byte.bak
 scratch/
+_private_brand_vault/
+
