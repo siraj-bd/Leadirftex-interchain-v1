@@ -8687,6 +8687,201 @@
       --snake-ltx-color: 255, 92, 0;
     }
 
+
+    /* === SERIAL #047: QUICK-KANGAROO-13 SCISSOR-CROSS GEOMETRIC LENS BUTTON === */
+    /* Shared Stage Box */
+    .kangaroo-stage-box {
+      width: 100%;
+      min-height: 260px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 24px;
+      background: radial-gradient(circle at center, #0e1526 0%, #060913 100%);
+      border-radius: 10px;
+      position: relative;
+      overflow: hidden;
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      padding: 35px 20px;
+      box-sizing: border-box;
+    }
+
+    /* Variant A: Canonical Uiverse Scissor-Cross Button */
+    .kangaroo-btn {
+      line-height: 48px;
+      height: 48px;
+      text-align: center;
+      width: 240px;
+      cursor: pointer;
+      border-radius: 25px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+      font-size: 15px;
+      font-weight: bold;
+      color: #ffffff;
+      position: relative;
+      overflow: hidden;
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      outline: none;
+      border: none;
+      background-color: transparent;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0;
+    }
+    .kangaroo-btn span {
+      z-index: 2;
+      display: block;
+      position: relative;
+      letter-spacing: 1px;
+    }
+    .kangaroo-btn::before,
+    .kangaroo-btn::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+      transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+      border: 1px solid rgba(255, 255, 255, 0.25);
+      background-color: rgba(255, 255, 255, 0.08);
+      border-radius: 25px;
+      box-sizing: border-box;
+    }
+    .kangaroo-btn::before {
+      transform: rotate(0deg);
+    }
+    .kangaroo-btn::after {
+      transform: rotate(0deg);
+    }
+    .kangaroo-btn:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+    }
+    .kangaroo-btn:hover::before {
+      transform: rotate(-45deg);
+      background-color: rgba(255, 255, 255, 0);
+      border-color: #33cccc;
+    }
+    .kangaroo-btn:hover::after {
+      transform: rotate(45deg);
+      background-color: rgba(255, 255, 255, 0);
+      border-color: #33cccc;
+    }
+    .kangaroo-btn:active {
+      transform: translateY(-2px) scale(0.98);
+    }
+
+    /* Variant B: Leadirftex Cyber Scissor-Cross Quantum Lens Cluster */
+    .kangaroo-ltx-cluster {
+      display: flex;
+      gap: 24px;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .kangaroo-ltx-btn {
+      line-height: 48px;
+      height: 48px;
+      text-align: center;
+      width: 250px;
+      cursor: pointer;
+      border-radius: 25px;
+      background-color: #070B14;
+      color: #00FF22;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 1.2px;
+      text-transform: uppercase;
+      position: relative;
+      overflow: hidden;
+      border: 1px solid rgba(0, 255, 34, 0.3);
+      outline: none;
+      transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0;
+      box-shadow: 0 0 12px rgba(0, 255, 34, 0.15);
+    }
+    .kangaroo-ltx-btn span {
+      z-index: 2;
+      position: relative;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .kangaroo-ltx-btn::before,
+    .kangaroo-ltx-btn::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+      border-radius: 25px;
+      transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+      box-sizing: border-box;
+    }
+    .kangaroo-ltx-btn::before {
+      border: 1.5px solid #00FF22;
+      background-color: rgba(0, 255, 34, 0.08);
+      transform: rotate(0deg);
+    }
+    .kangaroo-ltx-btn::after {
+      border: 1.5px solid #FF5C00;
+      background-color: rgba(255, 92, 0, 0.08);
+      transform: rotate(0deg);
+    }
+    .kangaroo-ltx-btn:hover {
+      transform: translateY(-5px);
+      border-color: transparent;
+      box-shadow: 0 0 25px rgba(0, 255, 34, 0.45), 0 0 35px rgba(255, 92, 0, 0.3);
+    }
+    .kangaroo-ltx-btn:hover::before {
+      transform: rotate(-45deg);
+      background-color: transparent;
+      box-shadow: 0 0 15px rgba(0, 255, 34, 0.5);
+    }
+    .kangaroo-ltx-btn:hover::after {
+      transform: rotate(45deg);
+      background-color: transparent;
+      box-shadow: 0 0 15px rgba(255, 92, 0, 0.5);
+    }
+    .kangaroo-ltx-btn:active {
+      transform: translateY(-2px) scale(0.97);
+    }
+
+    /* Node 2: Interchain Orange & Cyan Lens */
+    .kangaroo-ltx-orange {
+      color: #FF5C00;
+      border-color: rgba(255, 92, 0, 0.3);
+      box-shadow: 0 0 12px rgba(255, 92, 0, 0.15);
+    }
+    .kangaroo-ltx-orange::before {
+      border-color: #FF5C00;
+      background-color: rgba(255, 92, 0, 0.08);
+    }
+    .kangaroo-ltx-orange::after {
+      border-color: #00F0FF;
+      background-color: rgba(0, 240, 255, 0.08);
+    }
+    .kangaroo-ltx-orange:hover {
+      box-shadow: 0 0 25px rgba(255, 92, 0, 0.45), 0 0 35px rgba(0, 240, 255, 0.3);
+    }
+    .kangaroo-ltx-orange:hover::before {
+      box-shadow: 0 0 15px rgba(255, 92, 0, 0.5);
+    }
+    .kangaroo-ltx-orange:hover::after {
+      box-shadow: 0 0 15px rgba(0, 240, 255, 0.5);
+    }
+
   </style>
 </head>
 <body>
@@ -12337,6 +12532,66 @@
 
       <div style="margin-top: 20px; padding-top: 14px; border-top: 1px solid rgba(255,255,255,0.06); display: flex; justify-content: space-between; align-items: center; font-size: 11.5px; color: #64748b;">
         <span>Category: <strong>Buttons / Monospace Neon Action Button with Rotating Chevron</strong></span>
+        <span style="color: #00FF22;">● Verified Production Ingestion</span>
+      </div>
+    </section>
+
+
+    <!-- SERIAL #047 -->
+    <section id="mockup-item-047" class="mockup-card">
+      <div class="mockup-header">
+        <div style="display: flex; align-items: center; gap: 10px;">
+          <span class="serial-badge">SERIAL #047</span>
+          <strong style="color: #ffffff; font-size: 16px;">Quick-Kangaroo-13 Scissor-Cross Geometric Lens Button</strong>
+          <span style="font-size: 11px; color: #64748b; font-family: monospace;">uiverse.io/himanshu9682/quick-kangaroo-13</span>
+        </div>
+        <a href="serial-list-mockup-design.html" style="color: var(--orange); font-size: 12px; text-decoration: none; font-weight: 600;">&larr; View Master Serial Index</a>
+      </div>
+
+      <div class="stage-view">
+        <!-- Variant A: Canonical Uiverse Scissor-Cross Button -->
+        <div class="stage-column">
+          <div class="stage-header">
+            <span class="stage-title">VARIANT A: UIVERSE CANONICAL SCISSOR CROSS</span>
+            <span class="stage-tag">ORIGINAL SPEC</span>
+          </div>
+          <div class="kangaroo-stage-box">
+            <button class="kangaroo-btn" aria-label="Hover Me">
+              <span>HOVER ME</span>
+            </button>
+            <div style="font-size: 11px; font-family: monospace; color: #64748b; text-align: center;">
+              ● Hover: translateY(-5px) &bull; ::before shears -45&deg; &bull; ::after shears 45&deg; cross-lens
+            </div>
+          </div>
+        </div>
+
+        <!-- Variant B: Leadirftex Cyber Scissor-Cross Quantum Lens Cluster -->
+        <div class="stage-column">
+          <div class="stage-header">
+            <span class="stage-title">VARIANT B: LEADIRFTEX CYBER QUANTUM LENS NODES</span>
+            <span class="stage-tag" style="background: rgba(0, 255, 34, 0.15); color: #00FF22; border-color: rgba(0, 255, 34, 0.4);">QUANTUM LENS</span>
+          </div>
+          <div class="kangaroo-stage-box" style="background: radial-gradient(circle at center, rgba(0, 255, 34, 0.04) 0%, #03050A 80%); border-color: rgba(0, 255, 34, 0.25);">
+            <div class="kangaroo-ltx-cluster">
+              <!-- Action Node 1 -->
+              <button class="kangaroo-ltx-btn" aria-label="Settlement Prover">
+                <span>⚡ SETTLE PROVER</span>
+              </button>
+
+              <!-- Action Node 2 -->
+              <button class="kangaroo-ltx-btn kangaroo-ltx-orange" aria-label="Consensus Route">
+                <span>◈ CONSENSUS ROUTE</span>
+              </button>
+            </div>
+            <div style="font-size: 11px; font-family: 'JetBrains Mono', monospace; color: #00FF22; opacity: 0.85; text-align: center; letter-spacing: 0.8px;">
+              ⚡ [ #00FF22 &amp; #FF5C00 DUAL 45&deg; SCISSOR SHIELDS &bull; ZERO YELLOW POLICY ]
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div style="margin-top: 20px; padding-top: 14px; border-top: 1px solid rgba(255,255,255,0.06); display: flex; justify-content: space-between; align-items: center; font-size: 11.5px; color: #64748b;">
+        <span>Category: <strong>Buttons / Scissor-Cross Geometric Lens Action Button</strong></span>
         <span style="color: #00FF22;">● Verified Production Ingestion</span>
       </div>
     </section>
