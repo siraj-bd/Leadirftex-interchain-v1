@@ -6576,6 +6576,163 @@
       color: rgba(255, 92, 0, 0.5);
     }
 
+
+    /* === SERIAL #035: CURVY-DUCK-95 CENTER-EXPANDING ACTION BUTTON === */
+    /* Shared Stage Box */
+    .duck-stage-box {
+      width: 100%;
+      min-height: 240px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      background: radial-gradient(circle at center, #0e1526 0%, #060913 100%);
+      border-radius: 10px;
+      position: relative;
+      overflow: hidden;
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      padding: 40px 15px;
+    }
+
+    /* Variant A: Canonical Uiverse Navy & Golden Center-Expanding Button */
+    .duck-btn {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 6px;
+      background: #183153;
+      font-family: "Montserrat", -apple-system, BlinkMacSystemFont, sans-serif;
+      box-shadow: 0px 6px 24px 0px rgba(0, 0, 0, 0.25);
+      overflow: hidden;
+      border: none;
+      cursor: pointer;
+      outline: none;
+      transition: all 0.3s ease;
+    }
+    .duck-btn::after {
+      content: " ";
+      width: 0%;
+      height: 100%;
+      background: #FFD401;
+      position: absolute;
+      transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 1;
+    }
+    .duck-btn:hover::after {
+      width: 100%;
+    }
+    .duck-btn .duck-span {
+      text-align: center;
+      width: 100%;
+      padding: 16px 28px;
+      color: #fff;
+      font-size: 15px;
+      font-weight: 700;
+      letter-spacing: 0.25em;
+      z-index: 2;
+      transition: all 0.3s ease-in-out;
+      display: block;
+    }
+    .duck-btn:hover .duck-span {
+      color: #183153;
+      animation: duck_scaleUp 0.3s ease-in-out;
+    }
+
+    @keyframes duck_scaleUp {
+      0% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(0.95);
+      }
+      100% {
+        transform: scale(1);
+      }
+    }
+
+    /* Variant B: Leadirftex Cyber Center-Expanding Quantum Action Nodes */
+    .duck-ltx-cluster {
+      display: flex;
+      align-items: center;
+      gap: 28px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .duck-ltx-btn {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 6px;
+      background: #070B14;
+      border: 1.5px solid #00FF22;
+      box-shadow: 0 0 16px rgba(0, 255, 34, 0.2);
+      overflow: hidden;
+      cursor: pointer;
+      outline: none;
+      transition: all 0.35s ease;
+    }
+    .duck-ltx-btn::after {
+      content: " ";
+      width: 0%;
+      height: 100%;
+      background: #00FF22;
+      position: absolute;
+      transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 1;
+    }
+    .duck-ltx-btn:hover {
+      box-shadow: 0 0 28px rgba(0, 255, 34, 0.55);
+      border-color: #00FF22;
+    }
+    .duck-ltx-btn:hover::after {
+      width: 100%;
+    }
+    .duck-ltx-span {
+      text-align: center;
+      padding: 15px 26px;
+      color: #00FF22;
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 0.2em;
+      font-family: 'JetBrains Mono', monospace;
+      text-transform: uppercase;
+      z-index: 2;
+      transition: all 0.3s ease-in-out;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .duck-ltx-btn:hover .duck-ltx-span {
+      color: #03050A;
+      animation: duck_scaleUp 0.3s ease-in-out;
+    }
+
+    /* Orange Secondary Deploy Node */
+    .duck-ltx-orange {
+      border-color: #FF5C00;
+      box-shadow: 0 0 16px rgba(255, 92, 0, 0.2);
+    }
+    .duck-ltx-orange::after {
+      background: #FF5C00;
+    }
+    .duck-ltx-orange:hover {
+      box-shadow: 0 0 28px rgba(255, 92, 0, 0.55);
+      border-color: #FF5C00;
+    }
+    .duck-ltx-orange .duck-ltx-span {
+      color: #FF5C00;
+    }
+    .duck-ltx-orange:hover .duck-ltx-span {
+      color: #03050A;
+    }
+
   </style>
 </head>
 <body>
@@ -9149,6 +9306,65 @@
 
       <div style="margin-top: 20px; padding-top: 14px; border-top: 1px solid rgba(255,255,255,0.06); display: flex; justify-content: space-between; align-items: center; font-size: 11.5px; color: #64748b;">
         <span>Category: <strong>UI Form Elements / Expanding Search Bubble Input</strong></span>
+        <span style="color: #00FF22;">● Verified Production Ingestion</span>
+      </div>
+    </section>
+
+    <!-- SERIAL #035 -->
+    <section id="mockup-item-035" class="mockup-card">
+      <div class="mockup-header">
+        <div style="display: flex; align-items: center; gap: 10px;">
+          <span class="serial-badge">SERIAL #035</span>
+          <strong style="color: #ffffff; font-size: 16px;">Curvy-Duck-95 Center-Expanding Action Button with Pulse Scale</strong>
+          <span style="font-size: 11px; color: #64748b; font-family: monospace;">uiverse.io/imPradhyumn/curvy-duck-95</span>
+        </div>
+        <a href="serial-list-mockup-design.html" style="color: var(--orange); font-size: 12px; text-decoration: none; font-weight: 600;">&larr; View Master Serial Index</a>
+      </div>
+
+      <div class="stage-view">
+        <!-- Variant A: Uiverse Canonical Navy & Golden Button -->
+        <div class="stage-column">
+          <div class="stage-header">
+            <span class="stage-title">VARIANT A: UIVERSE CANONICAL CENTER-EXPANDING BUTTON</span>
+            <span class="stage-tag">ORIGINAL SPEC</span>
+          </div>
+          <div class="duck-stage-box">
+            <button class="duck-btn" aria-label="Execute Button">
+              <span class="duck-span">BUTTON</span>
+            </button>
+            <div style="font-size: 11px; font-family: monospace; color: #64748b; margin-top: 20px;">
+              ● Hover: Golden fill sweeps out from center &bull; Text scales down and bounces
+            </div>
+          </div>
+        </div>
+
+        <!-- Variant B: Leadirftex Cyber Center-Expanding Quantum Action Nodes -->
+        <div class="stage-column">
+          <div class="stage-header">
+            <span class="stage-title">VARIANT B: LEADIRFTEX CYBER QUANTUM ACTION NODES</span>
+            <span class="stage-tag" style="background: rgba(0, 255, 34, 0.15); color: #00FF22; border-color: rgba(0, 255, 34, 0.4);">CYBER EXPAND</span>
+          </div>
+          <div class="duck-stage-box" style="background: radial-gradient(circle at center, rgba(0, 255, 34, 0.06) 0%, #03050A 80%); border-color: rgba(0, 255, 34, 0.25);">
+            <div class="duck-ltx-cluster">
+              <!-- Node 1: Cyber Neon Green Bridge Node -->
+              <button class="duck-ltx-btn" aria-label="Initiate Bridge">
+                <span class="duck-ltx-span">INITIATE BRIDGE</span>
+              </button>
+
+              <!-- Node 2: Interchain Orange Deploy Node -->
+              <button class="duck-ltx-btn duck-ltx-orange" aria-label="Deploy Contract">
+                <span class="duck-ltx-span">DEPLOY CONTRACT</span>
+              </button>
+            </div>
+            <div style="font-size: 11px; font-family: 'JetBrains Mono', monospace; color: #00FF22; opacity: 0.85; margin-top: 20px; letter-spacing: 0.8px;">
+              ⚡ [ HOVER NODE: NEON / ORANGE SHIELD EXPANDS FROM CENTER WITH SCALE PULSE ]
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div style="margin-top: 20px; padding-top: 14px; border-top: 1px solid rgba(255,255,255,0.06); display: flex; justify-content: space-between; align-items: center; font-size: 11.5px; color: #64748b;">
+        <span>Category: <strong>Buttons / Center-Expanding Action Button with Pulse Scale</strong></span>
         <span style="color: #00FF22;">● Verified Production Ingestion</span>
       </div>
     </section>
