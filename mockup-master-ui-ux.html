@@ -8882,6 +8882,207 @@
       box-shadow: 0 0 15px rgba(0, 240, 255, 0.5);
     }
 
+
+    /* === SERIAL #048: BAD-MOOSE-58 DUAL-ORB BLUR AURA ACTION BUTTON === */
+    /* Shared Stage Box */
+    .moose-stage-box {
+      width: 100%;
+      min-height: 260px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 24px;
+      background: radial-gradient(circle at center, #0e1526 0%, #060913 100%);
+      border-radius: 10px;
+      position: relative;
+      overflow: hidden;
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      padding: 35px 20px;
+      box-sizing: border-box;
+    }
+
+    /* Variant A: Canonical Uiverse Dual-Orb Blur Button */
+    .moose-btn {
+      position: relative;
+      background-color: #0f172a;
+      height: 64px;
+      width: 256px;
+      border: 2px solid #0d9488;
+      color: #ffffff;
+      font-size: 16px;
+      font-weight: 700;
+      border-radius: 12px;
+      overflow: hidden;
+      cursor: pointer;
+      outline: none;
+      padding: 12px 20px;
+      text-align: left;
+      display: inline-flex;
+      align-items: center;
+      justify-content: flex-start;
+      transition: all 500ms cubic-bezier(0.23, 1, 0.32, 1);
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    }
+    .moose-btn span {
+      position: relative;
+      z-index: 20;
+      transition: color 500ms ease;
+    }
+    .moose-btn::before {
+      content: "";
+      position: absolute;
+      width: 40px;
+      height: 40px;
+      right: 8px;
+      top: 8px;
+      z-index: 10;
+      background-color: #6366f1;
+      border-radius: 9999px;
+      filter: blur(16px);
+      transition: all 500ms cubic-bezier(0.23, 1, 0.32, 1);
+      pointer-events: none;
+    }
+    .moose-btn::after {
+      content: "";
+      position: absolute;
+      z-index: 10;
+      width: 64px;
+      height: 64px;
+      background-color: #2dd4bf;
+      right: 24px;
+      top: 16px;
+      border-radius: 9999px;
+      filter: blur(16px);
+      transition: all 500ms cubic-bezier(0.23, 1, 0.32, 1);
+      pointer-events: none;
+    }
+    .moose-btn:hover {
+      transform: scale(1.05);
+      border-color: #34d399;
+      color: #6ee7b7;
+      box-shadow: 0 8px 24px rgba(45, 212, 191, 0.25);
+    }
+    .moose-btn:hover::before {
+      right: 40px;
+      top: auto;
+      bottom: -16px;
+      filter: blur(8px);
+    }
+    .moose-btn:hover::after {
+      right: -24px;
+      transform: scale(1.15);
+    }
+    .moose-btn:active {
+      transform: scale(0.98);
+    }
+
+    /* Variant B: Leadirftex Cyber Dual-Orb Quantum Reactor Cluster */
+    .moose-ltx-cluster {
+      display: flex;
+      gap: 24px;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .moose-ltx-btn {
+      position: relative;
+      background-color: #070B14;
+      height: 64px;
+      width: 260px;
+      border: 2px solid rgba(0, 255, 34, 0.45);
+      color: #00FF22;
+      font-size: 13px;
+      font-weight: 800;
+      font-family: 'JetBrains Mono', monospace;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      border-radius: 12px;
+      overflow: hidden;
+      cursor: pointer;
+      outline: none;
+      padding: 12px 22px;
+      text-align: left;
+      display: inline-flex;
+      align-items: center;
+      justify-content: flex-start;
+      transition: all 500ms cubic-bezier(0.23, 1, 0.32, 1);
+      box-shadow: 0 0 15px rgba(0, 255, 34, 0.15);
+    }
+    .moose-ltx-btn span {
+      position: relative;
+      z-index: 20;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      transition: all 500ms ease;
+    }
+    .moose-ltx-btn::before {
+      content: "";
+      position: absolute;
+      width: 42px;
+      height: 42px;
+      right: 10px;
+      top: 10px;
+      z-index: 10;
+      background-color: #FF5C00;
+      border-radius: 9999px;
+      filter: blur(14px);
+      transition: all 500ms cubic-bezier(0.23, 1, 0.32, 1);
+      pointer-events: none;
+    }
+    .moose-ltx-btn::after {
+      content: "";
+      position: absolute;
+      z-index: 10;
+      width: 68px;
+      height: 68px;
+      background-color: #00FF22;
+      right: 26px;
+      top: 14px;
+      border-radius: 9999px;
+      filter: blur(16px);
+      transition: all 500ms cubic-bezier(0.23, 1, 0.32, 1);
+      pointer-events: none;
+    }
+    .moose-ltx-btn:hover {
+      transform: scale(1.05);
+      border-color: #00FF22;
+      color: #ffffff;
+      box-shadow: 0 0 25px rgba(0, 255, 34, 0.45), 0 0 35px rgba(255, 92, 0, 0.3);
+    }
+    .moose-ltx-btn:hover::before {
+      right: 44px;
+      top: auto;
+      bottom: -16px;
+      filter: blur(10px);
+    }
+    .moose-ltx-btn:hover::after {
+      right: -20px;
+      transform: scale(1.2);
+    }
+    .moose-ltx-btn:active {
+      transform: scale(0.98);
+    }
+
+    /* Node 2: Interchain Orange & Cyan Reactor */
+    .moose-ltx-orange {
+      border-color: rgba(255, 92, 0, 0.45);
+      color: #FF5C00;
+      box-shadow: 0 0 15px rgba(255, 92, 0, 0.15);
+    }
+    .moose-ltx-orange::before {
+      background-color: #00FF22;
+    }
+    .moose-ltx-orange::after {
+      background-color: #FF5C00;
+    }
+    .moose-ltx-orange:hover {
+      border-color: #FF5C00;
+      color: #ffffff;
+      box-shadow: 0 0 25px rgba(255, 92, 0, 0.5), 0 0 35px rgba(0, 255, 34, 0.3);
+    }
+
   </style>
 </head>
 <body>
@@ -12592,6 +12793,66 @@
 
       <div style="margin-top: 20px; padding-top: 14px; border-top: 1px solid rgba(255,255,255,0.06); display: flex; justify-content: space-between; align-items: center; font-size: 11.5px; color: #64748b;">
         <span>Category: <strong>Buttons / Scissor-Cross Geometric Lens Action Button</strong></span>
+        <span style="color: #00FF22;">● Verified Production Ingestion</span>
+      </div>
+    </section>
+
+
+    <!-- SERIAL #048 -->
+    <section id="mockup-item-048" class="mockup-card">
+      <div class="mockup-header">
+        <div style="display: flex; align-items: center; gap: 10px;">
+          <span class="serial-badge">SERIAL #048</span>
+          <strong style="color: #ffffff; font-size: 16px;">Bad-Moose-58 Dual-Orb Blur Aura Action Button</strong>
+          <span style="font-size: 11px; color: #64748b; font-family: monospace;">uiverse.io/S4tyendra/bad-moose-58</span>
+        </div>
+        <a href="serial-list-mockup-design.html" style="color: var(--orange); font-size: 12px; text-decoration: none; font-weight: 600;">&larr; View Master Serial Index</a>
+      </div>
+
+      <div class="stage-view">
+        <!-- Variant A: Canonical Uiverse Dual-Orb Blur Button -->
+        <div class="stage-column">
+          <div class="stage-header">
+            <span class="stage-title">VARIANT A: UIVERSE CANONICAL DUAL-ORB BUTTON</span>
+            <span class="stage-tag">ORIGINAL SPEC</span>
+          </div>
+          <div class="moose-stage-box">
+            <button class="moose-btn" aria-label="Explore More">
+              <span>Explore More &rarr;</span>
+            </button>
+            <div style="font-size: 11px; font-family: monospace; color: #64748b; text-align: center;">
+              ● Hover: scale(1.05) &bull; Indigo &amp; teal blurred orbs shift position dynamically
+            </div>
+          </div>
+        </div>
+
+        <!-- Variant B: Leadirftex Cyber Dual-Orb Quantum Reactor Cluster -->
+        <div class="stage-column">
+          <div class="stage-header">
+            <span class="stage-title">VARIANT B: LEADIRFTEX CYBER ORB REACTOR NODES</span>
+            <span class="stage-tag" style="background: rgba(0, 255, 34, 0.15); color: #00FF22; border-color: rgba(0, 255, 34, 0.4);">ORB REACTOR</span>
+          </div>
+          <div class="moose-stage-box" style="background: radial-gradient(circle at center, rgba(0, 255, 34, 0.04) 0%, #03050A 80%); border-color: rgba(0, 255, 34, 0.25);">
+            <div class="moose-ltx-cluster">
+              <!-- Action Node 1 -->
+              <button class="moose-ltx-btn" aria-label="Explore Settlement">
+                <span>⚡ SETTLE NETWORK &rarr;</span>
+              </button>
+
+              <!-- Action Node 2 -->
+              <button class="moose-ltx-btn moose-ltx-orange" aria-label="Explore Relayer">
+                <span>◈ IBC CONSENSUS &rarr;</span>
+              </button>
+            </div>
+            <div style="font-size: 11px; font-family: 'JetBrains Mono', monospace; color: #00FF22; opacity: 0.85; text-align: center; letter-spacing: 0.8px;">
+              ⚡ [ #00FF22 &bull; #FF5C00 DUAL BLUR ORBS &bull; SCALE(1.05) &bull; ZERO YELLOW ]
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div style="margin-top: 20px; padding-top: 14px; border-top: 1px solid rgba(255,255,255,0.06); display: flex; justify-content: space-between; align-items: center; font-size: 11.5px; color: #64748b;">
+        <span>Category: <strong>Buttons / Dual-Orb Blur Aura Action Button</strong></span>
         <span style="color: #00FF22;">● Verified Production Ingestion</span>
       </div>
     </section>
