@@ -5221,6 +5221,180 @@
       border-color: transparent;
       box-shadow: none;
     }
+
+    /* === SERIAL #028: GRUMPY-BOBCAT-52 SLIDING TRAY DOWNLOAD BUTTON === */
+    /* Shared Stage Box */
+    .bobcat-stage-box {
+      width: 100%;
+      min-height: 240px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      background: radial-gradient(circle at center, #0e1526 0%, #060913 100%);
+      border-radius: 10px;
+      position: relative;
+      overflow: visible;
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      padding: 40px 15px;
+    }
+
+    /* Variant A: Canonical Uiverse White & Green Sliding Tray Button */
+    .bobcat-btn {
+      position: relative;
+      border-width: 0;
+      color: rgb(19, 19, 19);
+      font-size: 15px;
+      font-weight: 600;
+      border-radius: 6px;
+      z-index: 1;
+      background: transparent;
+      padding: 0;
+      cursor: pointer;
+      outline: none;
+      transition: all 0.4s ease;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    }
+    .bobcat-btn .bobcat-docs {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      min-height: 44px;
+      padding: 0 16px;
+      border-radius: 6px;
+      z-index: 2;
+      position: relative;
+      background-color: #ffffff;
+      border: solid 1px rgba(255, 255, 255, 0.2);
+      transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1);
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+      color: #111827;
+    }
+    .bobcat-btn:hover {
+      box-shadow: rgba(233, 233, 233, 0.3) 0px 30px 40px,
+        rgba(0, 0, 0, 0.2) 0px 4px 12px;
+    }
+    .bobcat-download {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      max-width: 88%;
+      margin: 0 auto;
+      z-index: 1;
+      border-radius: 0px 0px 6px 6px;
+      transform: translateY(0%);
+      background-color: #01e056;
+      border: solid 1px rgba(1, 224, 87, 0.3);
+      transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1);
+      cursor: pointer;
+      color: #03050A;
+      padding: 6px 0;
+    }
+    .bobcat-btn:hover .bobcat-download {
+      transform: translateY(100%);
+      box-shadow: 0 6px 18px rgba(1, 224, 86, 0.4);
+    }
+    .bobcat-download svg polyline,
+    .bobcat-download svg line {
+      animation: bobcat_anim 1s infinite;
+    }
+    @keyframes bobcat_anim {
+      0% { transform: translateY(0%); }
+      50% { transform: translateY(-15%); }
+      100% { transform: translateY(0%); }
+    }
+
+    /* Variant B: Leadirftex Cyber Quantum Whitepaper & Spec Tray */
+    .bobcat-ltx-cluster {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 24px;
+      flex-wrap: wrap;
+    }
+    .bobcat-ltx-btn {
+      position: relative;
+      border-width: 0;
+      border-radius: 6px;
+      z-index: 1;
+      background: transparent;
+      padding: 0;
+      cursor: pointer;
+      outline: none;
+      transition: all 0.4s ease;
+      font-family: 'JetBrains Mono', monospace;
+    }
+    .bobcat-ltx-btn .bobcat-ltx-docs {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      min-height: 44px;
+      padding: 0 16px;
+      border-radius: 6px;
+      z-index: 2;
+      position: relative;
+      background-color: rgba(7, 11, 20, 0.95);
+      border: 1.5px solid #00FF22;
+      transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1);
+      box-shadow: 0 0 18px rgba(0, 255, 34, 0.25);
+      color: #00FF22;
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 1px;
+    }
+    .bobcat-ltx-btn:hover .bobcat-ltx-docs {
+      border-color: #00FF22;
+      box-shadow: 0 0 25px rgba(0, 255, 34, 0.45);
+    }
+    .bobcat-ltx-download {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      max-width: 88%;
+      margin: 0 auto;
+      z-index: 1;
+      border-radius: 0px 0px 6px 6px;
+      transform: translateY(0%);
+      background-color: #00FF22;
+      border: 1px solid #00FF22;
+      transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1);
+      cursor: pointer;
+      color: #03050A;
+      padding: 6px 0;
+    }
+    .bobcat-ltx-btn:hover .bobcat-ltx-download {
+      transform: translateY(100%);
+      box-shadow: 0 8px 22px rgba(0, 255, 34, 0.6);
+    }
+    .bobcat-ltx-download svg polyline,
+    .bobcat-ltx-download svg line {
+      animation: bobcat_anim 0.9s infinite;
+      stroke: #03050A;
+    }
+    /* Orange Secondary Spec Tray */
+    .bobcat-ltx-orange .bobcat-ltx-docs {
+      border-color: #FF5C00;
+      color: #FF5C00;
+      box-shadow: 0 0 18px rgba(255, 92, 0, 0.25);
+    }
+    .bobcat-ltx-orange:hover .bobcat-ltx-docs {
+      border-color: #FF5C00;
+      box-shadow: 0 0 25px rgba(255, 92, 0, 0.45);
+    }
+    .bobcat-ltx-orange .bobcat-ltx-download {
+      background-color: #FF5C00;
+      border-color: #FF5C00;
+    }
+    .bobcat-ltx-orange:hover .bobcat-ltx-download {
+      box-shadow: 0 8px 22px rgba(255, 92, 0, 0.6);
+    }
   </style>
 </head>
 <body>
@@ -7111,6 +7285,108 @@
 
       <div style="margin-top: 20px; padding-top: 14px; border-top: 1px solid rgba(255,255,255,0.06); display: flex; justify-content: space-between; align-items: center; font-size: 11.5px; color: #64748b;">
         <span>Category: <strong>UI Form Elements / 360&deg; Spinning Expanding Search &amp; Query Bar</strong></span>
+        <span style="color: #00FF22;">● Verified Production Ingestion</span>
+      </div>
+    </section>
+
+    <!-- SERIAL #028 -->
+    <section id="mockup-item-028" class="mockup-card">
+      <div class="mockup-header">
+        <div style="display: flex; align-items: center; gap: 10px;">
+          <span class="serial-badge">SERIAL #028</span>
+          <strong style="color: #ffffff; font-size: 16px;">Grumpy-Bobcat-52 Sliding Tray Download Button</strong>
+          <span style="font-size: 11px; color: #64748b; font-family: monospace;">uiverse.io/barisdogansutcu/grumpy-bobcat-52</span>
+        </div>
+        <a href="serial-list-mockup-design.html" style="color: var(--orange); font-size: 12px; text-decoration: none; font-weight: 600;">&larr; View Master Serial Index</a>
+      </div>
+
+      <div class="stage-view">
+        <!-- Variant A: Uiverse Canonical White & Green Sliding Tray -->
+        <div class="stage-column">
+          <div class="stage-header">
+            <span class="stage-title">VARIANT A: UIVERSE CANONICAL SLIDING TRAY</span>
+            <span class="stage-tag">ORIGINAL SPEC</span>
+          </div>
+          <div class="bobcat-stage-box">
+            <button class="bobcat-btn">
+              <div class="bobcat-docs">
+                <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                  <polyline points="14 2 14 8 20 8"></polyline>
+                  <line x1="16" y1="13" x2="8" y2="13"></line>
+                  <line x1="16" y1="17" x2="8" y2="17"></line>
+                  <polyline points="10 9 9 9 8 9"></polyline>
+                </svg>
+                <span>Docs</span>
+              </div>
+              <div class="bobcat-download">
+                <svg viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                  <polyline points="7 10 12 15 17 10"></polyline>
+                  <line x1="12" y1="15" x2="12" y2="3"></line>
+                </svg>
+              </div>
+            </button>
+            <div style="font-size: 11px; font-family: monospace; color: #64748b; margin-top: 25px;">
+              ● Hover Docs button: Animated green download tray slides out underneath
+            </div>
+          </div>
+        </div>
+
+        <!-- Variant B: Leadirftex Cyber Quantum Whitepaper & Spec Tray -->
+        <div class="stage-column">
+          <div class="stage-header">
+            <span class="stage-title">VARIANT B: LEADIRFTEX SPEC &amp; AUDIT DOWNLOAD TRAY</span>
+            <span class="stage-tag" style="background: rgba(0, 255, 34, 0.15); color: #00FF22; border-color: rgba(0, 255, 34, 0.4);">CYBER TRAY</span>
+          </div>
+          <div class="bobcat-stage-box" style="background: radial-gradient(circle at center, rgba(0, 255, 34, 0.06) 0%, #03050A 80%); border-color: rgba(0, 255, 34, 0.25);">
+            <div class="bobcat-ltx-cluster">
+              <!-- Spec Whitepaper Button -->
+              <button class="bobcat-ltx-btn">
+                <div class="bobcat-ltx-docs">
+                  <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                    <polyline points="14 2 14 8 20 8"></polyline>
+                    <line x1="16" y1="13" x2="8" y2="13"></line>
+                    <line x1="16" y1="17" x2="8" y2="17"></line>
+                  </svg>
+                  <span>SPEC WHITEPAPER</span>
+                </div>
+                <div class="bobcat-ltx-download">
+                  <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                    <polyline points="7 10 12 15 17 10"></polyline>
+                    <line x1="12" y1="15" x2="12" y2="3"></line>
+                  </svg>
+                </div>
+              </button>
+
+              <!-- Audit Report Button -->
+              <button class="bobcat-ltx-btn bobcat-ltx-orange">
+                <div class="bobcat-ltx-docs">
+                  <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"></path>
+                  </svg>
+                  <span>AUDIT REPORT</span>
+                </div>
+                <div class="bobcat-ltx-download">
+                  <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                    <polyline points="7 10 12 15 17 10"></polyline>
+                    <line x1="12" y1="15" x2="12" y2="3"></line>
+                  </svg>
+                </div>
+              </button>
+            </div>
+            <div style="font-size: 11px; font-family: 'JetBrains Mono', monospace; color: #00FF22; opacity: 0.85; margin-top: 25px; letter-spacing: 0.8px;">
+              ⚡ [ HOVER BUTTON: CYBER TRAY EJECTS DOWNWARD WITH PULSING ARROW ]
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div style="margin-top: 20px; padding-top: 14px; border-top: 1px solid rgba(255,255,255,0.06); display: flex; justify-content: space-between; align-items: center; font-size: 11.5px; color: #64748b;">
+        <span>Category: <strong>UI Micro-Actions / Sliding Tray Ejection Download Button</strong></span>
         <span style="color: #00FF22;">● Verified Production Ingestion</span>
       </div>
     </section>
