@@ -7034,6 +7034,211 @@
       fill: #03050A;
     }
 
+
+    /* === SERIAL #038: COWARDLY-SKUNK-4 ELECTRIC CYAN MORPHING BUTTON === */
+    /* Shared Stage Box */
+    .skunk-stage-box {
+      width: 100%;
+      min-height: 240px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      background: radial-gradient(circle at center, #0e1526 0%, #060913 100%);
+      border-radius: 10px;
+      position: relative;
+      overflow: hidden;
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      padding: 40px 15px;
+    }
+
+    /* Variant A: Canonical Uiverse Electric Cyan Morphing Sign-In Button */
+    .skunk-btn {
+      position: relative;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      padding: 16px 38px;
+      border: 4px solid transparent;
+      font-size: 15px;
+      background-color: transparent;
+      border-radius: 100px;
+      font-weight: 600;
+      color: rgb(47, 248, 255);
+      box-shadow: 0 0 0 2px rgb(47, 255, 238);
+      cursor: pointer;
+      overflow: hidden;
+      transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+      outline: none;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    }
+    .skunk-btn svg {
+      position: absolute;
+      width: 22px;
+      fill: rgb(47, 255, 255);
+      z-index: 9;
+      transition: all 0.7s cubic-bezier(0.23, 1, 0.32, 1);
+    }
+    .skunk-btn .skunk-arr-1 {
+      right: 16px;
+    }
+    .skunk-btn .skunk-arr-2 {
+      left: -25%;
+    }
+    .skunk-btn .skunk-circle {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 20px;
+      height: 20px;
+      background-color: rgb(47, 224, 255);
+      border-radius: 50%;
+      opacity: 0;
+      transition: all 0.7s cubic-bezier(0.23, 1, 0.32, 1);
+    }
+    .skunk-btn .skunk-text {
+      position: relative;
+      z-index: 1;
+      transform: translateX(-10px);
+      transition: all 0.7s cubic-bezier(0.23, 1, 0.32, 1);
+    }
+    .skunk-btn:hover {
+      box-shadow: 0 0 0 12px transparent;
+      color: #1b1b1b;
+      border-radius: 12px;
+    }
+    .skunk-btn:hover .skunk-arr-1 {
+      right: -25%;
+    }
+    .skunk-btn:hover .skunk-arr-2 {
+      left: 16px;
+    }
+    .skunk-btn:hover .skunk-text {
+      transform: translateX(12px);
+    }
+    .skunk-btn:hover svg {
+      fill: #1b1b1b;
+    }
+    .skunk-btn:active {
+      transform: scale(0.95);
+      box-shadow: 0 0 0 4px rgb(47, 255, 238);
+    }
+    .skunk-btn:hover .skunk-circle {
+      width: 240px;
+      height: 240px;
+      opacity: 1;
+    }
+
+    /* Variant B: Leadirftex Cyber Quantum Auth & Validator Nodes */
+    .skunk-ltx-cluster {
+      display: flex;
+      align-items: center;
+      gap: 28px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .skunk-ltx-btn {
+      position: relative;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      padding: 15px 36px;
+      border: 2px solid #00FF22;
+      background-color: #070B14;
+      border-radius: 100px;
+      font-weight: 800;
+      font-size: 12px;
+      letter-spacing: 1.2px;
+      color: #00FF22;
+      box-shadow: 0 0 16px rgba(0, 255, 34, 0.25);
+      cursor: pointer;
+      overflow: hidden;
+      transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+      outline: none;
+      font-family: 'JetBrains Mono', monospace;
+      text-transform: uppercase;
+    }
+    .skunk-ltx-btn svg {
+      position: absolute;
+      width: 20px;
+      fill: #00FF22;
+      z-index: 9;
+      transition: all 0.7s cubic-bezier(0.23, 1, 0.32, 1);
+    }
+    .skunk-ltx-btn .skunk-ltx-arr-1 {
+      right: 14px;
+    }
+    .skunk-ltx-btn .skunk-ltx-arr-2 {
+      left: -25%;
+    }
+    .skunk-ltx-btn .skunk-ltx-circle {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 20px;
+      height: 20px;
+      background-color: #00FF22;
+      border-radius: 50%;
+      opacity: 0;
+      transition: all 0.7s cubic-bezier(0.23, 1, 0.32, 1);
+    }
+    .skunk-ltx-btn .skunk-ltx-text {
+      position: relative;
+      z-index: 1;
+      transform: translateX(-10px);
+      transition: all 0.7s cubic-bezier(0.23, 1, 0.32, 1);
+    }
+    .skunk-ltx-btn:hover {
+      box-shadow: 0 0 30px rgba(0, 255, 34, 0.6);
+      color: #03050A;
+      border-radius: 10px;
+      border-color: #00FF22;
+    }
+    .skunk-ltx-btn:hover .skunk-ltx-arr-1 {
+      right: -25%;
+    }
+    .skunk-ltx-btn:hover .skunk-ltx-arr-2 {
+      left: 14px;
+    }
+    .skunk-ltx-btn:hover .skunk-ltx-text {
+      transform: translateX(12px);
+    }
+    .skunk-ltx-btn:hover svg {
+      fill: #03050A;
+    }
+    .skunk-ltx-btn:active {
+      transform: scale(0.95);
+    }
+    .skunk-ltx-btn:hover .skunk-ltx-circle {
+      width: 280px;
+      height: 280px;
+      opacity: 1;
+    }
+
+    /* Orange Secondary Validator Login Node */
+    .skunk-ltx-orange {
+      border-color: #FF5C00;
+      color: #FF5C00;
+      box-shadow: 0 0 16px rgba(255, 92, 0, 0.25);
+    }
+    .skunk-ltx-orange svg {
+      fill: #FF5C00;
+    }
+    .skunk-ltx-orange .skunk-ltx-circle {
+      background-color: #FF5C00;
+    }
+    .skunk-ltx-orange:hover {
+      box-shadow: 0 0 30px rgba(255, 92, 0, 0.6);
+      border-color: #FF5C00;
+      color: #03050A;
+    }
+    .skunk-ltx-orange:hover svg {
+      fill: #03050A;
+    }
+
   </style>
 </head>
 <body>
@@ -9945,6 +10150,86 @@
 
       <div style="margin-top: 20px; padding-top: 14px; border-top: 1px solid rgba(255,255,255,0.06); display: flex; justify-content: space-between; align-items: center; font-size: 11.5px; color: #64748b;">
         <span>Category: <strong>Buttons / Morphing Pill-to-Squircle Button with Dual Sliding Arrows</strong></span>
+        <span style="color: #00FF22;">● Verified Production Ingestion</span>
+      </div>
+    </section>
+
+    <!-- SERIAL #038 -->
+    <section id="mockup-item-038" class="mockup-card">
+      <div class="mockup-header">
+        <div style="display: flex; align-items: center; gap: 10px;">
+          <span class="serial-badge">SERIAL #038</span>
+          <strong style="color: #ffffff; font-size: 16px;">Cowardly-Skunk-4 Electric Cyan Morphing Sign-In Button</strong>
+          <span style="font-size: 11px; color: #64748b; font-family: monospace;">uiverse.io/H_K_MENON/cowardly-skunk-4</span>
+        </div>
+        <a href="serial-list-mockup-design.html" style="color: var(--orange); font-size: 12px; text-decoration: none; font-weight: 600;">&larr; View Master Serial Index</a>
+      </div>
+
+      <div class="stage-view">
+        <!-- Variant A: Uiverse Canonical Electric Cyan Morphing Button -->
+        <div class="stage-column">
+          <div class="stage-header">
+            <span class="stage-title">VARIANT A: UIVERSE CANONICAL ELECTRIC CYAN BUTTON</span>
+            <span class="stage-tag">ORIGINAL SPEC</span>
+          </div>
+          <div class="skunk-stage-box">
+            <button class="skunk-btn" aria-label="Sign In">
+              <svg viewBox="0 0 24 24" class="skunk-arr-2" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
+              </svg>
+              <span class="skunk-text">SIGN IN</span>
+              <span class="skunk-circle"></span>
+              <svg viewBox="0 0 24 24" class="skunk-arr-1" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
+              </svg>
+            </button>
+            <div style="font-size: 11px; font-family: monospace; color: #64748b; margin-top: 20px;">
+              ● Hover: Pill morphs to squircle &bull; Cyan circle expands &bull; Dual arrows transit
+            </div>
+          </div>
+        </div>
+
+        <!-- Variant B: Leadirftex Cyber Quantum Auth & Validator Nodes -->
+        <div class="stage-column">
+          <div class="stage-header">
+            <span class="stage-title">VARIANT B: LEADIRFTEX CYBER QUANTUM AUTH &amp; VALIDATOR</span>
+            <span class="stage-tag" style="background: rgba(0, 255, 34, 0.15); color: #00FF22; border-color: rgba(0, 255, 34, 0.4);">CYBER AUTH</span>
+          </div>
+          <div class="skunk-stage-box" style="background: radial-gradient(circle at center, rgba(0, 255, 34, 0.06) 0%, #03050A 80%); border-color: rgba(0, 255, 34, 0.25);">
+            <div class="skunk-ltx-cluster">
+              <!-- Node 1: Cyber Neon Green Gateway Auth -->
+              <button class="skunk-ltx-btn" aria-label="Gateway Auth">
+                <svg viewBox="0 0 24 24" class="skunk-ltx-arr-2" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
+                </svg>
+                <span class="skunk-ltx-text">GATEWAY AUTH</span>
+                <span class="skunk-ltx-circle"></span>
+                <svg viewBox="0 0 24 24" class="skunk-ltx-arr-1" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
+                </svg>
+              </button>
+
+              <!-- Node 2: Interchain Orange Validator Login -->
+              <button class="skunk-ltx-btn skunk-ltx-orange" aria-label="Validator Login">
+                <svg viewBox="0 0 24 24" class="skunk-ltx-arr-2" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
+                </svg>
+                <span class="skunk-ltx-text">VALIDATOR</span>
+                <span class="skunk-ltx-circle"></span>
+                <svg viewBox="0 0 24 24" class="skunk-ltx-arr-1" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
+                </svg>
+              </button>
+            </div>
+            <div style="font-size: 11px; font-family: 'JetBrains Mono', monospace; color: #00FF22; opacity: 0.85; margin-top: 20px; letter-spacing: 0.8px;">
+              ⚡ [ HOVER NODE: PILL MORPHS TO SQUIRCLE &bull; CIRCLE EXPANDS &bull; ARROWS TRANSLATE ]
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div style="margin-top: 20px; padding-top: 14px; border-top: 1px solid rgba(255,255,255,0.06); display: flex; justify-content: space-between; align-items: center; font-size: 11.5px; color: #64748b;">
+        <span>Category: <strong>Buttons / Electric Cyan Morphing Pill-to-Squircle Button</strong></span>
         <span style="color: #00FF22;">● Verified Production Ingestion</span>
       </div>
     </section>
