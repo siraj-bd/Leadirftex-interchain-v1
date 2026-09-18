@@ -5,6 +5,21 @@
 **Full Platform Name:** Leadirftex Interchain  
 **Plan Domain will be:** Leadirftex.com  
 
+### Mockup Serial #033: Unlucky-Rat-66 Vertical Roll-Slide Download Pill Button
+
+**Status:** PASS / VERIFIED — INGESTED SERIAL #033: UNLUCKY-RAT-66 VERTICAL ROLL-SLIDE DOWNLOAD PILL BUTTON (SOURCE: uiverse.io/d3uceY/unlucky-rat-66). INTEGRATED INTO CENTRALIZED MASTER REPOSITORY (`mockup-master-ui-ux.html#mockup-item-033`) AND REGISTERED IN SERIAL REGISTRY (`serial-list-mockup-design.html`). PRESERVED CANONICAL VERTICAL TRANSLATEY(-45PX) TO TRANSLATEY(0) ROLL-SLIDE DYNAMICS WITH SIMULTANEOUS TEXT OPACITY FADEOUT AND CLOUD DOWNLOAD SVG FADEIN (TRANSITION: ALL 280MS CUBIC-BEZIER(0.4, 0, 0.2, 1)), FOCUS-STATE RHYTHMIC HEARTBEAT SCALE LOOP (@KEYFRAMES RAT_HEARTBEAT 1.5S INFINITE), ALONG WITH DEDICATED LEADIRFTEX CYBER TELEMETRY INGESTION & SPEC ROLL-PILLS FEATURING OBSIDIAN (#070B14), CYBER NEON GREEN (#00FF22), AND INTERCHAIN ORANGE (#FF5C00) WITH TELEMETRY STREAM AND LEDGER AUDIT SVGS. CSS BRACES 100% BALANCED.
+**Target Files:** `mockup-master-ui-ux.html`, `serial-list-mockup-design.html`, `project-execution-status.md`, `project-status-for-chatgpt.html`
+**Live Preview Route:** `mockup-master-ui-ux.html#mockup-item-033`, `serial-list-mockup-design.html`
+**Audit & Implementation Highlights:**
+1. **Mockup Master Repository Ingestion (#mockup-item-033):**
+   - Scoped pure CSS with overflow pill clipping and vertical translation transitions.
+   - Dual variant presentation: Variant A (Uiverse Canonical Roll-Slide Pill) and Variant B (Leadirftex Cyber Ingestion & Spec Pills).
+2. **Serial Registry Update:**
+   - Appended Serial `#033`, Item Short Name `Unlucky-Rat-66 Roll-Slide Download Pill`, Category `Buttons / Vertical Roll-Slide Download Pill Button`, Status `ACTIVE / INGESTED`, and direct action link.
+3. **Syntax Verification:**
+   - `mockup-master-ui-ux.html`: CSS Braces 100% BALANCED.
+   - `serial-list-mockup-design.html`: CSS Braces 100% BALANCED.
+
 ### Mockup Serial #032: Shaggy-Cobra-79 Jello-Wobble FAQ & Floating Tooltip Button
 
 **Status:** PASS / VERIFIED — INGESTED SERIAL #032: SHAGGY-COBRA-79 JELLO-WOBBLE FAQ & FLOATING TOOLTIP BUTTON (SOURCE: uiverse.io/Shell0110/shaggy-cobra-79). INTEGRATED INTO CENTRALIZED MASTER REPOSITORY (`mockup-master-ui-ux.html#mockup-item-032`) AND REGISTERED IN SERIAL REGISTRY (`serial-list-mockup-design.html`). PRESERVED CANONICAL 3D JELLO-VERTICAL WOBBLE KEYFRAME DYNAMICS (@KEYFRAMES COBRA_JELLO_VERTICAL WITH SCALE3D MULTI-AXIS OSCILLATION (0.75, 1.25, 1) TO (1.25, 0.75, 1)), NOTCH-POINTED FLOATING BADGE TOOLTIP (TOP: -20PX TO -42PX, OPACITY: 0 TO 1) WITH ROTATED 45-DEGREE DIAMOND POINTER, ALONG WITH DEDICATED LEADIRFTEX CYBER TELEMETRY HELP & PROTOCOL PODS FEATURING OBSIDIAN (#070B14), CYBER NEON GREEN (#00FF22), AND INTERCHAIN ORANGE (#FF5C00) WITH HIGH-CONTRAST QUESTION SVGS AND MONOSPACE LABELS. CSS BRACES 100% BALANCED.

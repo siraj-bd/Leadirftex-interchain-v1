@@ -6227,6 +6227,199 @@
       box-shadow: 0 0 6px #FF5C00;
     }
 
+
+    /* === SERIAL #033: UNLUCKY-RAT-66 VERTICAL ROLL-SLIDE DOWNLOAD PILL BUTTON === */
+    /* Shared Stage Box */
+    .rat-stage-box {
+      width: 100%;
+      min-height: 240px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      background: radial-gradient(circle at center, #0e1526 0%, #060913 100%);
+      border-radius: 10px;
+      position: relative;
+      overflow: hidden;
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      padding: 40px 15px;
+    }
+
+    /* Variant A: Canonical Uiverse Crimson Roll-Slide Pill Button */
+    .rat-download-btn {
+      height: 45px;
+      width: 105px;
+      cursor: pointer;
+      border: none;
+      background: #ff0021;
+      border-radius: 30px;
+      overflow: hidden;
+      outline: none;
+      box-shadow: 0 6px 15px rgba(255, 0, 33, 0.3);
+      transition: all 0.3s ease;
+      position: relative;
+    }
+    .rat-download-btn:hover {
+      box-shadow: 0 8px 22px rgba(255, 0, 33, 0.5);
+    }
+    .rat-button-content {
+      transform: translateY(-45px);
+      transition: all 280ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .rat-svg-container,
+    .rat-text-container {
+      height: 45px;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .rat-text-container .rat-text {
+      font-size: 13.5px;
+      color: #fff;
+      font-weight: 600;
+      opacity: 1;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      transition: opacity 250ms ease-in-out;
+    }
+    .rat-download-icon {
+      height: 24px;
+      width: 24px;
+      fill: #fff;
+      opacity: 0;
+      transition: opacity 250ms ease-in-out;
+    }
+    .rat-download-btn:hover .rat-button-content {
+      transform: translateY(0px);
+    }
+    .rat-download-btn:hover .rat-text {
+      opacity: 0;
+    }
+    .rat-download-btn:hover .rat-download-icon {
+      opacity: 1;
+    }
+    .rat-download-btn:focus .rat-download-icon {
+      animation: rat_heartbeat 1.5s ease-in-out infinite both;
+    }
+
+    @keyframes rat_heartbeat {
+      from {
+        transform: scale(1);
+        transform-origin: center center;
+        animation-timing-function: ease-out;
+      }
+      10% {
+        transform: scale(0.91);
+        animation-timing-function: ease-in;
+      }
+      17% {
+        transform: scale(0.98);
+        animation-timing-function: ease-out;
+      }
+      33% {
+        transform: scale(0.87);
+        animation-timing-function: ease-in;
+      }
+      45% {
+        transform: scale(1);
+        animation-timing-function: ease-out;
+      }
+    }
+
+    /* Variant B: Leadirftex Cyber Telemetry Ingestion & Spec Roll-Pill */
+    .rat-ltx-cluster {
+      display: flex;
+      align-items: center;
+      gap: 32px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .rat-ltx-node {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 12px;
+    }
+    .rat-ltx-btn {
+      height: 48px;
+      width: 145px;
+      cursor: pointer;
+      border: 1.5px solid #00FF22;
+      background: #070B14;
+      border-radius: 30px;
+      overflow: hidden;
+      outline: none;
+      box-shadow: 0 0 16px rgba(0, 255, 34, 0.2);
+      transition: all 0.35s ease;
+      position: relative;
+    }
+    .rat-ltx-btn:hover {
+      box-shadow: 0 0 26px rgba(0, 255, 34, 0.45);
+      border-color: #00FF22;
+      background: rgba(0, 255, 34, 0.08);
+    }
+    .rat-ltx-content {
+      transform: translateY(-48px);
+      transition: all 280ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .rat-ltx-svg-container,
+    .rat-ltx-text-container {
+      height: 48px;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 8px;
+    }
+    .rat-ltx-text {
+      font-size: 11.5px;
+      color: #00FF22;
+      font-weight: 800;
+      letter-spacing: 1.2px;
+      font-family: 'JetBrains Mono', monospace;
+      opacity: 1;
+      text-transform: uppercase;
+      transition: opacity 250ms ease-in-out;
+    }
+    .rat-ltx-icon {
+      height: 22px;
+      width: 22px;
+      stroke: #00FF22;
+      fill: none;
+      opacity: 0;
+      transition: opacity 250ms ease-in-out;
+    }
+    .rat-ltx-btn:hover .rat-ltx-content {
+      transform: translateY(0px);
+    }
+    .rat-ltx-btn:hover .rat-ltx-text {
+      opacity: 0;
+    }
+    .rat-ltx-btn:hover .rat-ltx-icon {
+      opacity: 1;
+    }
+    .rat-ltx-btn:focus .rat-ltx-icon {
+      animation: rat_heartbeat 1.5s ease-in-out infinite both;
+    }
+
+    /* Orange Secondary Audit Spec Roll-Pill */
+    .rat-ltx-orange .rat-ltx-btn {
+      border-color: #FF5C00;
+      box-shadow: 0 0 16px rgba(255, 92, 0, 0.2);
+    }
+    .rat-ltx-orange .rat-ltx-btn:hover {
+      box-shadow: 0 0 26px rgba(255, 92, 0, 0.45);
+      border-color: #FF5C00;
+      background: rgba(255, 92, 0, 0.08);
+    }
+    .rat-ltx-orange .rat-ltx-text {
+      color: #FF5C00;
+    }
+    .rat-ltx-orange .rat-ltx-icon {
+      stroke: #FF5C00;
+    }
+
   </style>
 </head>
 <body>
@@ -8628,6 +8821,103 @@
 
       <div style="margin-top: 20px; padding-top: 14px; border-top: 1px solid rgba(255,255,255,0.06); display: flex; justify-content: space-between; align-items: center; font-size: 11.5px; color: #64748b;">
         <span>Category: <strong>UI Micro-Actions / Jello-Wobble FAQ &amp; Floating Tooltip Button</strong></span>
+        <span style="color: #00FF22;">● Verified Production Ingestion</span>
+      </div>
+    </section>
+
+    <!-- SERIAL #033 -->
+    <section id="mockup-item-033" class="mockup-card">
+      <div class="mockup-header">
+        <div style="display: flex; align-items: center; gap: 10px;">
+          <span class="serial-badge">SERIAL #033</span>
+          <strong style="color: #ffffff; font-size: 16px;">Unlucky-Rat-66 Vertical Roll-Slide Download Pill Button</strong>
+          <span style="font-size: 11px; color: #64748b; font-family: monospace;">uiverse.io/d3uceY/unlucky-rat-66</span>
+        </div>
+        <a href="serial-list-mockup-design.html" style="color: var(--orange); font-size: 12px; text-decoration: none; font-weight: 600;">&larr; View Master Serial Index</a>
+      </div>
+
+      <div class="stage-view">
+        <!-- Variant A: Uiverse Canonical Crimson Roll-Slide Pill -->
+        <div class="stage-column">
+          <div class="stage-header">
+            <span class="stage-title">VARIANT A: UIVERSE CANONICAL ROLL-SLIDE PILL</span>
+            <span class="stage-tag">ORIGINAL SPEC</span>
+          </div>
+          <div class="rat-stage-box">
+            <button class="rat-download-btn" aria-label="Download">
+              <div class="rat-button-content">
+                <div class="rat-svg-container">
+                  <svg class="rat-download-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path d="M19.479 10.092c-.212-3.951-3.473-7.092-7.479-7.092-4.005 0-7.267 3.141-7.479 7.092-2.57.463-4.521 2.706-4.521 5.408 0 3.037 2.463 5.5 5.5 5.5h13c3.037 0 5.5-2.463 5.5-5.5 0-2.702-1.951-4.945-4.521-5.408zm-7.479 6.908l-4-4h3v-4h2v4h3l-4 4z"></path>
+                  </svg>
+                </div>
+                <div class="rat-text-container">
+                  <div class="rat-text">Download</div>
+                </div>
+              </div>
+            </button>
+            <div style="font-size: 11px; font-family: monospace; color: #64748b; margin-top: 20px;">
+              ● Hover: Text slides out, cloud icon slides in &bull; Focus: Heartbeat pulsation
+            </div>
+          </div>
+        </div>
+
+        <!-- Variant B: Leadirftex Cyber Telemetry Ingestion & Spec Roll-Pill -->
+        <div class="stage-column">
+          <div class="stage-header">
+            <span class="stage-title">VARIANT B: LEADIRFTEX CYBER INGESTION &amp; SPEC PILLS</span>
+            <span class="stage-tag" style="background: rgba(0, 255, 34, 0.15); color: #00FF22; border-color: rgba(0, 255, 34, 0.4);">CYBER ROLL</span>
+          </div>
+          <div class="rat-stage-box" style="background: radial-gradient(circle at center, rgba(0, 255, 34, 0.06) 0%, #03050A 80%); border-color: rgba(0, 255, 34, 0.25);">
+            <div class="rat-ltx-cluster">
+              <!-- Pill 1: Cyber Neon Green Telemetry Stream -->
+              <div class="rat-ltx-node">
+                <button class="rat-ltx-btn" aria-label="Telemetry Ingestion">
+                  <div class="rat-ltx-content">
+                    <div class="rat-ltx-svg-container">
+                      <svg class="rat-ltx-icon" viewBox="0 0 24 24" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                        <polyline points="7 10 12 15 17 10"></polyline>
+                        <line x1="12" y1="15" x2="12" y2="3"></line>
+                      </svg>
+                    </div>
+                    <div class="rat-ltx-text-container">
+                      <div class="rat-ltx-text">TELEMETRY</div>
+                    </div>
+                  </div>
+                </button>
+                <span style="font-family: 'JetBrains Mono', monospace; font-size: 10px; font-weight: 700; color: #00FF22; letter-spacing: 1px;">DATA STREAM</span>
+              </div>
+
+              <!-- Pill 2: Interchain Orange Audit Spec -->
+              <div class="rat-ltx-node rat-ltx-orange">
+                <button class="rat-ltx-btn" aria-label="Audit Spec">
+                  <div class="rat-ltx-content">
+                    <div class="rat-ltx-svg-container">
+                      <svg class="rat-ltx-icon" viewBox="0 0 24 24" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                        <polyline points="14 2 14 8 20 8"></polyline>
+                        <line x1="16" y1="13" x2="8" y2="13"></line>
+                        <line x1="16" y1="17" x2="8" y2="17"></line>
+                      </svg>
+                    </div>
+                    <div class="rat-ltx-text-container">
+                      <div class="rat-ltx-text">AUDIT SPEC</div>
+                    </div>
+                  </div>
+                </button>
+                <span style="font-family: 'JetBrains Mono', monospace; font-size: 10px; font-weight: 700; color: #FF5C00; letter-spacing: 1px;">LEDGER AUDIT</span>
+              </div>
+            </div>
+            <div style="font-size: 11px; font-family: 'JetBrains Mono', monospace; color: #00FF22; opacity: 0.85; margin-top: 20px; letter-spacing: 0.8px;">
+              ⚡ [ HOVER PILL: VERTICAL ROLL DISPATCH &bull; FOCUS: HEARTBEAT OSCILLATION ]
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div style="margin-top: 20px; padding-top: 14px; border-top: 1px solid rgba(255,255,255,0.06); display: flex; justify-content: space-between; align-items: center; font-size: 11.5px; color: #64748b;">
+        <span>Category: <strong>Buttons / Vertical Roll-Slide Download Pill Button</strong></span>
         <span style="color: #00FF22;">● Verified Production Ingestion</span>
       </div>
     </section>
