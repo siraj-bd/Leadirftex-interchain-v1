@@ -2360,6 +2360,195 @@
       font-size: 34px;
       transition: all 0.5s ease-in-out 0.3s;
     }
+
+    /* === SERIAL #016: BRAVE-SHRIMP-86 SPRING ANIMATED SOCIAL TOOLTIPS === */
+    /* Variant A: Canonical Uiverse */
+    .shrimp-wrapper {
+      display: inline-flex;
+      list-style: none;
+      height: 110px;
+      width: 100%;
+      padding-top: 35px;
+      padding-left: 0;
+      margin: 0;
+      justify-content: center;
+      align-items: center;
+      box-sizing: border-box;
+    }
+    .shrimp-wrapper .shrimp-icon {
+      position: relative;
+      background: #ffffff;
+      border-radius: 50%;
+      margin: 8px;
+      width: 48px;
+      height: 48px;
+      font-size: 18px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+      cursor: pointer;
+      transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+      color: #333333;
+    }
+    .shrimp-wrapper .shrimp-tooltip {
+      position: absolute;
+      top: 0;
+      font-size: 12px;
+      font-weight: 700;
+      background: #ffffff;
+      color: #ffffff;
+      padding: 5px 10px;
+      border-radius: 6px;
+      box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+      opacity: 0;
+      pointer-events: none;
+      transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+      white-space: nowrap;
+    }
+    .shrimp-wrapper .shrimp-tooltip::before {
+      position: absolute;
+      content: "";
+      height: 8px;
+      width: 8px;
+      background: inherit;
+      bottom: -4px;
+      left: 50%;
+      transform: translate(-50%) rotate(45deg);
+      transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    }
+    .shrimp-wrapper .shrimp-icon:hover .shrimp-tooltip {
+      top: -42px;
+      opacity: 1;
+      visibility: visible;
+      pointer-events: auto;
+    }
+    .shrimp-wrapper .shrimp-icon:hover {
+      transform: translateY(-2px);
+    }
+    .shrimp-wrapper .facebook:hover,
+    .shrimp-wrapper .facebook:hover .shrimp-tooltip {
+      background: #1877f2;
+      color: #ffffff;
+    }
+    .shrimp-wrapper .twitter:hover,
+    .shrimp-wrapper .twitter:hover .shrimp-tooltip {
+      background: #1da1f2;
+      color: #ffffff;
+    }
+    .shrimp-wrapper .instagram:hover,
+    .shrimp-wrapper .instagram:hover .shrimp-tooltip {
+      background: #e4405f;
+      color: #ffffff;
+    }
+
+    /* Variant B: Leadirftex Cyber Edition (Obsidian + Cyber Neon Green #00FF22 + Leadirftex Channels) */
+    .shrimp-ltx-wrapper {
+      display: inline-flex;
+      list-style: none;
+      height: 110px;
+      width: 100%;
+      padding-top: 35px;
+      padding-left: 0;
+      margin: 0;
+      justify-content: center;
+      align-items: center;
+      box-sizing: border-box;
+      flex-wrap: wrap;
+    }
+    .shrimp-ltx-wrapper .shrimp-ltx-icon {
+      position: relative;
+      background: #070B14;
+      border: 1px solid rgba(0, 255, 34, 0.35);
+      border-radius: 50%;
+      margin: 8px;
+      width: 48px;
+      height: 48px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.8);
+      cursor: pointer;
+      transition: all 0.25s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+      color: #00FF22;
+    }
+    .shrimp-ltx-wrapper .shrimp-ltx-tooltip {
+      position: absolute;
+      top: 0;
+      font-size: 11px;
+      font-family: 'JetBrains Mono', monospace;
+      font-weight: 800;
+      letter-spacing: 0.5px;
+      background: #03050A;
+      color: #00FF22;
+      border: 1px solid #00FF22;
+      padding: 4px 10px;
+      border-radius: 6px;
+      box-shadow: 0 0 15px rgba(0, 255, 34, 0.4);
+      opacity: 0;
+      pointer-events: none;
+      transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+      white-space: nowrap;
+    }
+    .shrimp-ltx-wrapper .shrimp-ltx-tooltip::before {
+      position: absolute;
+      content: "";
+      height: 6px;
+      width: 6px;
+      background: #03050A;
+      border-right: 1px solid #00FF22;
+      border-bottom: 1px solid #00FF22;
+      bottom: -4px;
+      left: 50%;
+      transform: translate(-50%) rotate(45deg);
+    }
+    .shrimp-ltx-wrapper .shrimp-ltx-icon:hover .shrimp-ltx-tooltip {
+      top: -42px;
+      opacity: 1;
+      visibility: visible;
+      pointer-events: auto;
+    }
+    .shrimp-ltx-wrapper .shrimp-ltx-icon:hover {
+      transform: translateY(-4px) scale(1.1);
+      box-shadow: 0 0 20px rgba(0, 255, 34, 0.6);
+      border-color: #00FF22;
+      color: #03050A;
+      background: #00FF22;
+    }
+    .shrimp-ltx-wrapper .x-icon:hover {
+      background: #ffffff;
+      color: #000000;
+      border-color: #ffffff;
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.6);
+    }
+    .shrimp-ltx-wrapper .x-icon:hover .shrimp-ltx-tooltip {
+      border-color: #ffffff;
+      color: #ffffff;
+      box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+    }
+    .shrimp-ltx-wrapper .reddit:hover {
+      background: #FF4500;
+      color: #ffffff;
+      border-color: #FF4500;
+      box-shadow: 0 0 20px rgba(255, 69, 0, 0.6);
+    }
+    .shrimp-ltx-wrapper .reddit:hover .shrimp-ltx-tooltip {
+      border-color: #FF4500;
+      color: #FF4500;
+      box-shadow: 0 0 15px rgba(255, 69, 0, 0.4);
+    }
+    .shrimp-ltx-wrapper .youtube:hover {
+      background: #FF0000;
+      color: #ffffff;
+      border-color: #FF0000;
+      box-shadow: 0 0 20px rgba(255, 0, 0, 0.6);
+    }
+    .shrimp-ltx-wrapper .youtube:hover .shrimp-ltx-tooltip {
+      border-color: #FF0000;
+      color: #FF0000;
+      box-shadow: 0 0 15px rgba(255, 0, 0, 0.4);
+    }
   </style>
 </head>
 <body>
@@ -3200,6 +3389,67 @@
 
       <div style="margin-top: 20px; padding-top: 14px; border-top: 1px solid rgba(255,255,255,0.06); display: flex; justify-content: space-between; align-items: center; font-size: 11.5px; color: #64748b;">
         <span>Category: <strong>Cards &amp; Panels / Morphing Avatar &amp; Sliding Bio Profile Card</strong></span>
+        <span style="color: #00FF22;">● Verified Production Ingestion</span>
+      </div>
+    </section>
+
+    <!-- SERIAL #016 -->
+    <section id="mockup-item-016" class="mockup-card">
+      <div class="mockup-header">
+        <div style="display: flex; align-items: center; gap: 10px;">
+          <span class="serial-badge">SERIAL #016</span>
+          <strong style="color: #ffffff; font-size: 16px;">Brave-Shrimp-86 Spring Animated Social Tooltips</strong>
+          <span style="font-size: 11px; color: #64748b; font-family: monospace;">uiverse.io/david-mohseni/brave-shrimp-86</span>
+        </div>
+        <a href="serial-list-mockup-design.html" style="color: var(--orange); font-size: 12px; text-decoration: none; font-weight: 600;">&larr; View Master Serial Index</a>
+      </div>
+
+      <div class="stage-view">
+        <!-- Variant A: Uiverse Canonical -->
+        <div class="stage-column">
+          <span class="stage-label">Variant A: Uiverse Canonical (Spring Bounce Tooltips)</span>
+          <div style="display: flex; justify-content: center; align-items: center; height: 180px; width: 100%;">
+            <ul class="shrimp-wrapper">
+              <li class="shrimp-icon facebook">
+                <span class="shrimp-tooltip">Facebook</span>
+                <svg viewBox="0 0 320 512" height="18" fill="currentColor"><path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"></path></svg>
+              </li>
+              <li class="shrimp-icon twitter">
+                <span class="shrimp-tooltip">Twitter</span>
+                <svg viewBox="0 0 24 24" height="18" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+              </li>
+              <li class="shrimp-icon instagram">
+                <span class="shrimp-tooltip">Instagram</span>
+                <svg viewBox="0 0 16 16" height="18" fill="currentColor"><path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/></svg>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Variant B: Leadirftex Cyber Edition -->
+        <div class="stage-column">
+          <span class="stage-label">Variant B: Leadirftex Cyber Edition (@leadirftex Channels)</span>
+          <div style="display: flex; justify-content: center; align-items: center; height: 180px; width: 100%;">
+            <ul class="shrimp-ltx-wrapper">
+              <li class="shrimp-ltx-icon x-icon">
+                <span class="shrimp-ltx-tooltip">@leadirftex / X</span>
+                <svg viewBox="0 0 24 24" height="17" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+              </li>
+              <li class="shrimp-ltx-icon reddit">
+                <span class="shrimp-ltx-tooltip">Reddit</span>
+                <svg viewBox="0 0 24 24" height="18" fill="currentColor"><path d="M12 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0zm5.01 4.744c.688 0 1.25.561 1.25 1.249a1.25 1.25 0 0 1-2.498.056l-2.597-.547-.8 3.747c1.824.07 3.48.632 4.674 1.488.308-.309.73-.491 1.207-.491.968 0 1.754.786 1.754 1.754 0 .716-.435 1.333-1.01 1.614a3.111 3.111 0 0 1 .042.52c0 2.694-3.13 4.87-7.004 4.87-3.874 0-7.004-2.176-7.004-4.87 0-.183.015-.366.043-.534A1.748 1.748 0 0 1 4.028 12c0-.968.786-1.754 1.754-1.754.463 0 .898.196 1.207.49 1.207-.883 2.878-1.43 4.744-1.487l.885-4.182a.342.342 0 0 1 .14-.197.35.35 0 0 1 .238-.042l2.906.617a1.214 1.214 0 0 1 1.108-.701zM9.25 12C8.561 12 8 12.562 8 13.25c0 .687.561 1.248 1.25 1.248.687 0 1.248-.561 1.248-1.249 0-.688-.561-1.249-1.249-1.249zm5.5 0c-.687 0-1.248.561-1.248 1.25 0 .687.561 1.248 1.249 1.248.688 0 1.249-.561 1.249-1.249 0-.687-.562-1.249-1.25-1.249zm-5.466 3.99a.327.327 0 0 0-.231.094.33.33 0 0 0 0 .463c.842.842 2.484.913 2.961.913.477 0 2.105-.056 2.961-.913a.361.361 0 0 0 .029-.463.33.33 0 0 0-.464 0c-.547.533-1.684.73-2.512.73-.828 0-1.979-.196-2.512-.73a.326.326 0 0 0-.232-.095z"/></svg>
+              </li>
+              <li class="shrimp-ltx-icon youtube">
+                <span class="shrimp-ltx-tooltip">YouTube</span>
+                <svg viewBox="0 0 24 24" height="18" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div style="margin-top: 20px; padding-top: 14px; border-top: 1px solid rgba(255,255,255,0.06); display: flex; justify-content: space-between; align-items: center; font-size: 11.5px; color: #64748b;">
+        <span>Category: <strong>UI Navigation / Spring Animated Social Tooltips</strong></span>
         <span style="color: #00FF22;">● Verified Production Ingestion</span>
       </div>
     </section>
