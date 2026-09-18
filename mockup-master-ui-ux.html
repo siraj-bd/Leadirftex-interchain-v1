@@ -1865,6 +1865,204 @@
       filter: blur(14px);
       opacity: 0.8;
     }
+
+    /* === SERIAL #014: NICE-SLOTH-46 INTERACTIVE RATING & FEEDBACK CARD === */
+    /* Variant A: Canonical Uiverse */
+    .sloth-wrapper {
+      width: 100%;
+      max-width: 320px;
+      margin: 10px auto;
+    }
+    .sloth-card {
+      background-color: hsl(213, 19%, 18%);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      color: hsl(0, 0%, 100%);
+      width: 100%;
+      min-height: 310px;
+      padding: 24px;
+      border-radius: 24px;
+      box-sizing: border-box;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+      text-align: left;
+    }
+    .sloth-star {
+      width: 40px;
+      height: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: hsla(217, 12%, 63%, 0.2);
+      border-radius: 50%;
+      margin-bottom: 8px;
+    }
+    .sloth-title {
+      font-size: 20px;
+      font-weight: 700;
+      color: #ffffff;
+      margin-bottom: 4px;
+    }
+    .sloth-text {
+      font-size: 13px;
+      font-weight: 400;
+      line-height: 1.45;
+      color: hsl(217, 12%, 63%);
+      margin: 0 0 16px;
+    }
+    .sloth-rating {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 18px;
+    }
+    .sloth-rating label {
+      cursor: pointer;
+      width: 40px;
+      height: 40px;
+      background-color: hsla(217, 12%, 63%, 0.2);
+      color: hsl(217, 12%, 63%);
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 14px;
+      font-weight: 700;
+      transition: all 0.2s ease;
+    }
+    .sloth-rating label:hover {
+      color: hsl(213, 19%, 18%);
+      background-color: hsl(0, 0%, 100%);
+    }
+    .sloth-rating input[type="radio"] {
+      display: none;
+    }
+    .sloth-rating input[type="radio"]:checked + label {
+      background-color: hsl(25, 97%, 53%);
+      color: #ffffff;
+      font-weight: 800;
+      box-shadow: 0 2px 10px rgba(252, 118, 20, 0.4);
+    }
+    .sloth-button {
+      background-color: hsl(25, 97%, 53%);
+      color: #ffffff;
+      font-weight: 700;
+      font-size: 13px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      width: 100%;
+      padding: 12px;
+      border-radius: 999px;
+      border: none;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      outline: none;
+    }
+    .sloth-button:hover {
+      background-color: hsl(0, 0%, 100%);
+      color: hsl(213, 19%, 18%);
+    }
+
+    /* Variant B: Leadirftex Cyber Edition (Titanium Obsidian + Cyber Neon Green #00FF22 + Orange #FF5C00) */
+    .sloth-ltx-card {
+      background-color: #070B14;
+      border: 1px solid rgba(0, 255, 34, 0.35);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      color: #ffffff;
+      width: 100%;
+      min-height: 310px;
+      padding: 24px;
+      border-radius: 24px;
+      box-sizing: border-box;
+      box-shadow: 0 0 25px rgba(0, 0, 0, 0.7), inset 0 0 15px rgba(0, 255, 34, 0.05);
+      text-align: left;
+    }
+    .sloth-ltx-star {
+      width: 40px;
+      height: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: rgba(0, 255, 34, 0.1);
+      border: 1px solid rgba(0, 255, 34, 0.4);
+      border-radius: 50%;
+      margin-bottom: 8px;
+      color: #00FF22;
+      font-size: 18px;
+    }
+    .sloth-ltx-title {
+      font-size: 18px;
+      font-family: 'JetBrains Mono', monospace;
+      font-weight: 800;
+      color: #ffffff;
+      margin-bottom: 4px;
+      letter-spacing: 0.5px;
+    }
+    .sloth-ltx-text {
+      font-size: 12px;
+      font-family: 'JetBrains Mono', monospace;
+      line-height: 1.45;
+      color: #94a3b8;
+      margin: 0 0 16px;
+    }
+    .sloth-ltx-rating {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 18px;
+    }
+    .sloth-ltx-rating label {
+      cursor: pointer;
+      width: 40px;
+      height: 40px;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      color: #94a3b8;
+      font-family: 'JetBrains Mono', monospace;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 14px;
+      font-weight: 700;
+      transition: all 0.2s ease;
+    }
+    .sloth-ltx-rating label:hover {
+      color: #03050A;
+      background-color: #00FF22;
+      border-color: #00FF22;
+    }
+    .sloth-ltx-rating input[type="radio"] {
+      display: none;
+    }
+    .sloth-ltx-rating input[type="radio"]:checked + label {
+      background-color: #00FF22;
+      border-color: #00FF22;
+      color: #03050A;
+      font-weight: 900;
+      box-shadow: 0 0 14px rgba(0, 255, 34, 0.6);
+    }
+    .sloth-ltx-button {
+      background: linear-gradient(135deg, #00FF22 0%, #00cc1b 100%);
+      color: #03050A;
+      font-family: 'JetBrains Mono', monospace;
+      font-weight: 800;
+      font-size: 12px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      width: 100%;
+      padding: 12px;
+      border-radius: 999px;
+      border: none;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      box-shadow: 0 0 15px rgba(0, 255, 34, 0.35);
+      outline: none;
+    }
+    .sloth-ltx-button:hover {
+      box-shadow: 0 0 25px rgba(0, 255, 34, 0.65);
+      transform: translateY(-1px);
+    }
   </style>
 </head>
 <body>
@@ -2552,6 +2750,82 @@
 
       <div style="margin-top: 20px; padding-top: 14px; border-top: 1px solid rgba(255,255,255,0.06); display: flex; justify-content: space-between; align-items: center; font-size: 11.5px; color: #64748b;">
         <span>Category: <strong>Cards &amp; Panels / 3D Flip Card with Glowing Orbs &amp; Rotating Border</strong></span>
+        <span style="color: #00FF22;">● Verified Production Ingestion</span>
+      </div>
+    </section>
+
+    <!-- SERIAL #014 -->
+    <section id="mockup-item-014" class="mockup-card">
+      <div class="mockup-header">
+        <div style="display: flex; align-items: center; gap: 10px;">
+          <span class="serial-badge">SERIAL #014</span>
+          <strong style="color: #ffffff; font-size: 16px;">Nice-Sloth-46 Interactive Rating &amp; Feedback Card</strong>
+          <span style="font-size: 11px; color: #64748b; font-family: monospace;">uiverse.io/jack0237/nice-sloth-46</span>
+        </div>
+        <a href="serial-list-mockup-design.html" style="color: var(--orange); font-size: 12px; text-decoration: none; font-weight: 600;">&larr; View Master Serial Index</a>
+      </div>
+
+      <div class="stage-view">
+        <!-- Variant A: Uiverse Canonical -->
+        <div class="stage-column">
+          <span class="stage-label">Variant A: Uiverse Canonical (5-Point Rating State &bull; Orange)</span>
+          <div class="sloth-wrapper">
+            <div class="sloth-card">
+              <div class="sloth-star">
+                <svg width="17" height="16" xmlns="http://www.w3.org/2000/svg">
+                  <path d="m9.067.43 1.99 4.031c.112.228.33.386.58.422l4.45.647a.772.772 0 0 1 .427 1.316l-3.22 3.138a.773.773 0 0 0-.222.683l.76 4.431a.772.772 0 0 1-1.12.813l-3.98-2.092a.773.773 0 0 0-.718 0l-3.98 2.092a.772.772 0 0 1-1.119-.813l.76-4.431a.77.77 0 0 0-.222-.683L.233 6.846A.772.772 0 0 1 .661 5.53l4.449-.647a.772.772 0 0 0 .58-.422L7.68.43a.774.774 0 0 1 1.387 0Z" fill="#FC7614"></path>
+                </svg>
+              </div>
+              <span class="sloth-title">How did we do?</span>
+              <p class="sloth-text">Please let us know how we did with your support request. All feedback helps us improve!</p>
+              <div class="sloth-rating">
+                <input id="rate-c-1" type="radio" name="rating-canonical" value="1" />
+                <label for="rate-c-1">1</label>
+                <input id="rate-c-2" type="radio" name="rating-canonical" value="2" />
+                <label for="rate-c-2">2</label>
+                <input id="rate-c-3" type="radio" name="rating-canonical" value="3" />
+                <label for="rate-c-3">3</label>
+                <input id="rate-c-4" type="radio" name="rating-canonical" value="4" checked />
+                <label for="rate-c-4">4</label>
+                <input id="rate-c-5" type="radio" name="rating-canonical" value="5" />
+                <label for="rate-c-5">5</label>
+              </div>
+              <button type="button" class="sloth-button" onclick="return false;">Submit</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Variant B: Leadirftex Cyber Edition -->
+        <div class="stage-column">
+          <span class="stage-label">Variant B: Leadirftex Cyber Edition (Supplier Quality Index)</span>
+          <div class="sloth-wrapper">
+            <div class="sloth-ltx-card">
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+                <div class="sloth-ltx-star">◈</div>
+                <span style="font-size: 9.5px; font-family: 'JetBrains Mono', monospace; color: #FF5C00; font-weight: 800;">AUDIT PROTOCOL</span>
+              </div>
+              <span class="sloth-ltx-title">Supplier Quality Index</span>
+              <p class="sloth-ltx-text">Rate shipment telemetry, CAD compliance, and smart contract execution accuracy.</p>
+              <div class="sloth-ltx-rating">
+                <input id="rate-ltx-1" type="radio" name="rating-ltx" value="1" />
+                <label for="rate-ltx-1">1</label>
+                <input id="rate-ltx-2" type="radio" name="rating-ltx" value="2" />
+                <label for="rate-ltx-2">2</label>
+                <input id="rate-ltx-3" type="radio" name="rating-ltx" value="3" />
+                <label for="rate-ltx-3">3</label>
+                <input id="rate-ltx-4" type="radio" name="rating-ltx" value="4" />
+                <label for="rate-ltx-4">4</label>
+                <input id="rate-ltx-5" type="radio" name="rating-ltx" value="5" checked />
+                <label for="rate-ltx-5">5</label>
+              </div>
+              <button type="button" class="sloth-ltx-button" onclick="return false;">Submit Telemetry Audit &rarr;</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div style="margin-top: 20px; padding-top: 14px; border-top: 1px solid rgba(255,255,255,0.06); display: flex; justify-content: space-between; align-items: center; font-size: 11.5px; color: #64748b;">
+        <span>Category: <strong>Inputs &amp; Forms / Interactive Rating &amp; Feedback Card</strong></span>
         <span style="color: #00FF22;">● Verified Production Ingestion</span>
       </div>
     </section>
