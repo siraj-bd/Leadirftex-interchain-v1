@@ -5,6 +5,21 @@
 **Full Platform Name:** Leadirftex Interchain  
 **Plan Domain will be:** Leadirftex.com  
 
+### Mockup Serial #030: Average-Falcon-37 Circular Diagonal-Swipe Scanner Button
+
+**Status:** PASS / VERIFIED — INGESTED SERIAL #030: AVERAGE-FALCON-37 CIRCULAR DIAGONAL-SWIPE SCANNER BUTTON (SOURCE: uiverse.io/gharsh11032000/average-falcon-37). INTEGRATED INTO CENTRALIZED MASTER REPOSITORY (`mockup-master-ui-ux.html#mockup-item-030`) AND REGISTERED IN SERIAL REGISTRY (`serial-list-mockup-design.html`). PRESERVED CANONICAL NEUMORPHIC CIRCULAR BUTTON WITH DIAGONAL 45-DEGREE ROTATING PLATE OVERSHOOT KEYFRAME DYNAMICS (@KEYFRAMES FALCON_SHAKEBACK WITH 50% 15%/-15% OVERSHOOT AND 100% -10%/10% SETTLE), ICON HOVER SCALE (1.25X) AND ACTIVE TOUCH (0.95X), ALONG WITH DEDICATED LEADIRFTEX CYBER QUANTUM TELEMETRY SCANNER & PULSE PODS FEATURING OBSIDIAN (#070B14), CYBER NEON GREEN (#00FF22), AND INTERCHAIN ORANGE (#FF5C00) WITH CROSSHAIR & CORE PULSE SVGS. CSS BRACES 100% BALANCED.
+**Target Files:** `mockup-master-ui-ux.html`, `serial-list-mockup-design.html`, `project-execution-status.md`, `project-status-for-chatgpt.html`
+**Live Preview Route:** `mockup-master-ui-ux.html#mockup-item-030`, `serial-list-mockup-design.html`
+**Audit & Implementation Highlights:**
+1. **Mockup Master Repository Ingestion (#mockup-item-030):**
+   - Scoped pure CSS with circular overflow clipping and elastic diagonal swipe keyframes.
+   - Dual variant presentation: Variant A (Uiverse Canonical Neumorphic Diagonal Swipe) and Variant B (Leadirftex Cyber Quantum Scanner & Pulse Pods).
+2. **Serial Registry Update:**
+   - Appended Serial `#030`, Item Short Name `Average-Falcon-37 Diagonal-Swipe Scanner`, Category `UI Micro-Actions / Circular Diagonal-Swipe Action Button`, Status `ACTIVE / INGESTED`, and direct action link.
+3. **Syntax Verification:**
+   - `mockup-master-ui-ux.html`: CSS Braces 100% BALANCED.
+   - `serial-list-mockup-design.html`: CSS Braces 100% BALANCED.
+
 ### Mockup Serial #029: Proud-Ladybug-47 Interactive Navigation Tooltip & Dropdown Menu
 
 **Status:** PASS / VERIFIED — INGESTED SERIAL #029: PROUD-LADYBUG-47 INTERACTIVE NAVIGATION TOOLTIP & DROPDOWN MENU (SOURCE: uiverse.io/Zain-Muhammad/proud-ladybug-47). INTEGRATED INTO CENTRALIZED MASTER REPOSITORY (`mockup-master-ui-ux.html#mockup-item-029`) AND REGISTERED IN SERIAL REGISTRY (`serial-list-mockup-design.html`). PRESERVED CANONICAL 360-DEGREE TAB ICON SPIN (NAV-LINK:HOVER .TAB SVG { TRANSFORM: ROTATE(360DEG); }), NOTCH-POINTED TOOLTIP DROPDOWN (CLIP-PATH: POLYGON(50% 0%, 0% 100%, 100% 100%)) WITH TRANSLATEY(0) OPACITY TRANSITIONS AND MULTI-ROW LINK ACTIONS, ALONG WITH DEDICATED LEADIRFTEX CYBER TELEMETRY & OPS GATEWAY FEATURING OBSIDIAN (#070B14), CYBER NEON GREEN (#00FF22), AND INTERCHAIN ORANGE (#FF5C00). CSS BRACES 100% BALANCED.
