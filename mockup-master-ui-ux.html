@@ -9679,6 +9679,308 @@
       transform: scale(0.98);
     }
 
+  
+    /* ==========================================================================
+       SERIAL #051: DANGEROUS-MOOSE-2 3D SOCIAL FEED PUBLISHING CARDS
+       Source: https://uiverse.io/prikshit_1236/dangerous-moose-2
+       Customized: Portrait 3D Feed Cards (Orange Frame & Green Frame Editions)
+       Features: Timestamp, Live Orbiting Celestial Body, 3D Inset/Bevel Rim,
+       Custom Post Copy, Official Leadirftex Monogram+Wordmark Lockup & Footer
+       ========================================================================== */
+
+    .moose-social-cluster {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 32px;
+      flex-wrap: wrap;
+      width: 100%;
+    }
+
+    /* Base 3D Portrait Social Publishing Card */
+    .moose-post-card {
+      position: relative;
+      width: 360px;
+      max-width: 95vw;
+      min-height: 540px;
+      border-radius: 36px;
+      padding: 26px 24px;
+      box-sizing: border-box;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: #ffffff;
+      overflow: hidden;
+      box-shadow: 0 25px 60px rgba(0, 0, 0, 0.45), 0 10px 25px rgba(0, 0, 0, 0.35);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.4s ease;
+      cursor: pointer;
+    }
+
+    .moose-post-card:hover {
+      transform: translateY(-8px) scale(1.015);
+    }
+
+    /* Outer 3D Framing Overlay */
+    .moose-post-card::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      border-radius: 36px;
+      pointer-events: none;
+      z-index: 20;
+    }
+
+    /* Orange Frame Card Edition */
+    .moose-card-orange {
+      background: linear-gradient(165deg, #1e131d 0%, #2b1825 35%, #3d1c1c 70%, #4a2216 100%);
+      border: 1px solid rgba(255, 92, 0, 0.4);
+      box-shadow: 0 20px 50px rgba(255, 92, 0, 0.15), 0 10px 25px rgba(0, 0, 0, 0.5);
+    }
+    .moose-card-orange::after {
+      box-shadow: inset 0 0 0 8px rgba(255, 92, 0, 0.95), inset 0 0 18px rgba(255, 92, 0, 0.4);
+    }
+    .moose-card-orange:hover {
+      box-shadow: 0 25px 60px rgba(255, 92, 0, 0.3), 0 0 30px rgba(255, 92, 0, 0.25);
+    }
+
+    /* Green Frame Card Edition */
+    .moose-card-green {
+      background: linear-gradient(165deg, #0d2218 0%, #0f2d20 35%, #133828 70%, #164230 100%);
+      border: 1px solid rgba(0, 255, 34, 0.4);
+      box-shadow: 0 20px 50px rgba(0, 255, 34, 0.12), 0 10px 25px rgba(0, 0, 0, 0.5);
+    }
+    .moose-card-green::after {
+      box-shadow: inset 0 0 0 8px rgba(0, 255, 34, 0.95), inset 0 0 18px rgba(0, 255, 34, 0.4);
+    }
+    .moose-card-green:hover {
+      box-shadow: 0 25px 60px rgba(0, 255, 34, 0.28), 0 0 30px rgba(0, 255, 34, 0.2);
+    }
+
+    /* Subtle Environmental Atmospheric Glow Layers */
+    .moose-bg-layer {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+      opacity: 0.65;
+      pointer-events: none;
+    }
+    .moose-card-orange .moose-bg-layer {
+      background: radial-gradient(circle at 80% 20%, rgba(255, 92, 0, 0.35) 0%, transparent 60%),
+                  radial-gradient(circle at 20% 80%, rgba(255, 140, 0, 0.2) 0%, transparent 50%);
+    }
+    .moose-card-green .moose-bg-layer {
+      background: radial-gradient(circle at 80% 20%, rgba(0, 255, 34, 0.3) 0%, transparent 60%),
+                  radial-gradient(circle at 20% 80%, rgba(0, 240, 255, 0.18) 0%, transparent 50%);
+    }
+
+    /* Top Metadata Header (Date & Time) */
+    .moose-meta-header {
+      position: relative;
+      z-index: 10;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-bottom: 12px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    .moose-badge-tag {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 9.5px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      padding: 3px 8px;
+      border-radius: 6px;
+    }
+    .moose-card-orange .moose-badge-tag {
+      background: rgba(255, 92, 0, 0.2);
+      color: #FF5C00;
+      border: 1px solid rgba(255, 92, 0, 0.4);
+    }
+    .moose-card-green .moose-badge-tag {
+      background: rgba(0, 255, 34, 0.15);
+      color: #00FF22;
+      border: 1px solid rgba(0, 255, 34, 0.4);
+    }
+
+    .moose-datetime {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 10.5px;
+      color: rgba(255, 255, 255, 0.85);
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    /* Main Post Body Area */
+    .moose-post-body {
+      position: relative;
+      z-index: 10;
+      margin: 16px 0;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .moose-post-title {
+      font-size: 20px;
+      font-weight: 800;
+      line-height: 1.25;
+      letter-spacing: -0.3px;
+      color: #ffffff;
+      margin: 0;
+    }
+    .moose-post-caption {
+      font-size: 12.5px;
+      line-height: 1.55;
+      color: rgba(255, 255, 255, 0.82);
+      margin: 0;
+    }
+
+    /* 3D Celestial Orbit System (from dangerous-moose-2, adapted for portrait) */
+    .moose-orbit-system {
+      position: relative;
+      width: 100%;
+      height: 70px;
+      z-index: 5;
+      margin: 4px 0 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+    .moose-orbit-track {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 280px;
+      height: 280px;
+      border-radius: 50%;
+      box-sizing: border-box;
+      -webkit-mask-image: linear-gradient(to right, transparent 5%, black 35%, black 65%, transparent 95%);
+      mask-image: linear-gradient(to right, transparent 5%, black 35%, black 65%, transparent 95%);
+    }
+    .moose-card-orange .moose-orbit-track {
+      border: 6px solid rgba(255, 92, 0, 0.3);
+    }
+    .moose-card-green .moose-orbit-track {
+      border: 6px solid rgba(0, 255, 34, 0.3);
+    }
+
+    .moose-orbit-pivot {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 280px;
+      height: 280px;
+      margin-top: -140px;
+      margin-left: -140px;
+      transform-origin: center center;
+      animation: mooseOrbitSweep 6s ease-in-out infinite alternate;
+    }
+    .moose-orbit-celestial {
+      position: absolute;
+      top: -10px;
+      left: 50%;
+      margin-left: -10px;
+      width: 20px;
+      height: 20px;
+      background: #ffffff;
+      border-radius: 50%;
+    }
+    .moose-card-orange .moose-orbit-celestial {
+      box-shadow: 0 0 16px 6px rgba(255, 255, 255, 0.9), 0 0 32px 14px rgba(255, 92, 0, 0.7);
+    }
+    .moose-card-green .moose-orbit-celestial {
+      box-shadow: 0 0 16px 6px rgba(255, 255, 255, 0.9), 0 0 32px 14px rgba(0, 255, 34, 0.7);
+    }
+
+    @keyframes mooseOrbitSweep {
+      0% {
+        transform: rotate(-50deg);
+      }
+      100% {
+        transform: rotate(50deg);
+      }
+    }
+
+    /* Brand Lockup & Contact Footer Section */
+    .moose-post-footer {
+      position: relative;
+      z-index: 10;
+      margin-top: auto;
+      padding-top: 14px;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    /* Compact Approved Brand Lockup */
+    .moose-brand-lockup {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      height: 38px;
+    }
+    .moose-brand-logo {
+      height: 38px;
+      width: auto;
+      object-fit: contain;
+      filter: drop-shadow(0 3px 8px rgba(0,0,0,0.6));
+    }
+    .moose-brand-texts {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 100%;
+    }
+    .moose-brand-wm {
+      font-family: 'Encode Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      font-weight: 900;
+      font-size: 26px;
+      color: #FF5C00;
+      line-height: 0.9;
+      letter-spacing: -0.02em;
+    }
+    .moose-brand-interchain {
+      font-family: 'Encode Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      font-weight: 900;
+      font-size: 8.5px;
+      letter-spacing: 0.20em;
+      text-transform: uppercase;
+      line-height: 0.85;
+      background: linear-gradient(180deg, #FFFFFF 0%, #CBD5E1 60%, #94A3B8 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    /* Official Contact & Domain Info */
+    .moose-contact-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 10.5px;
+      color: rgba(255, 255, 255, 0.7);
+      padding-top: 4px;
+    }
+    .moose-contact-link {
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: 700;
+      transition: color 0.2s ease;
+    }
+    .moose-card-orange .moose-contact-link:hover {
+      color: #FF5C00;
+    }
+    .moose-card-green .moose-contact-link:hover {
+      color: #00FF22;
+    }
+
   </style>
 </head>
 <body>
@@ -13810,6 +14112,122 @@
 
       <div style="margin-top: 20px; padding-top: 14px; border-top: 1px solid rgba(255,255,200,0.06); display: flex; justify-content: space-between; align-items: center; font-size: 11.5px; color: #64748b;">
         <span>Category: <strong>Buttons / Cyber Scanline Bevel-Shift Action Button</strong></span>
+        <span style="color: #00FF22;">● Verified Production Ingestion</span>
+      </div>
+    </section>
+
+
+    <!-- ==========================================================================
+         SERIAL #051: DANGEROUS-MOOSE-2 3D SOCIAL FEED PUBLISHING CARDS
+         ========================================================================== -->
+    <section id="mockup-item-051" class="mockup-card">
+      <div class="mockup-header">
+        <div style="display: flex; align-items: center; gap: 10px;">
+          <span class="serial-badge">SERIAL #051</span>
+          <strong style="color: #ffffff; font-size: 16px;">Dangerous-Moose-2 3D Social Publishing Cards</strong>
+          <span style="font-size: 11px; color: #64748b; font-family: monospace;">uiverse.io/prikshit_1236/dangerous-moose-2</span>
+        </div>
+        <a href="serial-list-mockup-design.html" style="color: var(--orange); font-size: 12px; text-decoration: none; font-weight: 600;">&larr; View Master Serial Index</a>
+      </div>
+
+      <div class="stage-view">
+        <div class="moose-social-cluster">
+          <!-- Card Edition 1: Cyber Orange 3D Frame -->
+          <div class="moose-post-card moose-card-orange">
+            <div class="moose-bg-layer"></div>
+
+            <!-- Top Post Metadata -->
+            <div class="moose-meta-header">
+              <span class="moose-badge-tag">OFFICIAL BROADCAST</span>
+              <div class="moose-datetime">
+                <span>🗓️ 18 Sep 2026</span>
+                <span>•</span>
+                <span>⏰ 10:30 AM</span>
+              </div>
+            </div>
+
+            <!-- Main Post Body -->
+            <div class="moose-post-body">
+              <h3 class="moose-post-title">Decentralized Apparel CAD Engine Live</h3>
+              <p class="moose-post-caption">
+                Deploying cross-chain garment geometry telemetry across 29 specialized manufacturing nodes. Zero latency sync for industrial denim patterns and automatic setting units worldwide.
+              </p>
+            </div>
+
+            <!-- 3D Kinetic Celestial Orbit System -->
+            <div class="moose-orbit-system">
+              <div class="moose-orbit-track"></div>
+              <div class="moose-orbit-pivot">
+                <div class="moose-orbit-celestial"></div>
+              </div>
+            </div>
+
+            <!-- Bottom Brand Lockup & Contact Details -->
+            <div class="moose-post-footer">
+              <div class="moose-brand-lockup">
+                <img class="moose-brand-logo" src="Monogram/monogram-approved-tight.png" alt="Leadirftex Monogram">
+                <div class="moose-brand-texts">
+                  <span class="moose-brand-wm">Leadirftex</span>
+                  <span class="moose-brand-interchain">INTERCHAIN</span>
+                </div>
+              </div>
+              <div class="moose-contact-row">
+                <span>✉️ contact@leadirftex.com</span>
+                <a class="moose-contact-link" href="https://leadirftex.com" target="_blank">leadirftex.com ↗</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card Edition 2: Cyber Neon Green 3D Frame -->
+          <div class="moose-post-card moose-card-green">
+            <div class="moose-bg-layer"></div>
+
+            <!-- Top Post Metadata -->
+            <div class="moose-meta-header">
+              <span class="moose-badge-tag">SMART FACTORY DISPATCH</span>
+              <div class="moose-datetime">
+                <span>🗓️ 18 Sep 2026</span>
+                <span>•</span>
+                <span>⏰ 10:30 AM</span>
+              </div>
+            </div>
+
+            <!-- Main Post Body -->
+            <div class="moose-post-body">
+              <h3 class="moose-post-title">Vi.Be.Mac Automated Setting Integration</h3>
+              <p class="moose-post-caption">
+                Automated back pocket and bottom hemming cycles synchronized in real-time. Full telemetry tracking verified for high-precision needle feeding and direct servo execution.
+              </p>
+            </div>
+
+            <!-- 3D Kinetic Celestial Orbit System -->
+            <div class="moose-orbit-system">
+              <div class="moose-orbit-track"></div>
+              <div class="moose-orbit-pivot">
+                <div class="moose-orbit-celestial"></div>
+              </div>
+            </div>
+
+            <!-- Bottom Brand Lockup & Contact Details -->
+            <div class="moose-post-footer">
+              <div class="moose-brand-lockup">
+                <img class="moose-brand-logo" src="Monogram/monogram-approved-tight.png" alt="Leadirftex Monogram">
+                <div class="moose-brand-texts">
+                  <span class="moose-brand-wm">Leadirftex</span>
+                  <span class="moose-brand-interchain">INTERCHAIN</span>
+                </div>
+              </div>
+              <div class="moose-contact-row">
+                <span>✉️ contact@leadirftex.com</span>
+                <a class="moose-contact-link" href="https://leadirftex.com" target="_blank">leadirftex.com ↗</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div style="margin-top: 20px; padding-top: 14px; border-top: 1px solid rgba(255,255,255,0.06); display: flex; justify-content: space-between; align-items: center; font-size: 11.5px; color: #64748b;">
+        <span>Category: <strong>Cards &amp; Panels / 3D Social Feed Publishing Cards (Orange &amp; Green Editions)</strong></span>
         <span style="color: #00FF22;">● Verified Production Ingestion</span>
       </div>
     </section>
