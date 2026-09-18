@@ -11490,6 +11490,225 @@
       text-shadow: 0 0 16px #00FF22, 0 0 28px #00FF22;
     }
 
+
+    /* ==========================================================================
+       CYBER MOCKUP EXPORT & DOWNLOAD ENGINE (FUTURE-PROOF DYNAMIC)
+       ========================================================================== */
+    .mockup-downloader-bar {
+      background: linear-gradient(135deg, rgba(13, 21, 39, 0.95) 0%, rgba(7, 11, 20, 0.98) 100%);
+      border: 1px solid rgba(255, 92, 0, 0.35);
+      border-left: 4px solid #FF5C00;
+      border-radius: 14px;
+      padding: 18px 22px;
+      margin-bottom: 32px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 16px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4), 0 0 20px rgba(255, 92, 0, 0.08);
+      position: relative;
+    }
+    .downloader-left {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+    }
+    .downloader-badge {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .downloader-pulse-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #00FF22;
+      box-shadow: 0 0 10px #00FF22;
+      animation: downloader-pulse 2s infinite;
+    }
+    @keyframes downloader-pulse {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.4; transform: scale(0.85); }
+    }
+    .downloader-badge-text {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 11px;
+      font-weight: 800;
+      color: #00FF22;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+    }
+    .downloader-count-pill {
+      background: rgba(0, 255, 34, 0.12);
+      border: 1px solid rgba(0, 255, 34, 0.3);
+      color: #00FF22;
+      font-size: 10px;
+      font-weight: 700;
+      padding: 2px 8px;
+      border-radius: 999px;
+      font-family: 'JetBrains Mono', monospace;
+    }
+    .downloader-tagline {
+      color: #94a3b8;
+      font-size: 12.5px;
+      margin: 0;
+    }
+    .downloader-controls {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+    .downloader-input-wrap {
+      position: relative;
+      display: flex;
+      align-items: center;
+    }
+    .downloader-hash {
+      position: absolute;
+      left: 12px;
+      color: #FF5C00;
+      font-family: 'JetBrains Mono', monospace;
+      font-weight: 800;
+      font-size: 14px;
+      pointer-events: none;
+    }
+    .downloader-input {
+      background: #070B14;
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      color: #ffffff;
+      padding: 10px 14px 10px 30px;
+      border-radius: 8px;
+      font-size: 13px;
+      font-family: 'JetBrains Mono', monospace;
+      width: 220px;
+      outline: none;
+      transition: all 0.2s ease;
+      box-sizing: border-box;
+    }
+    .downloader-input:focus {
+      border-color: #FF5C00;
+      box-shadow: 0 0 12px rgba(255, 92, 0, 0.35);
+    }
+    .downloader-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 10px 16px;
+      border-radius: 8px;
+      font-size: 12.5px;
+      font-weight: 700;
+      cursor: pointer;
+      border: none;
+      transition: all 0.2s ease;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    }
+    .downloader-btn-download {
+      background: linear-gradient(135deg, #FF5C00 0%, #D84E00 100%);
+      color: #ffffff;
+      box-shadow: 0 4px 15px rgba(255, 92, 0, 0.35);
+    }
+    .downloader-btn-download:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(255, 92, 0, 0.55);
+    }
+    .downloader-btn-copy {
+      background: rgba(0, 255, 34, 0.1);
+      color: #00FF22;
+      border: 1px solid rgba(0, 255, 34, 0.4);
+    }
+    .downloader-btn-copy:hover {
+      background: rgba(0, 255, 34, 0.2);
+      transform: translateY(-2px);
+      box-shadow: 0 0 15px rgba(0, 255, 34, 0.3);
+    }
+    .downloader-btn-jump {
+      background: rgba(255, 255, 255, 0.06);
+      color: #e2e8f0;
+      border: 1px solid rgba(255, 255, 255, 0.15);
+    }
+    .downloader-btn-jump:hover {
+      background: rgba(255, 255, 255, 0.12);
+      color: #ffffff;
+      transform: translateY(-2px);
+    }
+
+    /* Individual Mockup Card Actions */
+    .card-export-group {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      margin-left: auto;
+      margin-right: 12px;
+    }
+    .card-export-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      padding: 5px 10px;
+      font-size: 11px;
+      font-weight: 700;
+      border-radius: 5px;
+      cursor: pointer;
+      text-decoration: none;
+      transition: all 0.2s ease;
+      font-family: 'JetBrains Mono', monospace;
+      border: none;
+    }
+    .card-export-btn-dl {
+      background: rgba(255, 92, 0, 0.14);
+      color: #FF5C00;
+      border: 1px solid rgba(255, 92, 0, 0.4);
+    }
+    .card-export-btn-dl:hover {
+      background: #FF5C00;
+      color: #ffffff;
+      box-shadow: 0 0 12px rgba(255, 92, 0, 0.45);
+    }
+    .card-export-btn-copy {
+      background: rgba(0, 255, 34, 0.1);
+      color: #00FF22;
+      border: 1px solid rgba(0, 255, 34, 0.35);
+    }
+    .card-export-btn-copy:hover {
+      background: #00FF22;
+      color: #070B14;
+      box-shadow: 0 0 12px rgba(0, 255, 34, 0.45);
+    }
+
+    /* Feedback Toast */
+    .downloader-toast {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      background: #070B14;
+      border: 1px solid #00FF22;
+      color: #ffffff;
+      padding: 12px 20px;
+      border-radius: 8px;
+      font-size: 12.5px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.8), 0 0 20px rgba(0, 255, 34, 0.25);
+      z-index: 99999;
+      transform: translateY(120px);
+      opacity: 0;
+      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+      pointer-events: none;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    }
+    .downloader-toast.active {
+      transform: translateY(0);
+      opacity: 1;
+      pointer-events: auto;
+    }
+    .downloader-toast-error {
+      border-color: #FF5C00;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.8), 0 0 20px rgba(255, 92, 0, 0.25);
+    }
+
   </style>
 </head>
 <body>
@@ -11509,6 +11728,39 @@
         </a>
       </div>
     </header>
+
+    <!-- ======================================================================
+         CYBER MOCKUP DOWNLOADER & EXPORT ENGINE (FUTURE-PROOF DYNAMIC)
+         ====================================================================== -->
+    <div id="mockup-downloader-bar" class="mockup-downloader-bar">
+      <div class="downloader-left">
+        <div class="downloader-badge">
+          <span class="downloader-pulse-dot"></span>
+          <span class="downloader-badge-text">CYBER EXPORT ENGINE</span>
+          <span id="downloader-total-count" class="downloader-count-pill">SCANNING MOCKUPS...</span>
+        </div>
+        <div class="downloader-tagline">Download self-contained standalone production HTML for any serial (Auto-detects all current & future mockups)</div>
+      </div>
+
+      <div class="downloader-controls">
+        <div class="downloader-input-wrap">
+          <span class="downloader-hash">#</span>
+          <input type="text" id="serial-download-input" class="downloader-input" placeholder="Enter Serial (e.g. 051)..." list="serial-datalist" autocomplete="off">
+          <datalist id="serial-datalist"></datalist>
+        </div>
+        <button id="btn-download-serial" class="downloader-btn downloader-btn-download" title="Download standalone HTML file">
+          <span>⬇ Download HTML</span>
+        </button>
+        <button id="btn-copy-serial" class="downloader-btn downloader-btn-copy" title="Copy standalone HTML to clipboard">
+          <span>📋 Copy Code</span>
+        </button>
+        <button id="btn-jump-serial" class="downloader-btn downloader-btn-jump" title="Jump to Mockup Card">
+          <span>🔍 Jump</span>
+        </button>
+      </div>
+    </div>
+    <div id="downloader-toast" class="downloader-toast"></div>
+
 
     <!-- SERIAL #001 -->
     <section id="mockup-item-001" class="mockup-card">
@@ -16233,5 +16485,331 @@
     </section>
 
   </div>
+
+  <!-- ======================================================================
+       CYBER MOCKUP DOWNLOADER & EXPORT ENGINE SCRIPT (FUTURE-PROOF DYNAMIC)
+       ====================================================================== -->
+  <script>
+    (function() {
+      // Dynamic Cyber Standalone Mockup Export Engine
+      function showToast(msg, isError) {
+        var toast = document.getElementById('downloader-toast');
+        if (!toast) return;
+        toast.innerHTML = (isError ? '⚠️ ' : '✓ ') + msg;
+        if (isError) {
+          toast.classList.add('downloader-toast-error');
+        } else {
+          toast.classList.remove('downloader-toast-error');
+        }
+        toast.classList.add('active');
+        clearTimeout(window.__toastTimeout);
+        window.__toastTimeout = setTimeout(function() {
+          toast.classList.remove('active');
+        }, 3500);
+      }
+
+      function parseSerialInput(inputVal) {
+        if (!inputVal) return null;
+        var clean = String(inputVal).trim().replace(/[^0-9]/g, '');
+        if (!clean) return null;
+        return clean.padStart(3, '0');
+      }
+
+      function getAllMockupSections() {
+        return Array.from(document.querySelectorAll('section[id^="mockup-item-"]'));
+      }
+
+      function findMockupSection(serialStr) {
+        return document.getElementById('mockup-item-' + serialStr);
+      }
+
+      function getMockupTitle(section) {
+        var titleEl = section.querySelector('.mockup-header strong');
+        return titleEl ? titleEl.textContent.trim() : ('Mockup ' + section.id);
+      }
+
+      function generateStandaloneHtml(section, serialStr) {
+        var title = getMockupTitle(section);
+        var stageView = section.querySelector('.stage-view');
+        var stageHtml = stageView ? stageView.outerHTML : section.innerHTML;
+        var categoryEl = section.querySelector('div[style*="border-top"]');
+        var categoryHtml = categoryEl ? categoryEl.outerHTML : '';
+
+        // Extract style rules from document
+        var styleContent = '';
+        var styleTags = document.querySelectorAll('style');
+        styleTags.forEach(function(st) {
+          styleContent += st.innerHTML + '\n';
+        });
+
+        return '<!DOCTYPE html>\n' +
+          '<html lang="en">\n' +
+          '<head>\n' +
+          '  <meta charset="UTF-8">\n' +
+          '  <meta name="viewport" content="width=device-width, initial-scale=1.0">\n' +
+          '  <title>Leadirftex Interchain — Serial #' + serialStr + ': ' + title + '</title>\n' +
+          '  <link rel="preconnect" href="https://fonts.googleapis.com">\n' +
+          '  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>\n' +
+          '  <link href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@700;800;900&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600;700;800&display=swap" rel="stylesheet">\n' +
+          '  <style>\n' +
+          styleContent + '\n' +
+          '    /* Standalone Container Adaptations */\n' +
+          '    body {\n' +
+          '      background: #03050a;\n' +
+          '      min-height: 100vh;\n' +
+          '      padding: 30px 16px;\n' +
+          '      margin: 0;\n' +
+          '      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;\n' +
+          '      color: #ffffff;\n' +
+          '      display: flex;\n' +
+          '      flex-direction: column;\n' +
+          '      align-items: center;\n' +
+          '      box-sizing: border-box;\n' +
+          '    }\n' +
+          '    .standalone-card-wrapper {\n' +
+          '      max-width: 1100px;\n' +
+          '      width: 100%;\n' +
+          '      background: #070B14;\n' +
+          '      border: 1px solid rgba(255, 92, 0, 0.35);\n' +
+          '      border-radius: 16px;\n' +
+          '      padding: 24px;\n' +
+          '      box-shadow: 0 20px 60px rgba(0,0,0,0.8), 0 0 30px rgba(255, 92, 0, 0.1);\n' +
+          '      box-sizing: border-box;\n' +
+          '    }\n' +
+          '    .standalone-export-header {\n' +
+          '      display: flex;\n' +
+          '      justify-content: space-between;\n' +
+          '      align-items: center;\n' +
+          '      padding-bottom: 18px;\n' +
+          '      margin-bottom: 24px;\n' +
+          '      border-bottom: 1px solid rgba(255, 255, 255, 0.08);\n' +
+          '      flex-wrap: wrap;\n' +
+          '      gap: 12px;\n' +
+          '    }\n' +
+          '    .standalone-export-title {\n' +
+          '      font-size: 17px;\n' +
+          '      font-weight: 800;\n' +
+          '      color: #ffffff;\n' +
+          '      display: flex;\n' +
+          '      align-items: center;\n' +
+          '      gap: 10px;\n' +
+          '    }\n' +
+          '    .standalone-export-badge {\n' +
+          '      background: rgba(0, 255, 34, 0.14);\n' +
+          '      color: #00FF22;\n' +
+          '      border: 1px solid rgba(0, 255, 34, 0.4);\n' +
+          '      padding: 4px 10px;\n' +
+          '      border-radius: 6px;\n' +
+          '      font-size: 11px;\n' +
+          '      font-family: "JetBrains Mono", monospace;\n' +
+          '      font-weight: 700;\n' +
+          '      letter-spacing: 0.5px;\n' +
+          '    }\n' +
+          '    .standalone-brand-credit {\n' +
+          '      font-size: 12px;\n' +
+          '      color: #94a3b8;\n' +
+          '      font-family: "JetBrains Mono", monospace;\n' +
+          '    }\n' +
+          '    .standalone-brand-credit strong {\n' +
+          '      color: #FF5C00;\n' +
+          '    }\n' +
+          '  </style>\n' +
+          '</head>\n' +
+          '<body>\n' +
+          '  <div class="standalone-card-wrapper">\n' +
+          '    <div class="standalone-export-header">\n' +
+          '      <div class="standalone-export-title">\n' +
+          '        <span class="standalone-export-badge">SERIAL #' + serialStr + '</span>\n' +
+          '        <span>' + title + '</span>\n' +
+          '      </div>\n' +
+          '      <div class="standalone-brand-credit">\n' +
+          '        Leadirftex Interchain &bull; <strong>leadirftex.com</strong>\n' +
+          '      </div>\n' +
+          '    </div>\n\n' +
+          '    ' + stageHtml + '\n\n' +
+          '    ' + categoryHtml + '\n' +
+          '  </div>\n' +
+          '</body>\n' +
+          '</html>';
+      }
+
+      function downloadMockup(serialStr) {
+        var section = findMockupSection(serialStr);
+        if (!section) {
+          showToast('Serial #' + serialStr + ' not found on this page!', true);
+          return;
+        }
+        var title = getMockupTitle(section);
+        var safeTitle = title.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
+        var filename = 'leadirftex-mockup-serial-' + serialStr + '-' + safeTitle + '.html';
+        var htmlContent = generateStandaloneHtml(section, serialStr);
+
+        var blob = new Blob([htmlContent], { type: 'text/html;charset=utf-8' });
+        var url = URL.createObjectURL(blob);
+        var a = document.createElement('a');
+        a.href = url;
+        a.download = filename;
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+        URL.revokeObjectURL(url);
+
+        showToast('Downloaded: ' + filename);
+      }
+
+      function copyMockupCode(serialStr) {
+        var section = findMockupSection(serialStr);
+        if (!section) {
+          showToast('Serial #' + serialStr + ' not found on this page!', true);
+          return;
+        }
+        var htmlContent = generateStandaloneHtml(section, serialStr);
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+          navigator.clipboard.writeText(htmlContent).then(function() {
+            showToast('Copied Serial #' + serialStr + ' Standalone HTML to Clipboard!');
+          }).catch(function() {
+            showToast('Clipboard permission denied. Please click Download instead.', true);
+          });
+        } else {
+          showToast('Clipboard not supported in this environment. Please click Download.', true);
+        }
+      }
+
+      function jumpToMockup(serialStr) {
+        var section = findMockupSection(serialStr);
+        if (!section) {
+          showToast('Serial #' + serialStr + ' not found on this page!', true);
+          return;
+        }
+        section.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        section.style.outline = '2px solid #00FF22';
+        section.style.boxShadow = '0 0 30px rgba(0, 255, 34, 0.4)';
+        setTimeout(function() {
+          section.style.outline = '';
+          section.style.boxShadow = '';
+        }, 2500);
+        showToast('Viewing Serial #' + serialStr);
+      }
+
+      // Initialize Downloader Engine on DOM Ready (Future-Proof: dynamic scan of all present cards)
+      function init() {
+        var sections = getAllMockupSections();
+        var datalist = document.getElementById('serial-datalist');
+        var countPill = document.getElementById('downloader-total-count');
+
+        if (countPill) {
+          var firstId = sections.length > 0 ? sections[0].id.replace('mockup-item-', '') : '001';
+          var lastId = sections.length > 0 ? sections[sections.length - 1].id.replace('mockup-item-', '') : '000';
+          countPill.textContent = sections.length + ' MOCKUPS LOADED (SERIAL #' + firstId + ' — #' + lastId + ')';
+        }
+
+        // Populate Datalist & inject individual card quick-action buttons
+        sections.forEach(function(section) {
+          var id = section.id.replace('mockup-item-', '');
+          var title = getMockupTitle(section);
+
+          if (datalist) {
+            var option = document.createElement('option');
+            option.value = id;
+            option.label = 'Serial #' + id + ': ' + title;
+            datalist.appendChild(option);
+          }
+
+          // Inject quick download & copy buttons into each card header
+          var header = section.querySelector('.mockup-header');
+          if (header && !header.querySelector('.card-export-group')) {
+            var masterLink = header.querySelector('a');
+            var actionGroup = document.createElement('div');
+            actionGroup.className = 'card-export-group';
+
+            var dlBtn = document.createElement('button');
+            dlBtn.className = 'card-export-btn card-export-btn-dl';
+            dlBtn.innerHTML = '⬇ Download HTML';
+            dlBtn.title = 'Download standalone HTML file for Serial #' + id;
+            dlBtn.onclick = (function(sid) {
+              return function(e) {
+                e.preventDefault();
+                downloadMockup(sid);
+              };
+            })(id);
+
+            var copyBtn = document.createElement('button');
+            copyBtn.className = 'card-export-btn card-export-btn-copy';
+            copyBtn.innerHTML = '📋 Copy';
+            copyBtn.title = 'Copy standalone HTML code for Serial #' + id;
+            copyBtn.onclick = (function(sid) {
+              return function(e) {
+                e.preventDefault();
+                copyMockupCode(sid);
+              };
+            })(id);
+
+            actionGroup.appendChild(dlBtn);
+            actionGroup.appendChild(copyBtn);
+            if (masterLink) {
+              header.insertBefore(actionGroup, masterLink);
+            } else {
+              header.appendChild(actionGroup);
+            }
+          }
+        });
+
+        // Bind Main Control Bar Buttons
+        var input = document.getElementById('serial-download-input');
+        var btnDownload = document.getElementById('btn-download-serial');
+        var btnCopy = document.getElementById('btn-copy-serial');
+        var btnJump = document.getElementById('btn-jump-serial');
+
+        if (btnDownload) {
+          btnDownload.onclick = function() {
+            var serial = parseSerialInput(input ? input.value : '');
+            if (!serial) {
+              showToast('Please enter a serial number (e.g. 051 or 51)!', true);
+              return;
+            }
+            downloadMockup(serial);
+          };
+        }
+
+        if (btnCopy) {
+          btnCopy.onclick = function() {
+            var serial = parseSerialInput(input ? input.value : '');
+            if (!serial) {
+              showToast('Please enter a serial number (e.g. 051 or 51)!', true);
+              return;
+            }
+            copyMockupCode(serial);
+          };
+        }
+
+        if (btnJump) {
+          btnJump.onclick = function() {
+            var serial = parseSerialInput(input ? input.value : '');
+            if (!serial) {
+              showToast('Please enter a serial number (e.g. 051 or 51)!', true);
+              return;
+            }
+            jumpToMockup(serial);
+          };
+        }
+
+        if (input) {
+          input.addEventListener('keydown', function(e) {
+            if (e.key === 'Enter') {
+              e.preventDefault();
+              if (btnDownload) btnDownload.click();
+            }
+          });
+        }
+      }
+
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', init);
+      } else {
+        init();
+      }
+    })();
+  </script>
+
 </body>
 </html>
