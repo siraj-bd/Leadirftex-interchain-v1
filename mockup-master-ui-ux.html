@@ -1278,6 +1278,138 @@
         rgba(0, 255, 34, 0.35) 0px 0px 30px,
         rgba(0, 0, 0, 0.7) 0px 20px 40px;
     }
+
+    /* === SERIAL #010: GIANT-TREEFROG-92 ICON-TO-CONTENT REVEAL CARD === */
+    /* Variant A: Canonical Uiverse */
+    .treefrog-card {
+      position: relative;
+      width: 290px;
+      height: 190px;
+      background: linear-gradient(-45deg, #f89b29 0%, #ff0f7b 100%);
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+      cursor: pointer;
+    }
+    .treefrog-card svg {
+      width: 46px;
+      height: 46px;
+      fill: #ffffff;
+      transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+    }
+    .treefrog-card:hover {
+      box-shadow: 0 10px 25px rgba(255, 15, 123, 0.35);
+    }
+    .treefrog-card:hover svg {
+      transform: scale(0);
+      opacity: 0;
+    }
+    .treefrog-content {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) rotate(-4deg) scale(0.9);
+      width: 100%;
+      height: 100%;
+      padding: 20px;
+      box-sizing: border-box;
+      background-color: #ffffff;
+      opacity: 0;
+      transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: left;
+    }
+    .treefrog-card:hover .treefrog-content {
+      transform: translate(-50%, -50%) rotate(0deg) scale(1);
+      opacity: 1;
+    }
+    .treefrog-title {
+      margin: 0;
+      font-size: 18px;
+      color: #1e293b;
+      font-weight: 800;
+    }
+    .treefrog-desc {
+      margin: 8px 0 0;
+      font-size: 12.5px;
+      color: #64748b;
+      line-height: 1.4;
+    }
+
+    /* Variant B: Leadirftex Cyber Edition (Obsidian + Cyber Neon Green #00FF22 + Leadirftex Orange #FF5C00) */
+    .treefrog-ltx-card {
+      position: relative;
+      width: 290px;
+      height: 190px;
+      background: linear-gradient(135deg, #FF5C00 0%, #03050A 50%, #00FF22 100%);
+      border: 1px solid rgba(0, 255, 34, 0.3);
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+      cursor: pointer;
+    }
+    .treefrog-ltx-card svg {
+      width: 48px;
+      height: 48px;
+      fill: #00FF22;
+      filter: drop-shadow(0 0 8px #00FF22);
+      transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+    }
+    .treefrog-ltx-card:hover {
+      border-color: #00FF22;
+      box-shadow: 0 0 30px rgba(0, 255, 34, 0.4);
+    }
+    .treefrog-ltx-card:hover svg {
+      transform: scale(0);
+      opacity: 0;
+    }
+    .treefrog-ltx-content {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) rotate(-4deg) scale(0.9);
+      width: 100%;
+      height: 100%;
+      padding: 20px;
+      box-sizing: border-box;
+      background-color: #070B14;
+      border: 1px solid rgba(0, 255, 34, 0.5);
+      opacity: 0;
+      transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: left;
+    }
+    .treefrog-ltx-card:hover .treefrog-ltx-content {
+      transform: translate(-50%, -50%) rotate(0deg) scale(1);
+      opacity: 1;
+    }
+    .treefrog-ltx-title {
+      margin: 0;
+      font-size: 16px;
+      font-family: 'JetBrains Mono', monospace;
+      color: #00FF22;
+      font-weight: 800;
+      letter-spacing: 1px;
+    }
+    .treefrog-ltx-desc {
+      margin: 8px 0 0;
+      font-size: 12px;
+      font-family: 'JetBrains Mono', monospace;
+      color: #cbd5e1;
+      line-height: 1.45;
+    }
   </style>
 </head>
 <body>
@@ -1695,6 +1827,54 @@
 
       <div style="margin-top: 20px; padding-top: 14px; border-top: 1px solid rgba(255,255,255,0.06); display: flex; justify-content: space-between; align-items: center; font-size: 11.5px; color: #64748b;">
         <span>Category: <strong>Cards &amp; Panels / Deep Embossed 3D Inset Shadow Card</strong></span>
+        <span style="color: #00FF22;">● Verified Production Ingestion</span>
+      </div>
+    </section>
+
+    <!-- SERIAL #010 -->
+    <section id="mockup-item-010" class="mockup-card">
+      <div class="mockup-header">
+        <div style="display: flex; align-items: center; gap: 10px;">
+          <span class="serial-badge">SERIAL #010</span>
+          <strong style="color: #ffffff; font-size: 16px;">Giant-Treefrog-92 Icon-to-Content Reveal Card</strong>
+          <span style="font-size: 11px; color: #64748b; font-family: monospace;">uiverse.io/yashlikescode/giant-treefrog-92</span>
+        </div>
+        <a href="serial-list-mockup-design.html" style="color: var(--orange); font-size: 12px; text-decoration: none; font-weight: 600;">&larr; View Master Serial Index</a>
+      </div>
+
+      <div class="stage-view">
+        <!-- Variant A: Uiverse Canonical -->
+        <div class="stage-column">
+          <span class="stage-label">Variant A: Uiverse Canonical (Sunset Gradient &bull; White Sheet Reveal)</span>
+          <div class="treefrog-card">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path d="M20 5H4V19L13.2923 9.70649C13.6828 9.31595 14.3159 9.31591 14.7065 9.70641L20 15.0104V5ZM2 3.9934C2 3.44476 2.45531 3 2.9918 3H21.0082C21.556 3 22 3.44495 22 3.9934V20.0066C22 20.5552 21.5447 21 21.0082 21H2.9918C2.44405 21 2 20.5551 2 20.0066V3.9934ZM8 11C6.89543 11 6 10.1046 6 9C6 7.89543 6.89543 7 8 7C9.10457 7 10 7.89543 10 9C10 10.1046 9.10457 11 8 11Z"></path>
+            </svg>
+            <div class="treefrog-content">
+              <p class="treefrog-title">Media Dossier</p>
+              <p class="treefrog-desc">High-fidelity 3D CAD render preview and factory asset telemetry linked directly to live chain nodes.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Variant B: Leadirftex Cyber Edition -->
+        <div class="stage-column">
+          <span class="stage-label">Variant B: Leadirftex Cyber Edition (Titanium Protocol Reveal)</span>
+          <div class="treefrog-ltx-card">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm0 10.99h7c-.53 4.12-3.28 7.79-7 8.94V12H5V6.3l7-3.11v8.8z"/>
+            </svg>
+            <div class="treefrog-ltx-content">
+              <p class="treefrog-ltx-title">SECURITY CLEARANCE</p>
+              <p class="treefrog-ltx-desc">Enterprise Protocol #29 &bull; Zero-Loss Tech Pack Dossier validated on Interchain Core.</p>
+              <div style="margin-top: 8px; font-size: 10px; color: #FF5C00; font-family: monospace;">STATUS: ENCRYPTED // ACTIVE</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div style="margin-top: 20px; padding-top: 14px; border-top: 1px solid rgba(255,255,255,0.06); display: flex; justify-content: space-between; align-items: center; font-size: 11.5px; color: #64748b;">
+        <span>Category: <strong>Cards &amp; Panels / Icon-to-Content Reveal Card</strong></span>
         <span style="color: #00FF22;">● Verified Production Ingestion</span>
       </div>
     </section>
