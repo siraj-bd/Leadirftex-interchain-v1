@@ -11491,6 +11491,7 @@
     }
 
 
+
     /* ==========================================================================
        CYBER MOCKUP EXPORT & DOWNLOAD ENGINE (FUTURE-PROOF DYNAMIC)
        ========================================================================== */
@@ -11551,7 +11552,7 @@
     }
     .downloader-tagline {
       color: #94a3b8;
-      font-size: 12.5px;
+      font-size: 12px;
       margin: 0;
     }
     .downloader-controls {
@@ -11582,7 +11583,7 @@
       border-radius: 8px;
       font-size: 13px;
       font-family: 'JetBrains Mono', monospace;
-      width: 220px;
+      width: 170px;
       outline: none;
       transition: all 0.2s ease;
       box-sizing: border-box;
@@ -11591,34 +11592,72 @@
       border-color: #FF5C00;
       box-shadow: 0 0 12px rgba(255, 92, 0, 0.35);
     }
+    
+    /* Variant Choice Buttons */
+    .downloader-variant-group {
+      display: flex;
+      background: #070B14;
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      border-radius: 8px;
+      padding: 2px;
+      gap: 2px;
+    }
+    .variant-pill-label {
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      padding: 7px 11px;
+      font-size: 11.5px;
+      font-weight: 700;
+      border-radius: 6px;
+      color: #94a3b8;
+      transition: all 0.2s ease;
+      user-select: none;
+    }
+    .variant-pill-label input {
+      display: none;
+    }
+    .variant-pill-label:has(input:checked) {
+      background: rgba(255, 92, 0, 0.2);
+      color: #FF5C00;
+      border: 1px solid rgba(255, 92, 0, 0.45);
+      box-shadow: 0 0 10px rgba(255, 92, 0, 0.2);
+    }
+    .variant-pill-label.variant-green-target:has(input:checked) {
+      background: rgba(0, 255, 34, 0.15);
+      color: #00FF22;
+      border-color: rgba(0, 255, 34, 0.45);
+      box-shadow: 0 0 10px rgba(0, 255, 34, 0.2);
+    }
+
     .downloader-btn {
       display: inline-flex;
       align-items: center;
       gap: 6px;
-      padding: 10px 16px;
+      padding: 9px 14px;
       border-radius: 8px;
-      font-size: 12.5px;
+      font-size: 12px;
       font-weight: 700;
       cursor: pointer;
       border: none;
       transition: all 0.2s ease;
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
     }
-    .downloader-btn-download {
+    .downloader-btn-png {
       background: linear-gradient(135deg, #FF5C00 0%, #D84E00 100%);
       color: #ffffff;
       box-shadow: 0 4px 15px rgba(255, 92, 0, 0.35);
     }
-    .downloader-btn-download:hover {
+    .downloader-btn-png:hover {
       transform: translateY(-2px);
       box-shadow: 0 6px 20px rgba(255, 92, 0, 0.55);
     }
-    .downloader-btn-copy {
+    .downloader-btn-html {
       background: rgba(0, 255, 34, 0.1);
       color: #00FF22;
       border: 1px solid rgba(0, 255, 34, 0.4);
     }
-    .downloader-btn-copy:hover {
+    .downloader-btn-html:hover {
       background: rgba(0, 255, 34, 0.2);
       transform: translateY(-2px);
       box-shadow: 0 0 15px rgba(0, 255, 34, 0.3);
@@ -11634,47 +11673,84 @@
       transform: translateY(-2px);
     }
 
-    /* Individual Mockup Card Actions */
+    /* Individual Mockup Card Actions in Header */
     .card-export-group {
       display: inline-flex;
       align-items: center;
-      gap: 8px;
+      gap: 6px;
       margin-left: auto;
       margin-right: 12px;
+      flex-wrap: wrap;
     }
-    .card-export-btn {
+    .card-export-pill {
       display: inline-flex;
       align-items: center;
-      gap: 4px;
-      padding: 5px 10px;
-      font-size: 11px;
+      background: rgba(7, 11, 20, 0.9);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: 6px;
+      padding: 2px 4px;
+      gap: 3px;
+    }
+    .card-export-tag {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 9.5px;
+      font-weight: 800;
+      color: #94a3b8;
+      padding: 0 4px;
+      letter-spacing: 0.5px;
+    }
+    .card-btn-action {
+      display: inline-flex;
+      align-items: center;
+      gap: 3px;
+      padding: 4px 8px;
+      font-size: 10.5px;
       font-weight: 700;
-      border-radius: 5px;
+      border-radius: 4px;
       cursor: pointer;
       text-decoration: none;
-      transition: all 0.2s ease;
+      transition: all 0.15s ease;
       font-family: 'JetBrains Mono', monospace;
-      border: none;
+      border: 1px solid transparent;
+      outline: none;
     }
-    .card-export-btn-dl {
-      background: rgba(255, 92, 0, 0.14);
+    .card-btn-png-a {
+      background: rgba(255, 92, 0, 0.15);
       color: #FF5C00;
-      border: 1px solid rgba(255, 92, 0, 0.4);
+      border-color: rgba(255, 92, 0, 0.35);
     }
-    .card-export-btn-dl:hover {
+    .card-btn-png-a:hover {
       background: #FF5C00;
       color: #ffffff;
-      box-shadow: 0 0 12px rgba(255, 92, 0, 0.45);
+      box-shadow: 0 0 10px rgba(255, 92, 0, 0.5);
     }
-    .card-export-btn-copy {
-      background: rgba(0, 255, 34, 0.1);
+    .card-btn-png-b {
+      background: rgba(0, 255, 34, 0.12);
       color: #00FF22;
-      border: 1px solid rgba(0, 255, 34, 0.35);
+      border-color: rgba(0, 255, 34, 0.35);
     }
-    .card-export-btn-copy:hover {
+    .card-btn-png-b:hover {
       background: #00FF22;
       color: #070B14;
-      box-shadow: 0 0 12px rgba(0, 255, 34, 0.45);
+      box-shadow: 0 0 10px rgba(0, 255, 34, 0.5);
+    }
+    .card-btn-png-all {
+      background: rgba(255, 255, 255, 0.08);
+      color: #e2e8f0;
+      border-color: rgba(255, 255, 255, 0.18);
+    }
+    .card-btn-png-all:hover {
+      background: #ffffff;
+      color: #070B14;
+    }
+    .card-btn-html-item {
+      background: rgba(148, 163, 184, 0.1);
+      color: #cbd5e1;
+      border-color: rgba(148, 163, 184, 0.25);
+    }
+    .card-btn-html-item:hover {
+      background: rgba(148, 163, 184, 0.25);
+      color: #ffffff;
     }
 
     /* Feedback Toast */
@@ -11708,7 +11784,6 @@
       border-color: #FF5C00;
       box-shadow: 0 10px 30px rgba(0,0,0,0.8), 0 0 20px rgba(255, 92, 0, 0.25);
     }
-
   </style>
 </head>
 <body>
@@ -11729,6 +11804,7 @@
       </div>
     </header>
 
+
     <!-- ======================================================================
          CYBER MOCKUP DOWNLOADER & EXPORT ENGINE (FUTURE-PROOF DYNAMIC)
          ====================================================================== -->
@@ -11739,20 +11815,36 @@
           <span class="downloader-badge-text">CYBER EXPORT ENGINE</span>
           <span id="downloader-total-count" class="downloader-count-pill">SCANNING MOCKUPS...</span>
         </div>
-        <div class="downloader-tagline">Download self-contained standalone production HTML for any serial (Auto-detects all current & future mockups)</div>
+        <div class="downloader-tagline">Export high-resolution 3x Retina PNG Images (for Social Media) or Standalone HTML (for Web Code)</div>
       </div>
 
       <div class="downloader-controls">
         <div class="downloader-input-wrap">
           <span class="downloader-hash">#</span>
-          <input type="text" id="serial-download-input" class="downloader-input" placeholder="Enter Serial (e.g. 051)..." list="serial-datalist" autocomplete="off">
+          <input type="text" id="serial-download-input" class="downloader-input" placeholder="Serial (e.g. 051)..." list="serial-datalist" autocomplete="off">
           <datalist id="serial-datalist"></datalist>
         </div>
-        <button id="btn-download-serial" class="downloader-btn downloader-btn-download" title="Download standalone HTML file">
-          <span>⬇ Download HTML</span>
+
+        <div class="downloader-variant-group">
+          <label class="variant-pill-label" title="Choose Card / Variant A (e.g. Orange Edition)">
+            <input type="radio" name="export-variant" value="A" checked>
+            <span id="lbl-variant-a">Card A</span>
+          </label>
+          <label class="variant-pill-label variant-green-target" title="Choose Card / Variant B (e.g. Green Edition)">
+            <input type="radio" name="export-variant" value="B">
+            <span id="lbl-variant-b">Card B</span>
+          </label>
+          <label class="variant-pill-label" title="Choose Both Cards Together">
+            <input type="radio" name="export-variant" value="ALL">
+            <span>Both (A+B)</span>
+          </label>
+        </div>
+
+        <button id="btn-download-png" class="downloader-btn downloader-btn-png" title="Download High-Res 3x Retina PNG Image (Ready for Social Media Posts)">
+          <span>📸 Download PNG Image</span>
         </button>
-        <button id="btn-copy-serial" class="downloader-btn downloader-btn-copy" title="Copy standalone HTML to clipboard">
-          <span>📋 Copy Code</span>
+        <button id="btn-download-html" class="downloader-btn downloader-btn-html" title="Download Standalone Offline HTML File">
+          <span>📄 Download HTML</span>
         </button>
         <button id="btn-jump-serial" class="downloader-btn downloader-btn-jump" title="Jump to Mockup Card">
           <span>🔍 Jump</span>
@@ -11762,7 +11854,6 @@
     <div id="downloader-toast" class="downloader-toast"></div>
 
 
-    <!-- SERIAL #001 -->
     <section id="mockup-item-001" class="mockup-card">
       <div class="mockup-header">
         <div style="display: flex; align-items: center; gap: 10px;">
@@ -16486,6 +16577,15 @@
 
   </div>
 
+
+  <!-- External Libraries: Local with remote CDN Fallback -->
+  <script src="assets/html2canvas.min.js"></script>
+  <script>
+    if (typeof html2canvas === 'undefined') {
+      document.write('<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"><\/script>');
+    }
+  </script>
+
   <!-- ======================================================================
        CYBER MOCKUP DOWNLOADER & EXPORT ENGINE SCRIPT (FUTURE-PROOF DYNAMIC)
        ====================================================================== -->
@@ -16505,7 +16605,7 @@
         clearTimeout(window.__toastTimeout);
         window.__toastTimeout = setTimeout(function() {
           toast.classList.remove('active');
-        }, 3500);
+        }, 3800);
       }
 
       function parseSerialInput(inputVal) {
@@ -16528,26 +16628,122 @@
         return titleEl ? titleEl.textContent.trim() : ('Mockup ' + section.id);
       }
 
-      function generateStandaloneHtml(section, serialStr) {
+      // Dynamic Variant Scanner for ANY mockup (Works for current 56 & all future mockups)
+      function getMockupVariants(section) {
+        var stage = section.querySelector('.stage-view');
+        if (!stage) return [{ code: 'ALL', name: 'Full Mockup', shortName: 'All', element: section }];
+
+        // 1. Check for stage-column elements (Serials #001 to #050)
+        var cols = Array.from(stage.querySelectorAll(':scope > .stage-column'));
+        if (cols.length >= 2) {
+          return cols.map(function(col, idx) {
+            var label = col.querySelector('.stage-label');
+            var name = label ? label.textContent.trim() : ('Variant ' + String.fromCharCode(65 + idx));
+            return {
+              code: String.fromCharCode(65 + idx),
+              name: name,
+              shortName: 'Variant ' + String.fromCharCode(65 + idx),
+              element: col
+            };
+          });
+        }
+
+        // 2. Check for cluster child cards (Serials #051 to #056 and future social cards)
+        var cluster = stage.firstElementChild;
+        if (cluster && cluster.children.length >= 2) {
+          var children = Array.from(cluster.children);
+          return children.map(function(child, idx) {
+            var code = String.fromCharCode(65 + idx);
+            var cls = (child.className || '').toLowerCase();
+            var name = 'Card ' + code;
+            if (cls.indexOf('orange') !== -1) name = 'Card ' + code + ' (Orange)';
+            else if (cls.indexOf('green') !== -1) name = 'Card ' + code + ' (Green)';
+            return {
+              code: code,
+              name: name,
+              shortName: 'Card ' + code,
+              element: child
+            };
+          });
+        }
+
+        return [{ code: 'ALL', name: 'Full Component', shortName: 'All', element: stage }];
+      }
+
+      // High-Resolution Retina PNG Image Exporter (For Social Media Posts)
+      function exportElementAsPng(element, filename, labelInfo) {
+        showToast('Rendering 3x Retina PNG (' + labelInfo + ')...');
+
+        if (typeof html2canvas !== 'function') {
+          showToast('Rendering engine is initializing, please click again in 2 seconds...', true);
+          return;
+        }
+
+        // Clone element offscreen or prepare for clean capture
+        html2canvas(element, {
+          scale: 3, // 3x Ultra-Crisp Retina resolution (Zero blurry text, perfect for LinkedIn / X)
+          useCORS: true,
+          allowTaint: true,
+          backgroundColor: '#03050a',
+          logging: false,
+          onclone: function(clonedDoc, clonedElement) {
+            clonedElement.style.transform = 'none'; // reset hover transform
+            clonedElement.style.margin = '0 auto';
+            // ensure all images have absolute fallback
+            var imgs = clonedElement.querySelectorAll('img');
+            imgs.forEach(function(img) {
+              if (img.src && img.src.indexOf('Monogram/') !== -1) {
+                img.src = 'https://raw.githubusercontent.com/siraj-bd/Leadirftex-interchain-v1/main/' + img.src.substring(img.src.indexOf('Monogram/'));
+              }
+            });
+          }
+        }).then(function(canvas) {
+          canvas.toBlob(function(blob) {
+            if (!blob) {
+              showToast('Image generation failed', true);
+              return;
+            }
+            var url = URL.createObjectURL(blob);
+            var a = document.createElement('a');
+            a.href = url;
+            a.download = filename + '.png';
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
+            showToast('✓ Saved: ' + filename + '.png');
+          }, 'image/png');
+        }).catch(function(err) {
+          console.error('html2canvas render error:', err);
+          showToast('Render error: ' + (err.message || 'unknown'), true);
+        });
+      }
+
+      // Standalone HTML Exporter (Offline-Ready with GitHub Raw Image Fallbacks)
+      function generateStandaloneHtml(section, targetElement, serialStr, variantCode, variantName) {
         var title = getMockupTitle(section);
-        var stageView = section.querySelector('.stage-view');
-        var stageHtml = stageView ? stageView.outerHTML : section.innerHTML;
+        var elementHtml = targetElement.outerHTML;
         var categoryEl = section.querySelector('div[style*="border-top"]');
         var categoryHtml = categoryEl ? categoryEl.outerHTML : '';
 
-        // Extract style rules from document
+        // Rewrite relative image paths so file works anywhere offline or in Downloads folder
+        elementHtml = elementHtml.replace(/src=["']Monogram\/([^"']+)["']/g, 'src="https://raw.githubusercontent.com/siraj-bd/Leadirftex-interchain-v1/main/Monogram/$1" onerror="this.src='Monogram/$1'"');
+        elementHtml = elementHtml.replace(/src=["']assets\/([^"']+)["']/g, 'src="https://raw.githubusercontent.com/siraj-bd/Leadirftex-interchain-v1/main/assets/$1" onerror="this.src='assets/$1'"');
+
+        // Extract style rules
         var styleContent = '';
-        var styleTags = document.querySelectorAll('style');
-        styleTags.forEach(function(st) {
+        document.querySelectorAll('style').forEach(function(st) {
           styleContent += st.innerHTML + '\n';
         });
+
+        var docTitle = 'Leadirftex Interchain — Serial #' + serialStr + ' [' + variantCode + ']: ' + title;
 
         return '<!DOCTYPE html>\n' +
           '<html lang="en">\n' +
           '<head>\n' +
           '  <meta charset="UTF-8">\n' +
           '  <meta name="viewport" content="width=device-width, initial-scale=1.0">\n' +
-          '  <title>Leadirftex Interchain — Serial #' + serialStr + ': ' + title + '</title>\n' +
+          '  <title>' + docTitle + '</title>\n' +
           '  <link rel="preconnect" href="https://fonts.googleapis.com">\n' +
           '  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>\n' +
           '  <link href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@700;800;900&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600;700;800&display=swap" rel="stylesheet">\n' +
@@ -16564,10 +16760,11 @@
           '      display: flex;\n' +
           '      flex-direction: column;\n' +
           '      align-items: center;\n' +
+          '      justify-content: center;\n' +
           '      box-sizing: border-box;\n' +
           '    }\n' +
           '    .standalone-card-wrapper {\n' +
-          '      max-width: 1100px;\n' +
+          '      max-width: 960px;\n' +
           '      width: 100%;\n' +
           '      background: #070B14;\n' +
           '      border: 1px solid rgba(255, 92, 0, 0.35);\n' +
@@ -16575,8 +16772,12 @@
           '      padding: 24px;\n' +
           '      box-shadow: 0 20px 60px rgba(0,0,0,0.8), 0 0 30px rgba(255, 92, 0, 0.1);\n' +
           '      box-sizing: border-box;\n' +
+          '      display: flex;\n' +
+          '      flex-direction: column;\n' +
+          '      align-items: center;\n' +
           '    }\n' +
           '    .standalone-export-header {\n' +
+          '      width: 100%;\n' +
           '      display: flex;\n' +
           '      justify-content: space-between;\n' +
           '      align-items: center;\n' +
@@ -16587,7 +16788,7 @@
           '      gap: 12px;\n' +
           '    }\n' +
           '    .standalone-export-title {\n' +
-          '      font-size: 17px;\n' +
+          '      font-size: 16px;\n' +
           '      font-weight: 800;\n' +
           '      color: #ffffff;\n' +
           '      display: flex;\n' +
@@ -16598,20 +16799,37 @@
           '      background: rgba(0, 255, 34, 0.14);\n' +
           '      color: #00FF22;\n' +
           '      border: 1px solid rgba(0, 255, 34, 0.4);\n' +
-          '      padding: 4px 10px;\n' +
+          '      padding: 3px 8px;\n' +
           '      border-radius: 6px;\n' +
           '      font-size: 11px;\n' +
           '      font-family: "JetBrains Mono", monospace;\n' +
           '      font-weight: 700;\n' +
           '      letter-spacing: 0.5px;\n' +
           '    }\n' +
+          '    .standalone-variant-badge {\n' +
+          '      background: rgba(255, 92, 0, 0.14);\n' +
+          '      color: #FF5C00;\n' +
+          '      border: 1px solid rgba(255, 92, 0, 0.4);\n' +
+          '      padding: 3px 8px;\n' +
+          '      border-radius: 6px;\n' +
+          '      font-size: 11px;\n' +
+          '      font-family: "JetBrains Mono", monospace;\n' +
+          '      font-weight: 700;\n' +
+          '    }\n' +
           '    .standalone-brand-credit {\n' +
-          '      font-size: 12px;\n' +
+          '      font-size: 11.5px;\n' +
           '      color: #94a3b8;\n' +
           '      font-family: "JetBrains Mono", monospace;\n' +
           '    }\n' +
           '    .standalone-brand-credit strong {\n' +
           '      color: #FF5C00;\n' +
+          '    }\n' +
+          '    .standalone-stage-center {\n' +
+          '      display: flex;\n' +
+          '      justify-content: center;\n' +
+          '      align-items: center;\n' +
+          '      width: 100%;\n' +
+          '      padding: 10px 0;\n' +
           '    }\n' +
           '  </style>\n' +
           '</head>\n' +
@@ -16620,16 +16838,316 @@
           '    <div class="standalone-export-header">\n' +
           '      <div class="standalone-export-title">\n' +
           '        <span class="standalone-export-badge">SERIAL #' + serialStr + '</span>\n' +
+          '        <span class="standalone-variant-badge">' + variantName + '</span>\n' +
           '        <span>' + title + '</span>\n' +
           '      </div>\n' +
           '      <div class="standalone-brand-credit">\n' +
           '        Leadirftex Interchain &bull; <strong>leadirftex.com</strong>\n' +
           '      </div>\n' +
           '    </div>\n\n' +
-          '    ' + stageHtml + '\n\n' +
+          '    <div class="standalone-stage-center">\n' +
+          '      ' + elementHtml + '\n' +
+          '    </div>\n\n' +
           '    ' + categoryHtml + '\n' +
           '  </div>\n' +
           '</body>\n' +
+          '</html>';
+      }
+
+      function downloadMockupHtmlFile(section, targetElement, serialStr, variantCode, variantName) {
+        var title = getMockupTitle(section);
+        var safeTitle = title.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
+        var filename = 'leadirftex-serial-' + serialStr + '-variant-' + variantCode.toLowerCase() + '-' + safeTitle + '.html';
+        var htmlContent = generateStandaloneHtml(section, targetElement, serialStr, variantCode, variantName);
+
+        var blob = new Blob([htmlContent], { type: 'text/html;charset=utf-8' });
+        var url = URL.createObjectURL(blob);
+        var a = document.createElement('a');
+        a.href = url;
+        a.download = filename;
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+        URL.revokeObjectURL(url);
+
+        showToast('✓ Saved HTML: ' + filename);
+      }
+
+      function jumpToMockup(serialStr) {
+        var section = findMockupSection(serialStr);
+        if (!section) {
+          showToast('Serial #' + serialStr + ' not found on this page!', true);
+          return;
+        }
+        section.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        section.style.outline = '2px solid #00FF22';
+        section.style.boxShadow = '0 0 30px rgba(0, 255, 34, 0.4)';
+        setTimeout(function() {
+          section.style.outline = '';
+          section.style.boxShadow = '';
+        }, 2500);
+        showToast('Viewing Serial #' + serialStr);
+      }
+
+      // Initialize Downloader Engine on DOM Ready (Future-Proof: dynamic scan of all present cards)
+      function init() {
+        var sections = getAllMockupSections();
+        var datalist = document.getElementById('serial-datalist');
+        var countPill = document.getElementById('downloader-total-count');
+
+        if (countPill) {
+          var firstId = sections.length > 0 ? sections[0].id.replace('mockup-item-', '') : '001';
+          var lastId = sections.length > 0 ? sections[sections.length - 1].id.replace('mockup-item-', '') : '000';
+          countPill.textContent = sections.length + ' MOCKUPS LOADED (SERIAL #' + firstId + ' — #' + lastId + ')';
+        }
+
+        // Populate Datalist & inject individual card quick-action buttons
+        sections.forEach(function(section) {
+          var id = section.id.replace('mockup-item-', '');
+          var title = getMockupTitle(section);
+          var variants = getMockupVariants(section);
+
+          if (datalist) {
+            var option = document.createElement('option');
+            option.value = id;
+            option.label = 'Serial #' + id + ': ' + title;
+            datalist.appendChild(option);
+          }
+
+          // Inject quick download action buttons into each card header
+          var header = section.querySelector('.mockup-header');
+          if (header && !header.querySelector('.card-export-group')) {
+            var masterLink = header.querySelector('a');
+            var actionGroup = document.createElement('div');
+            actionGroup.className = 'card-export-group';
+
+            // PNG Pill Group
+            var pngPill = document.createElement('div');
+            pngPill.className = 'card-export-pill';
+            pngPill.innerHTML = '<span class="card-export-tag">PNG:</span>';
+
+            // HTML Pill Group
+            var htmlPill = document.createElement('div');
+            htmlPill.className = 'card-export-pill';
+            htmlPill.innerHTML = '<span class="card-export-tag">HTML:</span>';
+
+            if (variants.length >= 2) {
+              // Variant A Button
+              var varA = variants[0];
+              var btnPngA = document.createElement('button');
+              btnPngA.className = 'card-btn-action card-btn-png-a';
+              btnPngA.innerHTML = '📸 ' + varA.code;
+              btnPngA.title = 'Download ' + varA.name + ' as 3x Retina PNG Image (for Social Media)';
+              btnPngA.onclick = (function(target, fname, lbl) {
+                return function(e) {
+                  e.preventDefault();
+                  exportElementAsPng(target, fname, lbl);
+                };
+              })(varA.element, 'leadirftex-serial-' + id + '-variant-' + varA.code.toLowerCase(), varA.name);
+              pngPill.appendChild(btnPngA);
+
+              var btnHtmlA = document.createElement('button');
+              btnHtmlA.className = 'card-btn-action card-btn-html-item';
+              btnHtmlA.innerHTML = '📄 ' + varA.code;
+              btnHtmlA.title = 'Download ' + varA.name + ' Standalone HTML';
+              btnHtmlA.onclick = (function(sec, target, sid, code, name) {
+                return function(e) {
+                  e.preventDefault();
+                  downloadMockupHtmlFile(sec, target, sid, code, name);
+                };
+              })(section, varA.element, id, varA.code, varA.name);
+              htmlPill.appendChild(btnHtmlA);
+
+              // Variant B Button
+              var varB = variants[1];
+              var btnPngB = document.createElement('button');
+              btnPngB.className = 'card-btn-action card-btn-png-b';
+              btnPngB.innerHTML = '📸 ' + varB.code;
+              btnPngB.title = 'Download ' + varB.name + ' as 3x Retina PNG Image (for Social Media)';
+              btnPngB.onclick = (function(target, fname, lbl) {
+                return function(e) {
+                  e.preventDefault();
+                  exportElementAsPng(target, fname, lbl);
+                };
+              })(varB.element, 'leadirftex-serial-' + id + '-variant-' + varB.code.toLowerCase(), varB.name);
+              pngPill.appendChild(btnPngB);
+
+              var btnHtmlB = document.createElement('button');
+              btnHtmlB.className = 'card-btn-action card-btn-html-item';
+              btnHtmlB.innerHTML = '📄 ' + varB.code;
+              btnHtmlB.title = 'Download ' + varB.name + ' Standalone HTML';
+              btnHtmlB.onclick = (function(sec, target, sid, code, name) {
+                return function(e) {
+                  e.preventDefault();
+                  downloadMockupHtmlFile(sec, target, sid, code, name);
+                };
+              })(section, varB.element, id, varB.code, varB.name);
+              htmlPill.appendChild(btnHtmlB);
+
+              // Both Together Button
+              var stageView = section.querySelector('.stage-view');
+              var btnPngAll = document.createElement('button');
+              btnPngAll.className = 'card-btn-action card-btn-png-all';
+              btnPngAll.innerHTML = '📸 Both';
+              btnPngAll.title = 'Download Both Cards side-by-side as 3x Retina PNG Image';
+              btnPngAll.onclick = (function(target, fname) {
+                return function(e) {
+                  e.preventDefault();
+                  exportElementAsPng(target, fname, 'Both Cards');
+                };
+              })(stageView || section, 'leadirftex-serial-' + id + '-both-variants');
+              pngPill.appendChild(btnPngAll);
+            } else {
+              // Single Component
+              var single = variants[0];
+              var btnPng = document.createElement('button');
+              btnPng.className = 'card-btn-action card-btn-png-a';
+              btnPng.innerHTML = '📸 PNG';
+              btnPng.title = 'Download Component as 3x Retina PNG Image';
+              btnPng.onclick = (function(target, fname) {
+                return function(e) {
+                  e.preventDefault();
+                  exportElementAsPng(target, fname, 'Single Component');
+                };
+              })(single.element, 'leadirftex-serial-' + id);
+              pngPill.appendChild(btnPng);
+
+              var btnHtml = document.createElement('button');
+              btnHtml.className = 'card-btn-action card-btn-html-item';
+              btnHtml.innerHTML = '📄 HTML';
+              btnHtml.title = 'Download Standalone HTML';
+              btnHtml.onclick = (function(sec, target, sid) {
+                return function(e) {
+                  e.preventDefault();
+                  downloadMockupHtmlFile(sec, target, sid, 'ALL', 'Full Component');
+                };
+              })(section, single.element, id);
+              htmlPill.appendChild(btnHtml);
+            }
+
+            actionGroup.appendChild(pngPill);
+            actionGroup.appendChild(htmlPill);
+
+            if (masterLink) {
+              header.insertBefore(actionGroup, masterLink);
+            } else {
+              header.appendChild(actionGroup);
+            }
+          }
+        });
+
+        // Bind Main Control Bar
+        var input = document.getElementById('serial-download-input');
+        var btnDownloadPng = document.getElementById('btn-download-png');
+        var btnDownloadHtml = document.getElementById('btn-download-html');
+        var btnJump = document.getElementById('btn-jump-serial');
+        var lblA = document.getElementById('lbl-variant-a');
+        var lblB = document.getElementById('lbl-variant-b');
+
+        function getSelectedVariantOption() {
+          var checked = document.querySelector('input[name="export-variant"]:checked');
+          return checked ? checked.value : 'A';
+        }
+
+        function updateVariantLabels() {
+          var serial = parseSerialInput(input ? input.value : '');
+          if (!serial) return;
+          var sec = findMockupSection(serial);
+          if (!sec) return;
+          var vars = getMockupVariants(sec);
+          if (vars.length >= 2) {
+            if (lblA) lblA.textContent = vars[0].shortName;
+            if (lblB) lblB.textContent = vars[1].shortName;
+          } else {
+            if (lblA) lblA.textContent = 'Single';
+            if (lblB) lblB.textContent = 'N/A';
+          }
+        }
+
+        if (input) {
+          input.addEventListener('input', updateVariantLabels);
+          input.addEventListener('change', updateVariantLabels);
+          input.addEventListener('keydown', function(e) {
+            if (e.key === 'Enter') {
+              e.preventDefault();
+              if (btnDownloadPng) btnDownloadPng.click();
+            }
+          });
+        }
+
+        if (btnDownloadPng) {
+          btnDownloadPng.onclick = function() {
+            var serial = parseSerialInput(input ? input.value : '');
+            if (!serial) {
+              showToast('Please enter a serial number (e.g. 051 or 51)!', true);
+              return;
+            }
+            var sec = findMockupSection(serial);
+            if (!sec) {
+              showToast('Serial #' + serial + ' not found!', true);
+              return;
+            }
+            var choice = getSelectedVariantOption();
+            var vars = getMockupVariants(sec);
+            var stage = sec.querySelector('.stage-view');
+
+            if (choice === 'ALL' || vars.length < 2) {
+              exportElementAsPng(stage || sec, 'leadirftex-serial-' + serial + '-both', 'Both Cards');
+            } else if (choice === 'A') {
+              exportElementAsPng(vars[0].element, 'leadirftex-serial-' + serial + '-card-a', vars[0].name);
+            } else if (choice === 'B') {
+              exportElementAsPng(vars[1].element, 'leadirftex-serial-' + serial + '-card-b', vars[1].name);
+            }
+          };
+        }
+
+        if (btnDownloadHtml) {
+          btnDownloadHtml.onclick = function() {
+            var serial = parseSerialInput(input ? input.value : '');
+            if (!serial) {
+              showToast('Please enter a serial number (e.g. 051 or 51)!', true);
+              return;
+            }
+            var sec = findMockupSection(serial);
+            if (!sec) {
+              showToast('Serial #' + serial + ' not found!', true);
+              return;
+            }
+            var choice = getSelectedVariantOption();
+            var vars = getMockupVariants(sec);
+            var stage = sec.querySelector('.stage-view');
+
+            if (choice === 'ALL' || vars.length < 2) {
+              downloadMockupHtmlFile(sec, stage || sec, serial, 'ALL', 'Both Cards');
+            } else if (choice === 'A') {
+              downloadMockupHtmlFile(sec, vars[0].element, serial, vars[0].code, vars[0].name);
+            } else if (choice === 'B') {
+              downloadMockupHtmlFile(sec, vars[1].element, serial, vars[1].code, vars[1].name);
+            }
+          };
+        }
+
+        if (btnJump) {
+          btnJump.onclick = function() {
+            var serial = parseSerialInput(input ? input.value : '');
+            if (!serial) {
+              showToast('Please enter a serial number (e.g. 051 or 51)!', true);
+              return;
+            }
+            jumpToMockup(serial);
+          };
+        }
+      }
+
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', init);
+      } else {
+        init();
+      }
+    })();
+  </script>
+
+</body>\n' +
           '</html>';
       }
 
@@ -16797,7 +17315,7 @@
           input.addEventListener('keydown', function(e) {
             if (e.key === 'Enter') {
               e.preventDefault();
-              if (btnDownload) btnDownload.click();
+              if (btnDownloadPng) btnDownloadPng.click();
             }
           });
         }
