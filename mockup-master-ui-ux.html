@@ -2549,6 +2549,221 @@
       color: #FF0000;
       box-shadow: 0 0 15px rgba(255, 0, 0, 0.4);
     }
+
+    /* === SERIAL #017: EVIL-MULE-52 ISOMETRIC 3D LAYER STACK WITH PROFILE TOOLTIP === */
+    /* Variant A: Canonical Uiverse */
+    .mule-stage-box {
+      width: 100%;
+      height: 240px;
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      padding-bottom: 45px;
+      box-sizing: border-box;
+      position: relative;
+    }
+    .mule-container {
+      position: relative;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    .mule-tooltip {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      padding: 10px;
+      opacity: 0;
+      pointer-events: none;
+      transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+      border-radius: 15px;
+      z-index: 10;
+      white-space: nowrap;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6);
+    }
+    .mule-profile {
+      background: #1e222d;
+      border-radius: 12px;
+      padding: 12px 16px;
+      border: 1px solid #1da1f2;
+      text-align: left;
+    }
+    .mule-user {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .mule-avatar {
+      width: 40px;
+      height: 40px;
+      font-size: 16px;
+      font-weight: 800;
+      border: 1px solid #1da1f2;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #ffffff;
+      color: #1da1f2;
+    }
+    .mule-name {
+      font-size: 14px;
+      font-weight: 700;
+      color: #1da1f2;
+    }
+    .mule-username {
+      font-size: 11px;
+      color: #94a3b8;
+    }
+    .mule-about {
+      color: #cbd5e1;
+      font-size: 11px;
+      padding-top: 6px;
+      margin-top: 6px;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    .mule-container:hover .mule-tooltip {
+      top: -120px;
+      opacity: 1;
+      visibility: visible;
+      pointer-events: auto;
+    }
+    .mule-icon {
+      text-decoration: none;
+      color: #ffffff;
+      display: block;
+      position: relative;
+    }
+    .mule-layer {
+      width: 55px;
+      height: 55px;
+      transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+      position: relative;
+    }
+    .mule-container:hover .mule-layer {
+      transform: rotate(-35deg) skew(20deg);
+    }
+    .mule-layer span {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      border: 1px solid #1da1f2;
+      border-radius: 8px;
+      transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+      box-sizing: border-box;
+      background: rgba(29, 161, 242, 0.05);
+    }
+    .mule-container:hover .mule-layer span {
+      box-shadow: -1px 1px 6px rgba(29, 161, 242, 0.6);
+    }
+    .mule-container:hover .mule-layer span:nth-child(1) {
+      opacity: 0.2;
+    }
+    .mule-container:hover .mule-layer span:nth-child(2) {
+      opacity: 0.4;
+      transform: translate(5px, -5px);
+    }
+    .mule-container:hover .mule-layer span:nth-child(3) {
+      opacity: 0.6;
+      transform: translate(10px, -10px);
+    }
+    .mule-container:hover .mule-layer span:nth-child(4) {
+      opacity: 0.8;
+      transform: translate(15px, -15px);
+    }
+    .mule-container:hover .mule-layer span:nth-child(5) {
+      opacity: 1;
+      transform: translate(20px, -20px);
+    }
+    .mule-layer span.top-layer {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #000000;
+      color: #1da1f2;
+    }
+    .mule-label {
+      position: absolute;
+      left: 50%;
+      bottom: -10px;
+      opacity: 0;
+      font-size: 12px;
+      font-weight: 700;
+      color: #1da1f2;
+      transform: translateX(-50%);
+      transition: bottom 0.3s ease, opacity 0.3s ease;
+      white-space: nowrap;
+    }
+    .mule-container:hover .mule-label {
+      bottom: -30px;
+      opacity: 1;
+    }
+
+    /* Variant B: Leadirftex Cyber Edition (Obsidian + Cyber Neon Green #00FF22 + Leadirftex Orange #FF5C00) */
+    .mule-ltx-profile {
+      background: #070B14;
+      border-radius: 12px;
+      padding: 12px 16px;
+      border: 1px solid #00FF22;
+      text-align: left;
+      box-shadow: 0 0 20px rgba(0, 255, 34, 0.35);
+    }
+    .mule-ltx-avatar {
+      width: 40px;
+      height: 40px;
+      font-size: 13px;
+      font-family: 'JetBrains Mono', monospace;
+      font-weight: 900;
+      border: 1.5px solid #00FF22;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #03050A;
+      color: #00FF22;
+      box-shadow: 0 0 10px rgba(0, 255, 34, 0.4);
+    }
+    .mule-ltx-name {
+      font-size: 13px;
+      font-family: 'JetBrains Mono', monospace;
+      font-weight: 800;
+      color: #ffffff;
+      letter-spacing: 0.5px;
+    }
+    .mule-ltx-username {
+      font-size: 10.5px;
+      font-family: 'JetBrains Mono', monospace;
+      color: #00FF22;
+    }
+    .mule-ltx-about {
+      color: #94a3b8;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 10px;
+      padding-top: 6px;
+      margin-top: 6px;
+      border-top: 1px solid rgba(0, 255, 34, 0.2);
+    }
+    .mule-ltx-layer span {
+      border-color: #00FF22;
+      background: rgba(0, 255, 34, 0.08);
+    }
+    .mule-container:hover .mule-ltx-layer span {
+      box-shadow: -1px 1px 10px rgba(0, 255, 34, 0.6);
+    }
+    .mule-ltx-layer span.top-layer {
+      background: #03050A;
+      border-color: #00FF22;
+      color: #00FF22;
+      box-shadow: 0 0 12px rgba(0, 255, 34, 0.4);
+    }
+    .mule-ltx-label {
+      color: #00FF22;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 11px;
+      letter-spacing: 1px;
+    }
   </style>
 </head>
 <body>
@@ -3450,6 +3665,91 @@
 
       <div style="margin-top: 20px; padding-top: 14px; border-top: 1px solid rgba(255,255,255,0.06); display: flex; justify-content: space-between; align-items: center; font-size: 11.5px; color: #64748b;">
         <span>Category: <strong>UI Navigation / Spring Animated Social Tooltips</strong></span>
+        <span style="color: #00FF22;">● Verified Production Ingestion</span>
+      </div>
+    </section>
+
+    <!-- SERIAL #017 -->
+    <section id="mockup-item-017" class="mockup-card">
+      <div class="mockup-header">
+        <div style="display: flex; align-items: center; gap: 10px;">
+          <span class="serial-badge">SERIAL #017</span>
+          <strong style="color: #ffffff; font-size: 16px;">Evil-Mule-52 Isometric 3D Layer Stack with Profile Tooltip</strong>
+          <span style="font-size: 11px; color: #64748b; font-family: monospace;">uiverse.io/vikas7754/evil-mule-52</span>
+        </div>
+        <a href="serial-list-mockup-design.html" style="color: var(--orange); font-size: 12px; text-decoration: none; font-weight: 600;">&larr; View Master Serial Index</a>
+      </div>
+
+      <div class="stage-view">
+        <!-- Variant A: Uiverse Canonical -->
+        <div class="stage-column">
+          <span class="stage-label">Variant A: Uiverse Canonical (5-Tier Isometric Blue Stack)</span>
+          <div class="mule-stage-box">
+            <div class="mule-container">
+              <div class="mule-tooltip">
+                <div class="mule-profile">
+                  <div class="mule-user">
+                    <div class="mule-avatar">Ui</div>
+                    <div>
+                      <div class="mule-name">Vikas</div>
+                      <div class="mule-username">@vikas7754</div>
+                    </div>
+                  </div>
+                  <div class="mule-about">500+ Connections &bull; Frontend Dev</div>
+                </div>
+              </div>
+              <div class="mule-icon">
+                <div class="mule-layer">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span class="top-layer">
+                    <svg viewBox="0 0 448 512" width="22" height="22" fill="currentColor"><path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"></path></svg>
+                  </span>
+                </div>
+                <div class="mule-label">LinkedIn</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Variant B: Leadirftex Cyber Edition -->
+        <div class="stage-column">
+          <span class="stage-label">Variant B: Leadirftex Cyber Edition (Quantum Node Isometric Stack)</span>
+          <div class="mule-stage-box">
+            <div class="mule-container">
+              <div class="mule-tooltip">
+                <div class="mule-ltx-profile">
+                  <div class="mule-user">
+                    <div class="mule-ltx-avatar">LTX</div>
+                    <div>
+                      <div class="mule-ltx-name">TELEMETRY NODE</div>
+                      <div class="mule-ltx-username">@leadirftex</div>
+                    </div>
+                  </div>
+                  <div class="mule-ltx-about">29 PLATFORMS ACTIVE &bull; SECURE CORE</div>
+                </div>
+              </div>
+              <div class="mule-icon">
+                <div class="mule-layer mule-ltx-layer">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span class="top-layer">
+                    <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+                  </span>
+                </div>
+                <div class="mule-label mule-ltx-label">INTERCHAIN</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div style="margin-top: 20px; padding-top: 14px; border-top: 1px solid rgba(255,255,255,0.06); display: flex; justify-content: space-between; align-items: center; font-size: 11.5px; color: #64748b;">
+        <span>Category: <strong>UI Navigation / Isometric 3D Layer Stack with Profile Tooltip</strong></span>
         <span style="color: #00FF22;">● Verified Production Ingestion</span>
       </div>
     </section>
