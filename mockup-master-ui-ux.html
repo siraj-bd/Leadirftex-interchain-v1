@@ -6420,6 +6420,162 @@
       stroke: #FF5C00;
     }
 
+
+    /* === SERIAL #034: PRETTY-WOLVERINE-81 EXPANDING SEARCH BUBBLE === */
+    /* Shared Stage Box */
+    .wolverine-stage-box {
+      width: 100%;
+      min-height: 240px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      background: radial-gradient(circle at center, #0e1526 0%, #060913 100%);
+      border-radius: 10px;
+      position: relative;
+      overflow: hidden;
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      padding: 40px 15px;
+    }
+
+    /* Variant A: Canonical Uiverse Vibrant Royal Blue Expanding Search Bubble */
+    .wolverine-search-pod {
+      width: 60px;
+      height: 60px;
+      border-radius: 9999px;
+      background-color: #4070f4;
+      box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.25);
+      display: flex;
+      align-items: center;
+      padding: 0 19px;
+      overflow: hidden;
+      transition: width 350ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 350ms ease;
+      cursor: pointer;
+    }
+    .wolverine-search-pod:hover,
+    .wolverine-search-pod:focus-within {
+      width: 275px;
+      box-shadow: 0 8px 25px rgba(64, 112, 244, 0.45);
+    }
+    .wolverine-icon-box {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      fill: #ffffff;
+      flex-shrink: 0;
+    }
+    .wolverine-icon-box svg {
+      width: 22px;
+      height: 22px;
+    }
+    .wolverine-input {
+      background: transparent;
+      border: none;
+      outline: none;
+      color: #ffffff;
+      font-size: 15px;
+      padding-left: 14px;
+      width: 100%;
+      opacity: 0;
+      transition: opacity 250ms ease;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    }
+    .wolverine-search-pod:hover .wolverine-input,
+    .wolverine-search-pod:focus-within .wolverine-input {
+      opacity: 1;
+    }
+    .wolverine-input::placeholder {
+      color: rgba(255, 255, 255, 0.7);
+    }
+
+    /* Variant B: Leadirftex Cyber Quantum Telemetry Query Bubbles */
+    .wolverine-ltx-cluster {
+      display: flex;
+      align-items: center;
+      gap: 32px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .wolverine-ltx-pod {
+      width: 60px;
+      height: 60px;
+      border-radius: 9999px;
+      background-color: #070B14;
+      border: 1.5px solid #00FF22;
+      box-shadow: 0 0 16px rgba(0, 255, 34, 0.25);
+      display: flex;
+      align-items: center;
+      padding: 0 18px;
+      overflow: hidden;
+      transition: width 350ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 350ms ease, border-color 350ms ease;
+      cursor: pointer;
+    }
+    .wolverine-ltx-pod:hover,
+    .wolverine-ltx-pod:focus-within {
+      width: 310px;
+      box-shadow: 0 0 28px rgba(0, 255, 34, 0.55);
+      border-color: #00FF22;
+      background-color: rgba(7, 11, 20, 0.98);
+    }
+    .wolverine-ltx-icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      stroke: #00FF22;
+      color: #00FF22;
+    }
+    .wolverine-ltx-icon svg {
+      width: 22px;
+      height: 22px;
+      stroke: #00FF22;
+    }
+    .wolverine-ltx-input {
+      background: transparent;
+      border: none;
+      outline: none;
+      color: #00FF22;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.8px;
+      padding-left: 14px;
+      width: 100%;
+      opacity: 0;
+      caret-color: #FF5C00;
+      transition: opacity 250ms ease;
+      font-family: 'JetBrains Mono', monospace;
+    }
+    .wolverine-ltx-pod:hover .wolverine-ltx-input,
+    .wolverine-ltx-pod:focus-within .wolverine-ltx-input {
+      opacity: 1;
+    }
+    .wolverine-ltx-input::placeholder {
+      color: rgba(0, 255, 34, 0.5);
+      font-size: 10.5px;
+    }
+
+    /* Orange Secondary Consensus Query Pod */
+    .wolverine-ltx-orange {
+      border-color: #FF5C00;
+      box-shadow: 0 0 16px rgba(255, 92, 0, 0.25);
+    }
+    .wolverine-ltx-orange:hover,
+    .wolverine-ltx-orange:focus-within {
+      box-shadow: 0 0 28px rgba(255, 92, 0, 0.55);
+      border-color: #FF5C00;
+    }
+    .wolverine-ltx-orange .wolverine-ltx-icon svg {
+      stroke: #FF5C00;
+    }
+    .wolverine-ltx-orange .wolverine-ltx-input {
+      color: #FF5C00;
+      caret-color: #00FF22;
+    }
+    .wolverine-ltx-orange .wolverine-ltx-input::placeholder {
+      color: rgba(255, 92, 0, 0.5);
+    }
+
   </style>
 </head>
 <body>
@@ -8918,6 +9074,81 @@
 
       <div style="margin-top: 20px; padding-top: 14px; border-top: 1px solid rgba(255,255,255,0.06); display: flex; justify-content: space-between; align-items: center; font-size: 11.5px; color: #64748b;">
         <span>Category: <strong>Buttons / Vertical Roll-Slide Download Pill Button</strong></span>
+        <span style="color: #00FF22;">● Verified Production Ingestion</span>
+      </div>
+    </section>
+
+    <!-- SERIAL #034 -->
+    <section id="mockup-item-034" class="mockup-card">
+      <div class="mockup-header">
+        <div style="display: flex; align-items: center; gap: 10px;">
+          <span class="serial-badge">SERIAL #034</span>
+          <strong style="color: #ffffff; font-size: 16px;">Pretty-Wolverine-81 Expanding Search Bubble Input</strong>
+          <span style="font-size: 11px; color: #64748b; font-family: monospace;">uiverse.io/jubayer-10/pretty-wolverine-81</span>
+        </div>
+        <a href="serial-list-mockup-design.html" style="color: var(--orange); font-size: 12px; text-decoration: none; font-weight: 600;">&larr; View Master Serial Index</a>
+      </div>
+
+      <div class="stage-view">
+        <!-- Variant A: Uiverse Canonical Vibrant Royal Blue Search Bubble -->
+        <div class="stage-column">
+          <div class="stage-header">
+            <span class="stage-title">VARIANT A: UIVERSE CANONICAL EXPANDING SEARCH BUBBLE</span>
+            <span class="stage-tag">ORIGINAL SPEC</span>
+          </div>
+          <div class="wolverine-stage-box">
+            <div class="wolverine-search-pod">
+              <div class="wolverine-icon-box">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                  <path d="M18.9,16.776A10.539,10.539,0,1,0,16.776,18.9l5.1,5.1L24,21.88ZM10.5,18A7.5,7.5,0,1,1,18,10.5,7.507,7.507,0,0,1,10.5,18Z"></path>
+                </svg>
+              </div>
+              <input type="text" class="wolverine-input" placeholder="Search components..." />
+            </div>
+            <div style="font-size: 11px; font-family: monospace; color: #64748b; margin-top: 20px;">
+              ● Hover / Focus: 60px circular bubble expands horizontally to 275px
+            </div>
+          </div>
+        </div>
+
+        <!-- Variant B: Leadirftex Cyber Quantum Telemetry Query Bubbles -->
+        <div class="stage-column">
+          <div class="stage-header">
+            <span class="stage-title">VARIANT B: LEADIRFTEX CYBER QUANTUM QUERY BUBBLES</span>
+            <span class="stage-tag" style="background: rgba(0, 255, 34, 0.15); color: #00FF22; border-color: rgba(0, 255, 34, 0.4);">CYBER BUBBLE</span>
+          </div>
+          <div class="wolverine-stage-box" style="background: radial-gradient(circle at center, rgba(0, 255, 34, 0.06) 0%, #03050A 80%); border-color: rgba(0, 255, 34, 0.25);">
+            <div class="wolverine-ltx-cluster">
+              <!-- Pod 1: Cyber Neon Green Telemetry Query -->
+              <div class="wolverine-ltx-pod">
+                <div class="wolverine-ltx-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                  </svg>
+                </div>
+                <input type="text" class="wolverine-ltx-input" placeholder="QUERY TELEMETRY [TX/HASH]..." />
+              </div>
+
+              <!-- Pod 2: Interchain Orange Consensus Query -->
+              <div class="wolverine-ltx-pod wolverine-ltx-orange">
+                <div class="wolverine-ltx-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                    <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                  </svg>
+                </div>
+                <input type="text" class="wolverine-ltx-input" placeholder="CONSENSUS BLOCK SEARCH..." />
+              </div>
+            </div>
+            <div style="font-size: 11px; font-family: 'JetBrains Mono', monospace; color: #00FF22; opacity: 0.85; margin-top: 20px; letter-spacing: 0.8px;">
+              ⚡ [ HOVER / FOCUS POD: 60PX CIRCLE FLUIDLY EXPANDS TO 310PX QUERY DECK ]
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div style="margin-top: 20px; padding-top: 14px; border-top: 1px solid rgba(255,255,255,0.06); display: flex; justify-content: space-between; align-items: center; font-size: 11.5px; color: #64748b;">
+        <span>Category: <strong>UI Form Elements / Expanding Search Bubble Input</strong></span>
         <span style="color: #00FF22;">● Verified Production Ingestion</span>
       </div>
     </section>
