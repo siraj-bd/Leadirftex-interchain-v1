@@ -6,6 +6,22 @@
 **Plan Domain will be:** Leadirftex.com  
 
 
+### Mockup Serial #044: Silent-Turkey-70 Ghost Arrow Action Button
+
+**Status:** PASS / VERIFIED — INGESTED SERIAL #044: SILENT-TURKEY-70 GHOST ARROW ACTION BUTTON (SOURCE: uiverse.io/ExampleDoc28986/silent-turkey-70). INTEGRATED INTO CENTRALIZED MASTER REPOSITORY (`mockup-master-ui-ux.html#mockup-item-044`) AND REGISTERED IN SERIAL REGISTRY (`serial-list-mockup-design.html`). PRESERVED CANONICAL GHOST ACTION BUTTON FLOOD-FILL DYNAMICS (OUTLINE BORDER WITH TEAL #3CC, HOVER FULL BACKGROUND FILL INVERSION, ABSOLUTE SVG ARROW SMOOTHLY TRANSLATING RIGHTWARD VIA TRANSFORM: TRANSLATEX(6PX), SMOOTH 0.6S EASE TRANSITIONS, AND TACTILE RESPONSIVENESS). INTEGRATED DEDICATED LEADIRFTEX CYBER GHOST ACTION CLUSTER FEATURING OBSIDIAN (`#070B14`), CYBER NEON GREEN (`#00FF22`) SETTLEMENT NODE WITH 28PX NEON GLOW, INTERCHAIN ORANGE (`#FF5C00`) CONSENSUS NODE, STRICT ZERO-YELLOW COMPLIANCE, MONOSPACE TYPOGRAPHY, AND ACTIVE SCALE DEPRESSION. CSS BRACES 100% BALANCED.
+**Target Files:** `mockup-master-ui-ux.html`, `serial-list-mockup-design.html`, `project-execution-status.md`, `project-status-for-chatgpt.html`
+**Live Preview Route:** `mockup-master-ui-ux.html#mockup-item-044`, `serial-list-mockup-design.html`
+**Audit & Implementation Highlights:**
+1. **Mockup Master Repository Ingestion (#mockup-item-044):**
+   - Scoped pure CSS with ghost arrow hover translation, background flood fill inversion, and zero global class conflicts (`.button` and `.text` scoped to `.turkey-button` and `.turkey-text`).
+   - Dual variant presentation: Variant A (Uiverse Canonical Ghost Arrow Button) and Variant B (Leadirftex Cyber Ghost Action Nodes).
+2. **Serial Registry Update:**
+   - Appended Serial `#044`, Item Short Name `Silent-Turkey-70 Ghost Arrow Button`, Category `Buttons / Minimalist Ghost Arrow Flood-Fill Button`, Status `ACTIVE / INGESTED`, and direct action link.
+3. **Syntax Verification:**
+   - `mockup-master-ui-ux.html`: CSS Braces 100% BALANCED.
+   - `serial-list-mockup-design.html`: CSS Braces 100% BALANCED.
+
+
 ### Mockup Serial #043: Spicy-Mouse-4 Omnidirectional 3D Shadow Halo Button
 
 **Status:** PASS / VERIFIED — INGESTED SERIAL #043: SPICY-MOUSE-4 OMNIDIRECTIONAL 3D SHADOW HALO BUTTON (SOURCE: uiverse.io/omriluz/spicy-mouse-4). INTEGRATED INTO CENTRALIZED MASTER REPOSITORY (`mockup-master-ui-ux.html#mockup-item-043`) AND REGISTERED IN SERIAL REGISTRY (`serial-list-mockup-design.html`). PRESERVED CANONICAL 360-DEGREE 4-WAY OMNIDIRECTIONAL MULTI-STEPPED 3D SHADOW HALO BURST (TOP, BOTTOM, LEFT, RIGHT COMPOUND BOX-SHADOW IN #F85959 AND #39A2DB, TRANSLATEY(-10PX) HOVER ELEVATION, AND TACTILE ACTIVE PRESS STATE). INTEGRATED DEDICATED LEADIRFTEX CYBER QUANTUM HALO CLUSTER FEATURING OBSIDIAN (`#070B14`), 360-DEGREE INTERCHAIN ORANGE (`#FF5C00`) AND CYBER NEON GREEN (`#00FF22`) EXTRUSION SHELVES, ELECTRIC CYAN (`#00F0FF`) SECONDARY RELAY MATRIX NODE, STRICT ZERO-YELLOW COMPLIANCE, MONOSPACE TYPOGRAPHY, AND NEON DIFFUSE BLOOM. CSS BRACES 100% BALANCED.
