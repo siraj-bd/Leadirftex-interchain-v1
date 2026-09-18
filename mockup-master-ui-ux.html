@@ -4623,6 +4623,451 @@
       box-shadow: 0 0 30px rgba(168, 85, 247, 0.9);
       transform: translateY(-50%) scale(1.15);
     }
+
+    /* === SERIAL #026: AFRAID-SQUID-26 8-WAY OCTAGONAL SATELLITE BURST === */
+    /* Shared Stage Box */
+    .afraid-stage-box {
+      width: 100%;
+      min-height: 380px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      background: radial-gradient(circle at center, #0e1526 0%, #060913 100%);
+      border-radius: 10px;
+      position: relative;
+      overflow: visible;
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      padding: 60px 15px;
+    }
+
+    /* Variant A: Canonical Uiverse 8-Way Octagonal Satellite Burst */
+    .afraid-container {
+      background: linear-gradient(138deg, rgb(0, 0, 0) 15%, rgb(0, 31, 46) 65%);
+      position: relative;
+      cursor: pointer;
+      font-size: 17px;
+      padding: 0.85em;
+      border-radius: 50px;
+      box-shadow: 0 0.5rem 1.2rem rgba(0, 0, 0, 0.35);
+      transition: all 0.5s ease;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid rgba(0, 180, 255, 0.2);
+    }
+    .afraid-container:hover {
+      background: #ffffff;
+      box-shadow: 0 0.5rem 1.5rem rgba(0, 180, 255, 0.4);
+      border-color: #ffffff;
+    }
+    .afraid-container .afraid-text {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      fill: #ffffff;
+      transition: all 0.3s ease;
+    }
+    .afraid-container:hover .afraid-text {
+      fill: rgb(0, 0, 0);
+    }
+    /* Base Satellite Style */
+    .afraid-tt {
+      position: absolute;
+      opacity: 0;
+      visibility: hidden;
+      background: #ffffff;
+      padding: 10px;
+      border-radius: 50px;
+      transition: all 0.35s cubic-bezier(0.34, 1.56, 0.64, 1);
+      z-index: 10;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    /* TT1: Twitter (South) */
+    .afraid-tt1 {
+      top: 100%;
+      left: 50%;
+      transform: translateX(-50%);
+      fill: #03a9f4;
+    }
+    .afraid-container:hover .afraid-tt1 {
+      top: 165%;
+      opacity: 1;
+      visibility: visible;
+      transform: translate(-50%, 0);
+    }
+    .afraid-tt1:hover {
+      background: #03a9f4;
+      fill: #ffffff;
+      transform: translate(-50%, 3px) scale(1.15);
+    }
+    /* TT2: Facebook (North) */
+    .afraid-tt2 {
+      top: 100%;
+      left: 50%;
+      transform: translateX(-50%);
+      fill: #0462df;
+    }
+    .afraid-container:hover .afraid-tt2 {
+      top: -135%;
+      opacity: 1;
+      visibility: visible;
+      transform: translate(-50%, 0);
+    }
+    .afraid-tt2:hover {
+      background: #0462df;
+      fill: #ffffff;
+      transform: translate(-50%, -3px) scale(1.15);
+    }
+    /* TT3: WhatsApp (East) */
+    .afraid-tt3 {
+      top: 50%;
+      left: 100%;
+      transform: translateY(-50%);
+      fill: #1db954;
+    }
+    .afraid-container:hover .afraid-tt3 {
+      left: 175%;
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(-50%);
+    }
+    .afraid-tt3:hover {
+      background: #1db954;
+      fill: #ffffff;
+      transform: translateY(-50%) scale(1.15);
+    }
+    /* TT4: Discord (West) */
+    .afraid-tt4 {
+      top: 50%;
+      right: 100%;
+      transform: translateY(-50%);
+      fill: #8c9eff;
+    }
+    .afraid-container:hover .afraid-tt4 {
+      right: 175%;
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(-50%);
+    }
+    .afraid-tt4:hover {
+      background: #8c9eff;
+      fill: #ffffff;
+      transform: translateY(-50%) scale(1.15);
+    }
+    /* TT5: Pinterest (North-West) */
+    .afraid-tt5 {
+      top: 100%;
+      left: 50%;
+      transform: translate(-50%, 0);
+      fill: #bd081c;
+    }
+    .afraid-container:hover .afraid-tt5 {
+      top: -95%;
+      left: -95%;
+      opacity: 1;
+      visibility: visible;
+      transform: translate(0, 0);
+    }
+    .afraid-tt5:hover {
+      background: #bd081c;
+      fill: #ffffff;
+      transform: scale(1.15);
+    }
+    /* TT6: Dribbble (North-East) */
+    .afraid-tt6 {
+      top: 100%;
+      right: 50%;
+      transform: translate(50%, 0);
+      fill: #ea4c89;
+    }
+    .afraid-container:hover .afraid-tt6 {
+      top: -95%;
+      right: -95%;
+      opacity: 1;
+      visibility: visible;
+      transform: translate(0, 0);
+    }
+    .afraid-tt6:hover {
+      background: #ea4c89;
+      fill: #ffffff;
+      transform: scale(1.15);
+    }
+    /* TT7: GitHub (South-East) */
+    .afraid-tt7 {
+      top: 100%;
+      right: 50%;
+      transform: translate(50%, 0);
+      fill: #000000;
+    }
+    .afraid-container:hover .afraid-tt7 {
+      top: 125%;
+      right: -95%;
+      opacity: 1;
+      visibility: visible;
+      transform: translate(0, 0);
+    }
+    .afraid-tt7:hover {
+      background: #000000;
+      fill: #ffffff;
+      transform: scale(1.15);
+    }
+    /* TT8: Reddit (South-West) */
+    .afraid-tt8 {
+      top: 100%;
+      left: 50%;
+      transform: translate(-50%, 0);
+      fill: #ff4500;
+    }
+    .afraid-container:hover .afraid-tt8 {
+      top: 125%;
+      left: -95%;
+      opacity: 1;
+      visibility: visible;
+      transform: translate(0, 0);
+    }
+    .afraid-tt8:hover {
+      background: #ff4500;
+      fill: #ffffff;
+      transform: scale(1.15);
+    }
+    /* Invisible Hover Retention Ring Bridge */
+    .afraid-tt-bridge {
+      position: absolute;
+      top: -150%;
+      left: -150%;
+      width: 250px;
+      height: 250px;
+      border-radius: 50%;
+      opacity: 0;
+      visibility: hidden;
+      z-index: 1;
+      pointer-events: none;
+    }
+    .afraid-container:hover .afraid-tt-bridge {
+      visibility: visible;
+      pointer-events: auto;
+    }
+
+    /* Variant B: Leadirftex Cyber 8-Node Quantum Mesh Telemetry Octagon Hub */
+    .afraid-ltx-container {
+      background: rgba(7, 11, 20, 0.95);
+      border: 2px solid #00FF22;
+      position: relative;
+      cursor: pointer;
+      font-size: 17px;
+      padding: 0.85em;
+      border-radius: 50px;
+      box-shadow: 0 0 25px rgba(0, 255, 34, 0.35), inset 0 0 10px rgba(0, 255, 34, 0.15);
+      transition: all 0.4s ease;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .afraid-ltx-container:hover {
+      background: #00FF22;
+      box-shadow: 0 0 45px rgba(0, 255, 34, 0.85);
+    }
+    .afraid-ltx-container .afraid-ltx-text {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      fill: #00FF22;
+      transition: all 0.3s ease;
+    }
+    .afraid-ltx-container:hover .afraid-ltx-text {
+      fill: #03050A;
+    }
+    /* Cyber Base Satellite */
+    .afraid-ltx-tt {
+      position: absolute;
+      opacity: 0;
+      visibility: hidden;
+      background: #070B14;
+      padding: 10px;
+      border-radius: 50px;
+      transition: all 0.35s cubic-bezier(0.34, 1.56, 0.64, 1);
+      z-index: 10;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    /* 1. North: Telemetry Core */
+    .afraid-ltx-tt1 {
+      top: 100%;
+      left: 50%;
+      transform: translateX(-50%);
+      border: 1.5px solid #00FF22;
+      fill: #00FF22;
+      box-shadow: 0 0 16px rgba(0, 255, 34, 0.35);
+    }
+    .afraid-ltx-container:hover .afraid-ltx-tt1 {
+      top: -135%;
+      opacity: 1;
+      visibility: visible;
+      transform: translate(-50%, 0);
+    }
+    .afraid-ltx-tt1:hover {
+      background: #00FF22;
+      fill: #03050A;
+      box-shadow: 0 0 28px rgba(0, 255, 34, 0.9);
+      transform: translate(-50%, -3px) scale(1.15);
+    }
+    /* 2. South: Interchain Bridge */
+    .afraid-ltx-tt2 {
+      top: 100%;
+      left: 50%;
+      transform: translateX(-50%);
+      border: 1.5px solid #FF5C00;
+      fill: #FF5C00;
+      box-shadow: 0 0 16px rgba(255, 92, 0, 0.35);
+    }
+    .afraid-ltx-container:hover .afraid-ltx-tt2 {
+      top: 165%;
+      opacity: 1;
+      visibility: visible;
+      transform: translate(-50%, 0);
+    }
+    .afraid-ltx-tt2:hover {
+      background: #FF5C00;
+      fill: #03050A;
+      box-shadow: 0 0 28px rgba(255, 92, 0, 0.9);
+      transform: translate(-50%, 3px) scale(1.15);
+    }
+    /* 3. East: Encrypted Comms */
+    .afraid-ltx-tt3 {
+      top: 50%;
+      left: 100%;
+      transform: translateY(-50%);
+      border: 1.5px solid #38BDF8;
+      fill: #38BDF8;
+      box-shadow: 0 0 16px rgba(56, 189, 248, 0.35);
+    }
+    .afraid-ltx-container:hover .afraid-ltx-tt3 {
+      left: 175%;
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(-50%);
+    }
+    .afraid-ltx-tt3:hover {
+      background: #38BDF8;
+      fill: #03050A;
+      box-shadow: 0 0 28px rgba(56, 189, 248, 0.9);
+      transform: translateY(-50%) scale(1.15);
+    }
+    /* 4. West: Security Sentinel */
+    .afraid-ltx-tt4 {
+      top: 50%;
+      right: 100%;
+      transform: translateY(-50%);
+      border: 1.5px solid #A855F7;
+      fill: #A855F7;
+      box-shadow: 0 0 16px rgba(168, 85, 247, 0.35);
+    }
+    .afraid-ltx-container:hover .afraid-ltx-tt4 {
+      right: 175%;
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(-50%);
+    }
+    .afraid-ltx-tt4:hover {
+      background: #A855F7;
+      fill: #03050A;
+      box-shadow: 0 0 28px rgba(168, 85, 247, 0.9);
+      transform: translateY(-50%) scale(1.15);
+    }
+    /* 5. North-West: Gov Council */
+    .afraid-ltx-tt5 {
+      top: 100%;
+      left: 50%;
+      transform: translate(-50%, 0);
+      border: 1.5px solid #E2E8F0;
+      fill: #E2E8F0;
+      box-shadow: 0 0 16px rgba(226, 232, 240, 0.35);
+    }
+    .afraid-ltx-container:hover .afraid-ltx-tt5 {
+      top: -95%;
+      left: -95%;
+      opacity: 1;
+      visibility: visible;
+      transform: translate(0, 0);
+    }
+    .afraid-ltx-tt5:hover {
+      background: #E2E8F0;
+      fill: #03050A;
+      box-shadow: 0 0 28px rgba(226, 232, 240, 0.9);
+      transform: scale(1.15);
+    }
+    /* 6. North-East: Quantum Audit */
+    .afraid-ltx-tt6 {
+      top: 100%;
+      right: 50%;
+      transform: translate(50%, 0);
+      border: 1.5px solid #00FF22;
+      fill: #00FF22;
+      box-shadow: 0 0 16px rgba(0, 255, 34, 0.35);
+    }
+    .afraid-ltx-container:hover .afraid-ltx-tt6 {
+      top: -95%;
+      right: -95%;
+      opacity: 1;
+      visibility: visible;
+      transform: translate(0, 0);
+    }
+    .afraid-ltx-tt6:hover {
+      background: #00FF22;
+      fill: #03050A;
+      box-shadow: 0 0 28px rgba(0, 255, 34, 0.9);
+      transform: scale(1.15);
+    }
+    /* 7. South-East: Validator Guild */
+    .afraid-ltx-tt7 {
+      top: 100%;
+      right: 50%;
+      transform: translate(50%, 0);
+      border: 1.5px solid #FF5C00;
+      fill: #FF5C00;
+      box-shadow: 0 0 16px rgba(255, 92, 0, 0.35);
+    }
+    .afraid-ltx-container:hover .afraid-ltx-tt7 {
+      top: 125%;
+      right: -95%;
+      opacity: 1;
+      visibility: visible;
+      transform: translate(0, 0);
+    }
+    .afraid-ltx-tt7:hover {
+      background: #FF5C00;
+      fill: #03050A;
+      box-shadow: 0 0 28px rgba(255, 92, 0, 0.9);
+      transform: scale(1.15);
+    }
+    /* 8. South-West: Ledger Explorer */
+    .afraid-ltx-tt8 {
+      top: 100%;
+      left: 50%;
+      transform: translate(-50%, 0);
+      border: 1.5px solid #38BDF8;
+      fill: #38BDF8;
+      box-shadow: 0 0 16px rgba(56, 189, 248, 0.35);
+    }
+    .afraid-ltx-container:hover .afraid-ltx-tt8 {
+      top: 125%;
+      left: -95%;
+      opacity: 1;
+      visibility: visible;
+      transform: translate(0, 0);
+    }
+    .afraid-ltx-tt8:hover {
+      background: #38BDF8;
+      fill: #03050A;
+      box-shadow: 0 0 28px rgba(56, 189, 248, 0.9);
+      transform: scale(1.15);
+    }
   </style>
 </head>
 <body>
@@ -6313,6 +6758,149 @@
 
       <div style="margin-top: 20px; padding-top: 14px; border-top: 1px solid rgba(255,255,255,0.06); display: flex; justify-content: space-between; align-items: center; font-size: 11.5px; color: #64748b;">
         <span>Category: <strong>UI Navigation / Orbital Satellite Share Burst &amp; Protocol Dispatch Hub</strong></span>
+        <span style="color: #00FF22;">● Verified Production Ingestion</span>
+      </div>
+    </section>
+
+    <!-- SERIAL #026 -->
+    <section id="mockup-item-026" class="mockup-card">
+      <div class="mockup-header">
+        <div style="display: flex; align-items: center; gap: 10px;">
+          <span class="serial-badge">SERIAL #026</span>
+          <strong style="color: #ffffff; font-size: 16px;">Afraid-Squid-26 8-Way Octagonal Satellite Burst</strong>
+          <span style="font-size: 11px; color: #64748b; font-family: monospace;">uiverse.io/gamerx151/afraid-squid-26</span>
+        </div>
+        <a href="serial-list-mockup-design.html" style="color: var(--orange); font-size: 12px; text-decoration: none; font-weight: 600;">&larr; View Master Serial Index</a>
+      </div>
+
+      <div class="stage-view">
+        <!-- Variant A: Uiverse Canonical 8-Way Octagonal Satellite Burst -->
+        <div class="stage-column">
+          <div class="stage-header">
+            <span class="stage-title">VARIANT A: UIVERSE CANONICAL 8-WAY BURST</span>
+            <span class="stage-tag">ORIGINAL SPEC</span>
+          </div>
+          <div class="afraid-stage-box">
+            <div class="afraid-container">
+              <span class="afraid-text">
+                <svg viewBox="0 0 16 16" width="22" height="22">
+                  <path d="M15.964.686a.5.5 0 0 0-.65-.65L.767 5.855H.766l-.452.18a.5.5 0 0 0-.082.887l.41.26.001.002 4.995 3.178 3.178 4.995.002.002.26.41a.5.5 0 0 0 .886-.083zm-1.833 1.89L6.637 10.07l-.215-.338a.5.5 0 0 0-.154-.154l-.338-.215 7.494-7.494 1.178-.471z"></path>
+                </svg>
+              </span>
+
+              <!-- North: Facebook -->
+              <span class="afraid-tt afraid-tt2" title="Facebook">
+                <svg viewBox="0 0 16 16" width="20" height="20"><path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"></path></svg>
+              </span>
+
+              <!-- North-East: Dribbble -->
+              <span class="afraid-tt afraid-tt6" title="Dribbble">
+                <svg viewBox="0 0 16 16" width="20" height="20"><path d="M8 0C3.584 0 0 3.584 0 8s3.584 8 8 8c4.408 0 8-3.584 8-8s-3.592-8-8-8m5.284 3.688a6.8 6.8 0 0 1 1.545 4.251c-.226-.043-2.482-.503-4.755-.217-.052-.112-.096-.234-.148-.355-.139-.33-.295-.668-.451-.99 2.516-1.023 3.662-2.498 3.81-2.69zM8 1.18c1.735 0 3.323.65 4.53 1.718-.122.174-1.155 1.553-3.584 2.464-1.12-2.056-2.36-3.74-2.551-4A7 7 0 0 1 8 1.18m-2.907.642A43 43 0 0 1 7.627 5.77c-3.193.85-6.013.833-6.317.833a6.87 6.87 0 0 1 3.783-4.78zM1.163 8.01V7.8c.295.01 3.61.053 7.02-.971.199.381.381.772.555 1.162l-.27.078c-3.522 1.137-5.396 4.243-5.553 4.504a6.82 6.82 0 0 1-1.752-4.564zM8 14.837a6.8 6.8 0 0 1-4.19-1.44c.12-.252 1.509-2.924 5.361-4.269.018-.009.026-.009.044-.017a28.3 28.3 0 0 1 1.457 5.18A6.7 6.7 0 0 1 8 14.837m3.81-1.171c-.07-.417-.435-2.412-1.328-4.868 2.143-.338 4.017.217 4.251.295a6.77 6.77 0 0 1-2.924 4.573z" fill-rule="evenodd"></path></svg>
+              </span>
+
+              <!-- East: WhatsApp -->
+              <span class="afraid-tt afraid-tt3" title="WhatsApp">
+                <svg viewBox="0 0 16 16" width="20" height="20"><path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"></path></svg>
+              </span>
+
+              <!-- South-East: GitHub -->
+              <span class="afraid-tt afraid-tt7" title="GitHub">
+                <svg viewBox="0 0 16 16" width="20" height="20"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"></path></svg>
+              </span>
+
+              <!-- South: Twitter / X -->
+              <span class="afraid-tt afraid-tt1" title="Twitter / X">
+                <svg viewBox="0 0 16 16" width="20" height="20"><path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334q.002-.211-.006-.422A6.7 6.7 0 0 0 16 3.542a6.7 6.7 0 0 1-1.889.518 3.3 3.3 0 0 0 1.447-1.817 6.5 6.5 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.32 9.32 0 0 1-6.767-3.429 3.29 3.29 0 0 0 1.018 4.382A3.3 3.3 0 0 1 .64 6.575v.045a3.29 3.29 0 0 0 2.632 3.218 3.2 3.2 0 0 1-.865.115 3 3 0 0 1-.614-.057 3.28 3.28 0 0 0 3.067 2.277A6.6 6.6 0 0 1 .78 13.58a6 6 0 0 1-.78-.045A9.34 9.34 0 0 0 5.026 15"></path></svg>
+              </span>
+
+              <!-- South-West: Reddit -->
+              <span class="afraid-tt afraid-tt8" title="Reddit">
+                <svg viewBox="0 0 16 16" width="20" height="20"><path d="M6.167 8a.83.83 0 0 0-.83.83c0 .459.372.84.83.831a.831.831 0 0 0 0-1.661m1.843 3.647c.315 0 1.403-.038 1.976-.611a.23.23 0 0 0 0-.306.213.213 0 0 0-.306 0c-.353.363-1.126.487-1.67.487-.545 0-1.308-.124-1.671-.487a.213.213 0 0 0-.306 0 .213.213 0 0 0 0 .306c.564.563 1.652.61 1.977.61zm.992-2.807c0 .458.373.83.831.83s.83-.381.83-.83a.831.831 0 0 0-1.66 0z"></path><path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.828-1.165c-.315 0-.602.124-.812.325-.801-.573-1.9-.945-3.121-.993l.534-2.501 1.738.372a.83.83 0 1 0 .83-.869.83.83 0 0 0-.744.468l-1.938-.41a.2.2 0 0 0-.153.028.2.2 0 0 0-.086.134l-.592 2.788c-1.24.038-2.358.41-3.17.992-.21-.2-.496-.324-.81-.324a1.163 1.163 0 0 0-.478 2.224q-.03.17-.029.353c0 1.795 2.091 3.256 4.669 3.256s4.668-1.451 4.668-3.256c0-.114-.01-.238-.029-.353.401-.181.688-.592.688-1.069 0-.65-.525-1.165-1.165-1.165"></path></svg>
+              </span>
+
+              <!-- West: Discord -->
+              <span class="afraid-tt afraid-tt4" title="Discord">
+                <svg viewBox="0 0 16 16" width="20" height="20"><path d="M13.545 2.907a13.2 13.2 0 0 0-3.257-1.011.05.05 0 0 0-.052.025c-.141.25-.297.577-.406.833a12.2 12.2 0 0 0-3.658 0 8 8 0 0 0-.412-.833.05.05 0 0 0-.052-.025c-1.125.194-2.22.534-3.257 1.011a.04.04 0 0 0-.021.018C.356 6.024-.213 9.047.066 12.032q.003.022.021.037a13.3 13.3 0 0 0 3.995 2.02.05.05 0 0 0 .056-.019q.463-.63.818-1.329a.05.05 0 0 0-.01-.059l-.018-.011a9 9 0 0 1-1.248-.595.05.05 0 0 1-.02-.066l.015-.019q.127-.095.248-.195a.05.05 0 0 1 .051-.007c2.619 1.196 5.454 1.196 8.041 0a.05.05 0 0 1 .053.007q.121.1.248.195a.05.05 0 0 1-.004.085 8 8 0 0 1-1.249.594.05.05 0 0 0-.03.03.05.05 0 0 0 .003.041c.24.465.515.909.817 1.329a.05.05 0 0 0 .056.019 13.2 13.2 0 0 0 4.001-2.02.05.05 0 0 0 .021-.037c.334-3.451-.559-6.449-2.366-9.106a.03.03 0 0 0-.02-.019"></path></svg>
+              </span>
+
+              <!-- North-West: Pinterest -->
+              <span class="afraid-tt afraid-tt5" title="Pinterest">
+                <svg viewBox="0 0 16 16" width="20" height="20"><path d="M8 0a8 8 0 0 0-2.915 15.452c-.07-.633-.134-1.606.027-2.297.146-.625.938-3.977.938-3.977s-.239-.479-.239-1.187c0-1.113.645-1.943 1.448-1.943.682 0 1.012.512 1.012 1.127 0 .686-.437 1.712-.663 2.663-.188.796.4 1.446 1.185 1.446 1.422 0 2.515-1.5 2.515-3.664 0-1.915-1.377-3.254-3.342-3.254-2.276 0-3.612 1.707-3.612 3.471 0 .688.265 1.425.595 1.826a.24.24 0 0 1 .056.23c-.061.252-.196.796-.222.907-.035.146-.116.177-.268.107-1-.465-1.624-1.926-1.624-3.1 0-2.523 1.834-4.84 5.286-4.84 2.775 0 4.932 1.977 4.932 4.62 0 2.757-1.739 4.976-4.151 4.976-.811 0-1.573-.421-1.834-.919l-.498 1.902c-.181.695-.669 1.566-.995 2.097A8 8 0 1 0 8 0"></path></svg>
+              </span>
+
+              <!-- Hover Bridge -->
+              <span class="afraid-tt-bridge"></span>
+            </div>
+            <div style="font-size: 11px; font-family: monospace; color: #64748b; margin-top: 30px;">
+              ● Hover central trigger: 8 satellite social nodes burst out in full 360&deg; octagonal compass
+            </div>
+          </div>
+        </div>
+
+        <!-- Variant B: Leadirftex Cyber 8-Node Quantum Mesh Telemetry Octagon Hub -->
+        <div class="stage-column">
+          <div class="stage-header">
+            <span class="stage-title">VARIANT B: LEADIRFTEX 8-NODE QUANTUM MESH HUB</span>
+            <span class="stage-tag" style="background: rgba(0, 255, 34, 0.15); color: #00FF22; border-color: rgba(0, 255, 34, 0.4);">CYBER OCTAGON</span>
+          </div>
+          <div class="afraid-stage-box" style="background: radial-gradient(circle at center, rgba(0, 255, 34, 0.06) 0%, #03050A 80%); border-color: rgba(0, 255, 34, 0.25);">
+            <div class="afraid-ltx-container">
+              <span class="afraid-ltx-text">
+                <svg viewBox="0 0 24 24" width="22" height="22"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path></svg>
+              </span>
+
+              <!-- North: Telemetry Core -->
+              <span class="afraid-ltx-tt afraid-ltx-tt1" title="Quantum Telemetry Core">
+                <svg viewBox="0 0 24 24" width="20" height="20"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"></path></svg>
+              </span>
+
+              <!-- North-East: Quantum Audit -->
+              <span class="afraid-ltx-tt afraid-ltx-tt6" title="Quantum Audit Protocol">
+                <svg viewBox="0 0 24 24" width="20" height="20"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"></path></svg>
+              </span>
+
+              <!-- East: Interchain Bridge -->
+              <span class="afraid-ltx-tt afraid-ltx-tt3" title="Interchain Asset Bridge">
+                <svg viewBox="0 0 24 24" width="20" height="20"><path d="M4 15h16v-2H4v2zm0 4h16v-2H4v2zm0-8h16V9H4v2zm0-6v2h16V5H4z"></path></svg>
+              </span>
+
+              <!-- South-East: Validator Guild -->
+              <span class="afraid-ltx-tt afraid-ltx-tt7" title="Validator Guild Node">
+                <svg viewBox="0 0 24 24" width="20" height="20"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm0 10.99h7c-.53 4.12-3.28 7.79-7 8.94V12H5V6.3l7-3.11v8.8z"></path></svg>
+              </span>
+
+              <!-- South: Validator Mesh -->
+              <span class="afraid-ltx-tt afraid-ltx-tt2" title="Decentralized Mesh Relay">
+                <svg viewBox="0 0 24 24" width="20" height="20"><path d="M22 9.999V20C22 20.5523 21.5523 21 21 21H13V9.999H22ZM11 15.999V21H3C2.44772 21 2 20.5523 2 20V15.999H11ZM11 3V13.999H2V4C2 3.44772 2.44772 3 3 3H11ZM21 3C21.5523 3 22 3.44772 22 4V7.999H13V3H21Z"></path></svg>
+              </span>
+
+              <!-- South-West: Ledger Explorer -->
+              <span class="afraid-ltx-tt afraid-ltx-tt8" title="Ledger &amp; State Explorer">
+                <svg viewBox="0 0 24 24" width="20" height="20"><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path></svg>
+              </span>
+
+              <!-- West: Security Sentinel -->
+              <span class="afraid-ltx-tt afraid-ltx-tt4" title="Cyber Security Sentinel">
+                <svg viewBox="0 0 24 24" width="20" height="20"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm0 10.99h7c-.53 4.12-3.28 7.79-7 8.94V12H5V6.3l7-3.11v8.8z"></path></svg>
+              </span>
+
+              <!-- North-West: Gov Council -->
+              <span class="afraid-ltx-tt afraid-ltx-tt5" title="Institutional Governance">
+                <svg viewBox="0 0 24 24" width="20" height="20"><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"></path></svg>
+              </span>
+
+              <!-- Hover Bridge -->
+              <span class="afraid-tt-bridge"></span>
+            </div>
+            <div style="font-size: 11px; font-family: 'JetBrains Mono', monospace; color: #00FF22; opacity: 0.85; margin-top: 30px; letter-spacing: 0.8px;">
+              ⚡ [ HOVER CORE: 8-NODE QUANTUM MESH SATELLITES BURST IN 360&deg; OCTAGON ]
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div style="margin-top: 20px; padding-top: 14px; border-top: 1px solid rgba(255,255,255,0.06); display: flex; justify-content: space-between; align-items: center; font-size: 11.5px; color: #64748b;">
+        <span>Category: <strong>UI Navigation / 8-Way Octagonal Compass Satellite Burst Hub</strong></span>
         <span style="color: #00FF22;">● Verified Production Ingestion</span>
       </div>
     </section>
