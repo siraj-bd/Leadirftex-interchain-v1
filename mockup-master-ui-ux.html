@@ -2063,6 +2063,303 @@
       box-shadow: 0 0 25px rgba(0, 255, 34, 0.65);
       transform: translateY(-1px);
     }
+
+    /* === SERIAL #015: STUPID-BULLFROG-39 MORPHING PROFILE & SLIDING BIO CARD === */
+    /* Variant A: Canonical Uiverse */
+    .bullfrog-card {
+      width: 270px;
+      height: 270px;
+      background: #ffffff;
+      border-radius: 32px;
+      padding: 3px;
+      position: relative;
+      box-shadow: rgba(96, 75, 74, 0.25) 0px 30px 25px -20px;
+      transition: all 0.5s ease-in-out;
+      cursor: pointer;
+      overflow: hidden;
+      box-sizing: border-box;
+    }
+    .bullfrog-card .bullfrog-mail {
+      position: absolute;
+      right: 1.6rem;
+      top: 1.2rem;
+      background: transparent;
+      border: none;
+      z-index: 4;
+      cursor: pointer;
+    }
+    .bullfrog-card .bullfrog-mail svg {
+      stroke: #fbb9b6;
+      stroke-width: 2.5px;
+      transition: stroke 0.3s ease;
+    }
+    .bullfrog-card .bullfrog-mail svg:hover {
+      stroke: #f55d56;
+    }
+    .bullfrog-card .bullfrog-profile-pic {
+      position: absolute;
+      width: calc(100% - 6px);
+      height: calc(100% - 6px);
+      top: 3px;
+      left: 3px;
+      border-radius: 29px;
+      z-index: 1;
+      border: 0px solid #fbb9b6;
+      overflow: hidden;
+      transition: all 0.5s ease-in-out 0.2s, z-index 0.5s ease-in-out 0.2s;
+      background: linear-gradient(135deg, #ffe4e6 0%, #fecdd3 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .bullfrog-card .bullfrog-profile-pic .avatar-graphic {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 72px;
+      transition: all 0.5s ease-in-out;
+    }
+    .bullfrog-card .bullfrog-bottom {
+      position: absolute;
+      bottom: 3px;
+      left: 3px;
+      right: 3px;
+      background: #fbb9b6;
+      top: 78%;
+      border-radius: 29px;
+      z-index: 2;
+      box-shadow: rgba(96, 75, 74, 0.2) 0px 5px 5px 0px inset;
+      overflow: hidden;
+      transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+      padding: 16px 18px;
+      box-sizing: border-box;
+      text-align: left;
+    }
+    .bullfrog-card .bullfrog-name {
+      display: block;
+      font-size: 1.1rem;
+      color: #ffffff;
+      font-weight: 800;
+    }
+    .bullfrog-card .bullfrog-about {
+      display: block;
+      font-size: 0.8rem;
+      color: #ffffff;
+      margin-top: 6px;
+      line-height: 1.35;
+      opacity: 0.95;
+    }
+    .bullfrog-card .bullfrog-footer {
+      position: absolute;
+      bottom: 12px;
+      left: 18px;
+      right: 18px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .bullfrog-card .bullfrog-socials {
+      display: flex;
+      gap: 10px;
+    }
+    .bullfrog-card .bullfrog-socials svg {
+      width: 15px;
+      height: 15px;
+      fill: #ffffff;
+      transition: all 0.2s ease;
+      cursor: pointer;
+    }
+    .bullfrog-card .bullfrog-socials svg:hover {
+      fill: #f55d56;
+      transform: scale(1.2);
+    }
+    .bullfrog-card .bullfrog-btn {
+      background: #ffffff;
+      color: #f55d56;
+      border: none;
+      border-radius: 20px;
+      font-size: 0.65rem;
+      font-weight: 700;
+      padding: 0.35rem 0.65rem;
+      cursor: pointer;
+      box-shadow: rgba(165, 132, 130, 0.2) 0px 4px 6px 0px;
+      transition: all 0.2s ease;
+    }
+    .bullfrog-card .bullfrog-btn:hover {
+      background: #f55d56;
+      color: #ffffff;
+    }
+    .bullfrog-card:hover {
+      border-top-left-radius: 55px;
+    }
+    .bullfrog-card:hover .bullfrog-bottom {
+      top: 22%;
+      border-radius: 65px 29px 29px 29px;
+      transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0.2s;
+    }
+    .bullfrog-card:hover .bullfrog-profile-pic {
+      width: 80px;
+      height: 80px;
+      top: 8px;
+      left: 8px;
+      border-radius: 50%;
+      z-index: 3;
+      border: 5px solid #fbb9b6;
+      box-shadow: rgba(96, 75, 74, 0.25) 0px 5px 8px 0px;
+      transition: all 0.5s ease-in-out, z-index 0.5s ease-in-out 0.1s;
+    }
+    .bullfrog-card:hover .bullfrog-profile-pic:hover {
+      transform: scale(1.15);
+    }
+    .bullfrog-card:hover .avatar-graphic {
+      font-size: 38px;
+      transition: all 0.5s ease-in-out 0.3s;
+    }
+
+    /* Variant B: Leadirftex Cyber Edition (Titanium Obsidian + Cyber Neon Green #00FF22 + Orange #FF5C00) */
+    .bullfrog-ltx-card {
+      width: 270px;
+      height: 270px;
+      background: #070B14;
+      border: 1px solid rgba(0, 255, 34, 0.35);
+      border-radius: 32px;
+      padding: 3px;
+      position: relative;
+      box-shadow: 0 0 25px rgba(0, 0, 0, 0.8);
+      transition: all 0.5s ease-in-out;
+      cursor: pointer;
+      overflow: hidden;
+      box-sizing: border-box;
+    }
+    .bullfrog-ltx-card .bullfrog-mail {
+      position: absolute;
+      right: 1.6rem;
+      top: 1.2rem;
+      background: transparent;
+      border: none;
+      z-index: 4;
+      cursor: pointer;
+    }
+    .bullfrog-ltx-card .bullfrog-mail svg {
+      stroke: #00FF22;
+      stroke-width: 2.5px;
+      transition: stroke 0.3s ease;
+    }
+    .bullfrog-ltx-card .bullfrog-mail svg:hover {
+      stroke: #FF5C00;
+    }
+    .bullfrog-ltx-card .bullfrog-profile-pic {
+      position: absolute;
+      width: calc(100% - 6px);
+      height: calc(100% - 6px);
+      top: 3px;
+      left: 3px;
+      border-radius: 29px;
+      z-index: 1;
+      border: 0px solid #00FF22;
+      overflow: hidden;
+      transition: all 0.5s ease-in-out 0.2s, z-index 0.5s ease-in-out 0.2s;
+      background: radial-gradient(circle at 50% 50%, #0d1b2a 0%, #03050A 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .bullfrog-ltx-card .avatar-graphic {
+      font-size: 64px;
+      color: #00FF22;
+      filter: drop-shadow(0 0 12px #00FF22);
+      transition: all 0.5s ease-in-out;
+    }
+    .bullfrog-ltx-card .bullfrog-bottom {
+      position: absolute;
+      bottom: 3px;
+      left: 3px;
+      right: 3px;
+      background: linear-gradient(135deg, #0d1527 0%, #03050A 100%);
+      border: 1px solid rgba(0, 255, 34, 0.4);
+      top: 78%;
+      border-radius: 29px;
+      z-index: 2;
+      box-shadow: inset 0 0 15px rgba(0, 255, 34, 0.1);
+      overflow: hidden;
+      transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+      padding: 16px 18px;
+      box-sizing: border-box;
+      text-align: left;
+    }
+    .bullfrog-ltx-card .bullfrog-name {
+      display: block;
+      font-size: 1rem;
+      font-family: 'JetBrains Mono', monospace;
+      color: #ffffff;
+      font-weight: 800;
+      letter-spacing: 0.5px;
+    }
+    .bullfrog-ltx-card .bullfrog-about {
+      display: block;
+      font-size: 0.75rem;
+      font-family: 'JetBrains Mono', monospace;
+      color: #94a3b8;
+      margin-top: 6px;
+      line-height: 1.35;
+    }
+    .bullfrog-ltx-card .bullfrog-socials svg {
+      width: 15px;
+      height: 15px;
+      fill: #00FF22;
+      transition: all 0.2s ease;
+      cursor: pointer;
+    }
+    .bullfrog-ltx-card .bullfrog-socials svg:hover {
+      fill: #FF5C00;
+      transform: scale(1.2);
+    }
+    .bullfrog-ltx-card .bullfrog-btn {
+      background: #00FF22;
+      color: #03050A;
+      font-family: 'JetBrains Mono', monospace;
+      border: none;
+      border-radius: 20px;
+      font-size: 0.65rem;
+      font-weight: 800;
+      padding: 0.35rem 0.65rem;
+      cursor: pointer;
+      box-shadow: 0 0 10px rgba(0, 255, 34, 0.4);
+      transition: all 0.2s ease;
+    }
+    .bullfrog-ltx-card .bullfrog-btn:hover {
+      background: #FF5C00;
+      color: #ffffff;
+    }
+    .bullfrog-ltx-card:hover {
+      border-top-left-radius: 55px;
+      border-color: #00FF22;
+    }
+    .bullfrog-ltx-card:hover .bullfrog-bottom {
+      top: 22%;
+      border-radius: 65px 29px 29px 29px;
+      transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0.2s;
+    }
+    .bullfrog-ltx-card:hover .bullfrog-profile-pic {
+      width: 80px;
+      height: 80px;
+      top: 8px;
+      left: 8px;
+      border-radius: 50%;
+      z-index: 3;
+      border: 4px solid #00FF22;
+      box-shadow: 0 0 16px rgba(0, 255, 34, 0.6);
+      transition: all 0.5s ease-in-out, z-index 0.5s ease-in-out 0.1s;
+    }
+    .bullfrog-ltx-card:hover .bullfrog-profile-pic:hover {
+      transform: scale(1.15);
+    }
+    .bullfrog-ltx-card:hover .avatar-graphic {
+      font-size: 34px;
+      transition: all 0.5s ease-in-out 0.3s;
+    }
   </style>
 </head>
 <body>
@@ -2826,6 +3123,83 @@
 
       <div style="margin-top: 20px; padding-top: 14px; border-top: 1px solid rgba(255,255,255,0.06); display: flex; justify-content: space-between; align-items: center; font-size: 11.5px; color: #64748b;">
         <span>Category: <strong>Inputs &amp; Forms / Interactive Rating &amp; Feedback Card</strong></span>
+        <span style="color: #00FF22;">● Verified Production Ingestion</span>
+      </div>
+    </section>
+
+    <!-- SERIAL #015 -->
+    <section id="mockup-item-015" class="mockup-card">
+      <div class="mockup-header">
+        <div style="display: flex; align-items: center; gap: 10px;">
+          <span class="serial-badge">SERIAL #015</span>
+          <strong style="color: #ffffff; font-size: 16px;">Stupid-Bullfrog-39 Morphing Profile &amp; Sliding Bio Card</strong>
+          <span style="font-size: 11px; color: #64748b; font-family: monospace;">uiverse.io/Smit-Prajapati/stupid-bullfrog-39</span>
+        </div>
+        <a href="serial-list-mockup-design.html" style="color: var(--orange); font-size: 12px; text-decoration: none; font-weight: 600;">&larr; View Master Serial Index</a>
+      </div>
+
+      <div class="stage-view">
+        <!-- Variant A: Uiverse Canonical -->
+        <div class="stage-column">
+          <span class="stage-label">Variant A: Uiverse Canonical (Hover to Morph &bull; Rose Peach)</span>
+          <div style="display: flex; justify-content: center; align-items: center; height: 310px; width: 100%;">
+            <div class="bullfrog-card">
+              <button class="bullfrog-mail" type="button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+              </button>
+              <div class="bullfrog-profile-pic">
+                <div class="avatar-graphic">🦊</div>
+              </div>
+              <div class="bullfrog-bottom">
+                <span class="bullfrog-name">Smit Prajapati</span>
+                <span class="bullfrog-about">Creative frontend developer &amp; UI designer crafting micro-interactions.</span>
+                <div class="bullfrog-footer">
+                  <div class="bullfrog-socials">
+                    <svg viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                    <svg viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                  </div>
+                  <button class="bullfrog-btn" type="button" onclick="return false;">Contact Me</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Variant B: Leadirftex Cyber Edition -->
+        <div class="stage-column">
+          <span class="stage-label">Variant B: Leadirftex Cyber Edition (Interchain Core Operator)</span>
+          <div style="display: flex; justify-content: center; align-items: center; height: 310px; width: 100%;">
+            <div class="bullfrog-ltx-card">
+              <button class="bullfrog-mail" type="button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+              </button>
+              <div class="bullfrog-profile-pic">
+                <div class="avatar-graphic">🛡️</div>
+              </div>
+              <div class="bullfrog-bottom">
+                <span class="bullfrog-name">CORE ARCHITECT</span>
+                <span class="bullfrog-about">Operator Node #29 &bull; Decentralized CAD &amp; supply chain telemetry verification.</span>
+                <div class="bullfrog-footer">
+                  <div class="bullfrog-socials">
+                    <svg viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                    <svg viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                  </div>
+                  <button class="bullfrog-btn" type="button" onclick="return false;">Connect Node &rarr;</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div style="margin-top: 20px; padding-top: 14px; border-top: 1px solid rgba(255,255,255,0.06); display: flex; justify-content: space-between; align-items: center; font-size: 11.5px; color: #64748b;">
+        <span>Category: <strong>Cards &amp; Panels / Morphing Avatar &amp; Sliding Bio Profile Card</strong></span>
         <span style="color: #00FF22;">● Verified Production Ingestion</span>
       </div>
     </section>
