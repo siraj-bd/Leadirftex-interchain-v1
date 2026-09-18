@@ -5,6 +5,21 @@
 **Full Platform Name:** Leadirftex Interchain  
 **Plan Domain will be:** Leadirftex.com  
 
+### Mockup Serial #011: Selfish-Bobcat-73 3D Flipping Book & Folder Open Effect
+
+**Status:** PASS / VERIFIED — INGESTED SERIAL #011: SELFISH-BOBCAT-73 3D FLIPPING BOOK & FOLDER OPEN EFFECT (SOURCE: uiverse.io/eslam-hany/selfish-bobcat-73). INTEGRATED INTO CENTRALIZED MASTER REPOSITORY (`mockup-master-ui-ux.html#mockup-item-011`) AND REGISTERED IN SERIAL REGISTRY (`serial-list-mockup-design.html`). PRESERVED CANONICAL 3D PERSPECTIVE (2000PX) AND ROTATEY(-80DEG) COVER OPENING DYNAMICS WITH TRANSFORM-ORIGIN LEFT SPINE, ALONG WITH DEDICATED LEADIRFTEX CYBER INDUSTRIAL TECH-PACK DOSSIER EDITION (#00FF22 / #FF5C00). CSS BRACES 100% BALANCED.
+**Target Files:** `mockup-master-ui-ux.html`, `serial-list-mockup-design.html`, `project-execution-status.md`, `project-status-for-chatgpt.html`
+**Live Preview Route:** `mockup-master-ui-ux.html#mockup-item-011`, `serial-list-mockup-design.html`
+**Audit & Implementation Highlights:**
+1. **Mockup Master Repository Ingestion (#mockup-item-011):**
+   - Scoped pure CSS with `preserve-3d`, `perspective: 2000px`, and `rotateY(-80deg)` opening cover mechanics.
+   - Dual variant presentation: Variant A (Uiverse Canonical Hardcover Book) and Variant B (Leadirftex Cyber Industrial Tech-Pack Dossier).
+2. **Serial Registry Update:**
+   - Appended Serial `#011`, Item Short Name `Selfish-Bobcat-73 3D Book`, Category `3D Flipping Book & Folder Open Effect`, Status `ACTIVE / INGESTED`, and direct action link.
+3. **Syntax Verification:**
+   - `mockup-master-ui-ux.html`: CSS Braces 100% BALANCED.
+   - `serial-list-mockup-design.html`: CSS Braces 100% BALANCED.
+
 ### Mockup Serial #010: Giant-Treefrog-92 Icon-to-Content Reveal Card
 
 **Status:** PASS / VERIFIED — INGESTED SERIAL #010: GIANT-TREEFROG-92 ICON-TO-CONTENT REVEAL CARD (SOURCE: uiverse.io/yashlikescode/giant-treefrog-92). INTEGRATED INTO CENTRALIZED MASTER REPOSITORY (`mockup-master-ui-ux.html#mockup-item-010`) AND REGISTERED IN SERIAL REGISTRY (`serial-list-mockup-design.html`). PRESERVED CANONICAL ICON SCALE-TO-ZERO TRANSITION WITH SMOOTH ROTATING REVEAL SHEET PHYSICS (0.6S CUBIC-BEZIER(0.23, 1, 0.32, 1)), ALONG WITH DEDICATED LEADIRFTEX CYBER SECURITY PROTOCOL EDITION (#00FF22 / #FF5C00). CSS BRACES 100% BALANCED.

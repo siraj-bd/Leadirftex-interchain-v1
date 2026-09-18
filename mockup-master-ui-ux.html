@@ -1410,6 +1410,109 @@
       color: #cbd5e1;
       line-height: 1.45;
     }
+
+    /* === SERIAL #011: SELFISH-BOBCAT-73 3D FLIPPING BOOK & FOLDER EFFECT === */
+    /* Variant A: Canonical Uiverse */
+    .bobcat-book {
+      position: relative;
+      border-radius: 10px;
+      width: 200px;
+      height: 270px;
+      background-color: whitesmoke;
+      box-shadow: 1px 1px 16px rgba(0, 0, 0, 0.6);
+      transform-style: preserve-3d;
+      perspective: 2000px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: #1e293b;
+      padding: 20px;
+      box-sizing: border-box;
+      text-align: center;
+      cursor: pointer;
+    }
+    .bobcat-cover {
+      top: 0;
+      left: 0;
+      position: absolute;
+      background-color: #e2e8f0;
+      width: 100%;
+      height: 100%;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+      transform-origin: left center;
+      box-shadow: 2px 2px 14px rgba(0, 0, 0, 0.5);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      box-sizing: border-box;
+      color: #0f172a;
+    }
+    .bobcat-book:hover .bobcat-cover {
+      transform: rotateY(-80deg);
+      box-shadow: 10px 4px 20px rgba(0, 0, 0, 0.4);
+    }
+
+    /* Variant B: Leadirftex Cyber Edition (Titanium Obsidian Dossier Folder) */
+    .bobcat-ltx-book {
+      position: relative;
+      border-radius: 12px;
+      width: 210px;
+      height: 275px;
+      background: radial-gradient(circle at 50% 50%, #0d1527 0%, #03050A 100%);
+      border: 1px solid rgba(0, 255, 34, 0.35);
+      box-shadow: 0 0 25px rgba(0, 0, 0, 0.8), inset 0 0 15px rgba(0, 255, 34, 0.05);
+      transform-style: preserve-3d;
+      perspective: 2000px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      box-sizing: border-box;
+      text-align: center;
+      cursor: pointer;
+    }
+    .bobcat-ltx-cover {
+      top: 0;
+      left: 0;
+      position: absolute;
+      background: linear-gradient(135deg, #070B14 0%, #0c1424 100%);
+      border: 1.5px solid rgba(0, 255, 34, 0.4);
+      width: 100%;
+      height: 100%;
+      border-radius: 12px;
+      cursor: pointer;
+      transition: transform 0.65s cubic-bezier(0.4, 0, 0.2, 1);
+      transform-origin: left center;
+      box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.9);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      padding: 22px 16px;
+      box-sizing: border-box;
+    }
+    .bobcat-ltx-cover::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      width: 10px;
+      background: linear-gradient(90deg, #FF5C00, #ff8a00);
+      border-top-left-radius: 10px;
+      border-bottom-left-radius: 10px;
+    }
+    .bobcat-ltx-book:hover .bobcat-ltx-cover {
+      transform: rotateY(-80deg);
+      border-color: #00FF22;
+      box-shadow: 12px 6px 30px rgba(0, 255, 34, 0.35);
+    }
   </style>
 </head>
 <body>
@@ -1875,6 +1978,72 @@
 
       <div style="margin-top: 20px; padding-top: 14px; border-top: 1px solid rgba(255,255,255,0.06); display: flex; justify-content: space-between; align-items: center; font-size: 11.5px; color: #64748b;">
         <span>Category: <strong>Cards &amp; Panels / Icon-to-Content Reveal Card</strong></span>
+        <span style="color: #00FF22;">● Verified Production Ingestion</span>
+      </div>
+    </section>
+
+    <!-- SERIAL #011 -->
+    <section id="mockup-item-011" class="mockup-card">
+      <div class="mockup-header">
+        <div style="display: flex; align-items: center; gap: 10px;">
+          <span class="serial-badge">SERIAL #011</span>
+          <strong style="color: #ffffff; font-size: 16px;">Selfish-Bobcat-73 3D Flipping Book &amp; Dossier Folder</strong>
+          <span style="font-size: 11px; color: #64748b; font-family: monospace;">uiverse.io/eslam-hany/selfish-bobcat-73</span>
+        </div>
+        <a href="serial-list-mockup-design.html" style="color: var(--orange); font-size: 12px; text-decoration: none; font-weight: 600;">&larr; View Master Serial Index</a>
+      </div>
+
+      <div class="stage-view">
+        <!-- Variant A: Uiverse Canonical -->
+        <div class="stage-column">
+          <span class="stage-label">Variant A: Uiverse Canonical (Hardcover -80&deg; 3D Open)</span>
+          <div style="display: flex; justify-content: center; align-items: center; height: 310px; width: 100%;">
+            <div class="bobcat-book">
+              <div style="font-size: 18px; font-weight: 800; color: #0f172a;">INSIDE PAGE</div>
+              <p style="font-size: 12.5px; color: #475569; margin: 8px 0 0; line-height: 1.4;">
+                Interactive 3D book physics revealed on hover!
+              </p>
+              <div class="bobcat-cover">
+                <div style="font-size: 24px;">📖</div>
+                <div style="font-size: 16px; font-weight: 800; margin-top: 8px;">Hardcover Book</div>
+                <div style="font-size: 11px; color: #64748b; margin-top: 4px;">Hover to Open &rarr;</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Variant B: Leadirftex Cyber Edition -->
+        <div class="stage-column">
+          <span class="stage-label">Variant B: Leadirftex Cyber Edition (Industrial Tech-Pack Dossier)</span>
+          <div style="display: flex; justify-content: center; align-items: center; height: 310px; width: 100%;">
+            <div class="bobcat-ltx-book">
+              <div style="font-size: 10px; font-family: 'JetBrains Mono', monospace; color: #FF5C00; font-weight: 800; letter-spacing: 1.5px;">DOSSIER CLEARED</div>
+              <div style="font-size: 16px; font-family: 'JetBrains Mono', monospace; font-weight: 900; color: #00FF22; margin: 8px 0 4px;">CAD TECH-PACK</div>
+              <p style="font-size: 11px; font-family: 'JetBrains Mono', monospace; color: #94a3b8; margin: 0; line-height: 1.45;">
+                29 Industrial Platforms Active.<br/>
+                Proprietary DXF/ZPRJ telemetry secured.
+              </p>
+              <div style="font-size: 9px; font-family: 'JetBrains Mono', monospace; color: #00FF22; margin-top: 10px;">AUTH // NODE-29</div>
+
+              <div class="bobcat-ltx-cover">
+                <div style="display: flex; justify-content: space-between; width: 100%; align-items: center;">
+                  <span style="font-size: 9px; font-family: 'JetBrains Mono', monospace; color: #FF5C00; font-weight: 800;">TOP SECRET</span>
+                  <span style="width: 6px; height: 6px; border-radius: 50%; background: #00FF22; box-shadow: 0 0 6px #00FF22;"></span>
+                </div>
+                <div style="text-align: center;">
+                  <div style="font-size: 26px; color: #00FF22; filter: drop-shadow(0 0 8px rgba(0,255,34,0.5));">🗂️</div>
+                  <div style="font-size: 14px; font-family: 'JetBrains Mono', monospace; font-weight: 900; color: #ffffff; margin-top: 8px; letter-spacing: 1px;">TECH-PACK</div>
+                  <div style="font-size: 10px; font-family: 'JetBrains Mono', monospace; color: #00FF22; margin-top: 2px;">DOSSIER V2.6</div>
+                </div>
+                <div style="font-size: 9px; font-family: 'JetBrains Mono', monospace; color: #64748b;">HOVER TO UNLOCK &rarr;</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div style="margin-top: 20px; padding-top: 14px; border-top: 1px solid rgba(255,255,255,0.06); display: flex; justify-content: space-between; align-items: center; font-size: 11.5px; color: #64748b;">
+        <span>Category: <strong>Cards &amp; Panels / 3D Flipping Book &amp; Folder Open Effect</strong></span>
         <span style="color: #00FF22;">● Verified Production Ingestion</span>
       </div>
     </section>
