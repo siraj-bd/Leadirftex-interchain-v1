@@ -9083,6 +9083,255 @@
       box-shadow: 0 0 25px rgba(255, 92, 0, 0.5), 0 0 35px rgba(0, 255, 34, 0.3);
     }
 
+
+    /* === SERIAL #049: TOUGH-TIGER-78 TOP-APERTURE LASER HORIZON PILL BUTTON === */
+    /* Shared Stage Box */
+    .tiger-stage-box {
+      width: 100%;
+      min-height: 260px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 24px;
+      background: radial-gradient(circle at center, #0e1526 0%, #060913 100%);
+      border-radius: 10px;
+      position: relative;
+      overflow: hidden;
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      padding: 40px 20px;
+      box-sizing: border-box;
+    }
+
+    /* Variant A: Canonical Uiverse Laser Horizon Button */
+    .tiger-cont {
+      position: relative;
+      width: fit-content;
+      height: fit-content;
+      border-radius: 9999px;
+    }
+    .tiger-cont::before {
+      content: "";
+      position: absolute;
+      top: 0%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 0;
+      height: 0;
+      background: #06b5d4;
+      border-radius: 50%;
+      filter: blur(30px);
+      opacity: 0.8;
+      transition: all 0.6s cubic-bezier(1, 0, 0, 1);
+    }
+    .tiger-cont:hover::before {
+      width: 100%;
+      height: 25px;
+    }
+    .tiger-btn {
+      cursor: pointer;
+      position: relative;
+      padding: 18px 44px;
+      background-color: #083344;
+      font-size: 15px;
+      color: #fefefe;
+      font-weight: 600;
+      border: none;
+      border-radius: 9999px;
+      backdrop-filter: blur(4px);
+      -webkit-backdrop-filter: blur(4px);
+      box-shadow: inset 0px 1px 1px #67e8f9;
+      transition: all 0.3s ease-in-out, box-shadow 0.1s ease-in-out;
+      outline: none;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .tiger-btn::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translate(-50%, 0%);
+      width: 0;
+      height: 0;
+      border-radius: 50%;
+      box-shadow: 0px 0px 25px 3px rgba(103, 232, 249, 0.5);
+      transition: all 0.5s cubic-bezier(1, 0, 0, 1);
+    }
+    .tiger-btn::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translate(-50%, 0%);
+      width: 0;
+      height: 0;
+      background-image: linear-gradient(
+        to right,
+        rgba(6, 181, 212, 0),
+        rgba(78, 196, 219, 0),
+        rgba(144, 221, 234, 0.25),
+        #ace9f2,
+        #ace9f2,
+        rgba(144, 221, 234, 0.25),
+        rgba(78, 196, 219, 0),
+        rgba(6, 181, 212, 0)
+      );
+      border-radius: 0 0 50% 50%;
+      opacity: 0.9;
+      filter: drop-shadow(0px 0px 25px #06b6d4);
+      transition: all 0.5s cubic-bezier(1, 0, 0, 1);
+    }
+    .tiger-cont:hover .tiger-btn {
+      background: rgba(24, 24, 24, 0.65);
+      box-shadow: inset 0px 0px 0px #fefefe;
+    }
+    .tiger-cont:hover .tiger-btn::before {
+      width: 30%;
+      height: 2px;
+    }
+    .tiger-cont:hover .tiger-btn::after {
+      width: 100%;
+      height: 2px;
+    }
+
+    /* Variant B: Leadirftex Cyber Laser Horizon Cluster */
+    .tiger-ltx-cluster {
+      display: flex;
+      gap: 24px;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .tiger-ltx-cont {
+      position: relative;
+      width: fit-content;
+      height: fit-content;
+      border-radius: 9999px;
+    }
+    .tiger-ltx-cont::before {
+      content: "";
+      position: absolute;
+      top: 0%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 0;
+      height: 0;
+      background: #00FF22;
+      border-radius: 50%;
+      filter: blur(28px);
+      opacity: 0.85;
+      transition: all 0.6s cubic-bezier(1, 0, 0, 1);
+    }
+    .tiger-ltx-cont:hover::before {
+      width: 100%;
+      height: 26px;
+    }
+    .tiger-ltx-btn {
+      cursor: pointer;
+      position: relative;
+      padding: 18px 40px;
+      background-color: #070B14;
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 1.2px;
+      text-transform: uppercase;
+      font-family: 'JetBrains Mono', monospace;
+      color: #00FF22;
+      border: 1px solid rgba(0, 255, 34, 0.35);
+      border-radius: 9999px;
+      box-shadow: inset 0px 1px 1px #00FF22, 0 0 15px rgba(0, 255, 34, 0.15);
+      transition: all 0.35s cubic-bezier(0.23, 1, 0.32, 1);
+      outline: none;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+    }
+    .tiger-ltx-btn::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translate(-50%, 0%);
+      width: 0;
+      height: 0;
+      border-radius: 50%;
+      box-shadow: 0px 0px 25px 3px rgba(0, 255, 34, 0.6);
+      transition: all 0.5s cubic-bezier(1, 0, 0, 1);
+    }
+    .tiger-ltx-btn::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translate(-50%, 0%);
+      width: 0;
+      height: 0;
+      background-image: linear-gradient(
+        to right,
+        rgba(0, 255, 34, 0),
+        rgba(0, 255, 34, 0.2),
+        #00FF22,
+        #ffffff,
+        #00FF22,
+        rgba(0, 255, 34, 0.2),
+        rgba(0, 255, 34, 0)
+      );
+      border-radius: 0 0 50% 50%;
+      opacity: 0.95;
+      filter: drop-shadow(0px 0px 25px #00FF22);
+      transition: all 0.5s cubic-bezier(1, 0, 0, 1);
+    }
+    .tiger-ltx-cont:hover .tiger-ltx-btn {
+      background: rgba(3, 5, 10, 0.85);
+      box-shadow: inset 0px 0px 0px transparent, 0 0 25px rgba(0, 255, 34, 0.4);
+      color: #ffffff;
+    }
+    .tiger-ltx-cont:hover .tiger-ltx-btn::before {
+      width: 35%;
+      height: 2px;
+    }
+    .tiger-ltx-cont:hover .tiger-ltx-btn::after {
+      width: 100%;
+      height: 2px;
+    }
+    .tiger-ltx-btn:active {
+      transform: scale(0.97);
+    }
+
+    /* Node 2: Interchain Orange Laser Horizon */
+    .tiger-ltx-orange::before {
+      background: #FF5C00;
+    }
+    .tiger-ltx-orange .tiger-ltx-btn {
+      color: #FF5C00;
+      border-color: rgba(255, 92, 0, 0.35);
+      box-shadow: inset 0px 1px 1px #FF5C00, 0 0 15px rgba(255, 92, 0, 0.15);
+    }
+    .tiger-ltx-orange .tiger-ltx-btn::before {
+      box-shadow: 0px 0px 25px 3px rgba(255, 92, 0, 0.6);
+    }
+    .tiger-ltx-orange .tiger-ltx-btn::after {
+      background-image: linear-gradient(
+        to right,
+        rgba(255, 92, 0, 0),
+        rgba(255, 92, 0, 0.2),
+        #FF5C00,
+        #ffffff,
+        #FF5C00,
+        rgba(255, 92, 0, 0.2),
+        rgba(255, 92, 0, 0)
+      );
+      filter: drop-shadow(0px 0px 25px #FF5C00);
+    }
+    .tiger-ltx-orange:hover .tiger-ltx-btn {
+      box-shadow: inset 0px 0px 0px transparent, 0 0 25px rgba(255, 92, 0, 0.4);
+      color: #ffffff;
+    }
+
   </style>
 </head>
 <body>
@@ -12853,6 +13102,72 @@
 
       <div style="margin-top: 20px; padding-top: 14px; border-top: 1px solid rgba(255,255,255,0.06); display: flex; justify-content: space-between; align-items: center; font-size: 11.5px; color: #64748b;">
         <span>Category: <strong>Buttons / Dual-Orb Blur Aura Action Button</strong></span>
+        <span style="color: #00FF22;">● Verified Production Ingestion</span>
+      </div>
+    </section>
+
+
+    <!-- SERIAL #049 -->
+    <section id="mockup-item-049" class="mockup-card">
+      <div class="mockup-header">
+        <div style="display: flex; align-items: center; gap: 10px;">
+          <span class="serial-badge">SERIAL #049</span>
+          <strong style="color: #ffffff; font-size: 16px;">Tough-Tiger-78 Top-Aperture Laser Horizon Pill Button</strong>
+          <span style="font-size: 11px; color: #64748b; font-family: monospace;">uiverse.io/MuhammadHasann/tough-tiger-78</span>
+        </div>
+        <a href="serial-list-mockup-design.html" style="color: var(--orange); font-size: 12px; text-decoration: none; font-weight: 600;">&larr; View Master Serial Index</a>
+      </div>
+
+      <div class="stage-view">
+        <!-- Variant A: Canonical Uiverse Laser Horizon Button -->
+        <div class="stage-column">
+          <div class="stage-header">
+            <span class="stage-title">VARIANT A: UIVERSE CANONICAL LASER HORIZON</span>
+            <span class="stage-tag">ORIGINAL SPEC</span>
+          </div>
+          <div class="tiger-stage-box">
+            <div class="tiger-cont">
+              <button class="tiger-btn" aria-label="Light Button">Light Button</button>
+            </div>
+            <div style="font-size: 11px; font-family: monospace; color: #64748b; text-align: center;">
+              ● Hover: Top rim expands 100% laser beam streak &bull; 30px cyan aperture bloom
+            </div>
+          </div>
+        </div>
+
+        <!-- Variant B: Leadirftex Cyber Laser Horizon Cluster -->
+        <div class="stage-column">
+          <div class="stage-header">
+            <span class="stage-title">VARIANT B: LEADIRFTEX CYBER LASER HORIZON NODES</span>
+            <span class="stage-tag" style="background: rgba(0, 255, 34, 0.15); color: #00FF22; border-color: rgba(0, 255, 34, 0.4);">LASER HORIZON</span>
+          </div>
+          <div class="tiger-stage-box" style="background: radial-gradient(circle at center, rgba(0, 255, 34, 0.04) 0%, #03050A 80%); border-color: rgba(0, 255, 34, 0.25);">
+            <div class="tiger-ltx-cluster">
+              <!-- Action Node 1 -->
+              <div class="tiger-ltx-cont">
+                <button class="tiger-ltx-btn" aria-label="Initialize Quorum">
+                  <span>⚡</span>
+                  <span>INITIALIZE QUORUM</span>
+                </button>
+              </div>
+
+              <!-- Action Node 2 -->
+              <div class="tiger-ltx-cont tiger-ltx-orange">
+                <button class="tiger-ltx-btn" aria-label="Verify Merkle">
+                  <span>◈</span>
+                  <span>VERIFY MERKLE</span>
+                </button>
+              </div>
+            </div>
+            <div style="font-size: 11px; font-family: 'JetBrains Mono', monospace; color: #00FF22; opacity: 0.85; text-align: center; letter-spacing: 0.8px;">
+              ⚡ [ TOP-APERTURE #00FF22 &amp; #FF5C00 LASER RAYS &bull; 100% SPREAD &bull; ZERO YELLOW ]
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div style="margin-top: 20px; padding-top: 14px; border-top: 1px solid rgba(255,255,255,0.06); display: flex; justify-content: space-between; align-items: center; font-size: 11.5px; color: #64748b;">
+        <span>Category: <strong>Buttons / Top-Aperture Laser Horizon Glow Pill Button</strong></span>
         <span style="color: #00FF22;">● Verified Production Ingestion</span>
       </div>
     </section>
