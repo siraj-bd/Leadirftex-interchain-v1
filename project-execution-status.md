@@ -5,6 +5,21 @@
 **Full Platform Name:** Leadirftex Interchain  
 **Plan Domain will be:** Leadirftex.com  
 
+### Mockup Serial #013: Tricky-Robin-67 3D Flip Card with Glowing Orbs & Rotating Border
+
+**Status:** PASS / VERIFIED — INGESTED SERIAL #013: TRICKY-ROBIN-67 3D FLIP CARD WITH GLOWING ORBS & ROTATING BORDER (SOURCE: uiverse.io/ElSombrero2/tricky-robin-67). INTEGRATED INTO CENTRALIZED MASTER REPOSITORY (`mockup-master-ui-ux.html#mockup-item-013`) AND REGISTERED IN SERIAL REGISTRY (`serial-list-mockup-design.html`). PRESERVED CANONICAL 3D ROTATEY(180DEG) DUAL-SIDED FLIP DYNAMICS, CONTINUOUS ROTATING PSEUDO-ELEMENT LASER BORDER (@KEYFRAMES ROBIN-ROTATION 360DEG), FLOATING BLURRED GLOWING ORBS (@KEYFRAMES FLOATING), AND GLASSMORPHIC FROSTED DESCRIPTION OVERLAY, ALONG WITH DEDICATED LEADIRFTEX CYBER QUANTUM TELEMETRY NODE EDITION (#00FF22 / #FF5C00). CSS BRACES 100% BALANCED.
+**Target Files:** `mockup-master-ui-ux.html`, `serial-list-mockup-design.html`, `project-execution-status.md`, `project-status-for-chatgpt.html`
+**Live Preview Route:** `mockup-master-ui-ux.html#mockup-item-013`, `serial-list-mockup-design.html`
+**Audit & Implementation Highlights:**
+1. **Mockup Master Repository Ingestion (#mockup-item-013):**
+   - Scoped pure CSS with `perspective: 1000px`, `transform-style: preserve-3d`, `rotateY(180deg)` flip, rotating border layer, and floating blurred glow spheres.
+   - Dual variant presentation: Variant A (Uiverse Canonical Peach Glow Orbs) and Variant B (Leadirftex Cyber Quantum Telemetry Node).
+2. **Serial Registry Update:**
+   - Appended Serial `#013`, Item Short Name `Tricky-Robin-67 Flip Card`, Category `3D Flip Card with Glowing Orbs & Rotating Border`, Status `ACTIVE / INGESTED`, and direct action link.
+3. **Syntax Verification:**
+   - `mockup-master-ui-ux.html`: CSS Braces 100% BALANCED.
+   - `serial-list-mockup-design.html`: CSS Braces 100% BALANCED.
+
 ### Mockup Serial #012: Stupid-Swan-82 Horizontal 3D Flipping Dossier Binder
 
 **Status:** PASS / VERIFIED — INGESTED SERIAL #012: STUPID-SWAN-82 HORIZONTAL 3D FLIPPING DOSSIER BINDER (SOURCE: uiverse.io/PhyoTP/stupid-swan-82). POSITIONED SEQUENTIALLY ADJACENT TO SERIAL #011 AS REQUESTED. INTEGRATED INTO CENTRALIZED MASTER REPOSITORY (`mockup-master-ui-ux.html#mockup-item-012`) AND REGISTERED IN SERIAL REGISTRY (`serial-list-mockup-design.html`). PRESERVED CANONICAL LANDSCAPE 3D PERSPECTIVE (2000PX) AND ROTATEY(-90DEG) FULL ORTHOGONAL FLAP OPENING DYNAMICS WITH TRANSFORM-ORIGIN LEFT SPINE, ALONG WITH DEDICATED LEADIRFTEX CYBER INDUSTRIAL CAD BLUEPRINT DOSSIER EDITION (#00FF22 / #FF5C00). CSS BRACES 100% BALANCED.
