@@ -5,6 +5,21 @@
 **Full Platform Name:** Leadirftex Interchain  
 **Plan Domain will be:** Leadirftex.com  
 
+### Mockup Serial #027: Tidy-Warthog-91 360-Degree Expanding Search Input
+
+**Status:** PASS / VERIFIED — INGESTED SERIAL #027: TIDY-WARTHOG-91 360-DEGREE EXPANDING SEARCH INPUT (SOURCE: uiverse.io/Yaya12085/tidy-warthog-91). INTEGRATED INTO CENTRALIZED MASTER REPOSITORY (`mockup-master-ui-ux.html#mockup-item-027`) AND REGISTERED IN SERIAL REGISTRY (`serial-list-mockup-design.html`). PRESERVED CANONICAL 360-DEGREE HOVER ROTATION (INPUT:HOVER + .ICON { TRANSFORM: ROTATE(360DEG); }) ALONGSIDE FLUID EXPANSION ON FOCUS OR INPUT (WIDTH 44PX TO 290PX/320PX, CURSOR SWITCH, DYNAMIC PLACEHOLDER REVEAL, ICON Z-INDEX CONTEXT HOISTING), ALONG WITH DEDICATED LEADIRFTEX CYBER QUANTUM TELEMETRY QUERY BAR FEATURING OBSIDIAN (#070B14), CYBER NEON GREEN (#00FF22) SEARCH NODE, CARET ACCENT (#FF5C00), AND GLOWING AMBIENT CORE. CSS BRACES 100% BALANCED.
+**Target Files:** `mockup-master-ui-ux.html`, `serial-list-mockup-design.html`, `project-execution-status.md`, `project-status-for-chatgpt.html`
+**Live Preview Route:** `mockup-master-ui-ux.html#mockup-item-027`, `serial-list-mockup-design.html`
+**Audit & Implementation Highlights:**
+1. **Mockup Master Repository Ingestion (#mockup-item-027):**
+   - Scoped pure CSS with adjacent sibling combinators (`+`), pseudo-classes (`:focus`, `:not(:placeholder-shown)`), and smooth 450ms cubic-bezier transition curves.
+   - Dual variant presentation: Variant A (Uiverse Canonical Purple Expanding Search) and Variant B (Leadirftex Cyber Quantum Query Bar).
+2. **Serial Registry Update:**
+   - Appended Serial `#027`, Item Short Name `Tidy-Warthog-91 Expanding Search`, Category `UI Form Elements / 360° Spinning Expanding Query Bar`, Status `ACTIVE / INGESTED`, and direct action link.
+3. **Syntax Verification:**
+   - `mockup-master-ui-ux.html`: CSS Braces 100% BALANCED.
+   - `serial-list-mockup-design.html`: CSS Braces 100% BALANCED.
+
 ### Mockup Serial #026: Afraid-Squid-26 8-Way Octagonal Satellite Burst
 
 **Status:** PASS / VERIFIED — INGESTED SERIAL #026: AFRAID-SQUID-26 8-WAY OCTAGONAL SATELLITE BURST (SOURCE: uiverse.io/gamerx151/afraid-squid-26). INTEGRATED INTO CENTRALIZED MASTER REPOSITORY (`mockup-master-ui-ux.html#mockup-item-026`) AND REGISTERED IN SERIAL REGISTRY (`serial-list-mockup-design.html`). PRESERVED FULL 8-WAY OCTAGONAL 360-DEGREE RADIAL EJECTION DYNAMICS (N, NE, E, SE, S, SW, W, NW) WITH SPRING ACCELERATION (CUBIC-BEZIER(0.34, 1.56, 0.64, 1)), BRAND HOVER COLOR HIGHLIGHTING, AND INVISIBLE HOVER RETENTION RING (.AFRAID-TT-BRIDGE), ALONG WITH DEDICATED LEADIRFTEX CYBER 8-NODE QUANTUM MESH TELEMETRY OCTAGON HUB FEATURING OBSIDIAN (#070B14), CYBER NEON GREEN (#00FF22), INTERCHAIN ORANGE (#FF5C00), AND QUANTUM CYAN (#38BDF8) SERVICES. CSS BRACES 100% BALANCED.

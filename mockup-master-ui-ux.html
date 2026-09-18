@@ -5068,6 +5068,159 @@
       box-shadow: 0 0 28px rgba(56, 189, 248, 0.9);
       transform: scale(1.15);
     }
+
+    /* === SERIAL #027: TIDY-WARTHOG-91 360-DEGREE EXPANDING SEARCH INPUT === */
+    /* Shared Stage Box */
+    .warthog-stage-box {
+      width: 100%;
+      min-height: 240px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      background: radial-gradient(circle at center, #0e1526 0%, #060913 100%);
+      border-radius: 10px;
+      position: relative;
+      overflow: hidden;
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      padding: 35px 15px;
+    }
+
+    /* Variant A: Canonical Uiverse Purple 360-Degree Expanding Search */
+    .warthog-container {
+      position: relative;
+      display: flex;
+      align-items: center;
+    }
+    .warthog-input {
+      width: 44px;
+      height: 44px;
+      border-radius: 10px;
+      border: none;
+      outline: none;
+      padding: 10px 14px;
+      background-color: transparent;
+      cursor: pointer;
+      transition: all 0.45s cubic-bezier(0.4, 0, 0.2, 1);
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      font-size: 14px;
+      color: #1e1e2f;
+      box-sizing: border-box;
+      position: relative;
+      z-index: 2;
+    }
+    .warthog-input::placeholder {
+      color: transparent;
+      transition: color 0.3s ease;
+    }
+    .warthog-input:focus::placeholder {
+      color: rgb(131, 128, 128);
+    }
+    .warthog-input:focus,
+    .warthog-input:not(:placeholder-shown) {
+      background-color: #ffffff;
+      border: 1.5px solid rgb(98, 0, 255);
+      width: 290px;
+      cursor: text;
+      padding: 10px 16px 10px 44px;
+      box-shadow: 0 4px 20px rgba(98, 0, 255, 0.25);
+    }
+    .warthog-icon {
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 44px;
+      width: 44px;
+      background-color: #ffffff;
+      border-radius: 10px;
+      z-index: 1;
+      fill: rgb(98, 0, 255);
+      border: 1.5px solid rgb(98, 0, 255);
+      transition: transform 0.35s ease-in-out, background-color 0.3s ease, border-color 0.3s ease;
+      box-sizing: border-box;
+      pointer-events: none;
+    }
+    .warthog-input:hover + .warthog-icon {
+      transform: rotate(360deg);
+    }
+    .warthog-input:focus + .warthog-icon,
+    .warthog-input:not(:placeholder-shown) + .warthog-icon {
+      z-index: 3;
+      background-color: transparent;
+      border-color: transparent;
+    }
+
+    /* Variant B: Leadirftex Cyber Quantum Telemetry Query Bar */
+    .warthog-ltx-container {
+      position: relative;
+      display: flex;
+      align-items: center;
+    }
+    .warthog-ltx-input {
+      width: 46px;
+      height: 46px;
+      border-radius: 10px;
+      border: none;
+      outline: none;
+      padding: 10px 14px;
+      background-color: transparent;
+      cursor: pointer;
+      transition: all 0.45s cubic-bezier(0.4, 0, 0.2, 1);
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 13px;
+      color: #00FF22;
+      caret-color: #FF5C00;
+      box-sizing: border-box;
+      position: relative;
+      z-index: 2;
+    }
+    .warthog-ltx-input::placeholder {
+      color: transparent;
+      transition: color 0.3s ease;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 11px;
+      letter-spacing: 0.8px;
+    }
+    .warthog-ltx-input:focus::placeholder {
+      color: #64748b;
+    }
+    .warthog-ltx-input:focus,
+    .warthog-ltx-input:not(:placeholder-shown) {
+      background: rgba(7, 11, 20, 0.95);
+      border: 1.5px solid #00FF22;
+      width: 320px;
+      cursor: text;
+      padding: 10px 16px 10px 46px;
+      box-shadow: 0 0 25px rgba(0, 255, 34, 0.35), inset 0 0 10px rgba(0, 255, 34, 0.1);
+    }
+    .warthog-ltx-icon {
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 46px;
+      width: 46px;
+      background-color: #070B14;
+      border-radius: 10px;
+      z-index: 1;
+      fill: #00FF22;
+      border: 1.5px solid #00FF22;
+      box-shadow: 0 0 15px rgba(0, 255, 34, 0.25);
+      transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1), background-color 0.3s ease, border-color 0.3s ease;
+      box-sizing: border-box;
+      pointer-events: none;
+    }
+    .warthog-ltx-input:hover + .warthog-ltx-icon {
+      transform: rotate(360deg) scale(1.05);
+      box-shadow: 0 0 25px rgba(0, 255, 34, 0.6);
+    }
+    .warthog-ltx-input:focus + .warthog-ltx-icon,
+    .warthog-ltx-input:not(:placeholder-shown) + .warthog-ltx-icon {
+      z-index: 3;
+      background-color: transparent;
+      border-color: transparent;
+      box-shadow: none;
+    }
   </style>
 </head>
 <body>
@@ -6901,6 +7054,63 @@
 
       <div style="margin-top: 20px; padding-top: 14px; border-top: 1px solid rgba(255,255,255,0.06); display: flex; justify-content: space-between; align-items: center; font-size: 11.5px; color: #64748b;">
         <span>Category: <strong>UI Navigation / 8-Way Octagonal Compass Satellite Burst Hub</strong></span>
+        <span style="color: #00FF22;">● Verified Production Ingestion</span>
+      </div>
+    </section>
+
+    <!-- SERIAL #027 -->
+    <section id="mockup-item-027" class="mockup-card">
+      <div class="mockup-header">
+        <div style="display: flex; align-items: center; gap: 10px;">
+          <span class="serial-badge">SERIAL #027</span>
+          <strong style="color: #ffffff; font-size: 16px;">Tidy-Warthog-91 360-Degree Expanding Search Input</strong>
+          <span style="font-size: 11px; color: #64748b; font-family: monospace;">uiverse.io/Yaya12085/tidy-warthog-91</span>
+        </div>
+        <a href="serial-list-mockup-design.html" style="color: var(--orange); font-size: 12px; text-decoration: none; font-weight: 600;">&larr; View Master Serial Index</a>
+      </div>
+
+      <div class="stage-view">
+        <!-- Variant A: Uiverse Canonical Purple 360-Degree Expanding Search -->
+        <div class="stage-column">
+          <div class="stage-header">
+            <span class="stage-title">VARIANT A: UIVERSE CANONICAL EXPANDING SEARCH</span>
+            <span class="stage-tag">ORIGINAL SPEC</span>
+          </div>
+          <div class="warthog-stage-box">
+            <div class="warthog-container">
+              <input placeholder="Search something..." class="warthog-input" name="text" type="text">
+              <svg viewBox="0 0 24 24" class="warthog-icon">
+                <path d="M7.25007 2.38782C8.54878 2.0992 10.1243 2 12 2C13.8757 2 15.4512 2.0992 16.7499 2.38782C18.06 2.67897 19.1488 3.176 19.9864 4.01358C20.824 4.85116 21.321 5.94002 21.6122 7.25007C21.9008 8.54878 22 10.1243 22 12C22 13.8757 21.9008 15.4512 21.6122 16.7499C21.321 18.06 20.824 19.1488 19.9864 19.9864C19.1488 20.824 18.06 21.321 16.7499 21.6122C15.4512 21.9008 13.8757 22 12 22C10.1243 22 8.54878 21.9008 7.25007 21.6122C5.94002 21.321 4.85116 20.824 4.01358 19.9864C3.176 19.1488 2.67897 18.06 2.38782 16.7499C2.0992 15.4512 2 13.8757 2 12C2 10.1243 2.0992 8.54878 2.38782 7.25007C2.67897 5.94002 3.176 4.85116 4.01358 4.01358C4.85116 3.176 5.94002 2.67897 7.25007 2.38782ZM9 11.5C9 10.1193 10.1193 9 11.5 9C12.8807 9 14 10.1193 14 11.5C14 12.8807 12.8807 14 11.5 14C10.1193 14 9 12.8807 9 11.5ZM11.5 7C9.01472 7 7 9.01472 7 11.5C7 13.9853 9.01472 16 11.5 16C12.3805 16 13.202 15.7471 13.8957 15.31L15.2929 16.7071C15.6834 17.0976 16.3166 17.0976 16.7071 16.7071C17.0976 16.3166 17.0976 15.6834 16.7071 15.2929L15.31 13.8957C15.7471 13.202 16 12.3805 16 11.5C16 9.01472 13.9853 7 11.5 7Z" clip-rule="evenodd" fill-rule="evenodd"></path>
+              </svg>
+            </div>
+            <div style="font-size: 11px; font-family: monospace; color: #64748b; margin-top: 15px;">
+              ● Hover: Icon spins 360&deg; &bull; Click/Focus: Expands to 290px search field
+            </div>
+          </div>
+        </div>
+
+        <!-- Variant B: Leadirftex Cyber Quantum Telemetry Query Bar -->
+        <div class="stage-column">
+          <div class="stage-header">
+            <span class="stage-title">VARIANT B: LEADIRFTEX QUANTUM QUERY BAR</span>
+            <span class="stage-tag" style="background: rgba(0, 255, 34, 0.15); color: #00FF22; border-color: rgba(0, 255, 34, 0.4);">CYBER QUERY</span>
+          </div>
+          <div class="warthog-stage-box" style="background: radial-gradient(circle at center, rgba(0, 255, 34, 0.06) 0%, #03050A 80%); border-color: rgba(0, 255, 34, 0.25);">
+            <div class="warthog-ltx-container">
+              <input placeholder="QUERY TELEMETRY / ROUTING NODE..." class="warthog-ltx-input" name="ltx_search" type="text">
+              <svg viewBox="0 0 24 24" class="warthog-ltx-icon">
+                <path d="M7.25007 2.38782C8.54878 2.0992 10.1243 2 12 2C13.8757 2 15.4512 2.0992 16.7499 2.38782C18.06 2.67897 19.1488 3.176 19.9864 4.01358C20.824 4.85116 21.321 5.94002 21.6122 7.25007C21.9008 8.54878 22 10.1243 22 12C22 13.8757 21.9008 15.4512 21.6122 16.7499C21.321 18.06 20.824 19.1488 19.9864 19.9864C19.1488 20.824 18.06 21.321 16.7499 21.6122C15.4512 21.9008 13.8757 22 12 22C10.1243 22 8.54878 21.9008 7.25007 21.6122C5.94002 21.321 4.85116 20.824 4.01358 19.9864C3.176 19.1488 2.67897 18.06 2.38782 16.7499C2.0992 15.4512 2 13.8757 2 12C2 10.1243 2.0992 8.54878 2.38782 7.25007C2.67897 5.94002 3.176 4.85116 4.01358 4.01358C4.85116 3.176 5.94002 2.67897 7.25007 2.38782ZM9 11.5C9 10.1193 10.1193 9 11.5 9C12.8807 9 14 10.1193 14 11.5C14 12.8807 12.8807 14 11.5 14C10.1193 14 9 12.8807 9 11.5ZM11.5 7C9.01472 7 7 9.01472 7 11.5C7 13.9853 9.01472 16 11.5 16C12.3805 16 13.202 15.7471 13.8957 15.31L15.2929 16.7071C15.6834 17.0976 16.3166 17.0976 16.7071 16.7071C17.0976 16.3166 17.0976 15.6834 16.7071 15.2929L15.31 13.8957C15.7471 13.202 16 12.3805 16 11.5C16 9.01472 13.9853 7 11.5 7Z" clip-rule="evenodd" fill-rule="evenodd"></path>
+              </svg>
+            </div>
+            <div style="font-size: 11px; font-family: 'JetBrains Mono', monospace; color: #00FF22; opacity: 0.85; margin-top: 15px; letter-spacing: 0.8px;">
+              ⚡ [ HOVER NODE TO SPIN 360&deg; &bull; FOCUS TO ENGAGE 320PX TELEMETRY QUERY ]
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div style="margin-top: 20px; padding-top: 14px; border-top: 1px solid rgba(255,255,255,0.06); display: flex; justify-content: space-between; align-items: center; font-size: 11.5px; color: #64748b;">
+        <span>Category: <strong>UI Form Elements / 360&deg; Spinning Expanding Search &amp; Query Bar</strong></span>
         <span style="color: #00FF22;">● Verified Production Ingestion</span>
       </div>
     </section>
