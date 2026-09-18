@@ -11028,6 +11028,386 @@
       text-shadow: 0 0 16px #00FF22, 0 0 28px #00FF22;
     }
 
+
+    /* ==========================================================================
+       SERIAL #056: SPICY-WASP-30 CYBER LUMINANCE HARDWARE LOCKUP CARDS
+       Source: https://uiverse.io/Javierrocadev/spicy-wasp-30
+       Customized: Smart Hardware Bevel & Tactile Side Stem (::before), Concentric
+       Cyber Chambers with Inner Chamfer Shadows, Permanent Glowing Core (No Watch Time),
+       Official Leadirftex Monogram Always Illuminated, Flush Monogram+Wordmark Lockup,
+       and Bold 3D Contact Details (Email & Live Domain Link).
+       ========================================================================== */
+
+    .wasp-showcase-cluster {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 40px;
+      flex-wrap: wrap;
+      width: 100%;
+      padding: 20px 0;
+    }
+
+    /* Base Tactile Hardware Card (420px width, 480px min-height) */
+    .wasp-hw-card {
+      position: relative;
+      width: 420px;
+      max-width: 95vw;
+      min-height: 480px;
+      border-radius: 36px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      padding: 16px 14px 20px;
+      box-sizing: border-box;
+      user-select: none;
+      cursor: pointer;
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.75),
+                  inset 0 2px 4px rgba(255, 255, 255, 0.25),
+                  inset 0 -3px 6px rgba(0, 0, 0, 0.4);
+      transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.4s ease;
+      z-index: 1;
+    }
+
+    .wasp-hw-card:hover {
+      transform: translateY(-8px) scale(1.02);
+    }
+
+    /* Tactile Side Stem / Hardware Crown Button (from spicy-wasp-30 ::before) */
+    .wasp-hw-card::before {
+      content: "";
+      position: absolute;
+      width: 12px;
+      height: 48px;
+      top: 96px;
+      right: -8px;
+      border-radius: 16px;
+      z-index: -1;
+      box-shadow: inset 0 1px 3px rgba(255, 255, 255, 0.3),
+                  inset 0 -2px 4px rgba(0, 0, 0, 0.5),
+                  0 4px 10px rgba(0, 0, 0, 0.5);
+      transition: all 0.3s ease;
+    }
+
+    /* Edition 1: Cyber Interchain Orange Hardware Frame */
+    .wasp-hw-orange {
+      background: linear-gradient(145deg, #FF5C00, #cc4900);
+      border: 1px solid rgba(255, 92, 0, 0.6);
+    }
+    .wasp-hw-orange::before {
+      background: #FF5C00;
+      box-shadow: inset 0 1px 3px rgba(255, 255, 255, 0.4),
+                  inset 0 -2px 4px rgba(0, 0, 0, 0.5),
+                  0 0 15px rgba(255, 92, 0, 0.5);
+    }
+    .wasp-hw-orange:hover {
+      box-shadow: 0 25px 60px rgba(255, 92, 0, 0.35),
+                  0 0 40px rgba(255, 92, 0, 0.25),
+                  inset 0 2px 5px rgba(255, 255, 255, 0.35);
+    }
+
+    /* Edition 2: Cyber Neon Green Hardware Frame */
+    .wasp-hw-green {
+      background: linear-gradient(145deg, #00FF22, #00cc1b);
+      border: 1px solid rgba(0, 255, 34, 0.6);
+    }
+    .wasp-hw-green::before {
+      background: #00FF22;
+      box-shadow: inset 0 1px 3px rgba(255, 255, 255, 0.4),
+                  inset 0 -2px 4px rgba(0, 0, 0, 0.5),
+                  0 0 15px rgba(0, 255, 34, 0.5);
+    }
+    .wasp-hw-green:hover {
+      box-shadow: 0 25px 60px rgba(0, 255, 34, 0.35),
+                  0 0 40px rgba(0, 255, 34, 0.25),
+                  inset 0 2px 5px rgba(255, 255, 255, 0.35);
+    }
+
+    /* Outer Obsidian Bezel Chamber */
+    .wasp-inner-bezel {
+      width: 100%;
+      min-height: 440px;
+      flex: 1;
+      background: #080D1A;
+      border-radius: 28px;
+      box-shadow: inset 0 4px 12px rgba(0, 0, 0, 0.9),
+                  inset 0 1px 2px rgba(255, 255, 255, 0.08),
+                  0 2px 6px rgba(0, 0, 0, 0.3);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      padding: 20px 18px 18px;
+      box-sizing: border-box;
+      position: relative;
+    }
+
+    /* Top Protocol Tag */
+    .wasp-top-bar {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 4px;
+      z-index: 5;
+    }
+
+    .wasp-tag {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 10px;
+      font-weight: 800;
+      letter-spacing: 1.2px;
+      text-transform: uppercase;
+      padding: 3px 10px;
+      border-radius: 999px;
+    }
+
+    .wasp-hw-orange .wasp-tag {
+      color: #FF5C00;
+      background: rgba(255, 92, 0, 0.12);
+      border: 1px solid rgba(255, 92, 0, 0.35);
+    }
+
+    .wasp-hw-green .wasp-tag {
+      color: #00FF22;
+      background: rgba(0, 255, 34, 0.12);
+      border: 1px solid rgba(0, 255, 34, 0.35);
+    }
+
+    .wasp-status-beacon {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 9.5px;
+      font-weight: 800;
+      letter-spacing: 0.8px;
+      text-transform: uppercase;
+    }
+
+    .wasp-beacon-dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      animation: wasp-beacon-pulse 2s infinite ease-in-out;
+    }
+
+    .wasp-hw-orange .wasp-status-beacon {
+      color: #cbd5e1;
+    }
+    .wasp-hw-orange .wasp-beacon-dot {
+      background: #FF5C00;
+      box-shadow: 0 0 8px #FF5C00;
+    }
+
+    .wasp-hw-green .wasp-status-beacon {
+      color: #cbd5e1;
+    }
+    .wasp-hw-green .wasp-beacon-dot {
+      background: #00FF22;
+      box-shadow: 0 0 8px #00FF22;
+    }
+
+    @keyframes wasp-beacon-pulse {
+      0%, 100% { transform: scale(1); opacity: 1; }
+      50% { transform: scale(1.35); opacity: 0.6; }
+    }
+
+    /* Center Stage: Core Luminance Chamber (Always Glowing / Always Illuminated) */
+    .wasp-center-stage {
+      position: relative;
+      width: 100%;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 16px 0;
+      z-index: 5;
+    }
+
+    /* Glowing Core Radial Halo (Derived from spicy-wasp-30 blur core) */
+    .wasp-luminous-core {
+      position: absolute;
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      filter: blur(35px);
+      z-index: 1;
+      pointer-events: none;
+      animation: wasp-core-glow 4s ease-in-out infinite alternate;
+    }
+
+    .wasp-hw-orange .wasp-luminous-core {
+      background: radial-gradient(circle, rgba(255, 92, 0, 0.8) 0%, rgba(204, 73, 0, 0.4) 60%, transparent 100%);
+    }
+
+    .wasp-hw-green .wasp-luminous-core {
+      background: radial-gradient(circle, rgba(0, 255, 34, 0.75) 0%, rgba(0, 204, 27, 0.35) 60%, transparent 100%);
+    }
+
+    @keyframes wasp-core-glow {
+      0% {
+        transform: scale(0.95);
+        opacity: 0.8;
+      }
+      100% {
+        transform: scale(1.15);
+        opacity: 1;
+      }
+    }
+
+    /* Monogram Always Illuminated */
+    .wasp-monogram-img {
+      position: relative;
+      z-index: 3;
+      width: 150px;
+      height: 150px;
+      object-fit: contain;
+      transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1), filter 0.4s ease;
+    }
+
+    .wasp-hw-orange .wasp-monogram-img {
+      filter: drop-shadow(0 10px 25px rgba(0, 0, 0, 0.9))
+              drop-shadow(0 0 25px rgba(255, 92, 0, 0.75))
+              drop-shadow(0 0 45px rgba(255, 92, 0, 0.4));
+    }
+
+    .wasp-hw-green .wasp-monogram-img {
+      filter: drop-shadow(0 10px 25px rgba(0, 0, 0, 0.9))
+              drop-shadow(0 0 25px rgba(0, 255, 34, 0.75))
+              drop-shadow(0 0 45px rgba(0, 255, 34, 0.4));
+    }
+
+    .wasp-hw-card:hover .wasp-monogram-img {
+      transform: scale(1.08) translateY(-2px);
+    }
+
+    .wasp-hw-orange:hover .wasp-monogram-img {
+      filter: drop-shadow(0 14px 30px rgba(0, 0, 0, 0.95))
+              drop-shadow(0 0 35px #FF5C00)
+              drop-shadow(0 0 60px rgba(255, 92, 0, 0.7));
+    }
+
+    .wasp-hw-green:hover .wasp-monogram-img {
+      filter: drop-shadow(0 14px 30px rgba(0, 0, 0, 0.95))
+              drop-shadow(0 0 35px #00FF22)
+              drop-shadow(0 0 60px rgba(0, 255, 34, 0.7));
+    }
+
+    /* Bottom Section: Official Brand Lockup + Bold 3D Contact */
+    .wasp-bottom-section {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      padding-top: 14px;
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+      position: relative;
+      z-index: 5;
+    }
+
+    /* Approved Monogram + Wordmark Lockup */
+    .wasp-brand-lockup {
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      height: 40px;
+    }
+
+    .wasp-brand-icon {
+      height: 40px;
+      width: auto;
+      object-fit: contain;
+      filter: drop-shadow(0 3px 8px rgba(0, 0, 0, 0.6));
+    }
+
+    .wasp-brand-texts {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 100%;
+      text-align: left;
+    }
+
+    .wasp-brand-wm {
+      font-family: 'Encode Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      font-weight: 900;
+      font-size: 26px;
+      color: #FF5C00;
+      line-height: 0.9;
+      letter-spacing: -0.02em;
+    }
+
+    .wasp-brand-interchain {
+      font-family: 'Encode Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      font-weight: 900;
+      font-size: 8.5px;
+      letter-spacing: 0.20em;
+      text-transform: uppercase;
+      line-height: 0.85;
+      background: linear-gradient(180deg, #FFFFFF 0%, #E2E8F0 50%, #94A3B8 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    /* Bold 3D Contact Stack */
+    .wasp-contact-stack {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 4px;
+      width: 100%;
+      padding-top: 2px;
+    }
+
+    .wasp-contact-item {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: 0.6px;
+      text-decoration: none;
+      color: #ffffff;
+      transition: all 0.25s ease;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      text-shadow: 0 1px 2px rgba(0, 0, 0, 0.8),
+                   0 2px 4px rgba(0, 0, 0, 0.6);
+    }
+
+    .wasp-email-3d {
+      color: #cbd5e1;
+    }
+
+    .wasp-domain-3d {
+      font-size: 12.5px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+
+    .wasp-hw-orange .wasp-domain-3d {
+      color: #FF5C00;
+      text-shadow: 0 2px 5px rgba(0, 0, 0, 0.9),
+                   0 0 12px rgba(255, 92, 0, 0.6);
+    }
+    .wasp-hw-orange:hover .wasp-domain-3d {
+      color: #ffffff;
+      text-shadow: 0 0 16px #FF5C00, 0 0 28px #FF5C00;
+    }
+
+    .wasp-hw-green .wasp-domain-3d {
+      color: #00FF22;
+      text-shadow: 0 2px 5px rgba(0, 0, 0, 0.9),
+                   0 0 12px rgba(0, 255, 34, 0.6);
+    }
+    .wasp-hw-green:hover .wasp-domain-3d {
+      color: #ffffff;
+      text-shadow: 0 0 16px #00FF22, 0 0 28px #00FF22;
+    }
+
   </style>
 </head>
 <body>
@@ -15643,6 +16023,100 @@
 
       <div style="margin-top: 20px; padding-top: 14px; border-top: 1px solid rgba(255,255,255,0.06); display: flex; justify-content: space-between; align-items: center; font-size: 11.5px; color: #64748b;">
         <span>Category: <strong>Cards &amp; Panels / Pulsing Holographic Monogram Cards (Orange &amp; Green Editions)</strong></span>
+        <span style="color: #00FF22;">● Verified Production Ingestion</span>
+      </div>
+    </section>
+
+
+    <!-- ==========================================================================
+         SERIAL #056: SPICY-WASP-30 CYBER LUMINANCE HARDWARE LOCKUP CARDS
+         ========================================================================== -->
+    <section id="mockup-item-056" class="mockup-card">
+      <div class="mockup-header">
+        <div style="display: flex; align-items: center; gap: 10px;">
+          <span class="serial-badge">SERIAL #056</span>
+          <strong style="color: #ffffff; font-size: 16px;">Spicy-Wasp-30 Cyber Luminance Hardware Lockup Cards</strong>
+          <span style="font-size: 11px; color: #64748b; font-family: monospace;">uiverse.io/Javierrocadev/spicy-wasp-30</span>
+        </div>
+        <a href="serial-list-mockup-design.html" style="color: var(--orange); font-size: 12px; text-decoration: none; font-weight: 600;">&larr; View Master Serial Index</a>
+      </div>
+
+      <div class="stage-view">
+        <div class="wasp-showcase-cluster">
+          <!-- Card Edition 1: Cyber Orange Luminance Hardware Card -->
+          <div class="wasp-hw-card wasp-hw-orange">
+            <div class="wasp-inner-bezel">
+              <!-- Top Telemetry Bar -->
+              <div class="wasp-top-bar">
+                <span class="wasp-tag">LEADIRFTEX APPAREL PROTOCOL</span>
+                <div class="wasp-status-beacon">
+                  <span class="wasp-beacon-dot"></span>
+                  <span>CORE ACTIVE</span>
+                </div>
+              </div>
+
+              <!-- Center Stage: Permanent Glowing Core (No Watch Time, Logo Always Illuminated) -->
+              <div class="wasp-center-stage">
+                <div class="wasp-luminous-core"></div>
+                <img class="wasp-monogram-img" src="Monogram/monogram-approved-tight.png" alt="Leadirftex Official Monogram">
+              </div>
+
+              <!-- Bottom Section: Monogram + Wordmark Branding & Bold 3D Contact -->
+              <div class="wasp-bottom-section">
+                <div class="wasp-brand-lockup">
+                  <img class="wasp-brand-icon" src="Monogram/monogram-approved-tight.png" alt="Leadirftex Monogram">
+                  <div class="wasp-brand-texts">
+                    <span class="wasp-brand-wm">Leadirftex</span>
+                    <span class="wasp-brand-interchain">INTERCHAIN</span>
+                  </div>
+                </div>
+                <div class="wasp-contact-stack">
+                  <span class="wasp-contact-item wasp-email-3d">✉️ contact@leadirftex.com</span>
+                  <a class="wasp-contact-item wasp-domain-3d" href="https://leadirftex.com" target="_blank">leadirftex.com ↗</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card Edition 2: Cyber Neon Green Luminance Hardware Card -->
+          <div class="wasp-hw-card wasp-hw-green">
+            <div class="wasp-inner-bezel">
+              <!-- Top Telemetry Bar -->
+              <div class="wasp-top-bar">
+                <span class="wasp-tag">SMART FACTORY NETWORK</span>
+                <div class="wasp-status-beacon">
+                  <span class="wasp-beacon-dot"></span>
+                  <span>CORE ACTIVE</span>
+                </div>
+              </div>
+
+              <!-- Center Stage: Permanent Glowing Core (No Watch Time, Logo Always Illuminated) -->
+              <div class="wasp-center-stage">
+                <div class="wasp-luminous-core"></div>
+                <img class="wasp-monogram-img" src="Monogram/monogram-approved-tight.png" alt="Leadirftex Official Monogram">
+              </div>
+
+              <!-- Bottom Section: Monogram + Wordmark Branding & Bold 3D Contact -->
+              <div class="wasp-bottom-section">
+                <div class="wasp-brand-lockup">
+                  <img class="wasp-brand-icon" src="Monogram/monogram-approved-tight.png" alt="Leadirftex Monogram">
+                  <div class="wasp-brand-texts">
+                    <span class="wasp-brand-wm">Leadirftex</span>
+                    <span class="wasp-brand-interchain">INTERCHAIN</span>
+                  </div>
+                </div>
+                <div class="wasp-contact-stack">
+                  <span class="wasp-contact-item wasp-email-3d">✉️ contact@leadirftex.com</span>
+                  <a class="wasp-contact-item wasp-domain-3d" href="https://leadirftex.com" target="_blank">leadirftex.com ↗</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div style="margin-top: 20px; padding-top: 14px; border-top: 1px solid rgba(255,255,255,0.06); display: flex; justify-content: space-between; align-items: center; font-size: 11.5px; color: #64748b;">
+        <span>Category: <strong>Cards &amp; Panels / Cyber Luminance Hardware Lockup Cards (Orange &amp; Green Editions)</strong></span>
         <span style="color: #00FF22;">● Verified Production Ingestion</span>
       </div>
     </section>
