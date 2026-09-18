@@ -6032,6 +6032,201 @@
       transform: rotate(-15deg);
     }
 
+
+    /* === SERIAL #032: SHAGGY-COBRA-79 JELLO-WOBBLE FAQ & TOOLTIP BUTTON === */
+    /* Shared Stage Box */
+    .cobra-stage-box {
+      width: 100%;
+      min-height: 240px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      background: radial-gradient(circle at center, #0e1526 0%, #060913 100%);
+      border-radius: 10px;
+      position: relative;
+      overflow: visible;
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      padding: 50px 15px 30px;
+    }
+
+    /* Variant A: Canonical Uiverse Solar Gradient Jello-Vertical FAQ Button */
+    .cobra-faq-btn {
+      width: 52px;
+      height: 52px;
+      border-radius: 50%;
+      border: none;
+      background-color: #ffe53b;
+      background-image: linear-gradient(147deg, #ffe53b 0%, #ff2525 74%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.25);
+      position: relative;
+      outline: none;
+    }
+    .cobra-faq-btn:hover {
+      animation: cobra_jello_vertical 1s both;
+    }
+    .cobra-faq-btn svg {
+      height: 1.6em;
+      fill: white;
+    }
+
+    @keyframes cobra_jello_vertical {
+      0% {
+        transform: scale3d(1, 1, 1);
+      }
+      30% {
+        transform: scale3d(0.75, 1.25, 1);
+      }
+      40% {
+        transform: scale3d(1.25, 0.75, 1);
+      }
+      50% {
+        transform: scale3d(0.85, 1.15, 1);
+      }
+      65% {
+        transform: scale3d(1.05, 0.95, 1);
+      }
+      75% {
+        transform: scale3d(0.95, 1.05, 1);
+      }
+      100% {
+        transform: scale3d(1, 1, 1);
+      }
+    }
+
+    .cobra-tooltip {
+      position: absolute;
+      top: -20px;
+      opacity: 0;
+      background-color: #ffe53b;
+      background-image: linear-gradient(147deg, #ffe53b 0%, #ff2525 74%);
+      color: white;
+      padding: 5px 12px;
+      border-radius: 5px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+      pointer-events: none;
+      letter-spacing: 0.5px;
+      font-size: 12px;
+      font-weight: 700;
+      white-space: nowrap;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.25);
+    }
+    .cobra-tooltip::before {
+      position: absolute;
+      content: "";
+      width: 10px;
+      height: 10px;
+      background-color: #ff2525;
+      transform: rotate(45deg);
+      bottom: -4px;
+      left: calc(50% - 5px);
+      transition-duration: 0.3s;
+    }
+    .cobra-faq-btn:hover .cobra-tooltip {
+      top: -42px;
+      opacity: 1;
+    }
+
+    /* Variant B: Leadirftex Cyber Quantum Telemetry Help & Node Info Pods */
+    .cobra-ltx-cluster {
+      display: flex;
+      align-items: center;
+      gap: 40px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .cobra-ltx-node {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 14px;
+    }
+    .cobra-ltx-btn {
+      width: 56px;
+      height: 56px;
+      border-radius: 50%;
+      border: 1.5px solid #00FF22;
+      background: radial-gradient(circle at center, #00FF22 0%, #006611 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      box-shadow: 0 0 20px rgba(0, 255, 34, 0.35);
+      position: relative;
+      outline: none;
+    }
+    .cobra-ltx-btn:hover {
+      animation: cobra_jello_vertical 1s both;
+      box-shadow: 0 0 30px rgba(0, 255, 34, 0.65);
+    }
+    .cobra-ltx-btn svg {
+      height: 1.6em;
+      fill: #03050A;
+    }
+    .cobra-ltx-tooltip {
+      position: absolute;
+      top: -22px;
+      opacity: 0;
+      background-color: #070B14;
+      border: 1.5px solid #00FF22;
+      color: #00FF22;
+      padding: 5px 12px;
+      border-radius: 5px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+      pointer-events: none;
+      letter-spacing: 0.8px;
+      font-size: 10.5px;
+      font-family: 'JetBrains Mono', monospace;
+      font-weight: 700;
+      white-space: nowrap;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.8), 0 0 10px rgba(0, 255, 34, 0.3);
+    }
+    .cobra-ltx-tooltip::before {
+      position: absolute;
+      content: "";
+      width: 8px;
+      height: 8px;
+      background-color: #00FF22;
+      transform: rotate(45deg);
+      bottom: -5px;
+      left: calc(50% - 4px);
+      box-shadow: 0 0 6px #00FF22;
+    }
+    .cobra-ltx-btn:hover .cobra-ltx-tooltip {
+      top: -44px;
+      opacity: 1;
+    }
+
+    /* Orange Secondary Consensus SLA Pod */
+    .cobra-ltx-orange .cobra-ltx-btn {
+      border-color: #FF5C00;
+      background: radial-gradient(circle at center, #FF5C00 0%, #8c2a00 100%);
+      box-shadow: 0 0 20px rgba(255, 92, 0, 0.35);
+    }
+    .cobra-ltx-orange .cobra-ltx-btn:hover {
+      box-shadow: 0 0 30px rgba(255, 92, 0, 0.65);
+    }
+    .cobra-ltx-orange .cobra-ltx-tooltip {
+      border-color: #FF5C00;
+      color: #FF5C00;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.8), 0 0 10px rgba(255, 92, 0, 0.3);
+    }
+    .cobra-ltx-orange .cobra-ltx-tooltip::before {
+      background-color: #FF5C00;
+      box-shadow: 0 0 6px #FF5C00;
+    }
+
   </style>
 </head>
 <body>
@@ -8359,6 +8554,80 @@
 
       <div style="margin-top: 20px; padding-top: 14px; border-top: 1px solid rgba(255,255,255,0.06); display: flex; justify-content: space-between; align-items: center; font-size: 11.5px; color: #64748b;">
         <span>Category: <strong>UI Micro-Actions / Squircle Corner Slide-Fill Action Button</strong></span>
+        <span style="color: #00FF22;">● Verified Production Ingestion</span>
+      </div>
+    </section>
+
+    <!-- SERIAL #032 -->
+    <section id="mockup-item-032" class="mockup-card">
+      <div class="mockup-header">
+        <div style="display: flex; align-items: center; gap: 10px;">
+          <span class="serial-badge">SERIAL #032</span>
+          <strong style="color: #ffffff; font-size: 16px;">Shaggy-Cobra-79 Jello-Wobble FAQ &amp; Tooltip Button</strong>
+          <span style="font-size: 11px; color: #64748b; font-family: monospace;">uiverse.io/Shell0110/shaggy-cobra-79</span>
+        </div>
+        <a href="serial-list-mockup-design.html" style="color: var(--orange); font-size: 12px; text-decoration: none; font-weight: 600;">&larr; View Master Serial Index</a>
+      </div>
+
+      <div class="stage-view">
+        <!-- Variant A: Uiverse Canonical Solar Gradient Jello FAQ -->
+        <div class="stage-column">
+          <div class="stage-header">
+            <span class="stage-title">VARIANT A: UIVERSE CANONICAL JELLO FAQ BUTTON</span>
+            <span class="stage-tag">ORIGINAL SPEC</span>
+          </div>
+          <div class="cobra-stage-box">
+            <button class="cobra-faq-btn" aria-label="FAQ">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                <path d="M80 160c0-35.3 28.7-64 64-64h32c35.3 0 64 28.7 64 64v3.6c0 21.8-11.1 42.1-29.4 53.8l-42.2 27.1c-25.2 16.2-40.4 44.1-40.4 74V320c0 17.7 14.3 32 32 32s32-14.3 32-32v-1.4c0-8.2 4.2-15.8 11-20.2l42.2-27.1c36.6-23.6 58.8-64.1 58.8-107.7V160c0-70.7-57.3-128-128-128H144C73.3 32 16 89.3 16 160c0 17.7 14.3 32 32 32s32-14.3 32-32zm80 320a40 40 0 1 0 0-80 40 40 0 1 0 0 80z"></path>
+              </svg>
+              <span class="cobra-tooltip">FAQ</span>
+            </button>
+            <div style="font-size: 11px; font-family: monospace; color: #64748b; margin-top: 20px;">
+              ● Hover button: Elastic 3D jello wobble &bull; Upward floating notched tooltip
+            </div>
+          </div>
+        </div>
+
+        <!-- Variant B: Leadirftex Cyber Telemetry Help & Node Info Pods -->
+        <div class="stage-column">
+          <div class="stage-header">
+            <span class="stage-title">VARIANT B: LEADIRFTEX CYBER TELEMETRY &amp; PROTOCOL PODS</span>
+            <span class="stage-tag" style="background: rgba(0, 255, 34, 0.15); color: #00FF22; border-color: rgba(0, 255, 34, 0.4);">CYBER JELLO</span>
+          </div>
+          <div class="cobra-stage-box" style="background: radial-gradient(circle at center, rgba(0, 255, 34, 0.06) 0%, #03050A 80%); border-color: rgba(0, 255, 34, 0.25);">
+            <div class="cobra-ltx-cluster">
+              <!-- Pod 1: Cyber Neon Green Telemetry Assist -->
+              <div class="cobra-ltx-node">
+                <button class="cobra-ltx-btn" aria-label="Telemetry Assist">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                    <path d="M80 160c0-35.3 28.7-64 64-64h32c35.3 0 64 28.7 64 64v3.6c0 21.8-11.1 42.1-29.4 53.8l-42.2 27.1c-25.2 16.2-40.4 44.1-40.4 74V320c0 17.7 14.3 32 32 32s32-14.3 32-32v-1.4c0-8.2 4.2-15.8 11-20.2l42.2-27.1c36.6-23.6 58.8-64.1 58.8-107.7V160c0-70.7-57.3-128-128-128H144C73.3 32 16 89.3 16 160c0 17.7 14.3 32 32 32s32-14.3 32-32zm80 320a40 40 0 1 0 0-80 40 40 0 1 0 0 80z"></path>
+                  </svg>
+                  <span class="cobra-ltx-tooltip">TELEMETRY FAQ</span>
+                </button>
+                <span style="font-family: 'JetBrains Mono', monospace; font-size: 10px; font-weight: 700; color: #00FF22; letter-spacing: 1px;">NODE ASSIST</span>
+              </div>
+
+              <!-- Pod 2: Interchain Orange Consensus SLA -->
+              <div class="cobra-ltx-node cobra-ltx-orange">
+                <button class="cobra-ltx-btn" aria-label="Consensus SLA">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                    <path d="M80 160c0-35.3 28.7-64 64-64h32c35.3 0 64 28.7 64 64v3.6c0 21.8-11.1 42.1-29.4 53.8l-42.2 27.1c-25.2 16.2-40.4 44.1-40.4 74V320c0 17.7 14.3 32 32 32s32-14.3 32-32v-1.4c0-8.2 4.2-15.8 11-20.2l42.2-27.1c36.6-23.6 58.8-64.1 58.8-107.7V160c0-70.7-57.3-128-128-128H144C73.3 32 16 89.3 16 160c0 17.7 14.3 32 32 32s32-14.3 32-32zm80 320a40 40 0 1 0 0-80 40 40 0 1 0 0 80z"></path>
+                  </svg>
+                  <span class="cobra-ltx-tooltip">CONSENSUS SLA</span>
+                </button>
+                <span style="font-family: 'JetBrains Mono', monospace; font-size: 10px; font-weight: 700; color: #FF5C00; letter-spacing: 1px;">PROTOCOL SLA</span>
+              </div>
+            </div>
+            <div style="font-size: 11px; font-family: 'JetBrains Mono', monospace; color: #00FF22; opacity: 0.85; margin-top: 20px; letter-spacing: 0.8px;">
+              ⚡ [ HOVER POD: 3D JELLO OSCILLATION &bull; NOTCHED CYBER BADGE RISES ]
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div style="margin-top: 20px; padding-top: 14px; border-top: 1px solid rgba(255,255,255,0.06); display: flex; justify-content: space-between; align-items: center; font-size: 11.5px; color: #64748b;">
+        <span>Category: <strong>UI Micro-Actions / Jello-Wobble FAQ &amp; Floating Tooltip Button</strong></span>
         <span style="color: #00FF22;">● Verified Production Ingestion</span>
       </div>
     </section>
