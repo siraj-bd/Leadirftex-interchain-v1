@@ -5395,6 +5395,283 @@
     .bobcat-ltx-orange:hover .bobcat-ltx-download {
       box-shadow: 0 8px 22px rgba(255, 92, 0, 0.6);
     }
+
+    /* === SERIAL #029: PROUD-LADYBUG-47 INTERACTIVE NAVIGATION TOOLTIP & DROPDOWN === */
+    /* Shared Stage Box */
+    .ladybug-stage-box {
+      width: 100%;
+      min-height: 260px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 20px;
+      background: radial-gradient(circle at center, #0a1324 0%, #03050A 100%);
+      border-radius: 10px;
+      position: relative;
+      overflow: visible;
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      padding: 40px 15px 30px;
+    }
+
+    /* Variant A: Canonical Uiverse Cyan Tooltip & Dropdown Menu */
+    .ladybug-tooltip-wrapper {
+      --clr-btn: rgb(2, 22, 36);
+      --clr-dropdown: rgb(2, 22, 36);
+      --clr-nav-hover: rgb(3, 30, 48);
+      --clr-dropdown-hov: rgb(4, 40, 64);
+      --clr-light: #ffffff;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      position: relative;
+    }
+    .ladybug-tooltip-wrapper > .ladybug-tooltip-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .ladybug-nav-link {
+      position: relative;
+      list-style: none;
+    }
+    .ladybug-nav-link > .ladybug-tooltip-tab {
+      color: var(--clr-light);
+      background: var(--clr-btn);
+      padding: 0.8rem 1.4rem;
+      letter-spacing: 1px;
+      font-size: 0.75rem;
+      display: flex;
+      align-items: center;
+      column-gap: 12px;
+      justify-content: space-between;
+      text-transform: uppercase;
+      cursor: pointer;
+      border: 1px solid #00c1d5;
+      border-radius: 4px;
+      transition: 0.3s ease-in-out;
+      box-shadow: 0 4px 15px rgba(0, 193, 213, 0.2);
+    }
+    .ladybug-nav-link > .ladybug-tooltip-tab svg {
+      transition: transform 0.4s ease-in-out;
+    }
+    .ladybug-nav-link:hover > .ladybug-tooltip-tab svg {
+      transform: rotate(360deg);
+    }
+    .ladybug-nav-link:hover > .ladybug-tooltip-tab {
+      background-color: var(--clr-nav-hover);
+      box-shadow: 0 4px 20px rgba(0, 193, 213, 0.4);
+    }
+    .ladybug-tooltip {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      min-width: 14rem;
+      max-width: 16rem;
+      transform: translateY(10px);
+      opacity: 0;
+      pointer-events: none;
+      transition: 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+      padding: 12px 0 0 0;
+      z-index: 100;
+    }
+    .ladybug-tooltip::after {
+      content: "";
+      width: 14px;
+      height: 12px;
+      background: #00c1d5;
+      top: 2px;
+      left: 18px;
+      position: absolute;
+      display: inline-block;
+      clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+      z-index: 2;
+    }
+    .ladybug-tooltip .ladybug-tooltip-menu {
+      padding: 8px 0;
+      background-color: var(--clr-dropdown);
+      border: 1px solid #00c1d5;
+      border-radius: 4px;
+      list-style: none;
+      margin: 0;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+      position: relative;
+    }
+    .ladybug-tooltip-link {
+      list-style: none;
+    }
+    .ladybug-tooltip-link:not(:last-child) {
+      border-bottom: 1px solid rgba(0, 193, 213, 0.15);
+    }
+    .ladybug-tooltip-link > a {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      column-gap: 12px;
+      background-color: var(--clr-dropdown);
+      color: var(--clr-light);
+      padding: 0.6rem 1.1rem;
+      font-size: 0.78rem;
+      text-decoration: none;
+      transition: 0.25s ease;
+    }
+    .ladybug-tooltip-link > a:hover {
+      background-color: var(--clr-dropdown-hov);
+      color: #00c1d5;
+      padding-left: 1.3rem;
+    }
+    .ladybug-nav-link:hover > .ladybug-tooltip {
+      transform: translateY(0);
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    /* Variant B: Leadirftex Cyber Interchain Telemetry Support & Gateway */
+    .ladybug-ltx-wrapper {
+      font-family: 'JetBrains Mono', 'Fira Code', monospace;
+      position: relative;
+    }
+    .ladybug-ltx-cluster {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .ladybug-ltx-nav-link {
+      position: relative;
+      list-style: none;
+    }
+    .ladybug-ltx-tab {
+      background: rgba(7, 11, 20, 0.95);
+      border: 1.5px solid #00FF22;
+      border-radius: 4px;
+      padding: 10px 18px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      cursor: pointer;
+      color: #00FF22;
+      font-size: 11.5px;
+      font-weight: 800;
+      letter-spacing: 1.2px;
+      text-transform: uppercase;
+      box-shadow: 0 0 16px rgba(0, 255, 34, 0.2);
+      transition: all 0.35s ease;
+    }
+    .ladybug-ltx-tab svg {
+      stroke: #00FF22;
+      transition: transform 0.4s ease-in-out;
+    }
+    .ladybug-ltx-nav-link:hover .ladybug-ltx-tab {
+      background: rgba(0, 255, 34, 0.12);
+      box-shadow: 0 0 25px rgba(0, 255, 34, 0.5);
+      border-color: #00FF22;
+    }
+    .ladybug-ltx-nav-link:hover .ladybug-ltx-tab svg {
+      transform: rotate(360deg);
+    }
+    .ladybug-ltx-tooltip {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      min-width: 17rem;
+      transform: translateY(12px);
+      opacity: 0;
+      pointer-events: none;
+      transition: 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+      padding-top: 12px;
+      z-index: 100;
+    }
+    .ladybug-ltx-tooltip::after {
+      content: "";
+      width: 14px;
+      height: 12px;
+      background: #00FF22;
+      top: 2px;
+      left: 24px;
+      position: absolute;
+      display: inline-block;
+      clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+      z-index: 2;
+      box-shadow: 0 0 8px #00FF22;
+    }
+    .ladybug-ltx-menu {
+      padding: 8px 0;
+      background-color: #070B14;
+      border: 1.5px solid #00FF22;
+      border-radius: 4px;
+      list-style: none;
+      margin: 0;
+      box-shadow: 0 12px 35px rgba(0, 0, 0, 0.8), 0 0 18px rgba(0, 255, 34, 0.25);
+    }
+    .ladybug-ltx-link {
+      list-style: none;
+      border-bottom: 1px solid rgba(0, 255, 34, 0.12);
+    }
+    .ladybug-ltx-link:last-child {
+      border-bottom: none;
+    }
+    .ladybug-ltx-link > a {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 9px 16px;
+      color: #e2e8f0;
+      font-size: 11px;
+      letter-spacing: 0.8px;
+      text-decoration: none;
+      transition: all 0.25s ease;
+    }
+    .ladybug-ltx-link > a svg {
+      stroke: #00FF22;
+      flex-shrink: 0;
+    }
+    .ladybug-ltx-link > a:hover {
+      background: rgba(0, 255, 34, 0.15);
+      color: #00FF22;
+      padding-left: 20px;
+    }
+
+    /* Orange Secondary Dispatch Tab */
+    .ladybug-ltx-orange .ladybug-ltx-tab {
+      border-color: #FF5C00;
+      color: #FF5C00;
+      box-shadow: 0 0 16px rgba(255, 92, 0, 0.2);
+    }
+    .ladybug-ltx-orange .ladybug-ltx-tab svg {
+      stroke: #FF5C00;
+    }
+    .ladybug-ltx-orange:hover .ladybug-ltx-tab {
+      background: rgba(255, 92, 0, 0.12);
+      box-shadow: 0 0 25px rgba(255, 92, 0, 0.5);
+    }
+    .ladybug-ltx-orange .ladybug-ltx-tooltip::after {
+      background: #FF5C00;
+      box-shadow: 0 0 8px #FF5C00;
+    }
+    .ladybug-ltx-orange .ladybug-ltx-menu {
+      border-color: #FF5C00;
+      box-shadow: 0 12px 35px rgba(0, 0, 0, 0.8), 0 0 18px rgba(255, 92, 0, 0.25);
+    }
+    .ladybug-ltx-orange .ladybug-ltx-link {
+      border-bottom-color: rgba(255, 92, 0, 0.12);
+    }
+    .ladybug-ltx-orange .ladybug-ltx-link > a svg {
+      stroke: #FF5C00;
+    }
+    .ladybug-ltx-orange .ladybug-ltx-link > a:hover {
+      background: rgba(255, 92, 0, 0.15);
+      color: #FF5C00;
+    }
+
+    .ladybug-ltx-nav-link:hover .ladybug-ltx-tooltip {
+      transform: translateY(0);
+      opacity: 1;
+      pointer-events: auto;
+    }
+
   </style>
 </head>
 <body>
@@ -7390,6 +7667,180 @@
         <span style="color: #00FF22;">● Verified Production Ingestion</span>
       </div>
     </section>
+
+    <!-- SERIAL #029 -->
+    <section id="mockup-item-029" class="mockup-card">
+      <div class="mockup-header">
+        <div style="display: flex; align-items: center; gap: 10px;">
+          <span class="serial-badge">SERIAL #029</span>
+          <strong style="color: #ffffff; font-size: 16px;">Proud-Ladybug-47 Interactive Navigation Tooltip &amp; Dropdown</strong>
+          <span style="font-size: 11px; color: #64748b; font-family: monospace;">uiverse.io/Zain-Muhammad/proud-ladybug-47</span>
+        </div>
+        <a href="serial-list-mockup-design.html" style="color: var(--orange); font-size: 12px; text-decoration: none; font-weight: 600;">&larr; View Master Serial Index</a>
+      </div>
+
+      <div class="stage-view">
+        <!-- Variant A: Uiverse Canonical Cyan Navigation Tooltip & Dropdown -->
+        <div class="stage-column">
+          <div class="stage-header">
+            <span class="stage-title">VARIANT A: UIVERSE CANONICAL NAVIGATION TOOLTIP</span>
+            <span class="stage-tag">ORIGINAL SPEC</span>
+          </div>
+          <div class="ladybug-stage-box">
+            <div class="ladybug-tooltip-wrapper">
+              <ul class="ladybug-tooltip-container">
+                <li class="ladybug-nav-link">
+                  <div class="ladybug-tooltip-tab">
+                    <svg xmlns="http://www.w3.org/2000/svg" style="fill:none;" fill="none" viewBox="0 0 16 16" height="16" width="16">
+                      <path stroke-linejoin="round" stroke-linecap="round" stroke="#ffffff" d="M1 10V8C1 2.5 6 1 8 1C10 1 15 2.5 15 8V10M1 10C1 10.5552 1 11.1543 1.0984 11.6204C1.24447 12.3122 2 13 3 13C4 13 4.75553 12.3122 4.9016 11.6204C5 11.1543 5 10.5552 5 10C5 9.44485 5 8.84565 4.9016 8.37961C4.75553 7.68776 4 7 3 7C2 7 1.24447 7.68776 1.0984 8.37961C1 8.84565 1 9.44485 1 10ZM15 10C15 10.5552 15 11.1543 14.9016 11.6204C14.7555 12.3122 14 13 13 13C12 13 11.2445 12.3122 11.0984 11.6204C11 11.1543 11 10.5552 11 10C11 9.44485 11 8.84565 11.0984 8.37961C11.2445 7.68776 12 7 13 7C14 7 14.7555 7.68776 14.9016 8.37961C15 8.84565 15 9.44485 15 10ZM15 10C15 15.5 12.5 15 8 15"></path>
+                    </svg>
+                    Support
+                  </div>
+                  <div class="ladybug-tooltip">
+                    <ul class="ladybug-tooltip-menu">
+                      <li class="ladybug-tooltip-link">
+                        <a href="javascript:void(0)">
+                          <svg height="16" width="16" viewBox="0 0 16 16" fill="currentColor">
+                            <path d="m4.6.7 1.6 1.7c.6.6.7 1.6 0 2.2C5 6.1 5 6.4 7.2 8.7c2.4 2.4 2.7 2.4 4.2 1 .6-.5 1.6-.5 2.2 0l1.7 1.7v.1c.6.5.6 1.5 0 2.1v.1c-1.4 1.4-2.5 2-3.8 2h-.7c-1.6-.3-3.4-1.6-6.1-4.4C-.5 6.1-1 4 2.3.7 2.9.1 3.9.1 4.6.7m-1.2.4c-.2 0-.4.1-.5.3C.1 4 .5 5.9 5.3 10.7s6.6 5.2 9.3 2.4l.2.1-.2-.1c.3-.3.3-.7.1-1L13 10.4a.7.7 0 0 0-1 0c-1.9 1.8-2.7 1.6-5.3-1C4 6.6 3.8 5.8 5.6 4c.3-.3.3-.7 0-1L3.9 1.3a.7.7 0 0 0-.5-.2" fill-rule="evenodd"></path>
+                          </svg>
+                          000-000-1111
+                        </a>
+                      </li>
+                      <li class="ladybug-tooltip-link">
+                        <a href="javascript:void(0)">
+                          <svg viewBox="0 0 14 14" height="16" width="16" fill="currentColor">
+                            <path d="M6.985 13.97a6.985 6.985 0 1 1 6.986-6.985 6.993 6.993 0 0 1-6.986 6.986zm0-13.47a6.485 6.485 0 1 0 6.486 6.485A6.493 6.493 0 0 0 6.985.5"></path>
+                            <path d="M11.1 7.235H6.986a.25.25 0 0 1-.25-.25V1.972a.25.25 0 1 1 .5 0v4.763h3.866a.25.25 0 0 1 0 .5z"></path>
+                          </svg>
+                          8:30AM - 5PM PST
+                        </a>
+                      </li>
+                      <li class="ladybug-tooltip-link">
+                        <a href="javascript:void(0)">
+                          <svg viewBox="0 0 18.2 13.3" height="16" width="16" fill="currentColor">
+                            <path d="M17.9 0H.3a.3.3 0 0 0-.3.3v12.742a.3.3 0 0 0 .3.3h17.6a.3.3 0 0 0 .3-.3V.3a.3.3 0 0 0-.3-.3M.85.5h16.554L9.101 6.364Zm6.983 5.576 1.124.799a.25.25 0 0 0 .29 0l1.527-1.08-.133.13 6.719 6.917H.956ZM.5 12.59V.867l6.918 4.915Zm10.533-6.978L17.7.902v11.574ZM.539.5.5.554V.5Z"></path>
+                          </svg>
+                          uiverse.io
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div style="font-size: 11px; font-family: monospace; color: #64748b; margin-top: 50px;">
+              ● Hover Support tab: Headset spins 360&deg; &bull; Notch-pointer dropdown appears
+            </div>
+          </div>
+        </div>
+
+        <!-- Variant B: Leadirftex Cyber Interchain Telemetry Support & Gateway Node -->
+        <div class="stage-column">
+          <div class="stage-header">
+            <span class="stage-title">VARIANT B: LEADIRFTEX CYBER TELEMETRY &amp; OPS GATEWAY</span>
+            <span class="stage-tag" style="background: rgba(0, 255, 34, 0.15); color: #00FF22; border-color: rgba(0, 255, 34, 0.4);">CYBER GATEWAY</span>
+          </div>
+          <div class="ladybug-stage-box" style="background: radial-gradient(circle at center, rgba(0, 255, 34, 0.06) 0%, #03050A 80%); border-color: rgba(0, 255, 34, 0.25);">
+            <div class="ladybug-ltx-wrapper">
+              <div class="ladybug-ltx-cluster">
+                <!-- Tab 1: Neon Green Interchain Ops -->
+                <div class="ladybug-ltx-nav-link">
+                  <div class="ladybug-ltx-tab">
+                    <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path>
+                      <path d="M13.73 21a2 2 0 0 1-3.46 0"></path>
+                    </svg>
+                    <span>INTERCHAIN OPS</span>
+                  </div>
+                  <div class="ladybug-ltx-tooltip">
+                    <ul class="ladybug-ltx-menu">
+                      <li class="ladybug-ltx-link">
+                        <a href="javascript:void(0)">
+                          <svg viewBox="0 0 24 24" width="14" height="14" stroke="currentColor" stroke-width="2" fill="none">
+                            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                          </svg>
+                          <span>HOTLINE: +1 (800) LEAD-IRFTEX</span>
+                        </a>
+                      </li>
+                      <li class="ladybug-ltx-link">
+                        <a href="javascript:void(0)">
+                          <svg viewBox="0 0 24 24" width="14" height="14" stroke="currentColor" stroke-width="2" fill="none">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <polyline points="12 6 12 12 16 14"></polyline>
+                          </svg>
+                          <span>SLA: 24/7 REAL-TIME DISPATCH</span>
+                        </a>
+                      </li>
+                      <li class="ladybug-ltx-link">
+                        <a href="javascript:void(0)">
+                          <svg viewBox="0 0 24 24" width="14" height="14" stroke="currentColor" stroke-width="2" fill="none">
+                            <polyline points="16 18 22 12 16 6"></polyline>
+                            <polyline points="8 6 2 12 8 18"></polyline>
+                          </svg>
+                          <span>GATEWAY: gateway.leadirftex.com</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <!-- Tab 2: Interchain Orange Dispatch Node -->
+                <div class="ladybug-ltx-nav-link ladybug-ltx-orange">
+                  <div class="ladybug-ltx-tab">
+                    <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                      <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                    </svg>
+                    <span>CONSENSUS NODE</span>
+                  </div>
+                  <div class="ladybug-ltx-tooltip">
+                    <ul class="ladybug-ltx-menu">
+                      <li class="ladybug-ltx-link">
+                        <a href="javascript:void(0)">
+                          <svg viewBox="0 0 24 24" width="14" height="14" stroke="currentColor" stroke-width="2" fill="none">
+                            <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
+                            <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
+                            <line x1="6" y1="6" x2="6.01" y2="6"></line>
+                            <line x1="6" y1="18" x2="6.01" y2="18"></line>
+                          </svg>
+                          <span>NODE CLUSTER: ASIA-SOUTH-01</span>
+                        </a>
+                      </li>
+                      <li class="ladybug-ltx-link">
+                        <a href="javascript:void(0)">
+                          <svg viewBox="0 0 24 24" width="14" height="14" stroke="currentColor" stroke-width="2" fill="none">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                          </svg>
+                          <span>SECURITY: POST-QUANTUM AES</span>
+                        </a>
+                      </li>
+                      <li class="ladybug-ltx-link">
+                        <a href="javascript:void(0)">
+                          <svg viewBox="0 0 24 24" width="14" height="14" stroke="currentColor" stroke-width="2" fill="none">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <line x1="2" y1="12" x2="22" y2="12"></line>
+                            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                          </svg>
+                          <span>SYNC: 100% INTERCHAIN MESH</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div style="font-size: 11px; font-family: 'JetBrains Mono', monospace; color: #00FF22; opacity: 0.85; margin-top: 50px; letter-spacing: 0.8px;">
+              ⚡ [ HOVER NODE TO SPIN 360&deg; &bull; NOTCHED TELEMETRY DROPDOWN EMERGES ]
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div style="margin-top: 20px; padding-top: 14px; border-top: 1px solid rgba(255,255,255,0.06); display: flex; justify-content: space-between; align-items: center; font-size: 11.5px; color: #64748b;">
+        <span>Category: <strong>Navigation / Interactive Tooltip &amp; Dropdown Menu</strong></span>
+        <span style="color: #00FF22;">● Verified Production Ingestion</span>
+      </div>
+    </section>
+
   </div>
 </body>
 </html>
