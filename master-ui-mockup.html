@@ -6912,11 +6912,189 @@
       gap: 8px;
     }
 
-    .footer-nav-pills-cluster {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 6px;
+    /* ==========================================================================
+       DUAL PARTITION FOOTER DIRECTORY (GREEN LINE & ORANGE LINE • 3 PER SIDE / 6 PER ROW)
+       ========================================================================== */
+    .footer-directory-partition-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      width: 100%;
+      margin-top: 14px;
     }
+
+    .footer-partition-col {
+      background: rgba(11, 25, 44, 0.45);
+      border-radius: 12px;
+      padding: 14px 14px 16px;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    /* Left: Cyber Neon Green Partition (#00FF22) */
+    .footer-partition-green {
+      border: 1px solid rgba(0, 255, 34, 0.28);
+      border-top: 2.5px solid #00FF22;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4), inset 0 1px 0 rgba(0, 255, 34, 0.15);
+    }
+
+    /* Right: Cyber Interchain Orange Partition (#FF5C00) */
+    .footer-partition-orange {
+      border: 1px solid rgba(255, 92, 0, 0.28);
+      border-top: 2.5px solid #FF5C00;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4), inset 0 1px 0 rgba(255, 92, 0, 0.15);
+    }
+
+    .footer-partition-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-bottom: 8px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .footer-partition-head-left {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+    }
+
+    .footer-partition-dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      display: inline-block;
+    }
+    .footer-partition-dot.green-dot {
+      background: #00FF22;
+      box-shadow: 0 0 8px #00FF22;
+    }
+    .footer-partition-dot.orange-dot {
+      background: #FF5C00;
+      box-shadow: 0 0 8px #FF5C00;
+    }
+
+    .footer-partition-title {
+      font-family: var(--lt-font-mono, monospace);
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+    .footer-partition-title.green-title {
+      color: #00FF22;
+    }
+    .footer-partition-title.orange-title {
+      color: #FF5C00;
+    }
+
+    .footer-partition-count {
+      font-family: var(--lt-font-mono, monospace);
+      font-size: 9.5px;
+      font-weight: 800;
+      padding: 1.5px 7px;
+      border-radius: 9999px;
+    }
+    .footer-partition-count.green-count {
+      background: rgba(0, 255, 34, 0.12);
+      color: #00FF22;
+      border: 1px solid rgba(0, 255, 34, 0.3);
+    }
+    .footer-partition-count.orange-count {
+      background: rgba(255, 92, 0, 0.12);
+      color: #FF5C00;
+      border: 1px solid rgba(255, 92, 0, 0.3);
+    }
+
+    /* 3 Items Per Row (Row System Layer) in each partition */
+    .footer-partition-pills-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 8px 6px;
+      width: 100%;
+    }
+
+    /* Common Pill Styling for Dual Partition Grid */
+    .footer-nav-pill {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 6px;
+      background: rgba(255, 255, 255, 0.03);
+      padding: 7px 8px;
+      border-radius: 6px;
+      font-size: 11px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: all 0.22s ease-in-out;
+      box-sizing: border-box;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      min-height: 34px;
+    }
+
+    /* Green Line Pill System */
+    .footer-pill-green {
+      border: 1px solid rgba(0, 255, 34, 0.22);
+      color: #d1fae5;
+    }
+    .footer-pill-green:hover {
+      background: rgba(0, 255, 34, 0.14);
+      border-color: #00FF22;
+      color: #ffffff;
+      transform: translateY(-1.5px);
+      box-shadow: 0 3px 10px rgba(0, 255, 34, 0.25);
+    }
+
+    /* Orange Line Pill System */
+    .footer-pill-orange {
+      border: 1px solid rgba(255, 92, 0, 0.22);
+      color: #ffedd5;
+    }
+    .footer-pill-orange:hover {
+      background: rgba(255, 92, 0, 0.14);
+      border-color: #FF5C00;
+      color: #ffffff;
+      transform: translateY(-1.5px);
+      box-shadow: 0 3px 10px rgba(255, 92, 0, 0.25);
+    }
+
+    /* Responsive Queries for Dual Partition */
+    @media (max-width: 1200px) {
+      .footer-partition-pills-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+      .footer-nav-pill {
+        font-size: 10.5px;
+        padding: 6px 6px;
+      }
+    }
+
+    @media (max-width: 900px) {
+      .footer-directory-partition-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+      }
+      .footer-partition-pills-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
+    @media (max-width: 600px) {
+      .footer-partition-pills-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 420px) {
+      .footer-partition-pills-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
 
     .footer-nav-col-title {
       color: var(--lt-white);
@@ -81706,36 +81884,62 @@
             <span style="font-size: 11px; color: #94a3b8;">Click any page name below to switch views instantly:</span>
           </div>
 
-          <div class="footer-nav-pills-cluster">
-            <a href="#" onclick="showScreen('screen-home'); return false;" class="footer-nav-pill">🏠 Homepage</a>
-            <a href="#" onclick="showScreen('screen-fashion'); return false;" class="footer-nav-pill">👗 01. Fashion &amp; Design</a>
-            <a href="#" onclick="showScreen('screen-learning'); return false;" class="footer-nav-pill">🎓 02. Learning Academy</a>
-            <a href="#" onclick="showScreen('screen-automated-machine-equipment'); return false;" class="footer-nav-pill">⚙️ 03. Machinery &amp; Equipment</a>
-            <a href="#" onclick="showScreen('screen-digital-production-Technology'); return false;" class="footer-nav-pill">🤖 03B. Digital Production Tech</a>
-            <a href="#" onclick="showScreen('screen-parts'); return false;" class="footer-nav-pill">⚙️ Parts Intelligence</a>
-            <a href="#" onclick="showScreen('screen-marketplace'); return false;" class="footer-nav-pill">🌾 04. Raw Materials &amp; Yarn</a>
-            <a href="#" onclick="showScreen('screen-marketplace'); return false;" class="footer-nav-pill">🛒 05. Fabric Marketplace</a>
-            <a href="#" onclick="showScreen('screen-wash-chem'); return false;" class="footer-nav-pill">🧪 07. Wash &amp; Chemical</a>
-            <a href="#" onclick="showScreen('screen-excess-stocklot'); return false;" class="footer-nav-pill">📦 19. Excess &amp; Stocklots</a>
-            <a href="#" onclick="showScreen('screen-retail-marketplace'); return false;" class="footer-nav-pill">🛍️ 20. Retail Marketplace</a>
-            <a href="#" onclick="showScreen('screen-product'); return false;" class="footer-nav-pill">🔍 Product Detail</a>
-            <a href="#" onclick="showScreen('screen-factory'); return false;" class="footer-nav-pill">🏭 16. Factory Network</a>
-            <a href="#" onclick="showScreen('screen-buyer-req'); return false;" class="footer-nav-pill">📝 12. Buyer Req</a>
-            <a href="#" onclick="showScreen('screen-ai-matching'); return false;" class="footer-nav-pill">⚡ 13. AI Matching</a>
-            <a href="#" onclick="showScreen('screen-rfq'); return false;" class="footer-nav-pill">💬 RFQ Bids</a>
-            <a href="#" onclick="showScreen('screen-sample'); return false;" class="footer-nav-pill">🧵 11. Sample Dev</a>
-            <a href="#" onclick="showScreen('screen-workspace'); return false;" class="footer-nav-pill">📊 14. Workspace</a>
-            <a href="#" onclick="showScreen('screen-quality'); return false;" class="footer-nav-pill">🔬 17. Quality &amp; AQL</a>
-            <a href="#" onclick="showScreen('screen-rating-trust'); return false;" class="footer-nav-pill">⭐ 21. Rating &amp; Trust</a>
-            <a href="#" onclick="showScreen('screen-compliance'); return false;" class="footer-nav-pill">🎖️ 22. Social Compliance &amp; ESG</a>
-            <a href="#" onclick="showScreen('screen-jobs'); return false;" class="footer-nav-pill">💼 23. Job Feed</a>
-            <a href="#" onclick="showScreen('screen-cv'); return false;" class="footer-nav-pill">📄 23B. Free CV Builder</a>
-            <a href="#" onclick="showScreen('screen-trust'); return false;" class="footer-nav-pill">🛡️ Security &amp; Trust</a>
-            <a href="#" onclick="showScreen('screen-dashboard'); return false;" class="footer-nav-pill">📈 Dashboard</a>
-            <a href="#" onclick="showScreen('screen-hubs'); return false;" class="footer-nav-pill">🌐 21 Hubs Matrix</a>
-            <a href="#" onclick="showScreen('screen-production-floor-solution'); return false;" class="footer-nav-pill">🏭 Production Floor Solution</a>
-            <a href="#" onclick="showScreen('screen-privacy-policy'); return false;" class="footer-nav-pill" style="border-color: rgba(0, 255, 34, 0.4); color: #00FF22;">🛡️ Privacy Policy</a>
-            <a href="#" onclick="showScreen('screen-terms-conditions'); return false;" class="footer-nav-pill" style="border-color: rgba(255, 92, 0, 0.4); color: #FF5C00;">⚖️ Terms &amp; Conditions</a>
+          <!-- Dual Partition 29 Platform Directory (Green Side & Orange Side • 3 Items Per Row Each • 6 Across) -->
+          <div class="footer-directory-partition-grid">
+            <!-- Left Partition: Cyber Neon Green Section (15 Platforms • 3 Per Row) -->
+            <div class="footer-partition-col footer-partition-green">
+              <div class="footer-partition-header">
+                <div class="footer-partition-head-left">
+                  <span class="footer-partition-dot green-dot"></span>
+                  <span class="footer-partition-title green-title">PRIMARY HUBS &amp; PRODUCTION CORE</span>
+                </div>
+                <span class="footer-partition-count green-count">15 NODES</span>
+              </div>
+              <div class="footer-partition-pills-grid">
+                <a href="#" onclick="showScreen('screen-home'); return false;" class="footer-nav-pill footer-pill-green">🏠 Homepage</a>
+                <a href="#" onclick="showScreen('screen-fashion'); return false;" class="footer-nav-pill footer-pill-green">👗 01. Fashion &amp; Design</a>
+                <a href="#" onclick="showScreen('screen-learning'); return false;" class="footer-nav-pill footer-pill-green">🎓 02. Learning Academy</a>
+                <a href="#" onclick="showScreen('screen-automated-machine-equipment'); return false;" class="footer-nav-pill footer-pill-green">⚙️ 03. Machinery &amp; Equipment</a>
+                <a href="#" onclick="showScreen('screen-digital-production-Technology'); return false;" class="footer-nav-pill footer-pill-green">🤖 03B. Digital Production Tech</a>
+                <a href="#" onclick="showScreen('screen-parts'); return false;" class="footer-nav-pill footer-pill-green">⚙️ Parts Intelligence</a>
+                <a href="#" onclick="showScreen('screen-marketplace'); return false;" class="footer-nav-pill footer-pill-green">🌾 04. Raw Materials &amp; Yarn</a>
+                <a href="#" onclick="showScreen('screen-marketplace'); return false;" class="footer-nav-pill footer-pill-green">🛒 05. Fabric Marketplace</a>
+                <a href="#" onclick="showScreen('screen-wash-chem'); return false;" class="footer-nav-pill footer-pill-green">🧪 07. Wash &amp; Chemical</a>
+                <a href="#" onclick="showScreen('screen-excess-stocklot'); return false;" class="footer-nav-pill footer-pill-green">📦 19. Excess &amp; Stocklots</a>
+                <a href="#" onclick="showScreen('screen-retail-marketplace'); return false;" class="footer-nav-pill footer-pill-green">🛍️ 20. Retail Marketplace</a>
+                <a href="#" onclick="showScreen('screen-product'); return false;" class="footer-nav-pill footer-pill-green">🔍 Product Detail</a>
+                <a href="#" onclick="showScreen('screen-factory'); return false;" class="footer-nav-pill footer-pill-green">🏭 16. Factory Network</a>
+                <a href="#" onclick="showScreen('screen-buyer-req'); return false;" class="footer-nav-pill footer-pill-green">📝 12. Buyer Req</a>
+                <a href="#" onclick="showScreen('screen-ai-matching'); return false;" class="footer-nav-pill footer-pill-green">⚡ 13. AI Matching</a>
+              </div>
+            </div>
+
+            <!-- Right Partition: Cyber Interchain Orange Section (14 Platforms • 3 Per Row) -->
+            <div class="footer-partition-col footer-partition-orange">
+              <div class="footer-partition-header">
+                <div class="footer-partition-head-left">
+                  <span class="footer-partition-dot orange-dot"></span>
+                  <span class="footer-partition-title orange-title">OPERATIONS, QUALITY &amp; ECOSYSTEM</span>
+                </div>
+                <span class="footer-partition-count orange-count">14 NODES</span>
+              </div>
+              <div class="footer-partition-pills-grid">
+                <a href="#" onclick="showScreen('screen-rfq'); return false;" class="footer-nav-pill footer-pill-orange">💬 RFQ Bids</a>
+                <a href="#" onclick="showScreen('screen-sample'); return false;" class="footer-nav-pill footer-pill-orange">🧵 11. Sample Dev</a>
+                <a href="#" onclick="showScreen('screen-workspace'); return false;" class="footer-nav-pill footer-pill-orange">📊 14. Workspace</a>
+                <a href="#" onclick="showScreen('screen-quality'); return false;" class="footer-nav-pill footer-pill-orange">🔬 17. Quality &amp; AQL</a>
+                <a href="#" onclick="showScreen('screen-rating-trust'); return false;" class="footer-nav-pill footer-pill-orange">⭐ 21. Rating &amp; Trust</a>
+                <a href="#" onclick="showScreen('screen-compliance'); return false;" class="footer-nav-pill footer-pill-orange">🎖️ 22. Social Compliance &amp; ESG</a>
+                <a href="#" onclick="showScreen('screen-jobs'); return false;" class="footer-nav-pill footer-pill-orange">💼 23. Job Feed</a>
+                <a href="#" onclick="showScreen('screen-cv'); return false;" class="footer-nav-pill footer-pill-orange">📄 23B. Free CV Builder</a>
+                <a href="#" onclick="showScreen('screen-trust'); return false;" class="footer-nav-pill footer-pill-orange">🛡️ Security &amp; Trust</a>
+                <a href="#" onclick="showScreen('screen-dashboard'); return false;" class="footer-nav-pill footer-pill-orange">📈 Dashboard</a>
+                <a href="#" onclick="showScreen('screen-hubs'); return false;" class="footer-nav-pill footer-pill-orange">🌐 21 Hubs Matrix</a>
+                <a href="#" onclick="showScreen('screen-production-floor-solution'); return false;" class="footer-nav-pill footer-pill-orange">🏭 Production Floor Solution</a>
+                <a href="#" onclick="showScreen('screen-privacy-policy'); return false;" class="footer-nav-pill footer-pill-orange">🛡️ Privacy Policy</a>
+                <a href="#" onclick="showScreen('screen-terms-conditions'); return false;" class="footer-nav-pill footer-pill-orange">⚖️ Terms &amp; Conditions</a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
