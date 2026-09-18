@@ -10503,6 +10503,231 @@
       color: #00FF22;
     }
 
+  
+    /* ==========================================================================
+       SERIAL #054: FAT-OCTOPUS-26 INSET NEON GLOW 3D SOCIAL PUBLISHING CARDS
+       Source: https://uiverse.io/Yaseen549/fat-octopus-26
+       Customized: Landscape Social Media Publishing Cards (Cyber Orange & Cyber Green)
+       Features: Signature Inset Neon Glow (2px solid border, 2px 2px 18px inset shadow
+       that transforms into an intense neon radiation on hover), Timestamp, Post Title,
+       Caption, Official Monogram-Wordmark Lockup, Contact Email & Website Footer
+       ========================================================================== */
+
+    .octopus-social-cluster {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 36px;
+      flex-wrap: wrap;
+      width: 100%;
+      padding: 12px 0;
+    }
+
+    /* Base Landscape 3D Social Publishing Card */
+    .octopus-card {
+      width: 480px;
+      max-width: 95vw;
+      min-height: 290px;
+      background: linear-gradient(145deg, rgba(17, 24, 39, 0.95) 0%, rgba(7, 11, 20, 0.98) 100%);
+      border-radius: 16px;
+      padding: 24px 26px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      color: #ffffff;
+      position: relative;
+      cursor: pointer;
+      box-sizing: border-box;
+      transition: all 0.45s cubic-bezier(0.34, 1.56, 0.64, 1);
+      overflow: hidden;
+    }
+
+    /* Edition 1: Cyber Interchain Orange Border & Inset Glow */
+    .octopus-card-orange {
+      border: 2.5px solid #FF5C00;
+      box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.9) inset, 0 10px 25px rgba(0, 0, 0, 0.4);
+    }
+    .octopus-card-orange:hover {
+      transform: translateY(-6px) scale(1.02);
+      border-color: #ff8a00;
+      box-shadow: 2px 2px 25px rgba(255, 92, 0, 0.75) inset, 0 0 35px rgba(255, 92, 0, 0.4);
+    }
+
+    /* Edition 2: Cyber Neon Green Border & Inset Glow */
+    .octopus-card-green {
+      border: 2.5px solid #00FF22;
+      box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.9) inset, 0 10px 25px rgba(0, 0, 0, 0.4);
+    }
+    .octopus-card-green:hover {
+      transform: translateY(-6px) scale(1.02);
+      border-color: #34d399;
+      box-shadow: 2px 2px 25px rgba(0, 255, 34, 0.75) inset, 0 0 35px rgba(0, 255, 34, 0.4);
+    }
+
+    /* Subtle Inner Ambient Glow Halo */
+    .octopus-card::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      border-radius: 14px;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.4s ease;
+      z-index: 1;
+    }
+    .octopus-card-orange::before {
+      background: radial-gradient(circle at 50% 50%, rgba(255, 92, 0, 0.08) 0%, transparent 70%);
+    }
+    .octopus-card-green::before {
+      background: radial-gradient(circle at 50% 50%, rgba(0, 255, 34, 0.08) 0%, transparent 70%);
+    }
+    .octopus-card:hover::before {
+      opacity: 1;
+    }
+
+    /* Post Top Metadata Bar */
+    .octopus-meta-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-bottom: 10px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      position: relative;
+      z-index: 5;
+    }
+    .octopus-tag {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 9.5px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      padding: 2.5px 8px;
+      border-radius: 4px;
+    }
+    .octopus-card-orange .octopus-tag {
+      background: rgba(255, 92, 0, 0.2);
+      color: #FF5C00;
+      border: 1px solid rgba(255, 92, 0, 0.4);
+    }
+    .octopus-card-green .octopus-tag {
+      background: rgba(0, 255, 34, 0.15);
+      color: #00FF22;
+      border: 1px solid rgba(0, 255, 34, 0.4);
+    }
+    .octopus-datetime {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 10.5px;
+      color: rgba(255, 255, 255, 0.85);
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    /* Post Body Content */
+    .octopus-body {
+      margin: 14px 0;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      position: relative;
+      z-index: 5;
+    }
+    .octopus-title {
+      font-size: 19px;
+      font-weight: 800;
+      line-height: 1.3;
+      color: #ffffff;
+      margin: 0;
+      letter-spacing: -0.2px;
+      transition: color 0.3s ease;
+    }
+    .octopus-card-orange:hover .octopus-title {
+      color: #ff9966;
+    }
+    .octopus-card-green:hover .octopus-title {
+      color: #70ff85;
+    }
+
+    .octopus-caption {
+      font-size: 12.5px;
+      line-height: 1.55;
+      color: rgba(255, 255, 255, 0.82);
+      margin: 0;
+    }
+
+    /* Post Footer: Official Brand Lockup & Contact */
+    .octopus-footer {
+      padding-top: 14px;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+      z-index: 5;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .octopus-brand-wrap {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      height: 38px;
+    }
+    .octopus-brand-logo {
+      height: 38px;
+      width: auto;
+      object-fit: contain;
+      filter: drop-shadow(0 2px 6px rgba(0,0,0,0.5));
+    }
+    .octopus-brand-texts {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 100%;
+    }
+    .octopus-brand-wm {
+      font-family: 'Encode Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      font-weight: 900;
+      font-size: 25px;
+      color: #FF5C00;
+      line-height: 0.9;
+      letter-spacing: -0.02em;
+    }
+    .octopus-brand-interchain {
+      font-family: 'Encode Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      font-weight: 900;
+      font-size: 8px;
+      letter-spacing: 0.20em;
+      text-transform: uppercase;
+      line-height: 0.85;
+      background: linear-gradient(180deg, #FFFFFF 0%, #CBD5E1 60%, #94A3B8 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .octopus-contact-box {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 3px;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 10.5px;
+      color: rgba(255, 255, 255, 0.75);
+    }
+    .octopus-contact-link {
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: 700;
+      transition: color 0.2s ease;
+    }
+    .octopus-card-orange .octopus-contact-link:hover {
+      color: #FF5C00;
+    }
+    .octopus-card-green .octopus-contact-link:hover {
+      color: #00FF22;
+    }
+
   </style>
 </head>
 <body>
@@ -14946,6 +15171,102 @@
 
       <div style="margin-top: 20px; padding-top: 14px; border-top: 1px solid rgba(255,255,255,0.06); display: flex; justify-content: space-between; align-items: center; font-size: 11.5px; color: #64748b;">
         <span>Category: <strong>Cards &amp; Panels / Skewed 3D Geometric Social Cards (Landscape Orange &amp; Green)</strong></span>
+        <span style="color: #00FF22;">● Verified Production Ingestion</span>
+      </div>
+    </section>
+
+
+    <!-- ==========================================================================
+         SERIAL #054: FAT-OCTOPUS-26 INSET NEON GLOW 3D SOCIAL PUBLISHING CARDS
+         ========================================================================== -->
+    <section id="mockup-item-054" class="mockup-card">
+      <div class="mockup-header">
+        <div style="display: flex; align-items: center; gap: 10px;">
+          <span class="serial-badge">SERIAL #054</span>
+          <strong style="color: #ffffff; font-size: 16px;">Fat-Octopus-26 Inset Neon Glow 3D Social Cards</strong>
+          <span style="font-size: 11px; color: #64748b; font-family: monospace;">uiverse.io/Yaseen549/fat-octopus-26</span>
+        </div>
+        <a href="serial-list-mockup-design.html" style="color: var(--orange); font-size: 12px; text-decoration: none; font-weight: 600;">&larr; View Master Serial Index</a>
+      </div>
+
+      <div class="stage-view">
+        <div class="octopus-social-cluster">
+          <!-- Landscape Card Edition 1: Cyber Orange Border & Inset Glow -->
+          <div class="octopus-card octopus-card-orange">
+            <!-- Top Metadata -->
+            <div class="octopus-meta-header">
+              <span class="octopus-tag">INTERCHAIN BROADCAST</span>
+              <div class="octopus-datetime">
+                <span>🗓️ 18 Sep 2026</span>
+                <span>•</span>
+                <span>⏰ 11:15 AM</span>
+              </div>
+            </div>
+
+            <!-- Post Content -->
+            <div class="octopus-body">
+              <h3 class="octopus-title">Decentralized Apparel Protocol Synchronized</h3>
+              <p class="octopus-caption">
+                Automated back pocket and bottom hemming workflows connected across 29 specialized factories. Direct CAD vector parsing and verified cryptographic production tracking.
+              </p>
+            </div>
+
+            <!-- Official Monogram-Wordmark & Contact Footer -->
+            <div class="octopus-footer">
+              <div class="octopus-brand-wrap">
+                <img class="octopus-brand-logo" src="Monogram/monogram-approved-tight.png" alt="Leadirftex Monogram">
+                <div class="octopus-brand-texts">
+                  <span class="octopus-brand-wm">Leadirftex</span>
+                  <span class="octopus-brand-interchain">INTERCHAIN</span>
+                </div>
+              </div>
+              <div class="octopus-contact-box">
+                <span>✉️ contact@leadirftex.com</span>
+                <a class="octopus-contact-link" href="https://leadirftex.com" target="_blank">leadirftex.com ↗</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Landscape Card Edition 2: Cyber Neon Green Border & Inset Glow -->
+          <div class="octopus-card octopus-card-green">
+            <!-- Top Metadata -->
+            <div class="octopus-meta-header">
+              <span class="octopus-tag">FACTORY AUTOMATION DISPATCH</span>
+              <div class="octopus-datetime">
+                <span>🗓️ 18 Sep 2026</span>
+                <span>•</span>
+                <span>⏰ 11:15 AM</span>
+              </div>
+            </div>
+
+            <!-- Post Content -->
+            <div class="octopus-body">
+              <h3 class="octopus-title">High-Speed Industrial Workcells Online</h3>
+              <p class="octopus-caption">
+                Vi.Be.Mac VM02 and VM04 units operating at peak efficiency. Real-time needle feed calibration, condensed stitching, and zero yellow token compliance across all nodes.
+              </p>
+            </div>
+
+            <!-- Official Monogram-Wordmark & Contact Footer -->
+            <div class="octopus-footer">
+              <div class="octopus-brand-wrap">
+                <img class="octopus-brand-logo" src="Monogram/monogram-approved-tight.png" alt="Leadirftex Monogram">
+                <div class="octopus-brand-texts">
+                  <span class="octopus-brand-wm">Leadirftex</span>
+                  <span class="octopus-brand-interchain">INTERCHAIN</span>
+                </div>
+              </div>
+              <div class="octopus-contact-box">
+                <span>✉️ contact@leadirftex.com</span>
+                <a class="octopus-contact-link" href="https://leadirftex.com" target="_blank">leadirftex.com ↗</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div style="margin-top: 20px; padding-top: 14px; border-top: 1px solid rgba(255,255,255,0.06); display: flex; justify-content: space-between; align-items: center; font-size: 11.5px; color: #64748b;">
+        <span>Category: <strong>Cards &amp; Panels / Inset Neon Glow 3D Social Cards (Landscape Orange &amp; Green)</strong></span>
         <span style="color: #00FF22;">● Verified Production Ingestion</span>
       </div>
     </section>
