@@ -3288,6 +3288,291 @@
       transform: translateY(0);
       pointer-events: auto;
     }
+
+    /* === SERIAL #020: ITCHY-BABOON-17 COSMIC DEEP SPACE 404 ERROR NODE === */
+    /* Shared Stage Box */
+    .baboon-stage-box {
+      width: 100%;
+      min-height: 400px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background: radial-gradient(circle at center, #0e1526 0%, #060913 100%);
+      border-radius: 10px;
+      position: relative;
+      overflow: hidden;
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      padding: 30px 15px;
+    }
+
+    /* Variant A: Canonical Uiverse Cosmic Deep Space 404 */
+    .baboon-space-core {
+      position: relative;
+      padding: 2.4rem 3rem;
+      border-radius: 22px;
+      background: radial-gradient(circle at top, #1e2a3a, #080b12 70%);
+      color: #e8f7ff;
+      font-family: system-ui, -apple-system, sans-serif;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      box-shadow:
+        0 0 80px rgba(0, 180, 255, 0.22),
+        inset 0 0 40px rgba(255, 255, 255, 0.03);
+      max-width: 360px;
+      box-sizing: border-box;
+      border: 1px solid rgba(0, 180, 255, 0.2);
+    }
+    .baboon-cosmic-glow {
+      position: absolute;
+      inset: -40%;
+      background: radial-gradient(
+        circle,
+        rgba(0, 200, 255, 0.45),
+        rgba(0, 120, 255, 0.15),
+        transparent 65%
+      );
+      filter: blur(40px);
+      animation: baboon_breathe 7s ease-in-out infinite;
+      pointer-events: none;
+    }
+    .baboon-flow-line {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+        to bottom,
+        transparent,
+        rgba(0, 255, 255, 0.18),
+        transparent
+      );
+      animation: baboon_drift 5.5s linear infinite;
+      pointer-events: none;
+    }
+    .baboon-error-num {
+      position: relative;
+      font-size: 3.4rem;
+      font-weight: 900;
+      letter-spacing: 0.25rem;
+      color: #ffffff;
+      text-shadow: 0 0 20px rgba(0, 220, 255, 0.9);
+      line-height: 1;
+      margin: 0;
+    }
+    .baboon-error-num::after {
+      content: attr(data-text);
+      position: absolute;
+      inset: 0;
+      color: #8ff6ff;
+      opacity: 0.25;
+      filter: blur(10px);
+    }
+    .baboon-error-label {
+      margin-top: 0.45rem;
+      font-size: 0.78rem;
+      letter-spacing: 0.3rem;
+      text-transform: uppercase;
+      color: #9adfff;
+      font-weight: 700;
+    }
+    .baboon-error-desc {
+      margin-top: 0.9rem;
+      font-size: 0.82rem;
+      color: #cbe7ff;
+      opacity: 0.85;
+      max-inline-size: 30ch;
+      line-height: 1.5;
+    }
+    .baboon-home-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      margin-top: 1.4rem;
+      padding: 0.65rem 1.6rem;
+      border-radius: 999px;
+      text-decoration: none;
+      font-size: 0.82rem;
+      font-weight: 700;
+      color: #00131b;
+      background: linear-gradient(135deg, #00eaff, #6aa8ff);
+      box-shadow: 0 0 25px rgba(0, 234, 255, 0.6);
+      transition:
+        transform 0.35s ease,
+        box-shadow 0.35s ease,
+        filter 0.35s ease;
+      cursor: pointer;
+      position: relative;
+      z-index: 2;
+    }
+    .baboon-home-btn:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 0 45px rgba(0, 234, 255, 0.9);
+      filter: brightness(1.1);
+      color: #00131b;
+    }
+    .baboon-particle-field {
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+    }
+    .baboon-particle-field i {
+      position: absolute;
+      background: white;
+      border-radius: 50%;
+      opacity: 0.6;
+      animation: baboon_float 4s ease-in-out infinite alternate;
+    }
+    .baboon-particle-field i:nth-child(1) {
+      inset: 18% 70% auto auto;
+      padding: 1.5px;
+    }
+    .baboon-particle-field i:nth-child(2) {
+      inset: 35% auto auto 22%;
+      padding: 1px;
+    }
+    .baboon-particle-field i:nth-child(3) {
+      inset: auto 30% 25% auto;
+      padding: 2px;
+    }
+    .baboon-particle-field i:nth-child(4) {
+      inset: auto auto 35% 40%;
+      padding: 1.2px;
+    }
+    .baboon-particle-field i:nth-child(5) {
+      inset: 12% auto auto 45%;
+      padding: 1px;
+    }
+
+    @keyframes baboon_breathe {
+      0%, 100% { opacity: 0.45; }
+      50% { opacity: 0.75; }
+    }
+    @keyframes baboon_drift {
+      0% { transform: translateY(-120%); }
+      100% { transform: translateY(120%); }
+    }
+    @keyframes baboon_float {
+      from { opacity: 0.3; transform: translateY(0); }
+      to { opacity: 0.85; transform: translateY(-6px); }
+    }
+
+    /* Variant B: Leadirftex Cyber Quantum Telemetry Signal Loss Node (404 Error Hub) */
+    .baboon-ltx-space-core {
+      position: relative;
+      padding: 2.4rem 3rem;
+      border-radius: 22px;
+      background: radial-gradient(circle at top, #070e1c, #03050A 75%);
+      color: #ffffff;
+      font-family: 'JetBrains Mono', monospace, system-ui;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      box-shadow:
+        0 0 80px rgba(0, 255, 34, 0.2),
+        inset 0 0 40px rgba(0, 255, 34, 0.05);
+      max-width: 370px;
+      box-sizing: border-box;
+      border: 1px solid rgba(0, 255, 34, 0.45);
+    }
+    .baboon-ltx-cosmic-glow {
+      position: absolute;
+      inset: -40%;
+      background: radial-gradient(
+        circle,
+        rgba(0, 255, 34, 0.4),
+        rgba(255, 92, 0, 0.15),
+        transparent 65%
+      );
+      filter: blur(40px);
+      animation: baboon_breathe 6s ease-in-out infinite;
+      pointer-events: none;
+    }
+    .baboon-ltx-flow-line {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+        to bottom,
+        transparent,
+        rgba(0, 255, 34, 0.25),
+        transparent
+      );
+      animation: baboon_drift 4.5s linear infinite;
+      pointer-events: none;
+    }
+    .baboon-ltx-error-num {
+      position: relative;
+      font-size: 3.4rem;
+      font-weight: 900;
+      letter-spacing: 0.25rem;
+      color: #00FF22;
+      text-shadow: 0 0 24px rgba(0, 255, 34, 0.95);
+      line-height: 1;
+      margin: 0;
+    }
+    .baboon-ltx-error-num::after {
+      content: attr(data-text);
+      position: absolute;
+      inset: 0;
+      color: #FF5C00;
+      opacity: 0.35;
+      filter: blur(12px);
+    }
+    .baboon-ltx-error-label {
+      margin-top: 0.45rem;
+      font-size: 0.76rem;
+      letter-spacing: 0.25rem;
+      text-transform: uppercase;
+      color: #FF5C00;
+      font-weight: 800;
+    }
+    .baboon-ltx-error-desc {
+      margin-top: 0.9rem;
+      font-size: 0.8rem;
+      color: #94a3b8;
+      max-inline-size: 32ch;
+      line-height: 1.5;
+    }
+    .baboon-ltx-home-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      margin-top: 1.4rem;
+      padding: 0.65rem 1.6rem;
+      border-radius: 999px;
+      text-decoration: none;
+      font-size: 0.8rem;
+      font-weight: 800;
+      letter-spacing: 1px;
+      color: #03050A;
+      background: linear-gradient(135deg, #00FF22, #00d61d);
+      box-shadow: 0 0 25px rgba(0, 255, 34, 0.65);
+      transition:
+        transform 0.35s ease,
+        box-shadow 0.35s ease,
+        filter 0.35s ease;
+      cursor: pointer;
+      position: relative;
+      z-index: 2;
+      text-transform: uppercase;
+    }
+    .baboon-ltx-home-btn:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 0 45px rgba(0, 255, 34, 0.95);
+      filter: brightness(1.15);
+      color: #03050A;
+    }
+    .baboon-ltx-particle-field i:nth-child(odd) {
+      background: #00FF22;
+      box-shadow: 0 0 6px #00FF22;
+    }
+    .baboon-ltx-particle-field i:nth-child(even) {
+      background: #FF5C00;
+      box-shadow: 0 0 6px #FF5C00;
+    }
   </style>
 </head>
 <body>
@@ -4428,6 +4713,80 @@
 
       <div style="margin-top: 20px; padding-top: 14px; border-top: 1px solid rgba(255,255,255,0.06); display: flex; justify-content: space-between; align-items: center; font-size: 11.5px; color: #64748b;">
         <span>Category: <strong>Interactive Morphing Cards / Cosmic Orb to Command Deck</strong></span>
+        <span style="color: #00FF22;">● Verified Production Ingestion</span>
+      </div>
+    </section>
+
+    <!-- SERIAL #020 -->
+    <section id="mockup-item-020" class="mockup-card">
+      <div class="mockup-header">
+        <div style="display: flex; align-items: center; gap: 10px;">
+          <span class="serial-badge">SERIAL #020</span>
+          <strong style="color: #ffffff; font-size: 16px;">Itchy-Baboon-17 Cosmic Deep Space 404 Error Node</strong>
+          <span style="font-size: 11px; color: #64748b; font-family: monospace;">uiverse.io/danish_5376/itchy-baboon-17</span>
+        </div>
+        <a href="serial-list-mockup-design.html" style="color: var(--orange); font-size: 12px; text-decoration: none; font-weight: 600;">&larr; View Master Serial Index</a>
+      </div>
+
+      <div class="stage-view">
+        <!-- Variant A: Uiverse Canonical Deep Space 404 -->
+        <div class="stage-column">
+          <div class="stage-header">
+            <span class="stage-title">VARIANT A: UIVERSE CANONICAL DEEP SPACE 404</span>
+            <span class="stage-tag">ORIGINAL SPEC</span>
+          </div>
+          <div class="baboon-stage-box">
+            <div class="baboon-space-core">
+              <div class="baboon-cosmic-glow"></div>
+              <div class="baboon-flow-line"></div>
+
+              <div class="baboon-error-num" data-text="404">404</div>
+              <div class="baboon-error-label">Lost in Space</div>
+
+              <div class="baboon-error-desc">This signal no longer exists in our universe.</div>
+
+              <a href="#mockup-item-020" class="baboon-home-btn">
+                <span>Return Home</span>
+              </a>
+
+              <div class="baboon-particle-field">
+                <i></i><i></i><i></i><i></i><i></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Variant B: Leadirftex Cyber Quantum Telemetry Signal Loss Node -->
+        <div class="stage-column">
+          <div class="stage-header">
+            <span class="stage-title">VARIANT B: LEADIRFTEX SIGNAL LOSS TELEMETRY NODE</span>
+            <span class="stage-tag" style="background: rgba(0, 255, 34, 0.15); color: #00FF22; border-color: rgba(0, 255, 34, 0.4);">CYBER EDITION</span>
+          </div>
+          <div class="baboon-stage-box" style="background: radial-gradient(circle at center, rgba(0, 255, 34, 0.06) 0%, #03050A 80%); border-color: rgba(0, 255, 34, 0.25);">
+            <div class="baboon-ltx-space-core">
+              <div class="baboon-ltx-cosmic-glow"></div>
+              <div class="baboon-ltx-flow-line"></div>
+
+              <div class="baboon-ltx-error-num" data-text="404">404</div>
+              <div class="baboon-ltx-error-label">SIGNAL SEVERED</div>
+
+              <div class="baboon-ltx-error-desc">Quantum routing interrupted. Target bridge node disconnected from mesh.</div>
+
+              <a href="#mockup-item-020" class="baboon-ltx-home-btn">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
+                <span>RE-ESTABLISH UPLINK</span>
+              </a>
+
+              <div class="baboon-particle-field baboon-ltx-particle-field">
+                <i></i><i></i><i></i><i></i><i></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div style="margin-top: 20px; padding-top: 14px; border-top: 1px solid rgba(255,255,255,0.06); display: flex; justify-content: space-between; align-items: center; font-size: 11.5px; color: #64748b;">
+        <span>Category: <strong>UI Exception States / Cosmic 404 Deep Space &amp; Telemetry Signal Loss Node</strong></span>
         <span style="color: #00FF22;">● Verified Production Ingestion</span>
       </div>
     </section>
