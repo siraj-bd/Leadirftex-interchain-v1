@@ -1513,6 +1513,111 @@
       border-color: #00FF22;
       box-shadow: 12px 6px 30px rgba(0, 255, 34, 0.35);
     }
+
+    /* === SERIAL #012: STUPID-SWAN-82 HORIZONTAL 3D FLIPPING DOSSIER BINDER === */
+    /* Variant A: Canonical Uiverse */
+    .swan-book {
+      position: relative;
+      border-radius: 10px;
+      width: 280px;
+      height: 190px;
+      background-color: #0f172a;
+      box-shadow: 1px 1px 16px rgba(0, 0, 0, 0.7);
+      transform-style: preserve-3d;
+      perspective: 2000px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: #ffffff;
+      padding: 18px;
+      box-sizing: border-box;
+      text-align: center;
+      cursor: pointer;
+    }
+    .swan-cover {
+      top: 0;
+      left: 0;
+      position: absolute;
+      background-color: #000000;
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      width: 100%;
+      height: 100%;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+      transform-origin: left center;
+      box-shadow: 2px 2px 14px rgba(0, 0, 0, 0.8);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 18px;
+      box-sizing: border-box;
+      overflow: hidden;
+    }
+    .swan-book:hover .swan-cover {
+      transform: rotateY(-90deg);
+      box-shadow: 12px 4px 24px rgba(0, 0, 0, 0.5);
+    }
+
+    /* Variant B: Leadirftex Cyber Edition (Landscape CAD Blueprint Binder) */
+    .swan-ltx-book {
+      position: relative;
+      border-radius: 12px;
+      width: 290px;
+      height: 190px;
+      background: radial-gradient(circle at 50% 50%, #0d1527 0%, #03050A 100%);
+      border: 1px solid rgba(0, 255, 34, 0.35);
+      box-shadow: 0 0 25px rgba(0, 0, 0, 0.8), inset 0 0 15px rgba(0, 255, 34, 0.05);
+      transform-style: preserve-3d;
+      perspective: 2000px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 16px;
+      box-sizing: border-box;
+      text-align: center;
+      cursor: pointer;
+    }
+    .swan-ltx-cover {
+      top: 0;
+      left: 0;
+      position: absolute;
+      background: linear-gradient(135deg, #070B14 0%, #0b1424 100%);
+      border: 1.5px solid rgba(0, 255, 34, 0.4);
+      width: 100%;
+      height: 100%;
+      border-radius: 12px;
+      cursor: pointer;
+      transition: transform 0.65s cubic-bezier(0.4, 0, 0.2, 1);
+      transform-origin: left center;
+      box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.9);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      padding: 16px 20px;
+      box-sizing: border-box;
+      overflow: hidden;
+    }
+    .swan-ltx-cover::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      width: 8px;
+      background: linear-gradient(90deg, #FF5C00, #ff8a00);
+      border-top-left-radius: 12px;
+      border-bottom-left-radius: 12px;
+    }
+    .swan-ltx-book:hover .swan-ltx-cover {
+      transform: rotateY(-90deg);
+      border-color: #00FF22;
+      box-shadow: 14px 6px 30px rgba(0, 255, 34, 0.35);
+    }
   </style>
 </head>
 <body>
@@ -2044,6 +2149,73 @@
 
       <div style="margin-top: 20px; padding-top: 14px; border-top: 1px solid rgba(255,255,255,0.06); display: flex; justify-content: space-between; align-items: center; font-size: 11.5px; color: #64748b;">
         <span>Category: <strong>Cards &amp; Panels / 3D Flipping Book &amp; Folder Open Effect</strong></span>
+        <span style="color: #00FF22;">● Verified Production Ingestion</span>
+      </div>
+    </section>
+
+    <!-- SERIAL #012 -->
+    <section id="mockup-item-012" class="mockup-card">
+      <div class="mockup-header">
+        <div style="display: flex; align-items: center; gap: 10px;">
+          <span class="serial-badge">SERIAL #012</span>
+          <strong style="color: #ffffff; font-size: 16px;">Stupid-Swan-82 Horizontal 3D Flipping Dossier Binder</strong>
+          <span style="font-size: 11px; color: #64748b; font-family: monospace;">uiverse.io/PhyoTP/stupid-swan-82</span>
+        </div>
+        <a href="serial-list-mockup-design.html" style="color: var(--orange); font-size: 12px; text-decoration: none; font-weight: 600;">&larr; View Master Serial Index</a>
+      </div>
+
+      <div class="stage-view">
+        <!-- Variant A: Uiverse Canonical -->
+        <div class="stage-column">
+          <span class="stage-label">Variant A: Uiverse Canonical (Landscape -90&deg; 3D Flap)</span>
+          <div style="display: flex; justify-content: center; align-items: center; height: 230px; width: 100%;">
+            <div class="swan-book">
+              <div style="font-size: 16px; font-weight: 800; color: #38bdf8;">SCHEMATIC VIEW</div>
+              <p style="font-size: 12px; color: #94a3b8; margin: 6px 0 0; line-height: 1.4;">
+                Orthogonal 90-degree flap opening reveals blueprint specifications.
+              </p>
+              <div class="swan-cover">
+                <div style="font-size: 26px;">📁</div>
+                <div style="font-size: 15px; font-weight: 800; color: #ffffff; margin-top: 6px;">Technical Binder</div>
+                <div style="font-size: 10.5px; color: #64748b; margin-top: 3px;">Hover to Inspect &rarr;</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Variant B: Leadirftex Cyber Edition -->
+        <div class="stage-column">
+          <span class="stage-label">Variant B: Leadirftex Cyber Edition (CAD Blueprint Dossier)</span>
+          <div style="display: flex; justify-content: center; align-items: center; height: 230px; width: 100%;">
+            <div class="swan-ltx-book">
+              <div style="display: flex; justify-content: space-between; width: 100%; align-items: center; margin-bottom: 6px;">
+                <span style="font-size: 9px; font-family: 'JetBrains Mono', monospace; color: #FF5C00; font-weight: 800;">CAD DOSSIER</span>
+                <span style="font-size: 9px; font-family: 'JetBrains Mono', monospace; color: #00FF22;">NODE #29 ACTIVE</span>
+              </div>
+              <div style="font-size: 15px; font-family: 'JetBrains Mono', monospace; font-weight: 900; color: #00FF22; letter-spacing: 1px;">3D BLUEPRINT // DXF</div>
+              <p style="font-size: 11px; font-family: 'JetBrains Mono', monospace; color: #cbd5e1; margin: 6px 0 0; line-height: 1.4;">
+                Decentralized garment vector geometry synchronized across all supply nodes.
+              </p>
+
+              <div class="swan-ltx-cover">
+                <div style="display: flex; justify-content: space-between; width: 100%; align-items: center;">
+                  <span style="font-size: 9px; font-family: 'JetBrains Mono', monospace; color: #FF5C00; font-weight: 800;">CONFIDENTIAL</span>
+                  <span style="width: 6px; height: 6px; border-radius: 50%; background: #00FF22; box-shadow: 0 0 6px #00FF22;"></span>
+                </div>
+                <div style="text-align: center;">
+                  <div style="font-size: 24px; color: #00FF22; filter: drop-shadow(0 0 8px rgba(0,255,34,0.5));">📐</div>
+                  <div style="font-size: 13.5px; font-family: 'JetBrains Mono', monospace; font-weight: 900; color: #ffffff; margin-top: 4px; letter-spacing: 1px;">CAD BLUEPRINT</div>
+                  <div style="font-size: 9.5px; font-family: 'JetBrains Mono', monospace; color: #00FF22; margin-top: 2px;">INTERCHAIN SPECS</div>
+                </div>
+                <div style="font-size: 9px; font-family: 'JetBrains Mono', monospace; color: #64748b;">FLAP 90&deg; TO REVEAL &rarr;</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div style="margin-top: 20px; padding-top: 14px; border-top: 1px solid rgba(255,255,255,0.06); display: flex; justify-content: space-between; align-items: center; font-size: 11.5px; color: #64748b;">
+        <span>Category: <strong>Cards &amp; Panels / Horizontal 3D Flipping Dossier Binder</strong></span>
         <span style="color: #00FF22;">● Verified Production Ingestion</span>
       </div>
     </section>
