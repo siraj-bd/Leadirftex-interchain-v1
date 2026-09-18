@@ -5,6 +5,21 @@
 **Full Platform Name:** Leadirftex Interchain  
 **Plan Domain will be:** Leadirftex.com  
 
+### Mockup Serial #031: Perfect-Sloth-12 Squircle Corner Slide-Fill Action Button
+
+**Status:** PASS / VERIFIED — INGESTED SERIAL #031: PERFECT-SLOTH-12 SQUIRCLE CORNER SLIDE-FILL ACTION BUTTON (SOURCE: uiverse.io/gharsh11032000/perfect-sloth-12). INTEGRATED INTO CENTRALIZED MASTER REPOSITORY (`mockup-master-ui-ux.html#mockup-item-031`) AND REGISTERED IN SERIAL REGISTRY (`serial-list-mockup-design.html`). PRESERVED CANONICAL NEUMORPHIC 10PX SQUIRCLE BUTTON WITH CORNER-TO-CORNER TRANSLATE(-100%, 100%) TO TRANSLATE(0, 0) SLIDE-FILL TRANSITION DYNAMICS (0.6S CUBIC-BEZIER(0.23, 1, 0.32, 1)), ICON HOVER SCALE (1.25X) AND ACTIVE TOUCH (0.95X), ALONG WITH DEDICATED LEADIRFTEX CYBER QUANTUM DIAGNOSTIC & SECURITY SQUIRCLE PODS FEATURING OBSIDIAN (#070B14), CYBER NEON GREEN (#00FF22), AND INTERCHAIN ORANGE (#FF5C00) WITH CPU & SECURITY GATE SVGS. CSS BRACES 100% BALANCED.
+**Target Files:** `mockup-master-ui-ux.html`, `serial-list-mockup-design.html`, `project-execution-status.md`, `project-status-for-chatgpt.html`
+**Live Preview Route:** `mockup-master-ui-ux.html#mockup-item-031`, `serial-list-mockup-design.html`
+**Audit & Implementation Highlights:**
+1. **Mockup Master Repository Ingestion (#mockup-item-031):**
+   - Scoped pure CSS with squircle corner clipping and diagonal slide transitions.
+   - Dual variant presentation: Variant A (Uiverse Canonical Neumorphic Squircle Slide) and Variant B (Leadirftex Cyber Diagnostic & Security Pods).
+2. **Serial Registry Update:**
+   - Appended Serial `#031`, Item Short Name `Perfect-Sloth-12 Squircle Corner Slide`, Category `UI Micro-Actions / Squircle Corner Slide-Fill Action Button`, Status `ACTIVE / INGESTED`, and direct action link.
+3. **Syntax Verification:**
+   - `mockup-master-ui-ux.html`: CSS Braces 100% BALANCED.
+   - `serial-list-mockup-design.html`: CSS Braces 100% BALANCED.
+
 ### Mockup Serial #030: Average-Falcon-37 Circular Diagonal-Swipe Scanner Button
 
 **Status:** PASS / VERIFIED — INGESTED SERIAL #030: AVERAGE-FALCON-37 CIRCULAR DIAGONAL-SWIPE SCANNER BUTTON (SOURCE: uiverse.io/gharsh11032000/average-falcon-37). INTEGRATED INTO CENTRALIZED MASTER REPOSITORY (`mockup-master-ui-ux.html#mockup-item-030`) AND REGISTERED IN SERIAL REGISTRY (`serial-list-mockup-design.html`). PRESERVED CANONICAL NEUMORPHIC CIRCULAR BUTTON WITH DIAGONAL 45-DEGREE ROTATING PLATE OVERSHOOT KEYFRAME DYNAMICS (@KEYFRAMES FALCON_SHAKEBACK WITH 50% 15%/-15% OVERSHOOT AND 100% -10%/10% SETTLE), ICON HOVER SCALE (1.25X) AND ACTIVE TOUCH (0.95X), ALONG WITH DEDICATED LEADIRFTEX CYBER QUANTUM TELEMETRY SCANNER & PULSE PODS FEATURING OBSIDIAN (#070B14), CYBER NEON GREEN (#00FF22), AND INTERCHAIN ORANGE (#FF5C00) WITH CROSSHAIR & CORE PULSE SVGS. CSS BRACES 100% BALANCED.
