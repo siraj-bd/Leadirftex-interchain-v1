@@ -3573,6 +3573,204 @@
       background: #FF5C00;
       box-shadow: 0 0 6px #FF5C00;
     }
+
+    /* === SERIAL #021: HARD-HOUND-82 EXPANDING PILL SOCIAL ACTION BUTTON === */
+    /* Shared Stage Box */
+    .hound-stage-box {
+      width: 100%;
+      min-height: 240px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 18px;
+      background: radial-gradient(circle at center, #0e1526 0%, #060913 100%);
+      border-radius: 10px;
+      position: relative;
+      overflow: hidden;
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      padding: 30px 15px;
+    }
+
+    /* Variant A: Canonical Uiverse Telegram Expanding Pill */
+    .hound-btn {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      width: 48px;
+      height: 48px;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      position: relative;
+      overflow: hidden;
+      transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+      box-shadow: 2px 4px 15px rgba(0, 0, 0, 0.3);
+      background-color: #24a1de;
+      padding: 0;
+      outline: none;
+    }
+    .hound-sign {
+      width: 100%;
+      transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .hound-sign svg {
+      width: 24px;
+      height: 24px;
+      fill: #ffffff;
+    }
+    .hound-text {
+      position: absolute;
+      right: 0%;
+      width: 0%;
+      opacity: 0;
+      color: #ffffff;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      font-size: 14px;
+      font-weight: 700;
+      transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+      white-space: nowrap;
+      overflow: hidden;
+      text-align: left;
+    }
+    .hound-btn:hover {
+      width: 154px;
+      border-radius: 40px;
+      box-shadow: 0 6px 20px rgba(36, 161, 222, 0.45);
+    }
+    .hound-btn:hover .hound-sign {
+      width: 32%;
+      padding-left: 12px;
+    }
+    .hound-btn:hover .hound-text {
+      opacity: 1;
+      width: 68%;
+      padding-right: 14px;
+    }
+    .hound-btn:active {
+      transform: translate(2px, 2px);
+    }
+
+    /* Variant B: Leadirftex Cyber Expanding Protocol Pill Suite */
+    .hound-ltx-cluster {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    .hound-ltx-btn {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      cursor: pointer;
+      position: relative;
+      overflow: hidden;
+      transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+      background: rgba(7, 11, 20, 0.9);
+      padding: 0;
+      outline: none;
+      box-sizing: border-box;
+    }
+    .hound-ltx-sign {
+      width: 100%;
+      transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .hound-ltx-text {
+      position: absolute;
+      right: 0%;
+      width: 0%;
+      opacity: 0;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 1.2px;
+      transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+      white-space: nowrap;
+      overflow: hidden;
+      text-align: left;
+    }
+    .hound-ltx-btn:hover {
+      width: 168px;
+      border-radius: 40px;
+    }
+    .hound-ltx-btn:hover .hound-ltx-sign {
+      width: 32%;
+      padding-left: 12px;
+    }
+    .hound-ltx-btn:hover .hound-ltx-text {
+      opacity: 1;
+      width: 68%;
+      padding-right: 14px;
+    }
+    .hound-ltx-btn:active {
+      transform: translate(2px, 2px);
+    }
+    /* Cyber Green Pill */
+    .hound-ltx-green {
+      border: 1.5px solid #00FF22;
+      box-shadow: 0 0 16px rgba(0, 255, 34, 0.25);
+    }
+    .hound-ltx-green .hound-ltx-sign svg {
+      width: 22px;
+      height: 22px;
+      fill: #00FF22;
+      transition: 0.3s ease;
+    }
+    .hound-ltx-green .hound-ltx-text {
+      color: #00FF22;
+    }
+    .hound-ltx-green:hover {
+      box-shadow: 0 0 25px rgba(0, 255, 34, 0.5), inset 0 0 12px rgba(0, 255, 34, 0.15);
+      background: rgba(0, 255, 34, 0.08);
+    }
+    /* Interchain Orange Pill */
+    .hound-ltx-orange {
+      border: 1.5px solid #FF5C00;
+      box-shadow: 0 0 16px rgba(255, 92, 0, 0.25);
+    }
+    .hound-ltx-orange .hound-ltx-sign svg {
+      width: 22px;
+      height: 22px;
+      fill: #FF5C00;
+      transition: 0.3s ease;
+    }
+    .hound-ltx-orange .hound-ltx-text {
+      color: #FF5C00;
+    }
+    .hound-ltx-orange:hover {
+      box-shadow: 0 0 25px rgba(255, 92, 0, 0.5), inset 0 0 12px rgba(255, 92, 0, 0.15);
+      background: rgba(255, 92, 0, 0.08);
+    }
+    /* Quantum Cyan Pill */
+    .hound-ltx-cyan {
+      border: 1.5px solid #38BDF8;
+      box-shadow: 0 0 16px rgba(56, 189, 248, 0.25);
+    }
+    .hound-ltx-cyan .hound-ltx-sign svg {
+      width: 22px;
+      height: 22px;
+      fill: #38BDF8;
+      transition: 0.3s ease;
+    }
+    .hound-ltx-cyan .hound-ltx-text {
+      color: #38BDF8;
+    }
+    .hound-ltx-cyan:hover {
+      box-shadow: 0 0 25px rgba(56, 189, 248, 0.5), inset 0 0 12px rgba(56, 189, 248, 0.15);
+      background: rgba(56, 189, 248, 0.08);
+    }
   </style>
 </head>
 <body>
@@ -4787,6 +4985,90 @@
 
       <div style="margin-top: 20px; padding-top: 14px; border-top: 1px solid rgba(255,255,255,0.06); display: flex; justify-content: space-between; align-items: center; font-size: 11.5px; color: #64748b;">
         <span>Category: <strong>UI Exception States / Cosmic 404 Deep Space &amp; Telemetry Signal Loss Node</strong></span>
+        <span style="color: #00FF22;">● Verified Production Ingestion</span>
+      </div>
+    </section>
+
+    <!-- SERIAL #021 -->
+    <section id="mockup-item-021" class="mockup-card">
+      <div class="mockup-header">
+        <div style="display: flex; align-items: center; gap: 10px;">
+          <span class="serial-badge">SERIAL #021</span>
+          <strong style="color: #ffffff; font-size: 16px;">Hard-Hound-82 Expanding Pill Action Button</strong>
+          <span style="font-size: 11px; color: #64748b; font-family: monospace;">uiverse.io/mohit_7083/hard-hound-82</span>
+        </div>
+        <a href="serial-list-mockup-design.html" style="color: var(--orange); font-size: 12px; text-decoration: none; font-weight: 600;">&larr; View Master Serial Index</a>
+      </div>
+
+      <div class="stage-view">
+        <!-- Variant A: Uiverse Canonical Telegram Expanding Pill -->
+        <div class="stage-column">
+          <div class="stage-header">
+            <span class="stage-title">VARIANT A: UIVERSE CANONICAL EXPANDING PILL</span>
+            <span class="stage-tag">ORIGINAL SPEC</span>
+          </div>
+          <div class="hound-stage-box">
+            <button class="hound-btn">
+              <div class="hound-sign">
+                <svg viewBox="0 0 16 16">
+                  <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.287 5.906q-1.168.486-4.666 2.01-.567.225-.595.442c-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294q.39.01.868-.32 3.269-2.206 3.374-2.23c.05-.012.12-.026.166.016s.042.12.037.141c-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8 8 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629q.14.092.27.187c.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.4 1.4 0 0 0-.013-.315.34.34 0 0 0-.114-.217.53.53 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09"></path>
+                </svg>
+              </div>
+              <div class="hound-text">Telegram</div>
+            </button>
+            <div style="font-size: 11px; font-family: monospace; color: #64748b; margin-top: 10px;">
+              ● Hover circle to smoothly expand pill &bull; Revealing brand typography
+            </div>
+          </div>
+        </div>
+
+        <!-- Variant B: Leadirftex Cyber Expanding Protocol Pill Suite -->
+        <div class="stage-column">
+          <div class="stage-header">
+            <span class="stage-title">VARIANT B: LEADIRFTEX EXPANDING PROTOCOL PILL SUITE</span>
+            <span class="stage-tag" style="background: rgba(0, 255, 34, 0.15); color: #00FF22; border-color: rgba(0, 255, 34, 0.4);">CYBER SUITE</span>
+          </div>
+          <div class="hound-stage-box" style="background: radial-gradient(circle at center, rgba(0, 255, 34, 0.06) 0%, #03050A 80%); border-color: rgba(0, 255, 34, 0.25);">
+            <div class="hound-ltx-cluster">
+              <!-- Telegram / Community -->
+              <button class="hound-ltx-btn hound-ltx-green">
+                <div class="hound-ltx-sign">
+                  <svg viewBox="0 0 16 16">
+                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.287 5.906q-1.168.486-4.666 2.01-.567.225-.595.442c-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294q.39.01.868-.32 3.269-2.206 3.374-2.23c.05-.012.12-.026.166.016s.042.12.037.141c-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8 8 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629q.14.092.27.187c.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.4 1.4 0 0 0-.013-.315.34.34 0 0 0-.114-.217.53.53 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09"></path>
+                  </svg>
+                </div>
+                <div class="hound-ltx-text">TELEGRAM</div>
+              </button>
+
+              <!-- Interchain / Core -->
+              <button class="hound-ltx-btn hound-ltx-orange">
+                <div class="hound-ltx-sign">
+                  <svg viewBox="0 0 24 24">
+                    <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+                  </svg>
+                </div>
+                <div class="hound-ltx-text">INTERCHAIN</div>
+              </button>
+
+              <!-- Protocol / Telemetry Docs -->
+              <button class="hound-ltx-btn hound-ltx-cyan">
+                <div class="hound-ltx-sign">
+                  <svg viewBox="0 0 24 24">
+                    <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"></path>
+                  </svg>
+                </div>
+                <div class="hound-ltx-text">AUDIT DOCS</div>
+              </button>
+            </div>
+            <div style="font-size: 11px; font-family: 'JetBrains Mono', monospace; color: #00FF22; opacity: 0.85; margin-top: 10px; letter-spacing: 0.8px;">
+              ⚡ [ HOVER CIRCLE TO EXPAND CYBER PROTOCOL DRAWER ]
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div style="margin-top: 20px; padding-top: 14px; border-top: 1px solid rgba(255,255,255,0.06); display: flex; justify-content: space-between; align-items: center; font-size: 11.5px; color: #64748b;">
+        <span>Category: <strong>UI Micro-Actions / Expanding Pill Social &amp; Protocol Drawer</strong></span>
         <span style="color: #00FF22;">● Verified Production Ingestion</span>
       </div>
     </section>
