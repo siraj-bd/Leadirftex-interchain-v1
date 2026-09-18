@@ -7536,6 +7536,238 @@
       border-left-color: #FF003C;
     }
 
+
+    /* === SERIAL #040: BLACK-HORSE-74 ENCRYPTED NEON TEXTURE SHADER === */
+    /* Shared Stage Box */
+    .horse-stage-box {
+      width: 100%;
+      min-height: 280px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background: #060913;
+      border-radius: 10px;
+      position: relative;
+      overflow: hidden;
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Variant A: Canonical Uiverse Encrypted Neon Texture */
+    .horse-pattern-wrap {
+      position: relative;
+      width: 100%;
+      height: 280px;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .horse-encrypted-neon-pattern {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(135deg, #0d0d1a, #1a1a2f 50%, #2a1a4f);
+      filter: url(#horse-neon-texture-040-a);
+    }
+    .horse-data-stream-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: radial-gradient(
+          circle at 30% 40%,
+          rgba(0, 240, 255, 0.25) 0%,
+          transparent 25%
+        ),
+        radial-gradient(
+          circle at 70% 60%,
+          rgba(100, 50, 255, 0.2) 0%,
+          transparent 20%
+        );
+      animation: horse-pulse-stream 3s ease-in-out infinite;
+      pointer-events: none;
+    }
+    @keyframes horse-pulse-stream {
+      0%,
+      100% {
+        opacity: 0.45;
+      }
+      50% {
+        opacity: 0.95;
+      }
+    }
+    .horse-hud-overlay {
+      position: relative;
+      z-index: 5;
+      background: rgba(13, 17, 34, 0.75);
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+      border: 1px solid rgba(0, 240, 255, 0.35);
+      border-radius: 8px;
+      padding: 16px 22px;
+      text-align: center;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.6), 0 0 15px rgba(0, 240, 255, 0.15);
+      transition: all 0.3s ease;
+      max-width: 320px;
+    }
+    .horse-hud-overlay:hover {
+      transform: translateY(-2px);
+      border-color: rgba(0, 240, 255, 0.6);
+      box-shadow: 0 12px 36px rgba(0, 0, 0, 0.7), 0 0 24px rgba(0, 240, 255, 0.3);
+    }
+    .horse-hud-badge {
+      font-size: 10px;
+      font-family: 'JetBrains Mono', monospace;
+      color: #00F0FF;
+      letter-spacing: 1.2px;
+      font-weight: 700;
+      margin-bottom: 6px;
+    }
+    .horse-hud-title {
+      font-size: 14px;
+      font-weight: 800;
+      color: #ffffff;
+      letter-spacing: 0.5px;
+      margin-bottom: 6px;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    }
+    .horse-hud-meta {
+      font-size: 10.5px;
+      color: #94a3b8;
+      font-family: 'JetBrains Mono', monospace;
+    }
+
+    /* Variant B: Leadirftex Cyber Cryptographic Holographic Mesh */
+    .horse-ltx-pattern-wrap {
+      position: relative;
+      width: 100%;
+      height: 280px;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #03050A;
+    }
+    .horse-ltx-encrypted-pattern {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(135deg, #070B14 0%, #0c1322 45%, #151f33 100%);
+      filter: url(#horse-neon-texture-040-b);
+    }
+    .horse-ltx-stream-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: radial-gradient(
+          circle at 25% 35%,
+          rgba(0, 255, 34, 0.28) 0%,
+          transparent 28%
+        ),
+        radial-gradient(
+          circle at 75% 65%,
+          rgba(255, 92, 0, 0.22) 0%,
+          transparent 25%
+        );
+      animation: horse-ltx-pulse 3.5s ease-in-out infinite;
+      pointer-events: none;
+    }
+    @keyframes horse-ltx-pulse {
+      0%,
+      100% {
+        opacity: 0.4;
+        transform: scale(1);
+      }
+      50% {
+        opacity: 0.92;
+        transform: scale(1.04);
+      }
+    }
+    .horse-ltx-security-card {
+      position: relative;
+      z-index: 5;
+      background: rgba(7, 11, 20, 0.82);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border: 1px solid rgba(0, 255, 34, 0.35);
+      border-radius: 8px;
+      padding: 16px 20px;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.7), 0 0 20px rgba(0, 255, 34, 0.15);
+      transition: all 0.35s cubic-bezier(0.23, 1, 0.32, 1);
+      width: 100%;
+      max-width: 380px;
+      box-sizing: border-box;
+    }
+    .horse-ltx-security-card:hover {
+      transform: translateY(-2px);
+      border-color: rgba(0, 255, 34, 0.65);
+      box-shadow: 0 12px 36px rgba(0, 0, 0, 0.85), 0 0 28px rgba(0, 255, 34, 0.3);
+    }
+    .horse-ltx-sec-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 10px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+      padding-bottom: 8px;
+    }
+    .horse-ltx-sec-chip {
+      font-size: 10px;
+      font-family: 'JetBrains Mono', monospace;
+      color: #00FF22;
+      font-weight: 700;
+      letter-spacing: 1px;
+    }
+    .horse-ltx-sec-status {
+      font-size: 9.5px;
+      font-family: 'JetBrains Mono', monospace;
+      color: #00FF22;
+      background: rgba(0, 255, 34, 0.12);
+      padding: 2px 6px;
+      border-radius: 4px;
+      border: 1px solid rgba(0, 255, 34, 0.3);
+    }
+    .horse-ltx-sec-body {
+      margin-bottom: 10px;
+    }
+    .horse-ltx-sec-label {
+      font-size: 9.5px;
+      color: #64748b;
+      font-family: 'JetBrains Mono', monospace;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      margin-bottom: 2px;
+    }
+    .horse-ltx-sec-hash {
+      font-size: 12px;
+      color: #ffffff;
+      font-family: 'JetBrains Mono', monospace;
+      font-weight: 600;
+    }
+    .horse-ltx-sec-footer {
+      display: flex;
+      justify-content: space-between;
+      font-size: 9.5px;
+      font-family: 'JetBrains Mono', monospace;
+      color: #94a3b8;
+    }
+    .horse-ltx-sec-footer span:first-child {
+      color: #00FF22;
+    }
+    .horse-ltx-sec-footer span:last-child {
+      color: #FF5C00;
+    }
+
   </style>
 </head>
 <body>
@@ -10678,6 +10910,101 @@
 
       <div style="margin-top: 20px; padding-top: 14px; border-top: 1px solid rgba(255,255,255,0.06); display: flex; justify-content: space-between; align-items: center; font-size: 11.5px; color: #64748b;">
         <span>Category: <strong>Alerts &amp; Banners / Reactive Multi-Tier Telemetry Alert Stack</strong></span>
+        <span style="color: #00FF22;">● Verified Production Ingestion</span>
+      </div>
+    </section>
+
+
+    <!-- SERIAL #040 -->
+    <section id="mockup-item-040" class="mockup-card">
+      <div class="mockup-header">
+        <div style="display: flex; align-items: center; gap: 10px;">
+          <span class="serial-badge">SERIAL #040</span>
+          <strong style="color: #ffffff; font-size: 16px;">Black-Horse-74 Encrypted Neon Texture Shader</strong>
+          <span style="font-size: 11px; color: #64748b; font-family: monospace;">uiverse.io/chase2k25/black-horse-74</span>
+        </div>
+        <a href="serial-list-mockup-design.html" style="color: var(--orange); font-size: 12px; text-decoration: none; font-weight: 600;">&larr; View Master Serial Index</a>
+      </div>
+
+      <div class="stage-view">
+        <!-- Variant A: Canonical Uiverse Encrypted Neon Texture -->
+        <div class="stage-column">
+          <div class="stage-header">
+            <span class="stage-title">VARIANT A: UIVERSE CANONICAL NEON SHADER</span>
+            <span class="stage-tag">ORIGINAL SPEC</span>
+          </div>
+          <div class="horse-stage-box">
+            <!-- Hidden SVG Filter Definition (Canonical) -->
+            <svg style="position: absolute; width: 0; height: 0; pointer-events: none;" aria-hidden="true">
+              <filter id="horse-neon-texture-040-a">
+                <feTurbulence result="noise" numOctaves="2" baseFrequency="0.6" type="fractalNoise"></feTurbulence>
+                <feSpecularLighting result="specular" lighting-color="#00f0ff" specularExponent="25" specularConstant="0.9" surfaceScale="2" in="noise">
+                  <fePointLight z="90" y="100" x="100"></fePointLight>
+                </feSpecularLighting>
+                <feComposite result="litNoise" operator="over" in2="SourceGraphic" in="specular"></feComposite>
+                <feBlend mode="screen" in2="litNoise" in="SourceGraphic"></feBlend>
+              </filter>
+            </svg>
+
+            <div class="horse-pattern-wrap">
+              <div class="horse-encrypted-neon-pattern"></div>
+              <span class="horse-data-stream-overlay"></span>
+              
+              <!-- Floating Inspection HUD -->
+              <div class="horse-hud-overlay">
+                <div class="horse-hud-badge">PROD // ENCRYPTED SHADER</div>
+                <div class="horse-hud-title">NEON TEXTURE FILTER</div>
+                <div class="horse-hud-meta">feTurbulence(0.60) &bull; feSpecularLighting(#00F0FF)</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Variant B: Leadirftex Cyber Cryptographic Holographic Mesh -->
+        <div class="stage-column">
+          <div class="stage-header">
+            <span class="stage-title">VARIANT B: LEADIRFTEX CYBER CRYPTOGRAPHIC MESH</span>
+            <span class="stage-tag" style="background: rgba(0, 255, 34, 0.15); color: #00FF22; border-color: rgba(0, 255, 34, 0.4);">LIVE SHADER MESH</span>
+          </div>
+          <div class="horse-stage-box" style="border-color: rgba(0, 255, 34, 0.25);">
+            <!-- Hidden SVG Filter Definition (Leadirftex Cyber Zero-Yellow Spec) -->
+            <svg style="position: absolute; width: 0; height: 0; pointer-events: none;" aria-hidden="true">
+              <filter id="horse-neon-texture-040-b">
+                <feTurbulence result="noise" numOctaves="3" baseFrequency="0.55" type="fractalNoise"></feTurbulence>
+                <feSpecularLighting result="specular" lighting-color="#00FF22" specularExponent="30" specularConstant="1.2" surfaceScale="2.5" in="noise">
+                  <fePointLight z="100" y="80" x="120"></fePointLight>
+                </feSpecularLighting>
+                <feComposite result="litNoise" operator="over" in2="SourceGraphic" in="specular"></feComposite>
+                <feBlend mode="screen" in2="litNoise" in="SourceGraphic"></feBlend>
+              </filter>
+            </svg>
+
+            <div class="horse-ltx-pattern-wrap">
+              <div class="horse-ltx-encrypted-pattern"></div>
+              <span class="horse-ltx-stream-overlay"></span>
+
+              <!-- Leadirftex Zero-Knowledge Security Vault Card -->
+              <div class="horse-ltx-security-card">
+                <div class="horse-ltx-sec-header">
+                  <div class="horse-ltx-sec-chip">ZK-ENCRYPTED // MESH-040</div>
+                  <span class="horse-ltx-sec-status">● LIVE MESH</span>
+                </div>
+                <div class="horse-ltx-sec-body">
+                  <div class="horse-ltx-sec-label">CRYPTOGRAPHIC PROOF STATE</div>
+                  <div class="horse-ltx-sec-hash">0x7F9B...3A02 // VERIFIED QUORUM</div>
+                </div>
+                <div class="horse-ltx-sec-footer">
+                  <span>LIGHTING: #00FF22 SPECULAR</span>
+                  <span>MESH: #FF5C00 DUAL STREAM</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div style="margin-top: 20px; padding-top: 14px; border-top: 1px solid rgba(255,255,255,0.06); display: flex; justify-content: space-between; align-items: center; font-size: 11.5px; color: #64748b;">
+        <span>Category: <strong>Patterns &amp; Shaders / Encrypted SVG Neon Texture &amp; Animated Data Stream Filter</strong></span>
         <span style="color: #00FF22;">● Verified Production Ingestion</span>
       </div>
     </section>
