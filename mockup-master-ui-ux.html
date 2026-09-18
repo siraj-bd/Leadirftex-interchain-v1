@@ -9332,6 +9332,185 @@
       color: #ffffff;
     }
 
+  
+    /* ==========================================================================
+       SERIAL #050: STUPID-WASP-67 CYBER SCANLINE BEVEL-SHIFT BUTTON
+       Source: https://uiverse.io/catraco/stupid-wasp-67
+       Dual Mode: Variant A (Canonical Terminal Green) & Variant B (Leadirftex Dual Laser Nodes)
+       ========================================================================== */
+
+    .wasp-stage-box {
+      background: #020617;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 12px;
+      padding: 40px 24px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 220px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    /* Variant A: Canonical Terminal Green */
+    .wasp-btn {
+      background-color: rgb(5, 46, 22);
+      color: rgb(74, 222, 128);
+      border: 1px solid rgb(74, 222, 128);
+      border-bottom-width: 4px;
+      font-weight: 600;
+      font-family: inherit;
+      font-size: 14px;
+      overflow: hidden;
+      position: relative;
+      padding: 10px 24px;
+      border-radius: 8px;
+      outline: none;
+      cursor: pointer;
+      transition: border-width 0.3s ease, filter 0.3s ease, opacity 0.2s ease;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      box-sizing: border-box;
+    }
+
+    .wasp-scanline {
+      background-color: rgb(74, 222, 128);
+      position: absolute;
+      top: -150%;
+      left: 0;
+      display: inline-flex;
+      width: 100%;
+      height: 5px;
+      border-radius: 8px;
+      opacity: 0.6;
+      box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.3), 0 0 12px 3px #4ade80;
+      transition: top 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+      pointer-events: none;
+    }
+
+    .wasp-btn:hover {
+      filter: brightness(1.4);
+      border-top-width: 4px;
+      border-bottom-width: 1px;
+    }
+
+    .wasp-btn:hover .wasp-scanline {
+      top: 150%;
+    }
+
+    .wasp-btn:active {
+      opacity: 0.75;
+    }
+
+    /* Variant B: Leadirftex Cyber Scanline & Bevel Shift Nodes */
+    .wasp-ltx-cluster {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      gap: 24px;
+      width: 100%;
+    }
+
+    .wasp-ltx-btn {
+      background-color: #070B14;
+      border-radius: 8px;
+      outline: none;
+      cursor: pointer;
+      position: relative;
+      overflow: hidden;
+      padding: 12px 26px;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 1.2px;
+      text-transform: uppercase;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      box-sizing: border-box;
+      transition: border-width 0.25s ease, filter 0.3s ease, opacity 0.2s ease, box-shadow 0.3s ease;
+    }
+
+    /* Node 1: Cyber Neon Green (#00FF22) */
+    .wasp-ltx-green {
+      color: #00FF22;
+      border: 1px solid #00FF22;
+      border-bottom-width: 4px;
+      box-shadow: 0 0 15px rgba(0, 255, 34, 0.15), inset 0 0 10px rgba(0, 255, 34, 0.05);
+    }
+
+    .wasp-ltx-green .wasp-ltx-scanline {
+      background: #00FF22;
+      position: absolute;
+      top: -150%;
+      left: 0;
+      width: 100%;
+      height: 4px;
+      border-radius: 6px;
+      opacity: 0.85;
+      box-shadow: 0 0 15px 4px #00FF22, 0 0 25px 8px rgba(0, 255, 34, 0.4);
+      transition: top 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+      pointer-events: none;
+    }
+
+    .wasp-ltx-green:hover {
+      filter: brightness(1.35);
+      border-top-width: 4px;
+      border-bottom-width: 1px;
+      box-shadow: 0 0 25px rgba(0, 255, 34, 0.45), inset 0 0 16px rgba(0, 255, 34, 0.2);
+    }
+
+    .wasp-ltx-green:hover .wasp-ltx-scanline {
+      top: 150%;
+    }
+
+    .wasp-ltx-green:active {
+      opacity: 0.8;
+      transform: scale(0.98);
+    }
+
+    /* Node 2: Interchain Orange (#FF5C00) */
+    .wasp-ltx-orange {
+      color: #FF5C00;
+      border: 1px solid #FF5C00;
+      border-bottom-width: 4px;
+      box-shadow: 0 0 15px rgba(255, 92, 0, 0.15), inset 0 0 10px rgba(255, 92, 0, 0.05);
+    }
+
+    .wasp-ltx-orange .wasp-ltx-scanline {
+      background: #FF5C00;
+      position: absolute;
+      top: -150%;
+      left: 0;
+      width: 100%;
+      height: 4px;
+      border-radius: 6px;
+      opacity: 0.85;
+      box-shadow: 0 0 15px 4px #FF5C00, 0 0 25px 8px rgba(255, 92, 0, 0.4);
+      transition: top 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+      pointer-events: none;
+    }
+
+    .wasp-ltx-orange:hover {
+      filter: brightness(1.35);
+      border-top-width: 4px;
+      border-bottom-width: 1px;
+      box-shadow: 0 0 25px rgba(255, 92, 0, 0.45), inset 0 0 16px rgba(255, 92, 0, 0.2);
+    }
+
+    .wasp-ltx-orange:hover .wasp-ltx-scanline {
+      top: 150%;
+    }
+
+    .wasp-ltx-orange:active {
+      opacity: 0.8;
+      transform: scale(0.98);
+    }
+
   </style>
 </head>
 <body>
@@ -13168,6 +13347,67 @@
 
       <div style="margin-top: 20px; padding-top: 14px; border-top: 1px solid rgba(255,255,255,0.06); display: flex; justify-content: space-between; align-items: center; font-size: 11.5px; color: #64748b;">
         <span>Category: <strong>Buttons / Top-Aperture Laser Horizon Glow Pill Button</strong></span>
+        <span style="color: #00FF22;">● Verified Production Ingestion</span>
+      </div>
+    </section>
+
+
+    <!-- ==========================================================================
+         SERIAL #050: STUPID-WASP-67 CYBER SCANLINE BEVEL-SHIFT BUTTON
+         ========================================================================== -->
+    <section id="mockup-item-050" class="mockup-card">
+      <div class="mockup-header">
+        <div style="display: flex; align-items: center; gap: 10px;">
+          <span class="serial-badge">SERIAL #050</span>
+          <strong style="color: #ffffff; font-size: 16px;">Stupid-Wasp-67 Cyber Scanline Bevel-Shift Button</strong>
+          <span style="font-size: 11px; color: #64748b; font-family: monospace;">uiverse.io/catraco/stupid-wasp-67</span>
+        </div>
+        <a href="serial-list-mockup-design.html" style="color: var(--orange); font-size: 12px; text-decoration: none; font-weight: 600;">&larr; View Master Serial Index</a>
+      </div>
+
+      <div class="stage-view">
+        <!-- Variant A: Canonical Terminal Green Button -->
+        <div class="stage-column">
+          <div class="stage-label">Variant A &bull; Canonical Terminal Green Edition</div>
+          <div class="wasp-stage-box">
+            <button class="wasp-btn" aria-label="Hover Me Canonical">
+              <span class="wasp-scanline"></span>
+              Hover Me
+            </button>
+            <div style="font-size: 11px; font-family: monospace; color: #64748b; margin-top: 24px; text-align: center;">
+              Tactile Bevel Inversion &bull; Vertical Laser Scanline Sweep (-150% &rarr; +150%)
+            </div>
+          </div>
+        </div>
+
+        <!-- Variant B: Leadirftex Cyber Dual Reactor Nodes -->
+        <div class="stage-column">
+          <div class="stage-label">Variant B &bull; Leadirftex Cyber Dual Nodes (#00FF22 &amp; #FF5C00)</div>
+          <div class="wasp-stage-box">
+            <div class="wasp-ltx-cluster">
+              <!-- Node 1: Cyber Neon Green -->
+              <button class="wasp-ltx-btn wasp-ltx-green" aria-label="Execute Relay">
+                <span class="wasp-ltx-scanline"></span>
+                <span>⚡</span>
+                <span>EXECUTE RELAY</span>
+              </button>
+
+              <!-- Node 2: Interchain Orange -->
+              <button class="wasp-ltx-btn wasp-ltx-orange" aria-label="Authorize Bridge">
+                <span class="wasp-ltx-scanline"></span>
+                <span>◈</span>
+                <span>AUTHORIZE BRIDGE</span>
+              </button>
+            </div>
+            <div style="font-size: 11px; font-family: 'JetBrains Mono', monospace; color: #00FF22; opacity: 0.85; text-align: center; letter-spacing: 0.8px; margin-top: 24px;">
+              ⚡ [ DUAL TACTILE 4PX BEVEL SHIFT &bull; HIGH-ENERGY SCANLINE SWEEP &bull; ZERO YELLOW ]
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div style="margin-top: 20px; padding-top: 14px; border-top: 1px solid rgba(255,255,200,0.06); display: flex; justify-content: space-between; align-items: center; font-size: 11.5px; color: #64748b;">
+        <span>Category: <strong>Buttons / Cyber Scanline Bevel-Shift Action Button</strong></span>
         <span style="color: #00FF22;">● Verified Production Ingestion</span>
       </div>
     </section>
