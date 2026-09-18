@@ -6,6 +6,22 @@
 **Plan Domain will be:** Leadirftex.com  
 
 
+### Mockup Serial #042: Soft-Mayfly-11 Layered 3D Shadow Action Button
+
+**Status:** PASS / VERIFIED — INGESTED SERIAL #042: SOFT-MAYFLY-11 LAYERED 3D SHADOW ACTION BUTTON (SOURCE: uiverse.io/Mike11jr/soft-mayfly-11). INTEGRATED INTO CENTRALIZED MASTER REPOSITORY (`mockup-master-ui-ux.html#mockup-item-042`) AND REGISTERED IN SERIAL REGISTRY (`serial-list-mockup-design.html`). PRESERVED CANONICAL MULTI-TIER EXTRUDED 3D SHADOW DYNAMICS (TRANSFORM: TRANSLATEY(-10PX) ON HOVER WITH DUAL-TIER BOX-SHADOW SHELVES #F85959 AND #39A2DB, SMOOTH 0.4S CUBIC-BEZIER TRANSITIONS, AND TRANSLATEY(-5PX) ACTIVE PRESS STATE). INTEGRATED DEDICATED LEADIRFTEX CYBER EXTRUDED ACTION CLUSTER FEATURING OBSIDIAN (`#070B14`), CYBER NEON GREEN (`#00FF22`) AND INTERCHAIN ORANGE (`#FF5C00`) STEPPED SHELVES, ELECTRIC CYAN (`#00F0FF`) SECONDARY IBC ROUTING ACTION NODE, STRICT ZERO-YELLOW COMPLIANCE, MONOSPACE TYPOGRAPHY, AND AMBIENT NEON GLOW. CSS BRACES 100% BALANCED.
+**Target Files:** `mockup-master-ui-ux.html`, `serial-list-mockup-design.html`, `project-execution-status.md`, `project-status-for-chatgpt.html`
+**Live Preview Route:** `mockup-master-ui-ux.html#mockup-item-042`, `serial-list-mockup-design.html`
+**Audit & Implementation Highlights:**
+1. **Mockup Master Repository Ingestion (#mockup-item-042):**
+   - Scoped pure CSS with multi-step box-shadow extrusion and zero global class namespace conflicts (`.btn` to `.mayfly-btn`).
+   - Dual variant presentation: Variant A (Uiverse Canonical 3D Shadow Button) and Variant B (Leadirftex Cyber Extruded Action Nodes).
+2. **Serial Registry Update:**
+   - Appended Serial `#042`, Item Short Name `Soft-Mayfly-11 3D Shadow Button`, Category `Buttons / Layered Isometric 3D Shadow Action Button`, Status `ACTIVE / INGESTED`, and direct action link.
+3. **Syntax Verification:**
+   - `mockup-master-ui-ux.html`: CSS Braces 100% BALANCED.
+   - `serial-list-mockup-design.html`: CSS Braces 100% BALANCED.
+
+
 ### Mockup Serial #041: Silent-Liger-75 Dual-Layer Luminous Cyber Login Card
 
 **Status:** PASS / VERIFIED — INGESTED SERIAL #041: SILENT-LIGER-75 DUAL-LAYER LUMINOUS CYBER LOGIN CARD (SOURCE: uiverse.io/yashasvi9199/silent-liger-75). INTEGRATED INTO CENTRALIZED MASTER REPOSITORY (`mockup-master-ui-ux.html#mockup-item-041`) AND REGISTERED IN SERIAL REGISTRY (`serial-list-mockup-design.html`). PRESERVED CANONICAL DUAL-LAYER LUMINOUS INTERACTION DYNAMICS (OUTER GRADIENT CARD BORDER-RADIUS: 22PX, INNER DARK SURFACE CARD2 SCALING TO 0.98 ON HOVER WITH 20PX BORDER-RADIUS TO REVEAL LUMINOUS BORDER AURA), INSET DEEP SHADOW INPUT FIELDS WITH EMBEDDED AUTH SVG ICONS, DUAL ACTION BUTTON ROW, AND INTEGRATED DEDICATED LEADIRFTEX CYBER NODE AUTHENTICATION SUITE FEATURING OBSIDIAN (`#070B14`), CYBER NEON GREEN (`#00FF22`) TO INTERCHAIN ORANGE (`#FF5C00`) DUAL GRADIENT PERIMETER, STRICT ZERO-YELLOW COMPLIANCE, MONOSPACE TYPOGRAPHY, AND GLOWING FOCUS TELEMETRY. CSS BRACES 100% BALANCED.
